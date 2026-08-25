@@ -80,7 +80,7 @@ npm --prefix frontend run build
 
 ## Deploy
 
-See [Google Cloud deployment](docs/deployment/google-cloud.md), [prerequisites](docs/deployment/prerequisites.md), and the exact [deployment manifest](config/deployment-manifest.json). The canonical release is `v0.1.0-hackathon`, revision `isopact-outcome-gateway-00024-qnr`, pinned by immutable container digest.
+See [Google Cloud deployment](docs/deployment/google-cloud.md), [prerequisites](docs/deployment/prerequisites.md), and the exact [deployment manifest](config/deployment-manifest.json). The canonical release evidence remains pinned to revision `isopact-outcome-gateway-00024-qnr` and its immutable container digest. The current judge UI is revision `isopact-outcome-gateway-00025-tlc`, which adds platform marks without changing settlement semantics.
 
 ## Verify a settlement receipt
 

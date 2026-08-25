@@ -8,8 +8,10 @@
     "service": "isopact-outcome-gateway",
     "region": "africa-south1",
     "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
-    "revision": "isopact-outcome-gateway-00024-qnr",
-    "image": "africa-south1-docker.pkg.dev/isopact-agentic-20260823/cloud-run-source-deploy/isopact-release@sha256:f9d507b92942cb739522f6572ae6f94c9b64835575454d83e617e79ee00d7332",
+    "revision": "isopact-outcome-gateway-00025-tlc",
+    "image": "africa-south1-docker.pkg.dev/isopact-agentic-20260823/cloud-run-source-deploy/isopact-outcome-gateway@sha256:3f1a78448604ff8b572206e23f774875f89d524c0a988ffec48075ef08963fac",
+    "release_evidence_revision": "isopact-outcome-gateway-00024-qnr",
+    "release_evidence_image": "africa-south1-docker.pkg.dev/isopact-agentic-20260823/cloud-run-source-deploy/isopact-release@sha256:f9d507b92942cb739522f6572ae6f94c9b64835575454d83e617e79ee00d7332",
     "service_account": "isopact-outcome-gateway@isopact-agentic-20260823.iam.gserviceaccount.com",
     "network": "PUBLIC_REACHABLE",
     "application_auth": "GOOGLE_AGENT_RUNTIME_STS_JWT"

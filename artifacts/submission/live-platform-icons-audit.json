@@ -1,0 +1,16 @@
+{
+  "schema_version": "isopact-live-platform-icons-audit-v1",
+  "audited_at": "2026-08-25",
+  "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app/",
+  "revision": "isopact-outcome-gateway-00025-tlc",
+  "container_digest": "sha256:3f1a78448604ff8b572206e23f774875f89d524c0a988ffec48075ef08963fac",
+  "traffic_percent": 100,
+  "graph_marks": ["Jira", "Stripe", "Salesforce for the generic CRM node"],
+  "system_proof_marks": ["Jira", "Slack", "Salesforce"],
+  "illustrative_disclaimer_visible": true,
+  "implemented_integrations_claimed": false,
+  "browser_console_entries": 0,
+  "frontend_tests": 13,
+  "frontend_build": "PASS",
+  "result": "PASS"
+}
