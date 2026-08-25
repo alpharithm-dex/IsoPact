@@ -39,4 +39,15 @@ describe('judge interface', () => {
     await waitFor(() => expect(screen.getByRole('dialog')).toHaveTextContent('INVALID'))
     expect(screen.getByRole('dialog')).toHaveTextContent('SIGNATURE_INVALID')
   })
+
+  it('shows branded illustrative enterprise systems in system proof', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => data }))
+    render(<App />); await screen.findByLabelText('Live Outcome Pact Graph')
+    fireEvent.click(screen.getByRole('button', { name: 'SYSTEM PROOF' }))
+    const dialog = screen.getByRole('dialog')
+    expect(dialog).toHaveTextContent('Jira')
+    expect(dialog).toHaveTextContent('Slack')
+    expect(dialog).toHaveTextContent('Salesforce')
+    expect(dialog).toHaveTextContent(/no live integration or endorsement claimed/i)
+  })
 })
