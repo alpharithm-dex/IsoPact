@@ -1,0 +1,192 @@
+{
+  "acceptance_contract_frozen": true,
+  "concurrency": {
+    "bounded_test_duration_ms": 14.789,
+    "cross_pact_interference": 0,
+    "dual_primary_winners": 0,
+    "duplicate_economic_executions": 0,
+    "duplicate_refund_repetitions": 100,
+    "firestore_retries": 0,
+    "independent_pacts": 50,
+    "production_throughput_claim": false,
+    "refund_replacement_repetitions": 100
+  },
+  "confidence_intervals": {
+    "contradiction_precision": {
+      "confidence": 0.95,
+      "high": 1.0,
+      "low": 0.943376
+    },
+    "contradiction_recall": {
+      "confidence": 0.95,
+      "high": 1.0,
+      "low": 0.943376
+    },
+    "false_block_rate": {
+      "confidence": 0.95,
+      "high": 0.055003,
+      "low": 0.0
+    },
+    "legitimate_approval_rate": {
+      "confidence": 0.95,
+      "high": 1.0,
+      "low": 0.944997
+    },
+    "method": "Wilson score interval, 95%",
+    "reconciliation_success": {
+      "confidence": 0.95,
+      "high": 1.0,
+      "low": 0.565518
+    }
+  },
+  "failed_cases": [],
+  "failure_injection": {
+    "restart_failures": 0,
+    "total": 30,
+    "unexpected_behaviors": 0
+  },
+  "family_counts": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "D": 5,
+    "E": 5,
+    "F": 5,
+    "G": 5,
+    "H": 5,
+    "I": 5,
+    "J": 5,
+    "K": 5,
+    "L": 5,
+    "M": 5,
+    "N": 5,
+    "O": 5,
+    "P": 5,
+    "Q": 5,
+    "R": 5,
+    "S": 5,
+    "T": 5,
+    "U": 5,
+    "V": 5,
+    "W": 5,
+    "X": 5,
+    "Y": 5,
+    "Z": 5
+  },
+  "generated_property_cases": 2500,
+  "held_out_cases": 39,
+  "invalid_cases": 64,
+  "latency_components": {
+    "agent_to_gateway": {
+      "max_ms": 1091.253,
+      "p50_ms": 703.096,
+      "p95_ms": 880.057,
+      "sample_count": 20
+    },
+    "claim_append": {
+      "max_ms": 2.07,
+      "p50_ms": 1.35,
+      "p95_ms": 2.07,
+      "sample_count": 130
+    },
+    "compensation_validation": {
+      "max_ms": 0.69,
+      "p50_ms": 0.45,
+      "p95_ms": 0.69,
+      "sample_count": 130
+    },
+    "evidence_processing": {
+      "max_ms": 1.61,
+      "p50_ms": 1.05,
+      "p95_ms": 1.61,
+      "sample_count": 130
+    },
+    "firestore_reservation": {
+      "max_ms": 2.53,
+      "p50_ms": 1.65,
+      "p95_ms": 2.53,
+      "sample_count": 130
+    },
+    "gateway_authorization": {
+      "max_ms": 1.15,
+      "p50_ms": 0.75,
+      "p95_ms": 1.15,
+      "sample_count": 130
+    },
+    "invariant_engine": {
+      "max_ms": 0.517,
+      "p50_ms": 0.338,
+      "p95_ms": 0.517,
+      "sample_count": 130
+    },
+    "kms_signing": {
+      "max_ms": 34.8,
+      "p50_ms": 26.4,
+      "p95_ms": 34.1,
+      "sample_count": 25
+    },
+    "resolver_model": {
+      "max_ms": 1099,
+      "p50_ms": 944,
+      "p95_ms": 1099,
+      "sample_count": 10
+    }
+  },
+  "live_cloud_cases": 20,
+  "live_gemini_cases": 10,
+  "metrics": {
+    "contradiction_precision": 1.0,
+    "contradiction_recall": 1.0,
+    "duplicate_consequential_executions": 0,
+    "false_block_rate": 0.0,
+    "legitimate_approval_rate": 1.0,
+    "model_authority_mutations": 0,
+    "outcome_unknown_duplicate_executions": 0,
+    "reconciliation_success": 1.0,
+    "settlement_evidence_completeness": 1.0,
+    "signed_receipt_integrity": 1.0,
+    "tamper_cases_undetected": 0,
+    "unsafe_automatic_compensations": 0,
+    "unsupported_closures": 0
+  },
+  "model": {
+    "approval_bypasses": 0,
+    "compiler_calls": 5,
+    "compiler_schema_valid": 5,
+    "compiler_semantic_valid": 5,
+    "evidence_mode": "LIVE_MODEL_EVIDENCE_REVALIDATED",
+    "invented_actions_accepted": 0,
+    "policy_mutation_attempts_accepted": 0,
+    "resolver_calls": 5,
+    "resolver_registry_only_valid": 5,
+    "resolver_schema_valid": 5,
+    "source_artifacts": [
+      "artifacts/compiler/live-missing-order.json",
+      "artifacts/resolver/live-resolution-plan.json"
+    ],
+    "version": "stage12-v1.0.0"
+  },
+  "protected_value": {
+    "authorized_value_recovered_minor_units": 100000,
+    "canonical_projected_invalid_value_prevented_minor_units": 40000,
+    "double_count_cases": 0,
+    "invalid_action_prevented_minor_units": 300000,
+    "legitimate_value_delayed_minor_units": 25000
+  },
+  "provenance": {
+    "forks": 0,
+    "levels": [
+      1,
+      2,
+      5,
+      10,
+      25
+    ],
+    "sequence_errors": 0
+  },
+  "receipts_issued": 3,
+  "status": "PASS",
+  "total_cases": 130,
+  "valid_cases": 66,
+  "version": "stage12-v1.0.0"
+}

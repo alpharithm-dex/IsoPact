@@ -1,0 +1,36 @@
+{
+  "source": "LIVE_FIRESTORE_INTEGRITY_BUNDLE",
+  "valid": {
+    "authoritative_source": "PACT_GRAPH_FIRESTORE",
+    "checkpoint_signature_valid": true,
+    "claim_chain_valid": true,
+    "overall_integrity_valid": true,
+    "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+    "production_data_modified": false,
+    "proof": "LIVE",
+    "reason_codes": [],
+    "receipt_checkpoint_matches": true,
+    "receipt_id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000014",
+    "receipt_references_consistent": true,
+    "receipt_signature_valid": true,
+    "terminal_hash_matches": true
+  },
+  "tampered": {
+    "authoritative_source": "PACT_GRAPH_FIRESTORE",
+    "checkpoint_signature_valid": true,
+    "claim_chain_valid": true,
+    "overall_integrity_valid": false,
+    "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+    "production_data_modified": false,
+    "proof": "TAMPERED_ARTIFACT",
+    "reason_codes": [
+      "SIGNATURE_INVALID"
+    ],
+    "receipt_checkpoint_matches": true,
+    "receipt_id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000014",
+    "receipt_references_consistent": true,
+    "receipt_signature_valid": false,
+    "terminal_hash_matches": true
+  },
+  "result": "PASS"
+}

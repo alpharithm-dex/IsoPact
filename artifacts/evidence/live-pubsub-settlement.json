@@ -1,0 +1,43 @@
+{
+  "database": "(default)",
+  "deliveries": [
+    {
+      "logical_evidence_created": true,
+      "message_id": "21304824827720791",
+      "pact_state": "SETTLED",
+      "settlement_transition_created": true,
+      "source_event_id": "evt_stage5_primary_20260823212828_3b1754ac"
+    },
+    {
+      "logical_evidence_created": false,
+      "message_id": "21303677406793137",
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "source_event_id": "evt_stage5_primary_20260823212828_3b1754ac"
+    },
+    {
+      "logical_evidence_created": false,
+      "message_id": "21304702423889273",
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "source_event_id": "evt_stage5_primary_20260823212828_3b1754ac"
+    }
+  ],
+  "exactly_once_subscription_enabled": false,
+  "final_evidence_rank": 1,
+  "final_pact_state": "SETTLED",
+  "logical_evidence_records": 1,
+  "pact_id": "pact_stage5_20260823212828_3b1754ac_primary_93da000fd7d65ce41f18",
+  "project": "isopact-agentic-20260823",
+  "published_message_ids": [
+    "21304824827720791",
+    "21303677406793137",
+    "21304702423889273"
+  ],
+  "run_id": "20260823212828_3b1754ac",
+  "settlement_transitions": 1,
+  "source_event_id": "evt_stage5_primary_20260823212828_3b1754ac",
+  "subscription": "projects/isopact-agentic-20260823/subscriptions/isopact-stage5-evidence-proof",
+  "timestamp": "2026-08-23T21:28:28.345162+00:00",
+  "topic": "projects/isopact-agentic-20260823/topics/isopact-stage5-evidence"
+}

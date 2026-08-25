@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-08-24T02:19:07.355972+00:00",
+  "reasoning_plane": {
+    "service": "Google Agent Runtime",
+    "region": "europe-west1"
+  },
+  "settlement_plane": {
+    "service": "IsoPact Outcome Gateway on Cloud Run",
+    "region": "africa-south1"
+  },
+  "authoritative_store": {
+    "service": "Firestore Pact Graph and reservations",
+    "region": "africa-south1"
+  },
+  "cross_region_request_fields": [
+    "pact_id",
+    "domain subject ID",
+    "amount when applicable",
+    "session_id",
+    "trace_id",
+    "request_id"
+  ],
+  "agent_firestore_client": false,
+  "agent_full_pact_graph_access": false,
+  "raw_authoritative_payload_replicated": false,
+  "persistence_owner": "settlement plane"
+}

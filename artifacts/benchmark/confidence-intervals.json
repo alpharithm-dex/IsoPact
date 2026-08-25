@@ -1,0 +1,28 @@
+{
+  "contradiction_precision": {
+    "confidence": 0.95,
+    "high": 1.0,
+    "low": 0.943376
+  },
+  "contradiction_recall": {
+    "confidence": 0.95,
+    "high": 1.0,
+    "low": 0.943376
+  },
+  "false_block_rate": {
+    "confidence": 0.95,
+    "high": 0.055003,
+    "low": 0.0
+  },
+  "legitimate_approval_rate": {
+    "confidence": 0.95,
+    "high": 1.0,
+    "low": 0.944997
+  },
+  "method": "Wilson score interval, 95%",
+  "reconciliation_success": {
+    "confidence": 0.95,
+    "high": 1.0,
+    "low": 0.565518
+  }
+}

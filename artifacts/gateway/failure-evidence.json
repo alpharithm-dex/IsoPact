@@ -1,0 +1,12 @@
+{
+  "authoritative_external_failure_state": "FAILED_AUTHORITATIVELY",
+  "database": "(default)",
+  "downstream_calls_during_firestore_failure": 0,
+  "firestore_unavailable_decision": "DEFER",
+  "location": "africa-south1",
+  "project": "isopact-agentic-20260823",
+  "run_id": "20260823204536_81299571",
+  "safe_retry_decision": "ALLOW",
+  "safe_retry_reason": "AUTHORITATIVE_FAILURE_RETRY",
+  "timestamp": "2026-08-23T20:45:38.545607+00:00"
+}

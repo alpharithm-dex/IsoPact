@@ -1,0 +1,147 @@
+{
+  "database": "(default)",
+  "graph_counts": {
+    "claim_count": 9,
+    "conflict_count": 0,
+    "delivery_count": 3,
+    "economic_event_count": 1,
+    "evaluation_count": 9,
+    "evidence_count": 1,
+    "pact_id": "pact_stage5_20260823212828_3b1754ac_primary_93da000fd7d65ce41f18",
+    "participant_count": 5,
+    "resolved_operations": {
+      "8387ce19f68ab8e0fb7730e9d32362bf7f7b3a5d7f8595da2bb35a987cf84748": {
+        "attempt": 1,
+        "evidence_id": "ev_b0d13a7a7c6abfbd1fd25c18bb492978",
+        "evidence_type": "stripe.refund.succeeded",
+        "external_object_id": "REF-001",
+        "occurred_at": "2026-08-23T20:16:40+00:00",
+        "rank": 1,
+        "resolution_path": "successful_refund",
+        "source_system": "stripe",
+        "state": "SUCCEEDED"
+      }
+    },
+    "revision": 9,
+    "selected_resolution": "successful_refund",
+    "settlement_proof_count": 1,
+    "settlement_transition_count": 1,
+    "state": "SETTLED"
+  },
+  "pact_id": "pact_stage5_20260823212828_3b1754ac_primary_93da000fd7d65ce41f18",
+  "post_evidence": {
+    "business_settled": true,
+    "evidence_rank": 1,
+    "isopact_state": "SETTLED",
+    "refund_state": "SUCCEEDED",
+    "settlement_transitions": 1
+  },
+  "pre_evidence": {
+    "agent_status": "COMPLETE",
+    "business_settled": false,
+    "immediate_evidence_rank": 3,
+    "isopact_pact_state": "PENDING",
+    "jira_state": "CLOSED",
+    "refund_immediate_state": "PENDING"
+  },
+  "project": "isopact-agentic-20260823",
+  "run_id": "20260823212828_3b1754ac",
+  "schedule": [
+    {
+      "action_id": "e00",
+      "actor": "customer",
+      "enforcement_boundary": true,
+      "inputs": {
+        "request": "My $200 order never arrived. I was told yesterday that it would be refunded or replaced. Can someone please resolve this?"
+      },
+      "logical_time": 0,
+      "target_system": "jira",
+      "tool": "create_ticket"
+    },
+    {
+      "action_id": "e01",
+      "actor": "support-a",
+      "enforcement_boundary": true,
+      "inputs": {
+        "amount_minor_units": 20000,
+        "currency": "USD",
+        "idempotency_key": "stripe-key-A",
+        "session_id": "support-session-A",
+        "settle_at": 1000,
+        "settlement_outcome": "SUCCEEDED"
+      },
+      "logical_time": 100,
+      "target_system": "stripe",
+      "tool": "create_refund"
+    },
+    {
+      "action_id": "e02",
+      "actor": "support-a",
+      "enforcement_boundary": true,
+      "inputs": {
+        "reason": "Refund request accepted by payment API",
+        "reference": "REF-001"
+      },
+      "logical_time": 200,
+      "target_system": "jira",
+      "tool": "close_ticket"
+    },
+    {
+      "action_id": "e03",
+      "actor": "fulfillment",
+      "enforcement_boundary": true,
+      "inputs": {
+        "currency": "USD",
+        "value_minor_units": 20000
+      },
+      "logical_time": 300,
+      "target_system": "carrier",
+      "tool": "create_label"
+    },
+    {
+      "action_id": "e04",
+      "actor": "fulfillment",
+      "enforcement_boundary": true,
+      "inputs": {
+        "quantity": 1,
+        "resource": "replacement-order"
+      },
+      "logical_time": 350,
+      "target_system": "warehouse",
+      "tool": "reserve_stock"
+    },
+    {
+      "action_id": "e05",
+      "actor": "retention",
+      "enforcement_boundary": true,
+      "inputs": {
+        "amount_minor_units": 5000,
+        "authorized": true,
+        "currency": "USD"
+      },
+      "logical_time": 400,
+      "target_system": "crm",
+      "tool": "issue_credit"
+    },
+    {
+      "action_id": "e06",
+      "actor": "support-b",
+      "enforcement_boundary": true,
+      "inputs": {
+        "amount_minor_units": 20000,
+        "currency": "USD",
+        "idempotency_key": "stripe-key-B",
+        "session_id": "support-session-B",
+        "settle_at": 1050,
+        "settlement_outcome": "SUCCEEDED"
+      },
+      "logical_time": 500,
+      "target_system": "stripe",
+      "tool": "create_refund"
+    }
+  ],
+  "schedule_digest": "6bfba8125f850027429efde5c03938cbe0327e9f67796c7870aeb1492db827e8",
+  "subscription": "projects/isopact-agentic-20260823/subscriptions/isopact-stage5-evidence-proof",
+  "timestamp": "2026-08-23T21:28:28.345162+00:00",
+  "topic": "projects/isopact-agentic-20260823/topics/isopact-stage5-evidence"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "isopact-deployment-drift-v1",
+  "status": "PASS_WITH_DOCUMENTED_RISKS",
+  "canonical_desired_live_differences": [],
+  "unresolved_drift": [],
+  "documented_noncanonical_resources": [
+    "Historic Cloud Run revisions and Artifact Registry images retained for rollback and evidence",
+    "isopact-stage10c-proof Cloud Run job and resource-scoped Pub/Sub grants retained as a regression proof",
+    "Agent Gateway is CREATED_DEFAULT_DENY_NOT_BOUND and does not mediate canonical traffic"
+  ],
+  "pre_existing_project_risks": [
+    "The default Compute Engine service account retains project roles/editor; canonical workloads use dedicated identities, but removal was not attempted without a validated Cloud Build migration"
+  ],
+  "canonical_revision": "isopact-outcome-gateway-00024-qnr",
+  "canonical_image_digest": "sha256:f9d507b92942cb739522f6572ae6f94c9b64835575454d83e617e79ee00d7332"
+}

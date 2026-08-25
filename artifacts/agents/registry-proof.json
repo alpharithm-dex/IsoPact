@@ -1,0 +1,119 @@
+{
+  "api": "agentregistry.googleapis.com/v1",
+  "live_verified": true,
+  "location": "europe-west1",
+  "registered_agents": [
+    {
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-95af-4ad93ca9b5c8",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:1103584218845282304",
+      "display_name": "IsoPact Retention Agent v1",
+      "description": "Specialized retention worker; skill=apply_customer_retention_remedy; consequential requests route through IsoPact.",
+      "version": null,
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "skills": [],
+      "runtime_reference": "//aiplatform.googleapis.com/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+      "create_time": "2026-08-23T23:33:07.999757Z"
+    },
+    {
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-07e7-fd9da58fb549",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:1997126532413259776",
+      "display_name": "IsoPact Support Agent v1",
+      "description": "Specialized support worker; skill=resolve_missing_order_financially; consequential requests route through IsoPact.",
+      "version": null,
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "skills": [],
+      "runtime_reference": "//aiplatform.googleapis.com/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "create_time": "2026-08-23T23:47:56.296621Z"
+    },
+    {
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-4656-8d85d163ec69",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:4435825730634383360",
+      "display_name": "IsoPact Resolver Agent v1",
+      "description": "Specialized resolver worker; skill=reconcile_outcome_conflict; consequential requests route through IsoPact.",
+      "version": null,
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "skills": [],
+      "runtime_reference": "//aiplatform.googleapis.com/projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360",
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360",
+      "create_time": "2026-08-23T23:36:10.866128Z"
+    },
+    {
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-4ba0-ec1a518efa7b",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:7471674091947163648",
+      "display_name": "IsoPact Fulfillment Agent v1",
+      "description": "Specialized fulfillment worker; skill=manage_replacement_fulfillment; consequential requests route through IsoPact.",
+      "version": null,
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "skills": [],
+      "runtime_reference": "//aiplatform.googleapis.com/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+      "create_time": "2026-08-23T23:30:30.273539Z"
+    }
+  ],
+  "a2a_claimed": false,
+  "a2a_reason": "Automatic registration exposes these object-deployed AdkApp resources as CUSTOM HTTP_JSON, not A2A_AGENT.",
+  "logical_skills": {
+    "SUPPORT": "resolve_missing_order_financially",
+    "FULFILLMENT": "manage_replacement_fulfillment",
+    "RETENTION": "apply_customer_retention_remedy",
+    "RESOLVER": "reconcile_outcome_conflict"
+  }
+}

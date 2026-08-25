@@ -1,0 +1,647 @@
+{
+  "live_calls": 5,
+  "location": "global",
+  "model": "gemini-3.5-flash",
+  "project": "isopact-agentic-20260823",
+  "provider": "google-vertex-ai",
+  "request_timestamp": "2026-08-23T20:15:52.299686+00:00",
+  "results": [
+    {
+      "deterministic_result": {
+        "deterministic_contribution": {
+          "assigned_approval_threshold_minor_units": 25000,
+          "assigned_evidence_requirements": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "assigned_exclusive_slot": "primary_compensation",
+          "assigned_goodwill_currency": "USD",
+          "assigned_goodwill_limit_minor_units": 5000,
+          "assigned_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "reason_codes": [
+            "CANDIDATE_SEMANTICS_VALIDATED",
+            "TRUSTED_POLICY_ENRICHED"
+          ],
+          "selected_policy_id": "commerce_missing_order_v1",
+          "selected_policy_version": "1",
+          "verified_subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        },
+        "status": "VALID",
+        "trusted_draft": {
+          "activation_state": "DRAFT_NOT_ENFORCEABLE",
+          "allowed_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "completion_evidence": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "draft_id": "draft_4bf9b6439517942e",
+          "duplicate_compensation_blocked": true,
+          "exclusive_slot": "primary_compensation",
+          "goodwill_currency": "USD",
+          "goodwill_limit_minor_units": 5000,
+          "human_approval_threshold_minor_units": 25000,
+          "outcome_type": "resolve_missing_order",
+          "policy_id": "commerce_missing_order_v1",
+          "policy_version": "1",
+          "requested_resolution_semantics": "refund_or_replacement",
+          "subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        }
+      },
+      "model_contribution": {
+        "candidate": {
+          "ambiguities": [],
+          "candidate_evidence_requirements": [
+            "refund_status",
+            "shipment_status"
+          ],
+          "candidate_outcome_type": "resolve_missing_order",
+          "candidate_resolution_paths": [
+            "refund",
+            "replacement"
+          ],
+          "exclusive_resolution_suspected": true,
+          "explicit_user_constraints": [],
+          "extracted_amount": {
+            "amount_text": "$200",
+            "currency": "USD",
+            "minor_units": 20000,
+            "source": "customer_request"
+          },
+          "requested_resolution_semantics": "refund_or_replacement",
+          "source_grounding": [
+            {
+              "field_name": "candidate_outcome_type",
+              "source": "customer_request",
+              "source_excerpt": "My $200 order never arrived."
+            },
+            {
+              "field_name": "requested_resolution_semantics",
+              "source": "customer_request",
+              "source_excerpt": "refunded or replaced"
+            }
+          ],
+          "subject_references": [
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"order_id\":\"ORD-8472\"",
+              "subject_type": "order_id",
+              "value": "ORD-8472"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"customer_id\":\"CUS-104\"",
+              "subject_type": "customer_id",
+              "value": "CUS-104"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"ticket_id\":\"JIRA-8472\"",
+              "subject_type": "ticket_id",
+              "value": "JIRA-8472"
+            }
+          ]
+        },
+        "metadata": {
+          "execution_mode": "LIVE",
+          "latency_ms": 13350,
+          "model": "gemini-3.5-flash",
+          "provider": "google-vertex-ai"
+        }
+      },
+      "provider_error": null
+    },
+    {
+      "deterministic_result": {
+        "deterministic_contribution": {
+          "assigned_approval_threshold_minor_units": 25000,
+          "assigned_evidence_requirements": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "assigned_exclusive_slot": "primary_compensation",
+          "assigned_goodwill_currency": "USD",
+          "assigned_goodwill_limit_minor_units": 5000,
+          "assigned_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "reason_codes": [
+            "CANDIDATE_SEMANTICS_VALIDATED",
+            "TRUSTED_POLICY_ENRICHED"
+          ],
+          "selected_policy_id": "commerce_missing_order_v1",
+          "selected_policy_version": "1",
+          "verified_subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        },
+        "status": "VALID",
+        "trusted_draft": {
+          "activation_state": "DRAFT_NOT_ENFORCEABLE",
+          "allowed_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "completion_evidence": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "draft_id": "draft_4bf9b6439517942e",
+          "duplicate_compensation_blocked": true,
+          "exclusive_slot": "primary_compensation",
+          "goodwill_currency": "USD",
+          "goodwill_limit_minor_units": 5000,
+          "human_approval_threshold_minor_units": 25000,
+          "outcome_type": "resolve_missing_order",
+          "policy_id": "commerce_missing_order_v1",
+          "policy_version": "1",
+          "requested_resolution_semantics": "refund_or_replacement",
+          "subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        }
+      },
+      "model_contribution": {
+        "candidate": {
+          "ambiguities": [],
+          "candidate_evidence_requirements": [
+            "refund_status",
+            "shipment_status"
+          ],
+          "candidate_outcome_type": "resolve_missing_order",
+          "candidate_resolution_paths": [
+            "refund",
+            "replacement"
+          ],
+          "exclusive_resolution_suspected": true,
+          "explicit_user_constraints": [
+            "refunded or replaced"
+          ],
+          "extracted_amount": {
+            "amount_text": "$200",
+            "currency": "USD",
+            "minor_units": 20000,
+            "source": "customer_request"
+          },
+          "requested_resolution_semantics": "refund_or_replacement",
+          "source_grounding": [
+            {
+              "field_name": "candidate_outcome_type",
+              "source": "ticket_context",
+              "source_excerpt": "\"case_type\":\"missing_order\""
+            },
+            {
+              "field_name": "requested_resolution_semantics",
+              "source": "customer_request",
+              "source_excerpt": "refunded or replaced"
+            }
+          ],
+          "subject_references": [
+            {
+              "source": "known_context",
+              "source_excerpt": "\"order_id\":\"ORD-8472\"",
+              "subject_type": "order_id",
+              "value": "ORD-8472"
+            },
+            {
+              "source": "known_context",
+              "source_excerpt": "\"customer_id\":\"CUS-104\"",
+              "subject_type": "customer_id",
+              "value": "CUS-104"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"ticket_id\":\"JIRA-8472\"",
+              "subject_type": "ticket_id",
+              "value": "JIRA-8472"
+            }
+          ]
+        },
+        "metadata": {
+          "execution_mode": "LIVE",
+          "latency_ms": 13529,
+          "model": "gemini-3.5-flash",
+          "provider": "google-vertex-ai"
+        }
+      },
+      "provider_error": null
+    },
+    {
+      "deterministic_result": {
+        "deterministic_contribution": {
+          "assigned_approval_threshold_minor_units": 25000,
+          "assigned_evidence_requirements": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "assigned_exclusive_slot": "primary_compensation",
+          "assigned_goodwill_currency": "USD",
+          "assigned_goodwill_limit_minor_units": 5000,
+          "assigned_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "reason_codes": [
+            "CANDIDATE_SEMANTICS_VALIDATED",
+            "TRUSTED_POLICY_ENRICHED"
+          ],
+          "selected_policy_id": "commerce_missing_order_v1",
+          "selected_policy_version": "1",
+          "verified_subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        },
+        "status": "VALID",
+        "trusted_draft": {
+          "activation_state": "DRAFT_NOT_ENFORCEABLE",
+          "allowed_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "completion_evidence": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "draft_id": "draft_4bf9b6439517942e",
+          "duplicate_compensation_blocked": true,
+          "exclusive_slot": "primary_compensation",
+          "goodwill_currency": "USD",
+          "goodwill_limit_minor_units": 5000,
+          "human_approval_threshold_minor_units": 25000,
+          "outcome_type": "resolve_missing_order",
+          "policy_id": "commerce_missing_order_v1",
+          "policy_version": "1",
+          "requested_resolution_semantics": "refund_or_replacement",
+          "subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        }
+      },
+      "model_contribution": {
+        "candidate": {
+          "ambiguities": [],
+          "candidate_evidence_requirements": [
+            "refund_status",
+            "shipment_status"
+          ],
+          "candidate_outcome_type": "resolve_missing_order",
+          "candidate_resolution_paths": [
+            "refund",
+            "replacement"
+          ],
+          "exclusive_resolution_suspected": true,
+          "explicit_user_constraints": [
+            "refunded or replaced"
+          ],
+          "extracted_amount": {
+            "amount_text": "$200",
+            "currency": "USD",
+            "minor_units": 20000,
+            "source": "customer_request"
+          },
+          "requested_resolution_semantics": "refund_or_replacement",
+          "source_grounding": [
+            {
+              "field_name": "candidate_outcome_type",
+              "source": "ticket_context",
+              "source_excerpt": "\"case_type\":\"missing_order\""
+            },
+            {
+              "field_name": "requested_resolution_semantics",
+              "source": "customer_request",
+              "source_excerpt": "refunded or replaced"
+            }
+          ],
+          "subject_references": [
+            {
+              "source": "known_context",
+              "source_excerpt": "\"order_id\":\"ORD-8472\"",
+              "subject_type": "order_id",
+              "value": "ORD-8472"
+            },
+            {
+              "source": "known_context",
+              "source_excerpt": "\"customer_id\":\"CUS-104\"",
+              "subject_type": "customer_id",
+              "value": "CUS-104"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"ticket_id\":\"JIRA-8472\"",
+              "subject_type": "ticket_id",
+              "value": "JIRA-8472"
+            }
+          ]
+        },
+        "metadata": {
+          "execution_mode": "LIVE",
+          "latency_ms": 13876,
+          "model": "gemini-3.5-flash",
+          "provider": "google-vertex-ai"
+        }
+      },
+      "provider_error": null
+    },
+    {
+      "deterministic_result": {
+        "deterministic_contribution": {
+          "assigned_approval_threshold_minor_units": 25000,
+          "assigned_evidence_requirements": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "assigned_exclusive_slot": "primary_compensation",
+          "assigned_goodwill_currency": "USD",
+          "assigned_goodwill_limit_minor_units": 5000,
+          "assigned_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "reason_codes": [
+            "CANDIDATE_SEMANTICS_VALIDATED",
+            "TRUSTED_POLICY_ENRICHED"
+          ],
+          "selected_policy_id": "commerce_missing_order_v1",
+          "selected_policy_version": "1",
+          "verified_subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        },
+        "status": "VALID",
+        "trusted_draft": {
+          "activation_state": "DRAFT_NOT_ENFORCEABLE",
+          "allowed_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "completion_evidence": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "draft_id": "draft_4bf9b6439517942e",
+          "duplicate_compensation_blocked": true,
+          "exclusive_slot": "primary_compensation",
+          "goodwill_currency": "USD",
+          "goodwill_limit_minor_units": 5000,
+          "human_approval_threshold_minor_units": 25000,
+          "outcome_type": "resolve_missing_order",
+          "policy_id": "commerce_missing_order_v1",
+          "policy_version": "1",
+          "requested_resolution_semantics": "refund_or_replacement",
+          "subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        }
+      },
+      "model_contribution": {
+        "candidate": {
+          "ambiguities": [],
+          "candidate_evidence_requirements": [
+            "refund_status",
+            "shipment_status"
+          ],
+          "candidate_outcome_type": "resolve_missing_order",
+          "candidate_resolution_paths": [
+            "refund",
+            "replacement"
+          ],
+          "exclusive_resolution_suspected": true,
+          "explicit_user_constraints": [],
+          "extracted_amount": {
+            "amount_text": "$200",
+            "currency": "USD",
+            "minor_units": 20000,
+            "source": "customer_request"
+          },
+          "requested_resolution_semantics": "refund_or_replacement",
+          "source_grounding": [
+            {
+              "field_name": "candidate_outcome_type",
+              "source": "customer_request",
+              "source_excerpt": "My $200 order never arrived."
+            },
+            {
+              "field_name": "requested_resolution_semantics",
+              "source": "customer_request",
+              "source_excerpt": "refunded or replaced"
+            }
+          ],
+          "subject_references": [
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"order_id\":\"ORD-8472\"",
+              "subject_type": "order_id",
+              "value": "ORD-8472"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"customer_id\":\"CUS-104\"",
+              "subject_type": "customer_id",
+              "value": "CUS-104"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"ticket_id\":\"JIRA-8472\"",
+              "subject_type": "ticket_id",
+              "value": "JIRA-8472"
+            }
+          ]
+        },
+        "metadata": {
+          "execution_mode": "LIVE",
+          "latency_ms": 12923,
+          "model": "gemini-3.5-flash",
+          "provider": "google-vertex-ai"
+        }
+      },
+      "provider_error": null
+    },
+    {
+      "deterministic_result": {
+        "deterministic_contribution": {
+          "assigned_approval_threshold_minor_units": 25000,
+          "assigned_evidence_requirements": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "assigned_exclusive_slot": "primary_compensation",
+          "assigned_goodwill_currency": "USD",
+          "assigned_goodwill_limit_minor_units": 5000,
+          "assigned_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "reason_codes": [
+            "CANDIDATE_SEMANTICS_VALIDATED",
+            "TRUSTED_POLICY_ENRICHED"
+          ],
+          "selected_policy_id": "commerce_missing_order_v1",
+          "selected_policy_version": "1",
+          "verified_subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        },
+        "status": "VALID",
+        "trusted_draft": {
+          "activation_state": "DRAFT_NOT_ENFORCEABLE",
+          "allowed_resolution_paths": [
+            "successful_refund",
+            "confirmed_replacement"
+          ],
+          "completion_evidence": {
+            "confirmed_replacement": [
+              "carrier.shipment.accepted"
+            ],
+            "successful_refund": [
+              "stripe.refund.succeeded"
+            ]
+          },
+          "draft_id": "draft_4bf9b6439517942e",
+          "duplicate_compensation_blocked": true,
+          "exclusive_slot": "primary_compensation",
+          "goodwill_currency": "USD",
+          "goodwill_limit_minor_units": 5000,
+          "human_approval_threshold_minor_units": 25000,
+          "outcome_type": "resolve_missing_order",
+          "policy_id": "commerce_missing_order_v1",
+          "policy_version": "1",
+          "requested_resolution_semantics": "refund_or_replacement",
+          "subjects": {
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "ticket_id": "JIRA-8472"
+          }
+        }
+      },
+      "model_contribution": {
+        "candidate": {
+          "ambiguities": [],
+          "candidate_evidence_requirements": [
+            "refund_status",
+            "shipment_status"
+          ],
+          "candidate_outcome_type": "resolve_missing_order",
+          "candidate_resolution_paths": [
+            "refund",
+            "replacement"
+          ],
+          "exclusive_resolution_suspected": true,
+          "explicit_user_constraints": [],
+          "extracted_amount": {
+            "amount_text": "$200",
+            "currency": "USD",
+            "minor_units": 20000,
+            "source": "customer_request"
+          },
+          "requested_resolution_semantics": "refund_or_replacement",
+          "source_grounding": [
+            {
+              "field_name": "candidate_outcome_type",
+              "source": "ticket_context",
+              "source_excerpt": "\"case_type\":\"missing_order\""
+            },
+            {
+              "field_name": "requested_resolution_semantics",
+              "source": "customer_request",
+              "source_excerpt": "refunded or replaced"
+            }
+          ],
+          "subject_references": [
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"order_id\":\"ORD-8472\"",
+              "subject_type": "order_id",
+              "value": "ORD-8472"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"customer_id\":\"CUS-104\"",
+              "subject_type": "customer_id",
+              "value": "CUS-104"
+            },
+            {
+              "source": "ticket_context",
+              "source_excerpt": "\"ticket_id\":\"JIRA-8472\"",
+              "subject_type": "ticket_id",
+              "value": "JIRA-8472"
+            }
+          ]
+        },
+        "metadata": {
+          "execution_mode": "LIVE",
+          "latency_ms": 11849,
+          "model": "gemini-3.5-flash",
+          "provider": "google-vertex-ai"
+        }
+      },
+      "provider_error": null
+    }
+  ],
+  "schema_version": "stage3-live-proof-v1",
+  "successful_valid_calls": 5,
+  "unique_semantic_signatures": 1
+}

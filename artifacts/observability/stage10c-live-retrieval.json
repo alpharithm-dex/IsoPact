@@ -1,0 +1,59 @@
+{
+  "source": "LIVE_CLOUD_TRACE",
+  "pacts": {
+    "primary": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+    "reconciliation": "pact_stage7_live_20260824212114",
+    "toctou": "pact_stage10c_toctou_20260824212114",
+    "outcome_unknown": "pact_stage10c_unknown_20260824212114"
+  },
+  "retrieved_trace_counts": {
+    "primary": 44,
+    "reconciliation": 28,
+    "toctou": 4,
+    "outcome_unknown": 5
+  },
+  "live_span_union": [
+    "isopact.claim.append",
+    "isopact.compensation.execute",
+    "isopact.compensation.precondition",
+    "isopact.evidence.ingest",
+    "isopact.evidence.reduce",
+    "isopact.external.goodwill",
+    "isopact.external.refund",
+    "isopact.external.replacement",
+    "isopact.gateway.authenticate",
+    "isopact.gateway.authorize",
+    "isopact.gateway.request",
+    "isopact.invariants.evaluate",
+    "isopact.kms.checkpoint.sign",
+    "isopact.kms.receipt.sign",
+    "isopact.receipt.verify",
+    "isopact.reservation.transaction",
+    "isopact.resolution.validate",
+    "isopact.resolver.reason",
+    "isopact.settlement.evaluate"
+  ],
+  "required_span_names": [
+    "isopact.gateway.request",
+    "isopact.gateway.authenticate",
+    "isopact.gateway.authorize",
+    "isopact.reservation.transaction",
+    "isopact.external.refund",
+    "isopact.external.replacement",
+    "isopact.external.goodwill",
+    "isopact.evidence.ingest",
+    "isopact.evidence.reduce",
+    "isopact.invariants.evaluate",
+    "isopact.settlement.evaluate",
+    "isopact.resolver.reason",
+    "isopact.resolution.validate",
+    "isopact.compensation.precondition",
+    "isopact.compensation.execute",
+    "isopact.claim.append",
+    "isopact.kms.checkpoint.sign",
+    "isopact.kms.receipt.sign",
+    "isopact.receipt.verify"
+  ],
+  "missing_required_span_names": [],
+  "result": "PASS"
+}

@@ -1,0 +1,21 @@
+{
+  "source": "LIVE_CLOUD_MONITORING_DASHBOARD",
+  "deployedResource": "projects/442539309409/dashboards/377c888c-861e-459d-bd0f-97ec687cec44",
+  "displayName": "IsoPact \u2014 Outcome Settlement Operations",
+  "etag": "dee96b632a8a312fc797a5e2355bde39",
+  "panelCount": 10,
+  "panels": [
+    "Claim append latency p95",
+    "Compensation outcomes",
+    "Conflict prevention",
+    "Evidence processing",
+    "Gateway decisions",
+    "Gateway latency p95",
+    "Invariant failures",
+    "KMS signing latency p95",
+    "Resolver latency p95",
+    "Settlement transitions"
+  ],
+  "missingPanels": [],
+  "result": "PASS"
+}

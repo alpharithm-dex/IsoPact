@@ -1,0 +1,279 @@
+{
+  "cases": [
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-01",
+      "injection_point": "reservation_read",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-02",
+      "injection_point": "reservation_transaction",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-03",
+      "injection_point": "external_response_lost",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-04",
+      "injection_point": "process_restart",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-05",
+      "injection_point": "evidence_ack",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-06",
+      "injection_point": "evidence_reorder",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-07",
+      "injection_point": "duplicate_delivery",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-08",
+      "injection_point": "webhook_signature",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-09",
+      "injection_point": "model_timeout",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-10",
+      "injection_point": "compiler_schema",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-11",
+      "injection_point": "resolver_schema",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-12",
+      "injection_point": "unknown_compensation",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-13",
+      "injection_point": "prompt_injection",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-14",
+      "injection_point": "model_armor_timeout",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-15",
+      "injection_point": "memory_poison",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-16",
+      "injection_point": "pubsub_delay",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-17",
+      "injection_point": "consumer_restart",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-18",
+      "injection_point": "kms_unavailable",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-19",
+      "injection_point": "otel_unavailable",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-20",
+      "injection_point": "expired_token",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-21",
+      "injection_point": "wrong_audience",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-22",
+      "injection_point": "wrong_issuer",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-23",
+      "injection_point": "unknown_spiffe",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-24",
+      "injection_point": "modified_jwt",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-25",
+      "injection_point": "body_spoof",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-26",
+      "injection_point": "wrong_role",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-27",
+      "injection_point": "claim_edit",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-28",
+      "injection_point": "claim_delete",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-29",
+      "injection_point": "claim_reorder",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    },
+    {
+      "data_integrity": "VALID",
+      "economic_executions": 0,
+      "expected": "fail closed / preserve truth",
+      "injection_id": "FI-30",
+      "injection_point": "checkpoint_substitution",
+      "observed": "fail closed / preserve truth",
+      "status": "PASS"
+    }
+  ],
+  "expected_safe_behaviors": 30,
+  "restart_failures": 0,
+  "total": 30,
+  "unexpected_behaviors": 0,
+  "version": "stage12-v1.0.0"
+}

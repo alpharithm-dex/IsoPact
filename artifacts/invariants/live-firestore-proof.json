@@ -1,0 +1,19 @@
+{
+  "attempted": true,
+  "collection_counts": {
+    "economic_snapshots": 3,
+    "invariant_conflicts": 1,
+    "invariant_evaluations": 27,
+    "protection_events": 2
+  },
+  "database": "(default)",
+  "historical_conflict_statuses": [
+    "RESOLVED"
+  ],
+  "pact_id": "pact_stage6_live_economic_integrity",
+  "project": "isopact-agentic-20260823",
+  "snapshot_id": "economic_snapshot_96eba2f58d3b110da767e8adedbe0474",
+  "stored_lifecycle": "SETTLED",
+  "stored_rule_set": "commerce_missing_order_rules@1",
+  "verified": true
+}

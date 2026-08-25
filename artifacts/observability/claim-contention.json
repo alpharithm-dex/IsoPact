@@ -1,0 +1,11 @@
+{
+  "source": "Stage 9 live 25-way Firestore append proof; Stage 10 metric descriptor is live",
+  "workers": 25,
+  "retries": "transaction callback retries not individually exported",
+  "claim_hashing_ms": {"samples":500,"p50":0.108,"p95":0.158},
+  "firestore_claim_append_ms": {"samples":25,"p50":3150.627,"p95":5190.374},
+  "forks": 0,
+  "chain_valid": true,
+  "bottleneck": "per-pact provenance-chain serialization at the Firestore root transaction",
+  "integrity_weakened": false
+}

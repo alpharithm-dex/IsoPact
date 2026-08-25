@@ -1,0 +1,43 @@
+{
+  "schema_version": "isopact-deployment-v1",
+  "release": "v0.1.0-hackathon",
+  "project": "isopact-agentic-20260823",
+  "project_number": "442539309409",
+  "regions": {"reasoning_plane": "europe-west1", "settlement_plane": "africa-south1"},
+  "outcome_gateway": {
+    "service": "isopact-outcome-gateway",
+    "region": "africa-south1",
+    "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+    "revision": "isopact-outcome-gateway-00024-qnr",
+    "image": "africa-south1-docker.pkg.dev/isopact-agentic-20260823/cloud-run-source-deploy/isopact-release@sha256:f9d507b92942cb739522f6572ae6f94c9b64835575454d83e617e79ee00d7332",
+    "service_account": "isopact-outcome-gateway@isopact-agentic-20260823.iam.gserviceaccount.com",
+    "network": "PUBLIC_REACHABLE",
+    "application_auth": "GOOGLE_AGENT_RUNTIME_STS_JWT"
+  },
+  "agents": {
+    "SUPPORT": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "FULFILLMENT": "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+    "RETENTION": "projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+    "RESOLVER": "projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360"
+  },
+  "managed_agent_identity": "agents.global.proj-442539309409.system.id.goog",
+  "firestore": "projects/isopact-agentic-20260823/databases/(default)",
+  "pubsub": {
+    "topic": "projects/isopact-agentic-20260823/topics/isopact-stage5-evidence",
+    "subscription": "projects/isopact-agentic-20260823/subscriptions/isopact-stage5-evidence-proof"
+  },
+  "kms": {
+    "key": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing",
+    "verification_versions": [1, 2], "active_signing_version": 2
+  },
+  "secrets": ["isopact-otel-collector-config", "isopact-stripe-webhook-signing-secret"],
+  "model_armor": "projects/isopact-agentic-20260823/locations/europe-west1/templates/isopact-untrusted-input-v1",
+  "monitoring_dashboard": "projects/isopact-agentic-20260823/dashboards/377c888c-861e-459d-bd0f-97ec687cec44",
+  "agent_registry": {"agents_registered": 4, "outcome_gateway_registered": true},
+  "agent_gateway": {"resource": "projects/isopact-agentic-20260823/locations/europe-west1/agentGateways/isopact-egress", "status": "CREATED_DEFAULT_DENY_NOT_BOUND", "mediates_canonical_traffic": false},
+  "memory_bank": {"usage": "Agent Runtime session memory; untrusted advisory context only", "authority": false},
+  "frontend": "compiled into the Outcome Gateway image at /app/frontend",
+  "policy_version": "commerce_missing_order_rules@1",
+  "rule_version": "commerce_missing_order_rule_set@1",
+  "benchmark_version": "stage12-v1.0.0"
+}

@@ -1,0 +1,271 @@
+{
+  "concurrent_workers": 25,
+  "database": "(default)",
+  "delivery_records": 25,
+  "duplicated_economic_value": 0,
+  "economic_events": 1,
+  "economic_value_minor_units": 20000,
+  "effective_settlement_transitions": 1,
+  "logical_evidence_records": 1,
+  "pact_id": "pact_stage5_20260823212828_3b1754ac_duplicate_6eaa6c257d40ea1591c6",
+  "project": "isopact-agentic-20260823",
+  "run_id": "20260823212828_3b1754ac",
+  "subscription": "projects/isopact-agentic-20260823/subscriptions/isopact-stage5-evidence-proof",
+  "timestamp": "2026-08-23T21:28:28.345162+00:00",
+  "topic": "projects/isopact-agentic-20260823/topics/isopact-stage5-evidence",
+  "transaction_callback_invocations": 28,
+  "transport_attempts": 25,
+  "unique_source_event_ids": 1,
+  "workers": [
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 0,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 1,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 2,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 3,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 4,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 5,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 6,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 7,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 8,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": true,
+      "index": 9,
+      "logical_evidence_created": true,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": true,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 10,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 11,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 2
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 12,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 13,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 14,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 2
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 15,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 16,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 17,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 18,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 19,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 20,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 21,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 22,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 23,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 2
+    },
+    {
+      "application_attempts": 1,
+      "economic_event_created": false,
+      "index": 24,
+      "logical_evidence_created": false,
+      "ok": true,
+      "pact_state": "SETTLED",
+      "settlement_transition_created": false,
+      "transaction_callback_invocations": 1
+    }
+  ]
+}

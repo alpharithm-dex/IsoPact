@@ -1,0 +1,587 @@
+{
+  "generated_at": "2026-08-24T01:33:40.583386+00:00",
+  "available": true,
+  "integrated": true,
+  "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7",
+  "user_id": "stage8b-memory-user-20260824013323",
+  "session_a": {
+    "id": "5864992110016462848",
+    "gateway": {
+      "action": "refund",
+      "body_agent_id_supplied": "",
+      "body_identity_used_for_authority": false,
+      "external_call_executed": true,
+      "external_object": {
+        "actor": "isopact-support-v1",
+        "adapter": "FIRESTORE_BACKED_ENTERPRISE_SIMULATOR",
+        "created_at": "2026-08-24T01:34:14.962289+00:00",
+        "external_object_id": "REF-dd36d2e2250f",
+        "kind": "refund",
+        "operation_identity": "dd36d2e2250f8a3c0985de8716078b82f80f6b3d116c19101cba39f7087a21eb",
+        "request_id": "req-stage8b-memory-a",
+        "state": "PENDING"
+      },
+      "gateway_decision": "ALLOW",
+      "operation_identity": "dd36d2e2250f8a3c0985de8716078b82f80f6b3d116c19101cba39f7087a21eb",
+      "pact_graph_state": "PENDING",
+      "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7",
+      "reason_code": "AUTHORITY_RESERVED",
+      "regions": {
+        "firestore": "africa-south1",
+        "outcome_gateway": "africa-south1"
+      },
+      "request_id": "req-stage8b-memory-a",
+      "session_id": "stage8b-memory-a",
+      "timing_ms": {
+        "external_adapter_and_claim": 244.257,
+        "full_server": 1262.743,
+        "gateway_authorization_including_firestore": 183.99,
+        "identity_verification": 387.34
+      },
+      "trace_id": "trace-stage8b-memory-a",
+      "verified_agent_id": "isopact-support-v1",
+      "verified_caller": {
+        "token_audience": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ],
+        "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "verification": "GOOGLE_STS_JWKS_RS256"
+      },
+      "verified_role": "SUPPORT",
+      "http_status": 200,
+      "agent_runtime_region": "europe-west1",
+      "cross_region_round_trip_ms": 4295.102,
+      "safe_token_claims": {
+        "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "aud": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ]
+      }
+    },
+    "events": [
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_257254",
+                "args": {
+                  "trace_id": "trace-stage8b-memory-a",
+                  "request_id": "req-stage8b-memory-a",
+                  "session_id": "stage8b-memory-a",
+                  "order_id": "ORD-8472",
+                  "amount_minor_units": 20000,
+                  "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7"
+                },
+                "name": "request_refund_through_isopact"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 136,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 136
+            }
+          ],
+          "prompt_token_count": 445,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 445
+            }
+          ],
+          "thoughts_token_count": 277,
+          "total_token_count": 858,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-46fbd110-5087-4263-bb23-937e143f90c0",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "long_running_tool_ids": [],
+        "id": "f025808f-f96a-4215-9c52-9b7b50b9aa26",
+        "timestamp": 1787535248.0118196
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_response": {
+                "id": "call_257254",
+                "name": "request_refund_through_isopact",
+                "response": {
+                  "action": "refund",
+                  "body_agent_id_supplied": "",
+                  "body_identity_used_for_authority": false,
+                  "external_call_executed": true,
+                  "external_object": {
+                    "actor": "isopact-support-v1",
+                    "adapter": "FIRESTORE_BACKED_ENTERPRISE_SIMULATOR",
+                    "created_at": "2026-08-24T01:34:14.962289+00:00",
+                    "external_object_id": "REF-dd36d2e2250f",
+                    "kind": "refund",
+                    "operation_identity": "dd36d2e2250f8a3c0985de8716078b82f80f6b3d116c19101cba39f7087a21eb",
+                    "request_id": "req-stage8b-memory-a",
+                    "state": "PENDING"
+                  },
+                  "gateway_decision": "ALLOW",
+                  "operation_identity": "dd36d2e2250f8a3c0985de8716078b82f80f6b3d116c19101cba39f7087a21eb",
+                  "pact_graph_state": "PENDING",
+                  "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7",
+                  "reason_code": "AUTHORITY_RESERVED",
+                  "regions": {
+                    "firestore": "africa-south1",
+                    "outcome_gateway": "africa-south1"
+                  },
+                  "request_id": "req-stage8b-memory-a",
+                  "session_id": "stage8b-memory-a",
+                  "timing_ms": {
+                    "external_adapter_and_claim": 244.257,
+                    "full_server": 1262.743,
+                    "gateway_authorization_including_firestore": 183.99,
+                    "identity_verification": 387.34
+                  },
+                  "trace_id": "trace-stage8b-memory-a",
+                  "verified_agent_id": "isopact-support-v1",
+                  "verified_caller": {
+                    "token_audience": [
+                      "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+                    ],
+                    "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+                    "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+                    "verification": "GOOGLE_STS_JWKS_RS256"
+                  },
+                  "verified_role": "SUPPORT",
+                  "http_status": 200,
+                  "agent_runtime_region": "europe-west1",
+                  "cross_region_round_trip_ms": 4295.102,
+                  "safe_token_claims": {
+                    "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+                    "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+                    "aud": [
+                      "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocation_id": "e-46fbd110-5087-4263-bb23-937e143f90c0",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "e5992537-401e-4a0b-a3dd-56c3460d5cb8",
+        "timestamp": 1787535255.3078084
+      },
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "text": "The refund request has been successfully transmitted to the IsoPact Gateway. Here is the exact result of the call:\n\n*   **Pact ID**: `pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7`\n*   **Order ID**: `ORD-8472`\n*   **Request ID**: `req-stage8b-memory-a`\n*   **Session ID**: `stage8b-memory-a`\n*   **Trace ID**: `trace-stage8b-memory-a`\n*   **Gateway Decision**: `ALLOW` (Reason Code: `AUTHORITY_RESERVED`)\n*   **Refund Operation Identity**: `dd36d2e2250f8a3c0985de8716078b82f80f6b3d116c19101cba39f7087a21eb`\n*   **External Object ID**: `REF-dd36d2e2250f`\n*   **Pact Graph State**: `PENDING`\n*   **External Object State**: `PENDING`\n\n**Important Note:** The refund operation currently has a status of **PENDING** and is **not yet settled**."
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 305,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 305
+            }
+          ],
+          "prompt_token_count": 1678,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1678
+            }
+          ],
+          "thoughts_token_count": 359,
+          "total_token_count": 2342,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-46fbd110-5087-4263-bb23-937e143f90c0",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "59058b3b-9989-4d90-ae21-45f4a4f47c46",
+        "timestamp": 1787535255.373234
+      }
+    ]
+  },
+  "memory_generation": null,
+  "search_result": {
+    "memories": []
+  },
+  "session_b": {
+    "id": "2982688348499345408",
+    "gateway": {
+      "action": "refund",
+      "body_agent_id_supplied": "",
+      "body_identity_used_for_authority": false,
+      "external_call_executed": false,
+      "external_object": null,
+      "gateway_decision": "BLOCK",
+      "operation_identity": "dd36d2e2250f8a3c0985de8716078b82f80f6b3d116c19101cba39f7087a21eb",
+      "pact_graph_state": "PENDING",
+      "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7",
+      "reason_code": "DUPLICATE_OPERATION",
+      "regions": {
+        "firestore": "africa-south1",
+        "outcome_gateway": "africa-south1"
+      },
+      "request_id": "req-stage8b-memory-b",
+      "session_id": "stage8b-memory-b",
+      "timing_ms": {
+        "external_adapter_and_claim": 0.0,
+        "full_server": 1476.955,
+        "gateway_authorization_including_firestore": 43.689,
+        "identity_verification": 1219.167
+      },
+      "trace_id": "trace-stage8b-memory-b",
+      "verified_agent_id": "isopact-support-v1",
+      "verified_caller": {
+        "token_audience": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ],
+        "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "verification": "GOOGLE_STS_JWKS_RS256"
+      },
+      "verified_role": "SUPPORT",
+      "http_status": 409,
+      "agent_runtime_region": "europe-west1",
+      "cross_region_round_trip_ms": 1874.818,
+      "safe_token_claims": {
+        "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "aud": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ]
+      }
+    },
+    "events": [
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_89365",
+                "args": {
+                  "trace_id": "trace-stage8b-memory-b",
+                  "session_id": "stage8b-memory-b",
+                  "order_id": "ORD-8472",
+                  "request_id": "req-stage8b-memory-b",
+                  "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7",
+                  "amount_minor_units": 20000
+                },
+                "name": "request_refund_through_isopact"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 136,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 136
+            }
+          ],
+          "prompt_token_count": 439,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 439
+            }
+          ],
+          "thoughts_token_count": 376,
+          "total_token_count": 951,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-a623ebd4-c352-4183-9a3f-bc6ba9a52ab2",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "long_running_tool_ids": [],
+        "id": "dd5f4b73-5664-403d-90c1-01ac0b0ddfc4",
+        "timestamp": 1787535270.236172
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_response": {
+                "id": "call_89365",
+                "name": "request_refund_through_isopact",
+                "response": {
+                  "action": "refund",
+                  "body_agent_id_supplied": "",
+                  "body_identity_used_for_authority": false,
+                  "external_call_executed": false,
+                  "external_object": null,
+                  "gateway_decision": "BLOCK",
+                  "operation_identity": "dd36d2e2250f8a3c0985de8716078b82f80f6b3d116c19101cba39f7087a21eb",
+                  "pact_graph_state": "PENDING",
+                  "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7",
+                  "reason_code": "DUPLICATE_OPERATION",
+                  "regions": {
+                    "firestore": "africa-south1",
+                    "outcome_gateway": "africa-south1"
+                  },
+                  "request_id": "req-stage8b-memory-b",
+                  "session_id": "stage8b-memory-b",
+                  "timing_ms": {
+                    "external_adapter_and_claim": 0.0,
+                    "full_server": 1476.955,
+                    "gateway_authorization_including_firestore": 43.689,
+                    "identity_verification": 1219.167
+                  },
+                  "trace_id": "trace-stage8b-memory-b",
+                  "verified_agent_id": "isopact-support-v1",
+                  "verified_caller": {
+                    "token_audience": [
+                      "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+                    ],
+                    "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+                    "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+                    "verification": "GOOGLE_STS_JWKS_RS256"
+                  },
+                  "verified_role": "SUPPORT",
+                  "http_status": 409,
+                  "agent_runtime_region": "europe-west1",
+                  "cross_region_round_trip_ms": 1874.818,
+                  "safe_token_claims": {
+                    "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+                    "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+                    "aud": [
+                      "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocation_id": "e-a623ebd4-c352-4183-9a3f-bc6ba9a52ab2",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "c3ff5236-63c0-460c-a57b-28390928ab9e",
+        "timestamp": 1787535274.9260788
+      },
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_274301",
+                "args": {
+                  "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7"
+                },
+                "name": "support_inspect_pact_state"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 64,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 64
+            }
+          ],
+          "prompt_token_count": 1610,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1610
+            }
+          ],
+          "thoughts_token_count": 110,
+          "total_token_count": 1784,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-a623ebd4-c352-4183-9a3f-bc6ba9a52ab2",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "long_running_tool_ids": [],
+        "id": "4d7a4ff4-1dcc-4f90-85b3-2279138dd67c",
+        "timestamp": 1787535274.9932032
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_response": {
+                "id": "call_274301",
+                "name": "support_inspect_pact_state",
+                "response": {
+                  "authoritative_source": "PACT_GRAPH_FIRESTORE",
+                  "pact_id": "pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7",
+                  "returned_fields": [
+                    "pact_id",
+                    "status"
+                  ],
+                  "status": "PENDING",
+                  "verified_agent_id": "isopact-support-v1",
+                  "verified_caller": {
+                    "token_audience": [
+                      "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+                    ],
+                    "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+                    "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+                    "verification": "GOOGLE_STS_JWKS_RS256"
+                  },
+                  "verified_role": "SUPPORT",
+                  "http_status": 200,
+                  "agent_runtime_region": "europe-west1",
+                  "cross_region_round_trip_ms": 248.258,
+                  "safe_token_claims": {
+                    "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+                    "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+                    "aud": [
+                      "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocation_id": "e-a623ebd4-c352-4183-9a3f-bc6ba9a52ab2",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "df61136e-7945-4da2-ad5c-53bbad9b55e1",
+        "timestamp": 1787535277.1686916
+      },
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "text": "Based on the execution of the refund request through the IsoPact Gateway, here are the exact results:\n\n### **Gateway Call Result**\n* **Gateway Decision:** `BLOCK`\n* **HTTP Status:** `409`\n* **Reason Code:** `DUPLICATE_OPERATION`\n* **Pact Graph State:** `PENDING`\n* **Pact ID:** `pact_stage8b-memory-20260824013323_7a8b5fd590b79a41ece7`\n\n### **Pact State Inspection Result**\n* **Authoritative Status:** `PENDING`\n\n### **Status Confirmation**\nAs the pact graph state and inspected status are both **`PENDING`**, **the work is not settled at this time.**"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 176,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 176
+            }
+          ],
+          "prompt_token_count": 2276,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 2276
+            }
+          ],
+          "thoughts_token_count": 130,
+          "total_token_count": 2582,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-a623ebd4-c352-4183-9a3f-bc6ba9a52ab2",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "bf7cf1a0-063a-47bb-b605-ddc10fa01ae4",
+        "timestamp": 1787535277.2247458
+      }
+    ]
+  },
+  "cross_session_memory_retrieved": true,
+  "authoritative_data_stored": false,
+  "memory_classification": "NON_AUTHORITATIVE_CONTEXT_ONLY",
+  "stale_policy_memory_visible_to_agent": true,
+  "second_refund_decision": "BLOCK",
+  "second_refund_reason": "DUPLICATE_OPERATION",
+  "external_refund_execution_count": 1,
+  "policy_id_after": "commerce_missing_order_v1",
+  "policy_version_after": "1",
+  "policy_mutation_count": 0
+}

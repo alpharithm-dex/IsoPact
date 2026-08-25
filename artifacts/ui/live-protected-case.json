@@ -1,0 +1,3927 @@
+{
+  "architecture": {
+    "reasoningPlane": "europe-west1",
+    "settlementPlane": "africa-south1"
+  },
+  "authoritativeSources": [
+    "Firestore Pact Graph",
+    "backend-derived CaseChronicle",
+    "Stage 4 deterministic replay",
+    "Stage 7 Resolver proof",
+    "Stage 9 signed integrity bundle",
+    "Stage 10 Cloud evidence"
+  ],
+  "generatedAt": "2026-08-25T10:11:22.333194+00:00",
+  "liveBackend": {
+    "currentLifecycle": "SETTLED",
+    "pactId": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+    "readAt": "2026-08-25T10:11:22.333246+00:00",
+    "receiptCount": 3,
+    "silentReplayFallback": false,
+    "source": "PACT_GRAPH_FIRESTORE"
+  },
+  "observability": {
+    "agentResource": "Support Agent \u00b7 managed identity verified",
+    "cloudTraceStatus": "19 / 19 required span classes",
+    "dashboardUrl": "https://console.cloud.google.com/monitoring/dashboards/builder/377c888c-861e-459d-bd0f-97ec687cec44?project=isopact-agentic-20260823",
+    "evidenceStatus": "LIVE \u00b7 correlated",
+    "firestoreLatency": "Cloud Trace linked",
+    "gatewayLatency": "0.333 ms controlled p95",
+    "invariantStatus": "LIVE \u00b7 PASS",
+    "kmsStatus": "LIVE \u00b7 key version 2",
+    "liveTraceId": "7cf150602994fa1029fc855b953d380e",
+    "otelStatus": "OTLP / gRPC \u00b7 healthy",
+    "receiptStatus": "VALID"
+  },
+  "receiptBundle": {
+    "receipt": {
+      "approval_references": [],
+      "authoritative_evidence_ids": [
+        "ev_c080c1216fc6c45924737aabfc1d79f7"
+      ],
+      "economic_position": {
+        "authorized_primary_value": 20000,
+        "blocked_value": 20000,
+        "captured_value": 20000,
+        "currency": "USD",
+        "failed_primary_value": 0,
+        "goodwill_authorized_value": 5000,
+        "goodwill_settled_value": 5000,
+        "legitimately_delayed_value": 0,
+        "other_exception_value": 0,
+        "pending_primary_value": 0,
+        "projected_excess_exposure": 5000,
+        "projected_total_compensation": 25000,
+        "protected_value": 40000,
+        "provenance": [
+          "fact_claim_ev_c080c1216fc6c45924737aabfc1d79f7",
+          "fact_claim_gateway_req-stage8b-e2e-fulfillment",
+          "fact_claim_gateway_req-stage8b-e2e-retention"
+        ],
+        "recoverable_candidate_value": 0,
+        "recovered_value": 0,
+        "replacement_committed_value": 0,
+        "replacement_projected_value": 0,
+        "settled_excess_exposure": 5000,
+        "settled_primary_value": 20000,
+        "settled_total_compensation": 25000
+      },
+      "exceptions": [],
+      "final_authoritative_external_states": {
+        "43b8220e8f24dc42f593b084bd57d861b91401d37296f621974e3d976a07d589": {
+          "attempt": 1,
+          "evidence_id": "ev_c080c1216fc6c45924737aabfc1d79f7",
+          "evidence_type": "stripe.refund.succeeded",
+          "external_object_id": "REF-43b8220e8f24",
+          "occurred_at": "2026-08-24T20:01:29.392634+00:00",
+          "rank": 1,
+          "resolution_path": "successful_refund",
+          "source_sequence": null,
+          "source_system": "stripe",
+          "state": "SUCCEEDED"
+        }
+      },
+      "final_checkpoint": {
+        "checkpoint_id": "checkpoint_pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2_00000008",
+        "terminal_claim_hash": "740a87e78a66a36a3d8e9b645a60e5dea3671a5ef7f1d5734a82c89d066b3de8",
+        "through_sequence": 8
+      },
+      "final_pact_lifecycle": "SETTLED",
+      "issuance_status": "SIGNED",
+      "original_requested_outcome": "resolve_missing_order",
+      "pact_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2",
+      "participants": [
+        {
+          "authenticated_principal": "isopact-fulfillment-v1",
+          "derived_from_claim_ids": [
+            "claim_gateway_req-stage8b-e2e-fulfillment"
+          ],
+          "display_name": "isopact-fulfillment-v1",
+          "kind": "AGENT",
+          "participant_id": "participant_isopact-fulfillment-v1",
+          "roles": [
+            "FULFILLMENT"
+          ]
+        },
+        {
+          "authenticated_principal": "isopact-resolver-v1",
+          "consequential_execution_performed": false,
+          "derived_from_claim_ids": [],
+          "derived_from_remote_invocation_ids": [
+            "e-2f643581-2f32-42ed-83bc-d791418cf1a6"
+          ],
+          "display_name": "isopact-resolver-v1",
+          "kind": "AGENT",
+          "participant_id": "participant_isopact-resolver-v1",
+          "roles": [
+            "RESOLVER"
+          ]
+        },
+        {
+          "authenticated_principal": "isopact-retention-v1",
+          "derived_from_claim_ids": [
+            "claim_gateway_req-stage8b-e2e-retention",
+            "claim_remote_req-stage8b-e2e-retention"
+          ],
+          "display_name": "isopact-retention-v1",
+          "kind": "AGENT",
+          "participant_id": "participant_isopact-retention-v1",
+          "roles": [
+            "RETENTION"
+          ]
+        },
+        {
+          "authenticated_principal": "isopact-support-v1",
+          "derived_from_claim_ids": [
+            "claim_gateway_req-stage8b-e2e-support",
+            "claim_gateway_req-stage8b-e2e-support-second",
+            "claim_remote_req-stage8b-e2e-support"
+          ],
+          "display_name": "isopact-support-v1",
+          "kind": "AGENT",
+          "participant_id": "participant_isopact-support-v1",
+          "roles": [
+            "SUPPORT"
+          ]
+        }
+      ],
+      "policy_version": "commerce_missing_order_v1@1",
+      "receipt_id": "receipt_pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2_00000008_all-participants",
+      "receipt_schema_version": "isopact.settlement-receipt.v1",
+      "reconciliation_actions": [],
+      "rule_versions": [
+        "commerce_missing_order_rules@1"
+      ],
+      "selected_resolution_path": "successful_refund",
+      "settlement_timestamp": "2026-08-24T20:01:29.392634+00:00",
+      "signature": "MEQCIEU1X6OzSUsD9j9NQ8op1duVQwXwhUFm+Tle861mc4G8AiBKI267Nfq2RG7PRHo1jsoBBv/QsD/hpsoTBxWrjeKsxQ==",
+      "signature_algorithm": "EC_SIGN_P256_SHA256",
+      "signing_key_resource": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing",
+      "signing_key_version": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2",
+      "subject_identifiers": {
+        "customer_id": "CUS-104",
+        "order_id": "ORD-8472",
+        "ticket_id": "JIRA-8472"
+      }
+    },
+    "tamperedVerification": {
+      "checkpoint_signature_valid": true,
+      "claim_chain_valid": true,
+      "overall_integrity_valid": false,
+      "reason_codes": [
+        "SIGNATURE_INVALID"
+      ],
+      "receipt_checkpoint_matches": true,
+      "receipt_references_consistent": true,
+      "receipt_signature_valid": false,
+      "terminal_hash_matches": true
+    },
+    "verification": {
+      "checkpoint_signature_valid": true,
+      "claim_chain_valid": true,
+      "overall_integrity_valid": true,
+      "reason_codes": [],
+      "receipt_checkpoint_matches": true,
+      "receipt_references_consistent": true,
+      "receipt_signature_valid": true,
+      "terminal_hash_matches": true
+    }
+  },
+  "scenarios": [
+    {
+      "caseLabel": "Missing Order / ORD-8472",
+      "chronicle": [
+        {
+          "actor": "isopact-support-v1",
+          "category": "GATEWAY_AUTHORIZATION",
+          "caused_by": [
+            "gateway-decision:AUTHORITY_RESERVED"
+          ],
+          "claim_hash": "989c16f715b1299974b8149d2db5c20846ef9ef80faf15d29e0c970f3a35903d",
+          "confirmed_by": [],
+          "entry_id": "claim_gateway_req-stage8b-e2e-support",
+          "evidence_id": null,
+          "evidence_rank": 4,
+          "gateway_decision": "ALLOW",
+          "logical_time": "2026-08-24T20:54:41.961559+00:00",
+          "reason_code": "AUTHORITY_RESERVED",
+          "sequence": 1,
+          "summary": "Support Agent requested a $200 refund.",
+          "trace_id": "trace-stage8b-e2e-support"
+        },
+        {
+          "actor": "isopact-support-v1",
+          "category": "API_RESPONSE",
+          "caused_by": [
+            "remote-role:SUPPORT"
+          ],
+          "claim_hash": "9a4c0ca24301b9138e608397b16a14580f20ab2e6ba6576853d4286f5c2a3307",
+          "confirmed_by": [],
+          "entry_id": "claim_remote_req-stage8b-e2e-support",
+          "evidence_id": null,
+          "evidence_rank": 3,
+          "gateway_decision": null,
+          "logical_time": "2026-08-24T20:54:42.076675+00:00",
+          "reason_code": null,
+          "sequence": 2,
+          "summary": "Stripe accepted the refund. State: PENDING.",
+          "trace_id": "trace-stage8b-e2e-support"
+        },
+        {
+          "actor": "isopact-fulfillment-v1",
+          "category": "GATEWAY_AUTHORIZATION",
+          "caused_by": [
+            "gateway-decision:EXCLUSIVE_RESOLUTION_CONFLICT"
+          ],
+          "claim_hash": "751a1bb91c0d3d7280be9c1606ed5b8f9b2502cbd12e1b9b01f9ce2fae4f226d",
+          "confirmed_by": [],
+          "entry_id": "claim_gateway_req-stage8b-e2e-fulfillment",
+          "evidence_id": null,
+          "evidence_rank": 4,
+          "gateway_decision": "BLOCK",
+          "logical_time": "2026-08-24T20:54:56.179116+00:00",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "sequence": 3,
+          "summary": "IsoPact blocked the $200 replacement.",
+          "trace_id": "trace-stage8b-e2e-fulfillment"
+        },
+        {
+          "actor": "isopact-retention-v1",
+          "category": "GATEWAY_AUTHORIZATION",
+          "caused_by": [
+            "gateway-decision:AUTHORITY_RESERVED"
+          ],
+          "claim_hash": "d483ad07af91a00495e4846d5dc1875f8132c60feece499a634b823ba21fc544",
+          "confirmed_by": [],
+          "entry_id": "claim_gateway_req-stage8b-e2e-retention",
+          "evidence_id": null,
+          "evidence_rank": 4,
+          "gateway_decision": "ALLOW",
+          "logical_time": "2026-08-24T20:55:29.926780+00:00",
+          "reason_code": "AUTHORITY_RESERVED",
+          "sequence": 4,
+          "summary": "Retention Agent requested $50 goodwill.",
+          "trace_id": "trace-stage8b-e2e-retention"
+        },
+        {
+          "actor": "isopact-retention-v1",
+          "category": "API_RESPONSE",
+          "caused_by": [
+            "remote-role:RETENTION"
+          ],
+          "claim_hash": "bd616c13d82c7e7984bc7480cde5534130310ce990b25d5c97b5ef923b4c95f4",
+          "confirmed_by": [],
+          "entry_id": "claim_remote_req-stage8b-e2e-retention",
+          "evidence_id": null,
+          "evidence_rank": 3,
+          "gateway_decision": null,
+          "logical_time": "2026-08-24T20:55:30.364049+00:00",
+          "reason_code": null,
+          "sequence": 5,
+          "summary": "CRM issued the bounded $50 goodwill.",
+          "trace_id": "trace-stage8b-e2e-retention"
+        },
+        {
+          "actor": "isopact-support-v1",
+          "category": "GATEWAY_AUTHORIZATION",
+          "caused_by": [
+            "gateway-decision:DUPLICATE_OPERATION"
+          ],
+          "claim_hash": "8ab35bb4130b73fb8ad2020c0491e462c66b127b57d50461f72ec41968a220bd",
+          "confirmed_by": [],
+          "entry_id": "claim_gateway_req-stage8b-e2e-support-second",
+          "evidence_id": null,
+          "evidence_rank": 4,
+          "gateway_decision": "BLOCK",
+          "logical_time": "2026-08-24T20:55:42.678713+00:00",
+          "reason_code": "DUPLICATE_OPERATION",
+          "sequence": 6,
+          "summary": "IsoPact blocked the duplicate refund.",
+          "trace_id": "trace-stage8b-e2e-support-second"
+        },
+        {
+          "actor": "isopact-support-v1",
+          "category": "AGENT_ASSERTION",
+          "caused_by": [],
+          "claim_hash": "054f3d936ae5ddd1273e79a0164eeb6af186acc122fd440889aa00acf6644474",
+          "confirmed_by": [],
+          "entry_id": "claim_24e14258eda4456682ec22ec3f838460",
+          "evidence_id": null,
+          "evidence_rank": 4,
+          "gateway_decision": null,
+          "logical_time": "2026-08-24T20:56:17.518333+00:00",
+          "reason_code": null,
+          "sequence": 7,
+          "summary": "Support Agent marked work COMPLETE; settlement remained PENDING.",
+          "trace_id": "trace-stage8b-e2e-support-statement"
+        },
+        {
+          "actor": null,
+          "category": "AUTHORITATIVE_EVENT",
+          "caused_by": [
+            "ev_055917cb6b302bd3227daef006aa47a5"
+          ],
+          "claim_hash": "a1b6f9213c0b2ca488c75ca32b77e95236cd7475197acbd3e61138ea3f2c5623",
+          "confirmed_by": [
+            "ev_055917cb6b302bd3227daef006aa47a5"
+          ],
+          "entry_id": "claim_ev_055917cb6b302bd3227daef006aa47a5",
+          "evidence_id": "ev_055917cb6b302bd3227daef006aa47a5",
+          "evidence_rank": 1,
+          "gateway_decision": null,
+          "logical_time": "2026-08-24T20:56:19.621263+00:00",
+          "reason_code": null,
+          "sequence": 8,
+          "summary": "Stripe emitted stripe.refund.succeeded; Rank 1 evidence accepted.",
+          "trace_id": "trace-stage8b-e2e-stripe"
+        }
+      ],
+      "evidenceMode": "LIVE",
+      "id": "protected",
+      "label": "Protected outcome",
+      "orderId": "ORD-8472",
+      "pactId": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "scheduleDigest": "6bfba8125f850027429efde5c03938cbe0327e9f67796c7870aeb1492db827e8",
+      "shortLabel": "ISOPACT PROTECTED",
+      "sourceArtifacts": [
+        "Pact Graph Firestore",
+        "artifacts/observability/chronicle-primary.json",
+        "artifacts/security/final-settlement-receipt.json"
+      ],
+      "steps": [
+        {
+          "businessOutcome": "NOT SETTLED",
+          "chronicleThrough": 0,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "intent",
+              "id": "e1",
+              "label": "outcome pact created",
+              "to": "isopact",
+              "tone": "active"
+            }
+          ],
+          "eyebrow": "CUSTOMER REQUEST",
+          "id": "pact-created",
+          "lifecycle": "OPEN",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "One primary resolution",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "PACT OPEN",
+              "tone": "active",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "The enterprise promise becomes explicit"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "chronicleThrough": 1,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "intent",
+              "id": "e1",
+              "label": "request",
+              "to": "support",
+              "tone": "active"
+            },
+            {
+              "dashed": false,
+              "from": "support",
+              "id": "e2",
+              "label": "refund requested",
+              "to": "isopact",
+              "tone": "active"
+            },
+            {
+              "dashed": false,
+              "from": "isopact",
+              "id": "e3",
+              "label": "ALLOW \u00b7 $200",
+              "to": "stripe",
+              "tone": "allowed"
+            }
+          ],
+          "eyebrow": "SUPPORT REQUEST",
+          "id": "refund-allowed",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "Managed identity verified",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "REQUESTED REFUND",
+              "tone": "active",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "$200",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "REQUEST RECEIVED",
+              "tone": "active",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "AUTHORITY_RESERVED",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "ALLOW",
+              "tone": "allowed",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "Refund authority is reserved once"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "AGENT CLAIM VS REALITY",
+            "detail": "\u201cRefund completed.\u201d Stripe is still PENDING. IsoPact remains PENDING.",
+            "reason": "RANK 4 INTERPRETATION",
+            "tone": "pending",
+            "verdict": "COMPLETE \u2260 SETTLED"
+          },
+          "chronicleThrough": 2,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "support",
+              "id": "e1",
+              "label": "ticket closed",
+              "to": "jira",
+              "tone": "verified"
+            },
+            {
+              "dashed": true,
+              "from": "isopact",
+              "id": "e2",
+              "label": "awaiting evidence",
+              "to": "stripe",
+              "tone": "pending"
+            }
+          ],
+          "eyebrow": "EXTERNAL RESULT",
+          "id": "refund-pending",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "Agent task finished",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "COMPLETE",
+              "tone": "verified",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "Local workflow complete",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "CLOSED",
+              "tone": "verified",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "Rank 3 \u00b7 accepted / pending",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "PENDING",
+              "tone": "pending",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Authoritative evidence missing",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "PENDING",
+              "tone": "pending",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "The API accepted; the outcome did not settle"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "FULFILLMENT AGENT",
+            "detail": "Existing primary path: $200 refund. Prevented projected overlap: $200.",
+            "reason": "EXCLUSIVE_RESOLUTION_CONFLICT",
+            "tone": "blocked",
+            "verdict": "BLOCKED"
+          },
+          "chronicleThrough": 3,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "fulfillment",
+              "id": "e1",
+              "label": "replacement requested",
+              "to": "isopact",
+              "tone": "active"
+            },
+            {
+              "dashed": true,
+              "from": "isopact",
+              "id": "e2",
+              "label": "BLOCK",
+              "to": "carrier",
+              "tone": "blocked"
+            }
+          ],
+          "eyebrow": "FULFILLMENT REQUEST",
+          "id": "replacement-blocked",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "$200 projected",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "REPLACEMENT REQUESTED",
+              "tone": "active",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "Refund path reserved",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "PENDING",
+              "tone": "pending",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "0 external executions",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "NOT CALLED",
+              "tone": "blocked",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Exclusive primary path",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "BLOCKED",
+              "tone": "blocked",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "A contradictory primary path is stopped"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "chronicleThrough": 5,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "retention",
+              "id": "e1",
+              "label": "goodwill requested",
+              "to": "isopact",
+              "tone": "active"
+            },
+            {
+              "dashed": false,
+              "from": "isopact",
+              "id": "e2",
+              "label": "ALLOW \u00b7 $50",
+              "to": "crm",
+              "tone": "allowed"
+            }
+          ],
+          "eyebrow": "RETENTION REQUEST",
+          "id": "goodwill-allowed",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "$50",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "GOODWILL REQUESTED",
+              "tone": "active",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "Refund not proven",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "PENDING",
+              "tone": "pending",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "$50 goodwill",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "ISSUED",
+              "tone": "verified",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Within cumulative limit",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "ALLOW",
+              "tone": "allowed",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "A bounded customer remedy remains compatible"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "SECOND SUPPORT SESSION",
+            "detail": "The same consequential operation was already reserved. External refund calls remain one.",
+            "reason": "DUPLICATE_OPERATION",
+            "tone": "blocked",
+            "verdict": "BLOCKED"
+          },
+          "chronicleThrough": 6,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "support",
+              "id": "e1",
+              "label": "same refund requested",
+              "to": "isopact",
+              "tone": "active"
+            },
+            {
+              "dashed": true,
+              "from": "isopact",
+              "id": "e2",
+              "label": "BLOCK",
+              "to": "stripe",
+              "tone": "blocked"
+            }
+          ],
+          "eyebrow": "DUPLICATE SUPPORT SESSION",
+          "id": "duplicate-blocked",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "Same economic intent",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "SECOND REFUND",
+              "tone": "active",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "No second call",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "ONE REFUND PENDING",
+              "tone": "pending",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Semantic duplicate",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "BLOCKED",
+              "tone": "blocked",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "A second session cannot repeat the refund"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "SUPPORT AGENT \u00b7 COMPLETE / JIRA \u00b7 CLOSED",
+            "detail": "Agent completion and ticket closure are observations\u2014not settlement authority.",
+            "reason": "AUTHORITATIVE_SETTLEMENT_EVIDENCE_MISSING",
+            "tone": "pending",
+            "verdict": "BUSINESS NOT SETTLED"
+          },
+          "chronicleThrough": 7,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "support",
+              "id": "e1",
+              "label": "work marked complete",
+              "to": "jira",
+              "tone": "verified"
+            },
+            {
+              "dashed": true,
+              "from": "stripe",
+              "id": "e2",
+              "label": "Rank 3 only",
+              "to": "isopact",
+              "tone": "pending"
+            }
+          ],
+          "eyebrow": "CONCEPTUAL HEART",
+          "id": "agent-complete-unsettled",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "Rank 4 interpretation",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "COMPLETE",
+              "tone": "verified",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "Workflow ended",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "CLOSED",
+              "tone": "verified",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "No authoritative success",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "PENDING",
+              "tone": "pending",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Settlement condition unmet",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "PENDING",
+              "tone": "pending",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "The ticket is closed. The obligation remains."
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "STRIPE",
+            "detail": "Business settlement condition: CONFIRMED. Deterministic invariants now evaluate.",
+            "reason": "stripe.refund.succeeded \u00b7 RANK 1",
+            "tone": "verified",
+            "verdict": "AUTHORITATIVE EVENT"
+          },
+          "chronicleThrough": 8,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "stripe",
+              "id": "e1",
+              "label": "Rank 1 evidence",
+              "to": "isopact",
+              "tone": "verified"
+            }
+          ],
+          "eyebrow": "STRIPE EVENT",
+          "id": "rank1-evidence",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "Rank 1 authoritative event",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "SUCCEEDED",
+              "tone": "verified",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "stripe.refund.succeeded",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "EVALUATING",
+              "tone": "active",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "Authoritative evidence changes what is known"
+        },
+        {
+          "businessOutcome": "SETTLED",
+          "chronicleThrough": 8,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "stripe",
+              "id": "e1",
+              "label": "confirmed by Rank 1",
+              "to": "isopact",
+              "tone": "verified"
+            },
+            {
+              "dashed": false,
+              "from": "crm",
+              "id": "e2",
+              "label": "bounded goodwill",
+              "to": "isopact",
+              "tone": "allowed"
+            },
+            {
+              "dashed": false,
+              "from": "isopact",
+              "id": "e3",
+              "label": "settlement verified",
+              "to": "jira",
+              "tone": "settled"
+            }
+          ],
+          "eyebrow": "DETERMINISTIC SETTLEMENT",
+          "id": "settled",
+          "lifecycle": "SETTLED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "Managed agent",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "COMPLETE",
+              "tone": "verified",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "Local workflow",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "CLOSED",
+              "tone": "verified",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "Rank 1",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "SUCCEEDED",
+              "tone": "verified",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "$50",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "ISSUED",
+              "tone": "verified",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Invariants PASS",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "SETTLED",
+              "tone": "settled",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "SIGNED \u00b7 VERIFIED",
+          "title": "The outcome\u2014not merely the task\u2014is settled"
+        },
+        {
+          "businessOutcome": "SETTLED",
+          "callout": {
+            "actor": "SETTLEMENT RECEIPT",
+            "detail": "The receipt proves integrity without giving the model settlement authority.",
+            "reason": "SIGNATURE \u00b7 CHECKPOINT \u00b7 CHAIN \u00b7 TERMINAL HASH",
+            "tone": "settled",
+            "verdict": "VERIFIED"
+          },
+          "chronicleThrough": 8,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "allowed",
+              "value": "$200"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Duplicate refund",
+              "note": null,
+              "tone": "blocked",
+              "value": "BLOCKED"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            },
+            {
+              "label": "Projected invalid value prevented",
+              "note": "Not a cash-saved claim",
+              "tone": "verified",
+              "value": "$400"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "stripe",
+              "id": "e1",
+              "label": "evidence bound",
+              "to": "isopact",
+              "tone": "verified"
+            },
+            {
+              "dashed": false,
+              "from": "isopact",
+              "id": "e2",
+              "label": "signed receipt",
+              "to": "jira",
+              "tone": "settled"
+            }
+          ],
+          "eyebrow": "SIGNED SETTLEMENT RECEIPT",
+          "id": "receipt-verified",
+          "lifecycle": "SETTLED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "Outcome proof attached",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "CLOSED",
+              "tone": "verified",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "Authoritative evidence",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "SUCCEEDED",
+              "tone": "verified",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "KMS P-256 \u00b7 chain valid",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "RECEIPT VERIFIED",
+              "tone": "settled",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "VERIFIED",
+          "title": "The settlement is portable and independently verifiable"
+        }
+      ]
+    },
+    {
+      "caseLabel": "Missing Order / ORD-8472",
+      "chronicle": [
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unmanaged"
+          ],
+          "entry_id": "unmanaged-1",
+          "summary": "Support requested refund A."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unmanaged"
+          ],
+          "entry_id": "unmanaged-2",
+          "summary": "Fulfillment created a replacement."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unmanaged"
+          ],
+          "entry_id": "unmanaged-3",
+          "summary": "Warehouse reserved stock."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unmanaged"
+          ],
+          "entry_id": "unmanaged-4",
+          "summary": "Retention issued $50 goodwill."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unmanaged"
+          ],
+          "entry_id": "unmanaged-5",
+          "summary": "A second support workflow created refund B."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unmanaged"
+          ],
+          "entry_id": "unmanaged-6",
+          "summary": "Jira closed the ticket."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unmanaged"
+          ],
+          "entry_id": "unmanaged-7",
+          "summary": "Projected combined compensation reached $650."
+        }
+      ],
+      "evidenceMode": "VERIFIED REPLAY",
+      "id": "unmanaged",
+      "label": "Without IsoPact",
+      "orderId": "ORD-8472",
+      "pactId": "scenario:missing_order_unmanaged",
+      "scheduleDigest": "6bfba8125f850027429efde5c03938cbe0327e9f67796c7870aeb1492db827e8",
+      "shortLabel": "UNMANAGED",
+      "sourceArtifacts": [
+        "artifacts/replays/missing_order_comparison.json"
+      ],
+      "steps": [
+        {
+          "businessOutcome": "NOT SETTLED",
+          "chronicleThrough": 0,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund A",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 projected"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 projected"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Refund B",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 projected"
+            },
+            {
+              "label": "Projected compensation",
+              "note": null,
+              "tone": "conflict",
+              "value": "$650"
+            },
+            {
+              "label": "Projected excess exposure",
+              "note": null,
+              "tone": "conflict",
+              "value": "$450"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "intent",
+              "id": "u1",
+              "label": "request",
+              "to": "support",
+              "tone": "active"
+            }
+          ],
+          "eyebrow": "SAME DETERMINISTIC SCHEDULE",
+          "id": "unmanaged-start",
+          "lifecycle": "OPEN",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "No interception",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "NOT PRESENT",
+              "tone": "neutral",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "NONE",
+          "title": "The same request, without settlement control"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "COMBINED BUSINESS POSITION",
+            "detail": "Every local workflow can appear successful while the enterprise outcome contradicts itself.",
+            "reason": "$450 PROJECTED EXCESS EXPOSURE",
+            "tone": "conflict",
+            "verdict": "$650 PROJECTED"
+          },
+          "chronicleThrough": 7,
+          "economics": [
+            {
+              "label": "Original value",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Refund A",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 projected"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 projected"
+            },
+            {
+              "label": "Goodwill",
+              "note": null,
+              "tone": "allowed",
+              "value": "$50"
+            },
+            {
+              "label": "Refund B",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 projected"
+            },
+            {
+              "label": "Projected compensation",
+              "note": null,
+              "tone": "conflict",
+              "value": "$650"
+            },
+            {
+              "label": "Projected excess exposure",
+              "note": null,
+              "tone": "conflict",
+              "value": "$450"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "support",
+              "id": "u1",
+              "label": "refund A + B",
+              "to": "stripe",
+              "tone": "conflict"
+            },
+            {
+              "dashed": false,
+              "from": "fulfillment",
+              "id": "u2",
+              "label": "replacement",
+              "to": "carrier",
+              "tone": "conflict"
+            },
+            {
+              "dashed": false,
+              "from": "fulfillment",
+              "id": "u3",
+              "label": "reserve",
+              "to": "warehouse",
+              "tone": "conflict"
+            },
+            {
+              "dashed": false,
+              "from": "retention",
+              "id": "u4",
+              "label": "goodwill",
+              "to": "crm",
+              "tone": "allowed"
+            },
+            {
+              "dashed": false,
+              "from": "support",
+              "id": "u5",
+              "label": "ticket closed",
+              "to": "jira",
+              "tone": "verified"
+            }
+          ],
+          "eyebrow": "UNMANAGED ENTERPRISE",
+          "id": "unmanaged-conflict",
+          "lifecycle": "VIOLATED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "$400 projected",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "TWO REFUNDS",
+              "tone": "conflict",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "$200 projected",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "REPLACEMENT",
+              "tone": "conflict",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "$50",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "GOODWILL",
+              "tone": "allowed",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "Appears complete",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "CLOSED",
+              "tone": "verified",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "$400",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "2 \u00d7 PENDING",
+              "tone": "conflict",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "$200",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "LABEL CREATED",
+              "tone": "conflict",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "$200",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "RESERVED",
+              "tone": "conflict",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "$50",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "ISSUED",
+              "tone": "verified",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Nothing blocked",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "NO CONTROL",
+              "tone": "neutral",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "NONE",
+          "title": "Local success compounds into contradiction"
+        }
+      ]
+    },
+    {
+      "caseLabel": "Divergent Resolution / ORD-8472",
+      "chronicle": [
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:reconciliation"
+          ],
+          "entry_id": "reconciliation-1",
+          "summary": "Exclusive primary resolution conflict detected."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:reconciliation"
+          ],
+          "entry_id": "reconciliation-2",
+          "summary": "Gemini proposed two registered compensation actions."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:reconciliation"
+          ],
+          "entry_id": "reconciliation-3",
+          "summary": "Deterministic validator authorized both actions."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:reconciliation"
+          ],
+          "entry_id": "reconciliation-4",
+          "summary": "Rank 1 recovery evidence confirmed $200 recovered."
+        }
+      ],
+      "evidenceMode": "VERIFIED REPLAY",
+      "id": "reconciliation",
+      "label": "Pre-existing divergence",
+      "orderId": "ORD-8472",
+      "pactId": "pact_stage7_live_20260824212114",
+      "shortLabel": "RECONCILIATION",
+      "sourceArtifacts": [
+        "artifacts/resolver/preexisting-divergence-reconciled.json",
+        "artifacts/observability/reconciliation-causal-bundle.json"
+      ],
+      "steps": [
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "SETTLEMENT RESOLVER",
+            "detail": "Cancel carrier label, then release warehouse stock. Proposal is not execution authority.",
+            "reason": "2 REGISTERED ACTIONS",
+            "tone": "active",
+            "verdict": "GEMINI PROPOSES"
+          },
+          "chronicleThrough": 1,
+          "economics": [
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 pending"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "conflict",
+              "value": "$200 created"
+            },
+            {
+              "label": "Recoverable candidate",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Recovered",
+              "note": null,
+              "tone": "pending",
+              "value": "$0"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "stripe",
+              "id": "r1",
+              "label": "refund path",
+              "to": "isopact",
+              "tone": "pending"
+            },
+            {
+              "dashed": false,
+              "from": "carrier",
+              "id": "r2",
+              "label": "replacement path",
+              "to": "isopact",
+              "tone": "conflict"
+            },
+            {
+              "dashed": false,
+              "from": "warehouse",
+              "id": "r3",
+              "label": "reservation",
+              "to": "isopact",
+              "tone": "conflict"
+            }
+          ],
+          "eyebrow": "PRE-EXISTING DIVERGENCE",
+          "id": "recon-violated",
+          "lifecycle": "VIOLATED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "$200",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "REFUND PENDING",
+              "tone": "pending",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "Replacement label",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "CREATED",
+              "tone": "conflict",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "Stock held",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "RESERVED",
+              "tone": "conflict",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Exclusive primary resolution",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "VIOLATED",
+              "tone": "conflict",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "Pre-existing divergence is detected"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "DETERMINISTIC VALIDATOR",
+            "detail": "Execution-time preconditions pass against current authoritative state.",
+            "reason": "REGISTERED_AUTOMATIC_PLAN_VALID",
+            "tone": "allowed",
+            "verdict": "VALID"
+          },
+          "chronicleThrough": 2,
+          "economics": [
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 pending"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "conflict",
+              "value": "$200 created"
+            },
+            {
+              "label": "Recoverable candidate",
+              "note": null,
+              "tone": null,
+              "value": "$200"
+            },
+            {
+              "label": "Recovered",
+              "note": null,
+              "tone": "pending",
+              "value": "$0"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "isopact",
+              "id": "r1",
+              "label": "authorized action 1",
+              "to": "carrier",
+              "tone": "allowed"
+            },
+            {
+              "dashed": false,
+              "from": "isopact",
+              "id": "r2",
+              "label": "authorized action 2",
+              "to": "warehouse",
+              "tone": "allowed"
+            }
+          ],
+          "eyebrow": "CONSTRAINED RESOLUTION",
+          "id": "recon-valid",
+          "lifecycle": "VIOLATED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "CREATED",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "PRECONDITION PASS",
+              "tone": "allowed",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "RESERVED",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "PRECONDITION PASS",
+              "tone": "allowed",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "0 model calls",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "VALIDATOR \u00b7 VALID",
+              "tone": "allowed",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "The proposal enters deterministic authority"
+        },
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "AUTHORITATIVE RECOVERY EVIDENCE",
+            "detail": "Recovered value was $0 before evidence and becomes $200 only after confirmation.",
+            "reason": "CONFIRMED AFTER EXECUTION",
+            "tone": "verified",
+            "verdict": "$200 RECOVERED"
+          },
+          "chronicleThrough": 3,
+          "economics": [
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 pending"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "verified",
+              "value": "REVERSED"
+            },
+            {
+              "label": "Recovered",
+              "note": null,
+              "tone": "verified",
+              "value": "$200"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "carrier",
+              "id": "r1",
+              "label": "cancel confirmed",
+              "to": "isopact",
+              "tone": "verified"
+            },
+            {
+              "dashed": false,
+              "from": "warehouse",
+              "id": "r2",
+              "label": "release confirmed",
+              "to": "isopact",
+              "tone": "verified"
+            }
+          ],
+          "eyebrow": "RECOVERY CONFIRMED",
+          "id": "recon-recovered",
+          "lifecycle": "PENDING",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "Rank 1 evidence",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "CANCELLED",
+              "tone": "verified",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "Rank 1 evidence",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "RELEASED",
+              "tone": "verified",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Conflict resolved; refund pending",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "PENDING",
+              "tone": "pending",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "PENDING",
+          "title": "Recovery counts only after authoritative evidence"
+        },
+        {
+          "businessOutcome": "SETTLED",
+          "chronicleThrough": 4,
+          "economics": [
+            {
+              "label": "Refund",
+              "note": null,
+              "tone": "pending",
+              "value": "$200 pending"
+            },
+            {
+              "label": "Replacement",
+              "note": null,
+              "tone": "verified",
+              "value": "REVERSED"
+            },
+            {
+              "label": "Recovered",
+              "note": null,
+              "tone": "verified",
+              "value": "$200"
+            },
+            {
+              "label": "Final authorized compensation",
+              "note": null,
+              "tone": "settled",
+              "value": "$250"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "stripe",
+              "id": "r1",
+              "label": "refund confirmed",
+              "to": "isopact",
+              "tone": "verified"
+            },
+            {
+              "dashed": false,
+              "from": "carrier",
+              "id": "r2",
+              "label": "recovered",
+              "to": "isopact",
+              "tone": "verified"
+            },
+            {
+              "dashed": false,
+              "from": "warehouse",
+              "id": "r3",
+              "label": "recovered",
+              "to": "isopact",
+              "tone": "verified"
+            }
+          ],
+          "eyebrow": "FINAL SETTLEMENT",
+          "id": "recon-settled",
+          "lifecycle": "SETTLED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "Rank 1",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "SUCCEEDED",
+              "tone": "verified",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "Recovered",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "CANCELLED",
+              "tone": "verified",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "Recovered",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "RELEASED",
+              "tone": "verified",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Conflict resolved",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "SETTLED",
+              "tone": "settled",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "VERIFIED",
+          "title": "Refund evidence closes the remaining obligation"
+        }
+      ]
+    },
+    {
+      "caseLabel": "World Changed / SHIP-001",
+      "chronicle": [
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:toctou"
+          ],
+          "entry_id": "toctou-1",
+          "summary": "Gemini proposed cancellation against CREATED."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:toctou"
+          ],
+          "entry_id": "toctou-2",
+          "summary": "Carrier advanced to ACCEPTED; execution precondition failed with zero calls."
+        }
+      ],
+      "evidenceMode": "VERIFIED REPLAY",
+      "id": "toctou",
+      "label": "Stale plan",
+      "orderId": "ORD-8472",
+      "pactId": "pact_stage10c_toctou_20260824212114",
+      "shortLabel": "TOCTOU PROOF",
+      "sourceArtifacts": [
+        "artifacts/resolver/toctou-refusal.json",
+        "artifacts/observability/toctou-causal-bundle.json"
+      ],
+      "steps": [
+        {
+          "businessOutcome": "NOT SETTLED",
+          "chronicleThrough": 1,
+          "economics": [
+            {
+              "label": "Planned carrier state",
+              "note": null,
+              "tone": null,
+              "value": "CREATED"
+            },
+            {
+              "label": "Current carrier state",
+              "note": null,
+              "tone": "conflict",
+              "value": "ACCEPTED"
+            },
+            {
+              "label": "Cancellation calls",
+              "note": null,
+              "tone": "verified",
+              "value": "0"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": true,
+              "from": "isopact",
+              "id": "t1",
+              "label": "proposed cancel",
+              "to": "carrier",
+              "tone": "allowed"
+            }
+          ],
+          "eyebrow": "STALE PLAN / WORLD CHANGED",
+          "id": "toctou-plan",
+          "lifecycle": "VIOLATED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "Planning state",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "CREATED",
+              "tone": "active",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Gemini recommendation",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "PLAN VALID",
+              "tone": "allowed",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "NONE",
+          "title": "The plan is valid against the planning snapshot"
+        },
+        {
+          "businessOutcome": "SAFE REFUSAL",
+          "callout": {
+            "actor": "EXECUTION PRECONDITION",
+            "detail": "Gemini recommendation does not grant execution authority. Cancellation calls: 0.",
+            "reason": "EXECUTION_STATE_INELIGIBLE",
+            "tone": "blocked",
+            "verdict": "FAILED \u00b7 SAFE REFUSAL"
+          },
+          "chronicleThrough": 2,
+          "economics": [
+            {
+              "label": "Planned carrier state",
+              "note": null,
+              "tone": null,
+              "value": "CREATED"
+            },
+            {
+              "label": "Current carrier state",
+              "note": null,
+              "tone": "conflict",
+              "value": "ACCEPTED"
+            },
+            {
+              "label": "Cancellation calls",
+              "note": null,
+              "tone": "verified",
+              "value": "0"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": true,
+              "from": "isopact",
+              "id": "t1",
+              "label": "NO CALL",
+              "to": "carrier",
+              "tone": "blocked"
+            }
+          ],
+          "eyebrow": "EXECUTION-TIME AUTHORITY",
+          "id": "toctou-refusal",
+          "lifecycle": "VIOLATED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "World changed",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "ACCEPTED",
+              "tone": "conflict",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "0 external calls",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "PRECONDITION FAILED",
+              "tone": "blocked",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "NONE",
+          "title": "Current state defeats the stale plan safely"
+        }
+      ]
+    },
+    {
+      "caseLabel": "Ambiguous Carrier Write / ORD-8472",
+      "chronicle": [
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unknown"
+          ],
+          "entry_id": "unknown-1",
+          "summary": "Carrier operation executed once; response was lost; retry deferred."
+        },
+        {
+          "category": "DERIVED_BACKEND_PROOF",
+          "caused_by": [
+            "authoritative-proof:unknown"
+          ],
+          "entry_id": "unknown-2",
+          "summary": "Authoritative carrier evidence confirmed the result without re-execution."
+        }
+      ],
+      "evidenceMode": "VERIFIED REPLAY",
+      "id": "unknown",
+      "label": "Ambiguous write",
+      "orderId": "ORD-8472",
+      "pactId": "pact_stage10c_unknown_20260824212114",
+      "shortLabel": "OUTCOME UNKNOWN",
+      "sourceArtifacts": [
+        "artifacts/observability/outcome-unknown-causal-bundle.json"
+      ],
+      "steps": [
+        {
+          "businessOutcome": "NOT SETTLED",
+          "callout": {
+            "actor": "RETRY REQUEST",
+            "detail": "We don't retry consequential operations when the first result may already have happened.",
+            "reason": "POSSIBLE_PRIOR_EXECUTION",
+            "tone": "pending",
+            "verdict": "DEFER"
+          },
+          "chronicleThrough": 1,
+          "economics": [
+            {
+              "label": "External executions",
+              "note": null,
+              "tone": "verified",
+              "value": "1"
+            },
+            {
+              "label": "Retry after ambiguity",
+              "note": null,
+              "tone": "pending",
+              "value": "DEFER"
+            },
+            {
+              "label": "Final state",
+              "note": null,
+              "tone": "verified",
+              "value": "CONFIRMED"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "isopact",
+              "id": "o1",
+              "label": "one execution",
+              "to": "carrier",
+              "tone": "allowed"
+            },
+            {
+              "dashed": true,
+              "from": "carrier",
+              "id": "o2",
+              "label": "response lost",
+              "to": "isopact",
+              "tone": "pending"
+            }
+          ],
+          "eyebrow": "AMBIGUOUS EXTERNAL WRITE",
+          "id": "unknown",
+          "lifecycle": "OUTCOME_UNKNOWN",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "Write may have happened",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "RESPONSE LOST",
+              "tone": "pending",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "Authority retained",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "OUTCOME UNKNOWN",
+              "tone": "pending",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "NONE",
+          "title": "The response is lost after a consequential write"
+        },
+        {
+          "businessOutcome": "CONFIRMED",
+          "chronicleThrough": 2,
+          "economics": [
+            {
+              "label": "External executions",
+              "note": null,
+              "tone": "verified",
+              "value": "1"
+            },
+            {
+              "label": "Retry after ambiguity",
+              "note": null,
+              "tone": "pending",
+              "value": "DEFER"
+            },
+            {
+              "label": "Final state",
+              "note": null,
+              "tone": "verified",
+              "value": "CONFIRMED"
+            }
+          ],
+          "edges": [
+            {
+              "dashed": false,
+              "from": "carrier",
+              "id": "o1",
+              "label": "Rank 1 evidence",
+              "to": "isopact",
+              "tone": "verified"
+            }
+          ],
+          "eyebrow": "EVIDENCE RECONCILIATION",
+          "id": "unknown-confirmed",
+          "lifecycle": "CONFIRMED",
+          "nodes": [
+            {
+              "detail": "",
+              "id": "intent",
+              "kind": "intent",
+              "label": "Customer intent",
+              "state": "MISSING ORDER",
+              "tone": "active",
+              "x": 12,
+              "y": 45
+            },
+            {
+              "detail": "",
+              "id": "support",
+              "kind": "agent",
+              "label": "Support Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 18
+            },
+            {
+              "detail": "",
+              "id": "fulfillment",
+              "kind": "agent",
+              "label": "Fulfillment Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 42
+            },
+            {
+              "detail": "",
+              "id": "retention",
+              "kind": "agent",
+              "label": "Retention Agent",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 31,
+              "y": 66
+            },
+            {
+              "detail": "",
+              "id": "jira",
+              "kind": "system",
+              "label": "Jira",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 12
+            },
+            {
+              "detail": "",
+              "id": "stripe",
+              "kind": "system",
+              "label": "Stripe",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 24
+            },
+            {
+              "detail": "Authoritative query evidence",
+              "id": "carrier",
+              "kind": "system",
+              "label": "Carrier",
+              "state": "CONFIRMED",
+              "tone": "verified",
+              "x": 78,
+              "y": 46
+            },
+            {
+              "detail": "",
+              "id": "warehouse",
+              "kind": "system",
+              "label": "Warehouse",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 78,
+              "y": 65
+            },
+            {
+              "detail": "",
+              "id": "crm",
+              "kind": "system",
+              "label": "CRM",
+              "state": "READY",
+              "tone": "neutral",
+              "x": 54,
+              "y": 75
+            },
+            {
+              "detail": "External executions remain 1",
+              "id": "isopact",
+              "kind": "control",
+              "label": "IsoPact",
+              "state": "CONFIRMED",
+              "tone": "verified",
+              "x": 54,
+              "y": 43
+            }
+          ],
+          "receiptState": "NONE",
+          "title": "Authoritative evidence resolves ambiguity"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": "isopact.stage11.presentation.v1"
+}

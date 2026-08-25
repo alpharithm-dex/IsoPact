@@ -1,0 +1,61 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: isopact-outcome-gateway
+  annotations:
+    run.googleapis.com/ingress: all
+    run.googleapis.com/invoker-iam-disabled: 'true'
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: '3'
+        run.googleapis.com/container-dependencies: '{"gateway":["otel-collector"]}'
+    spec:
+      containerConcurrency: 80
+      serviceAccountName: isopact-outcome-gateway@isopact-agentic-20260823.iam.gserviceaccount.com
+      timeoutSeconds: 60
+      containers:
+      - name: gateway
+        image: africa-south1-docker.pkg.dev/isopact-agentic-20260823/cloud-run-source-deploy/isopact-release@sha256:f9d507b92942cb739522f6572ae6f94c9b64835575454d83e617e79ee00d7332
+        ports:
+        - name: http1
+          containerPort: 8080
+        env:
+        - {name: ISOPACT_PROJECT, value: isopact-agentic-20260823}
+        - {name: GOOGLE_CLOUD_PROJECT, value: isopact-agentic-20260823}
+        - {name: ISOPACT_PROJECT_NUMBER, value: '442539309409'}
+        - {name: ISOPACT_DATABASE, value: '(default)'}
+        - {name: ISOPACT_EXPECTED_AUDIENCE, value: 'https://isopact-outcome-gateway-442539309409.africa-south1.run.app'}
+        - {name: ISOPACT_TELEMETRY_ENABLED, value: 'true'}
+        - {name: OTEL_EXPORTER_OTLP_ENDPOINT, value: 'http://localhost:4317'}
+        - {name: OTEL_TRACES_SAMPLER, value: parentbased_traceidratio}
+        - {name: OTEL_TRACES_SAMPLER_ARG, value: '1.0'}
+        - {name: ISOPACT_REGION, value: africa-south1}
+        - {name: ISOPACT_STAGE11_PACT_ID, value: 'pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793'}
+        resources:
+          limits: {cpu: 1000m, memory: 512Mi}
+        startupProbe:
+          tcpSocket: {port: 8080}
+          periodSeconds: 10
+          failureThreshold: 24
+      - name: otel-collector
+        image: us-docker.pkg.dev/cloud-ops-agents-artifacts/google-cloud-opentelemetry-collector/otelcol-google:0.156.0
+        args: ['--config=/etc/otelcol-google/config.yaml']
+        volumeMounts:
+        - {name: otel-config, mountPath: /etc/otelcol-google}
+        resources:
+          limits: {cpu: 1000m, memory: 512Mi}
+        startupProbe:
+          httpGet: {path: /, port: 13133}
+          periodSeconds: 5
+          failureThreshold: 12
+      volumes:
+      - name: otel-config
+        secret:
+          secretName: isopact-otel-collector-config
+          items:
+          - {key: latest, path: config.yaml}
+  traffic:
+  - latestRevision: true
+    percent: 100

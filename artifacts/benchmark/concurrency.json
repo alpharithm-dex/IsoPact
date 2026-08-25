@@ -1,0 +1,11 @@
+{
+  "bounded_test_duration_ms": 14.789,
+  "cross_pact_interference": 0,
+  "dual_primary_winners": 0,
+  "duplicate_economic_executions": 0,
+  "duplicate_refund_repetitions": 100,
+  "firestore_retries": 0,
+  "independent_pacts": 50,
+  "production_throughput_claim": false,
+  "refund_replacement_repetitions": 100
+}

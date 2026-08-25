@@ -1,0 +1,23 @@
+{
+  "deterministic_plan_validation": {
+    "evaluations": 1000,
+    "max_ms": 0.2924,
+    "p50_ms": 0.0218,
+    "p95_ms": 0.091
+  },
+  "environment": "local single-process timings; not a production scale claim",
+  "execution_time_precondition_validation": {
+    "evaluations": 1000,
+    "max_ms": 0.0059,
+    "p50_ms": 0.0002,
+    "p95_ms": 0.0012
+  },
+  "gemini_resolver_latency_ms": [
+    10294,
+    8727,
+    13255,
+    8474,
+    10561
+  ],
+  "model_calls_during_deterministic_authorization": 0
+}

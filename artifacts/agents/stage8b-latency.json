@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-08-24T02:19:07.354971+00:00",
+  "scope": "small Stage 8B functional proof sample; not a throughput benchmark",
+  "sample_count": 8,
+  "agent_to_outcome_gateway_ms": {
+    "samples": [
+      1780.447,
+      653.098,
+      571.135,
+      446.592,
+      579.813,
+      432.385,
+      575.3,
+      465.59
+    ],
+    "p50": 573.217,
+    "p95_nearest_rank": 1780.447
+  },
+  "firestore_authorization_ms": {
+    "samples": [
+      748.054,
+      60.827,
+      71.579,
+      25.785,
+      66.611,
+      33.051,
+      73.168,
+      26.532
+    ],
+    "p50": 63.719,
+    "p95_nearest_rank": 748.054
+  },
+  "full_gateway_action_ms": {
+    "samples": [
+      1377.865,
+      251.7,
+      187.426,
+      42.118,
+      179.658,
+      52.213,
+      178.657,
+      42.918
+    ],
+    "p50": 179.157,
+    "p95_nearest_rank": 1377.865
+  }
+}

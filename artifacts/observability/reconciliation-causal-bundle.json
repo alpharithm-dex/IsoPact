@@ -1,0 +1,650 @@
+{
+  "scenario": "reconciliation",
+  "pact": "pact_stage7_live_20260824212114",
+  "source": "LIVE_CLOUD_TRACE_AND_FIRESTORE",
+  "trace_ids": [
+    "6c95310b98f8d77e98fa78cdee5c3078",
+    "6d84c9f0056216c5210041b1b945e7d4",
+    "7c9d867dbc9216e3278d57c9aebf5fdd",
+    "c308c8d96c555675a9b8f2785500317c",
+    "00147c15edf10e3d438d489453ebdeef",
+    "00374345c0eb6a53dc591ecd037e58fb",
+    "009fa2ca1f398709ef20b1c07f7864df",
+    "00d349112ea430b3ed4b4fab24bddb44",
+    "011eac6292b2dd54470bcbd22faa3084",
+    "015f27a0350b59bc65bf1bdb17679c70",
+    "01689471b0ef5769674e2157154f2fbe",
+    "0174d9470f5121480a4f18cd8359397a",
+    "019dc6c40c1c485d5668c91fba5f208e",
+    "01a87607a053490fee572f9d291bb3af",
+    "01c6b6c66b73833e0ea56f3565346cf2",
+    "0263667ad81263b8828fd23fab7c8533",
+    "02e691cd6532eb610bc1d729dd3a6a8a",
+    "039c520f0eb66bebabaa458b57d74503",
+    "03beb34feb6e5ffb0be522d62ff55277",
+    "040d066b101cda50ede972e36c284275",
+    "0416aa10a984346d65d7be95400336ae",
+    "045fe9f36e401ff449a31e023deb4740",
+    "048dbb8b8666440bef605faee7b6066c",
+    "04ae4652dde1ba1d5f93cb8462271f15",
+    "4fabacf6e14ec2ef7349ad4ce52af6c8",
+    "ae268b5ddedebdeb92d69d17d347c034",
+    "f440979293c8304851bf6bf94cd9b6d9",
+    "66ee60587e4dc682f47ea40543cf7ce8"
+  ],
+  "live_spans": [
+    "isopact.compensation.execute",
+    "isopact.compensation.precondition",
+    "isopact.invariants.evaluate",
+    "isopact.resolution.validate",
+    "isopact.resolver.reason"
+  ],
+  "traces": [
+    {
+      "trace_id": "6c95310b98f8d77e98fa78cdee5c3078",
+      "spans": [
+        {
+          "span_id": "12470018013395608642",
+          "parent_span_id": null,
+          "name": "isopact.invariants.evaluate",
+          "start_time": "2026-08-24T21:21:33.700654285Z",
+          "end_time": "2026-08-24T21:21:33.701212157Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114",
+            "isopact.rule.id": "commerce_missing_order_rules",
+            "isopact.rule.version": "1"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "6d84c9f0056216c5210041b1b945e7d4",
+      "spans": [
+        {
+          "span_id": "10862054250554265573",
+          "parent_span_id": null,
+          "name": "isopact.invariants.evaluate",
+          "start_time": "2026-08-24T21:21:14.662985051Z",
+          "end_time": "2026-08-24T21:21:14.663551862Z",
+          "labels": {
+            "isopact.rule.id": "commerce_missing_order_rules",
+            "isopact.rule.version": "1",
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "7c9d867dbc9216e3278d57c9aebf5fdd",
+      "spans": [
+        {
+          "span_id": "13635828615376430656",
+          "parent_span_id": null,
+          "name": "isopact.invariants.evaluate",
+          "start_time": "2026-08-24T21:21:33.791301177Z",
+          "end_time": "2026-08-24T21:21:33.792227019Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114",
+            "isopact.rule.id": "commerce_missing_order_rules",
+            "isopact.rule.version": "1"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "c308c8d96c555675a9b8f2785500317c",
+      "spans": [
+        {
+          "span_id": "18284531036190508882",
+          "parent_span_id": null,
+          "name": "isopact.resolver.reason",
+          "start_time": "2026-08-24T21:21:19.042352723Z",
+          "end_time": "2026-08-24T21:21:32.108350294Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114",
+            "gen_ai.request.model": "gemini-3.5-flash",
+            "gen_ai.system": "google_vertex_ai"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "00147c15edf10e3d438d489453ebdeef",
+      "spans": [
+        {
+          "span_id": "1958176709306320156",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.010271422Z",
+          "end_time": "2026-08-24T21:21:34.010351602Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "00374345c0eb6a53dc591ecd037e58fb",
+      "spans": [
+        {
+          "span_id": "10623935692008445704",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.101265044Z",
+          "end_time": "2026-08-24T21:21:34.101337404Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "009fa2ca1f398709ef20b1c07f7864df",
+      "spans": [
+        {
+          "span_id": "6443273516853632567",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.996967949Z",
+          "end_time": "2026-08-24T21:21:33.997045380Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "00d349112ea430b3ed4b4fab24bddb44",
+      "spans": [
+        {
+          "span_id": "4181366675231771326",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.012154386Z",
+          "end_time": "2026-08-24T21:21:34.012224206Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "011eac6292b2dd54470bcbd22faa3084",
+      "spans": [
+        {
+          "span_id": "7394463296525278891",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.029799780Z",
+          "end_time": "2026-08-24T21:21:34.029884650Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "015f27a0350b59bc65bf1bdb17679c70",
+      "spans": [
+        {
+          "span_id": "8513123218136255105",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.985637592Z",
+          "end_time": "2026-08-24T21:21:33.985716222Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "01689471b0ef5769674e2157154f2fbe",
+      "spans": [
+        {
+          "span_id": "6720435581717248501",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.153629122Z",
+          "end_time": "2026-08-24T21:21:34.153700672Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0174d9470f5121480a4f18cd8359397a",
+      "spans": [
+        {
+          "span_id": "5778076703382866745",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.158221143Z",
+          "end_time": "2026-08-24T21:21:34.158289603Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "019dc6c40c1c485d5668c91fba5f208e",
+      "spans": [
+        {
+          "span_id": "10881105343515190877",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.113178553Z",
+          "end_time": "2026-08-24T21:21:34.113248733Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "01a87607a053490fee572f9d291bb3af",
+      "spans": [
+        {
+          "span_id": "1250052443923624099",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.003137354Z",
+          "end_time": "2026-08-24T21:21:34.003214915Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "01c6b6c66b73833e0ea56f3565346cf2",
+      "spans": [
+        {
+          "span_id": "1358280806556846848",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.117162623Z",
+          "end_time": "2026-08-24T21:21:34.117231923Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0263667ad81263b8828fd23fab7c8533",
+      "spans": [
+        {
+          "span_id": "10165770043556446102",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.994286103Z",
+          "end_time": "2026-08-24T21:21:33.994376893Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "02e691cd6532eb610bc1d729dd3a6a8a",
+      "spans": [
+        {
+          "span_id": "15080325043348117875",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.045230397Z",
+          "end_time": "2026-08-24T21:21:34.045300637Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "039c520f0eb66bebabaa458b57d74503",
+      "spans": [
+        {
+          "span_id": "2942744225793660485",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.977541482Z",
+          "end_time": "2026-08-24T21:21:33.977616152Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "03beb34feb6e5ffb0be522d62ff55277",
+      "spans": [
+        {
+          "span_id": "10988802795915842225",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.973601112Z",
+          "end_time": "2026-08-24T21:21:33.973672562Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "040d066b101cda50ede972e36c284275",
+      "spans": [
+        {
+          "span_id": "5716926227054938498",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.132712681Z",
+          "end_time": "2026-08-24T21:21:34.132783871Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0416aa10a984346d65d7be95400336ae",
+      "spans": [
+        {
+          "span_id": "2692457764881603488",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.053413957Z",
+          "end_time": "2026-08-24T21:21:34.053492238Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "045fe9f36e401ff449a31e023deb4740",
+      "spans": [
+        {
+          "span_id": "12981788312820226766",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.144158819Z",
+          "end_time": "2026-08-24T21:21:34.144237279Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "048dbb8b8666440bef605faee7b6066c",
+      "spans": [
+        {
+          "span_id": "9870188347293156562",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.127642119Z",
+          "end_time": "2026-08-24T21:21:34.127713279Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "04ae4652dde1ba1d5f93cb8462271f15",
+      "spans": [
+        {
+          "span_id": "9138021776877088249",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:34.040340035Z",
+          "end_time": "2026-08-24T21:21:34.040422475Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "4fabacf6e14ec2ef7349ad4ce52af6c8",
+      "spans": [
+        {
+          "span_id": "15596668952362479608",
+          "parent_span_id": null,
+          "name": "isopact.compensation.execute",
+          "start_time": "2026-08-24T21:21:32.862027496Z",
+          "end_time": "2026-08-24T21:21:33.246025154Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114",
+            "isopact.compensation.id": "carrier_cancel_unaccepted_label_v1"
+          }
+        },
+        {
+          "span_id": "12415750484625050392",
+          "parent_span_id": "15596668952362479608",
+          "name": "isopact.compensation.precondition",
+          "start_time": "2026-08-24T21:21:33.028032672Z",
+          "end_time": "2026-08-24T21:21:33.028166352Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114",
+            "isopact.compensation.id": "carrier_cancel_unaccepted_label_v1"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "ae268b5ddedebdeb92d69d17d347c034",
+      "spans": [
+        {
+          "span_id": "361107615252921565",
+          "parent_span_id": null,
+          "name": "isopact.compensation.execute",
+          "start_time": "2026-08-24T21:21:33.577876135Z",
+          "end_time": "2026-08-24T21:21:33.666786222Z",
+          "labels": {
+            "isopact.compensation.id": "crm_reverse_unused_goodwill_v1",
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        },
+        {
+          "span_id": "17401680498487582091",
+          "parent_span_id": "361107615252921565",
+          "name": "isopact.compensation.precondition",
+          "start_time": "2026-08-24T21:21:33.616384969Z",
+          "end_time": "2026-08-24T21:21:33.616415409Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114",
+            "isopact.compensation.id": "crm_reverse_unused_goodwill_v1"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "f440979293c8304851bf6bf94cd9b6d9",
+      "spans": [
+        {
+          "span_id": "765383008060345290",
+          "parent_span_id": null,
+          "name": "isopact.compensation.execute",
+          "start_time": "2026-08-24T21:21:33.246348795Z",
+          "end_time": "2026-08-24T21:21:33.346816Z",
+          "labels": {
+            "isopact.compensation.id": "warehouse_release_reserved_stock_v1",
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        },
+        {
+          "span_id": "397717960658629975",
+          "parent_span_id": "765383008060345290",
+          "name": "isopact.compensation.precondition",
+          "start_time": "2026-08-24T21:21:33.270808725Z",
+          "end_time": "2026-08-24T21:21:33.270834285Z",
+          "labels": {
+            "isopact.compensation.id": "warehouse_release_reserved_stock_v1",
+            "isopact.pact_id": "pact_stage7_live_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "66ee60587e4dc682f47ea40543cf7ce8",
+      "spans": [
+        {
+          "span_id": "14564104802009773663",
+          "parent_span_id": null,
+          "name": "isopact.compensation.execute",
+          "start_time": "2026-08-24T21:21:33.437078231Z",
+          "end_time": "2026-08-24T21:21:33.474232572Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage7_live_20260824212114",
+            "isopact.compensation.id": "crm_reverse_unused_goodwill_v1"
+          }
+        }
+      ]
+    }
+  ],
+  "business_snapshot": {
+    "root": {
+      "stage6_latest_economic_snapshot_id": "economic_snapshot_064b06eea1670face52c21dcff4eeff8",
+      "created_at": "2026-08-23T20:00:00Z",
+      "updated_at": "2026-08-23T20:00:00Z",
+      "stage6_open_conflict_ids": [],
+      "pact_id": "pact_stage7_live_20260824212114",
+      "evaluation_rule_set_version": "1",
+      "stage6_lifecycle": "SETTLED",
+      "status": "ACTIVE",
+      "evaluation_rule_set_id": "commerce_missing_order_rules",
+      "graph_revision": 1,
+      "authorization_policy_version": "commerce_missing_order_v1@1"
+    },
+    "collections": {
+      "claims": [],
+      "evidence": [
+        {
+          "rank": 1,
+          "evidence_id": "ev_carrier_cancelled_live",
+          "occurred_at": "2026-08-23T20:00:00Z",
+          "source_system": "carrier",
+          "target_id": "SHIP-001",
+          "resolved_state": "CANCELLED",
+          "authenticity": "VERIFIED"
+        },
+        {
+          "rank": 1,
+          "evidence_id": "ev_warehouse_released_live",
+          "occurred_at": "2026-08-23T20:00:00Z",
+          "source_system": "warehouse",
+          "target_id": "STK-001",
+          "resolved_state": "RELEASED",
+          "authenticity": "VERIFIED"
+        }
+      ],
+      "invariant_conflicts": [
+        {
+          "last_evaluated_at": "2026-08-23T20:00:00Z",
+          "related_evidence_ids": [],
+          "rule_version": "1.0.0",
+          "pact_id": "pact_stage7_live_20260824212114",
+          "resolution_eligibility": "REGISTERED_COMPENSATION_CANDIDATE",
+          "first_detected_at": "2026-08-23T20:00:00Z",
+          "rule_id": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+          "conflict_id": "conflict_4a662ed2944956831cbb599034956d98",
+          "economic_impact": {
+            "currency": "USD",
+            "minor_units": 20000
+          },
+          "status": "RESOLVED",
+          "severity": "CRITICAL",
+          "human_approval_requirement": null,
+          "related_operation_ids": [
+            "op_refund_a",
+            "op_replacement"
+          ]
+        }
+      ],
+      "compensation_executions": [
+        {
+          "planned_against_state": "RESERVED",
+          "trace_id": "stage7-live-primary",
+          "precondition_result": "PASS",
+          "executed_against_state": "RESERVED",
+          "evidence_ids": [],
+          "conflict_ids": [
+            "conflict_4a662ed2944956831cbb599034956d98"
+          ],
+          "state": "CONFIRMED",
+          "execution_id": "compensation_execution_79dfd9f344c89b8f4271576c3c0dc469",
+          "target_id": "STK-001",
+          "external_call_executed": true,
+          "target_system": "warehouse",
+          "validated_against_state": "RESERVED",
+          "updated_at": "2026-08-23T20:00:00Z",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "pact_id": "pact_stage7_live_20260824212114",
+          "authority_tier": "AUTOMATIC",
+          "registry_action_id": "warehouse_release_reserved_stock_v1",
+          "plan_id": "resolution_plan_37ec2f08d60887b15b8b8fa5c7c05c2b",
+          "registry_version": "1",
+          "semantic_operation_key": "compensation_operation_3588a86b07591ba2ea6a07502d619374",
+          "approval_id": null
+        },
+        {
+          "planned_against_state": "ISSUED",
+          "trace_id": "stage7-live-approval",
+          "precondition_result": "PASS",
+          "executed_against_state": "ISSUED",
+          "evidence_ids": [],
+          "conflict_ids": [
+            "conflict_4a662ed2944956831cbb599034956d98"
+          ],
+          "state": "CONFIRMED",
+          "execution_id": "compensation_execution_75f352bf2cb8eb0b0f259460f85173dc",
+          "target_id": "CR-001",
+          "external_call_executed": true,
+          "target_system": "crm",
+          "validated_against_state": "ISSUED",
+          "updated_at": "2026-08-23T20:00:00Z",
+          "economic_effect_category": "GOODWILL_REVERSAL",
+          "pact_id": "pact_stage7_live_20260824212114",
+          "authority_tier": "HUMAN_APPROVAL_REQUIRED",
+          "registry_action_id": "crm_reverse_unused_goodwill_v1",
+          "plan_id": "resolution_plan_f099fc4184b99ca606da6563ab71503f",
+          "registry_version": "1",
+          "semantic_operation_key": "compensation_operation_5be55ec0d50b043079e67c159cee4eee",
+          "approval_id": "approval_c7875789835bc3f76665fef01faad131"
+        },
+        {
+          "planned_against_state": "CREATED",
+          "trace_id": "stage7-live-primary",
+          "precondition_result": "PASS",
+          "executed_against_state": "CREATED",
+          "evidence_ids": [],
+          "conflict_ids": [
+            "conflict_4a662ed2944956831cbb599034956d98"
+          ],
+          "state": "CONFIRMED",
+          "execution_id": "compensation_execution_9c609ad9e7635257abedb8d252dac0eb",
+          "target_id": "SHIP-001",
+          "external_call_executed": true,
+          "target_system": "carrier",
+          "validated_against_state": "CREATED",
+          "updated_at": "2026-08-23T20:00:00Z",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "pact_id": "pact_stage7_live_20260824212114",
+          "authority_tier": "AUTOMATIC",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "plan_id": "resolution_plan_37ec2f08d60887b15b8b8fa5c7c05c2b",
+          "registry_version": "1",
+          "semantic_operation_key": "compensation_operation_9d667c1a68b50d07b7f1830a67de2fa2",
+          "approval_id": null
+        }
+      ],
+      "settlement_receipts": [],
+      "graph_checkpoints": []
+    }
+  },
+  "completeness_result": "PASS_LIVE_RETRIEVED"
+}

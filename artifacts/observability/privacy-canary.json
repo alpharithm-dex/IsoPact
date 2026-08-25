@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-24T22:17:02.567852+00:00",
+  "request_marker": "ISOPACT_TRACE_PRIVACY_CANARY_20260824T221544_917F4B08_REQUEST",
+  "response_marker": "ISOPACT_TRACE_PRIVACY_CANARY_20260824T221544_917F4B08_RESPONSE",
+  "runtime_resource": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+  "invocation_ids": [
+    "e-fbf8e8f2-0ff0-49a7-a4a1-7ee570d30bbe"
+  ],
+  "recent_traces_scanned": 1,
+  "trace_matches": 0,
+  "trace_match_ids": [],
+  "logging_matches": 0,
+  "completion_upload_hooks_present": false,
+  "gcs_or_bigquery_completion_sink_configured": false,
+  "raw_model_content_observed": false,
+  "result": "PASS"
+}

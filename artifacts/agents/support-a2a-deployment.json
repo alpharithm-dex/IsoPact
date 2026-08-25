@@ -1,0 +1,12 @@
+{
+  "status": "FAILED_PRODUCT_RUNTIME_INCOMPATIBILITY",
+  "project": "isopact-agentic-20260823",
+  "location": "europe-west1",
+  "resource": "projects/442539309409/locations/europe-west1/reasoningEngines/4651998512748167168",
+  "template": "agentplatform.agent_engines.templates.a2a.A2aAgent",
+  "server_mode_requested": "EXPERIMENTAL",
+  "agent_card_skill": "resolve_missing_order_financially",
+  "error": "A2aAgent.register_operations() contains unsupported mode: a2a_extension. Supported modes are: ['', 'async', 'async_stream', 'bidi_stream', 'stream'].",
+  "a2a_claimed": false,
+  "fallback_claim": "No fallback protocol claim. Core AdkApp resources remain automatically registered as CUSTOM HTTP_JSON."
+}

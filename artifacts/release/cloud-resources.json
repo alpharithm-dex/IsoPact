@@ -1,0 +1,1208 @@
+{
+  "project": "isopact-agentic-20260823",
+  "queried_at": "2026-08-25T12:36:52.102339+00:00",
+  "query_status": {
+    "artifact_images": "OK",
+    "artifact_repositories": "OK",
+    "cloud_run_jobs": "OK",
+    "cloud_run_revisions": "OK",
+    "cloud_run_services": "OK",
+    "dashboards": "OK",
+    "enabled_apis": "OK",
+    "firestore": "OK",
+    "kms_keyrings": "OK",
+    "kms_keys": "OK",
+    "kms_versions": "OK",
+    "model_armor": "OK",
+    "project_iam": "OK",
+    "pubsub_subscriptions": "OK",
+    "pubsub_topics": "OK",
+    "reasoning_engines": "OK",
+    "secrets": "OK",
+    "service_accounts": "OK"
+  },
+  "resources": [
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": "isopact-outcome-gateway@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "type": "cloud_run_services"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00024-qnr",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00023-4s7",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00022-flq",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00021-hnc",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00020-gcq",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00019-lnd",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00018-fdw",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00017-blk",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00016-cxm",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00015-qsm",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00014-mzn",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00013-zlv",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00012-66r",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00011-pg6",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00010-tn6",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00009-7g8",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00008-w66",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00007-pgs",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00006-4bm",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00005-mqj",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00004-7nv",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00003-77v",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00002-cv8",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "isopact-outcome-gateway-00001-r6d",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_revisions"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "isopact-stage10c-proof",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "cloud_run_jobs"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/databases/(default)",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "firestore"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/topics/isopact-stage5-evidence",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "pubsub_topics"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/subscriptions/isopact-stage5-evidence-proof",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "pubsub_subscriptions"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "kms_keyrings"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "kms_keys"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/1",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "kms_versions"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "kms_versions"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/secrets/isopact-otel-collector-config",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "secrets"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/secrets/isopact-stripe-webhook-signing-secret",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "secrets"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/dashboards/377c888c-861e-459d-bd0f-97ec687cec44",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "dashboards"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-outcome-gateway@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/442539309409-compute@developer.gserviceaccount.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-resolver-invoker@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-evidence-ingestor@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-retention-invoker@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-stage10c-proof@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-checkpoint-signer@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-fulfillment-invoker@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-support-invoker@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/serviceAccounts/isopact-model-input-screener@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "service_accounts"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_repositories"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:3701e40138275130cf0c244f559660fb4ea7914f30e984e4bd83a438bc4edbfa",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:3af963b411ebcb334b463f4296d8c0c55bd09bc216396eceb07253bf3a44503e",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:5117123fc9ab746efe9bf36b0a9526c4586cef9cab4a9da3b0a4a172de6fecdf",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:6a83818d38db5027f541da612096b05ca2e9b9dc406f23fb4e0d1e5087c5ee3e",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:70cebebf952bdf1cd45b72583498a1a4bfe8952877c130df6aa6819743aab853",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:a4d90936f55e48de9d3471d1b29c91bf9f4cbbbfa3a6bec114711010434dc993",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:f0caf0836a7f55e7ff4899b6b6546168987d89666c4663f23150fb69ca1b1846",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": true,
+      "classification": "CANONICAL",
+      "exposure": "public-network/application-auth",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-outcome-gateway@sha256:f43852c9f54ddf20e24e682e992e6bee535ef4d9764d6848109324025c466382",
+      "purpose": "active IsoPact deployment/evidence dependency",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-pact-status@sha256:cf283256cdc252be501784181606bf100818d4e8ebad95aa7b2acea581ef7141",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-pact-status@sha256:f15c4d13344076756406392183ba4a9dd9be0096ceb8227a260f8b912c81b612",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-release@sha256:1905f9f99a4cbb2a69ce8990cba3f299381928d0bb22e9d472c9684ac34269f2",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-release@sha256:6293aaaf1ac6c8927d319019b0c9b27e6a0d93bcf93cd2c804ebca9bd4c0e3f6",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-release@sha256:f9d507b92942cb739522f6572ae6f94c9b64835575454d83e617e79ee00d7332",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:0613a596b397dacc1f629a829902dff73f0ce986d88472302e3517a24567ec50",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:14094b52410abdfe05151c9bc99356f1aaaedc68c1d32ef2af904c7de92d2111",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:1a0c0902414abc95ca04d540e9452f5666109e2105ad5c1f07b2479164ab5e57",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:3489998a9a3a686547a0ca9b46e3d7bc56af2ad4c4090032dc767a1f0aada74e",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:389354c63d9c37ea359b250e2bbf4c7c41bca7226f9f16362db9c22fc2b8d2b5",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:59d95681f1e357317138f5c335270e4f5bb3ff15ca86d7355978bb4954f50dd5",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:b28c769061cdb0bc8e3d4952164d4a3bb95340e4c5fcc43e61e340e34edf678c",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:b374d5c4a5731ef348045417eb510de25d08103ebef0e76c473d4b6a75ca3794",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:e1fdce0ce94f84ae0d02b467dc35e197938e024979efae6ea08e536e30713d0f",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:e84619630652a9d030375fce46223853838c0d758ff071daa2d95a3ea676421f",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage10c-proof@sha256:f980d1d3b3e780be4cdd9073807b8ee9a492d6a61112963432325219acf60438",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage11-ui@sha256:0162d7869bf8a2f018095a84c019017a9c0cb65486dc8eda04768f5bca2be7ed",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage11-ui@sha256:6c307bdadbfda90e3460cb4bd17e7a0b8f0d636f794cfd1d25243a87cc284c5b",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage11-ui@sha256:760e1b9e06837314ae2e6605bd7c9a1e33a7ae90ced70116dbe1478d0804515a",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "PROOF/TEST",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/africa-south1/repositories/cloud-run-source-deploy/dockerImages/isopact-stage11-ui@sha256:7f6accaae477e4eb430edf69ed210fc586c75950321bad821c7bdf303a474119",
+      "purpose": "retained reproducibility or historic verification resource",
+      "region": null,
+      "service_identity": null,
+      "type": "artifact_images"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/agentregistry.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/aiplatform.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/analyticshub.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/artifactregistry.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/bigquery.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/bigqueryconnection.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/bigquerydatapolicy.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/bigquerydatatransfer.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/bigquerymigration.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/bigqueryreservation.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/bigquerystorage.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/cloudapis.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/cloudbuild.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/cloudkms.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/cloudtrace.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/containerregistry.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/dataform.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/dataplex.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/datastore.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/edgecache.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/firebaserules.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/firestore.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/iam.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/iamcredentials.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/logging.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/modelarmor.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/monitoring.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/networkservices.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/pubsub.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/run.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/secretmanager.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/servicemanagement.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/serviceusage.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/sql-component.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/storage-api.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/storage-component.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/storage.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/services/telemetry.googleapis.com",
+      "purpose": "project-level supporting inventory",
+      "region": null,
+      "service_identity": null,
+      "type": "enabled_apis"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "reasoning_engines"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "reasoning_engines"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "reasoning_engines"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "reasoning_engines"
+    },
+    {
+      "canonical": false,
+      "classification": "OPTIONAL",
+      "exposure": "platform-managed",
+      "name": "projects/isopact-agentic-20260823/locations/europe-west1/templates/isopact-untrusted-input-v1",
+      "purpose": "live project resource; not required by canonical manifest",
+      "region": null,
+      "service_identity": null,
+      "type": "model_armor"
+    }
+  ],
+  "schema_version": "stage13-cloud-inventory-v1",
+  "unknown_resources": 0
+}

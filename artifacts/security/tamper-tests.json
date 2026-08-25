@@ -1,0 +1,120 @@
+{
+  "all_tampering_detected": true,
+  "cases": {
+    "deleted_intermediate_claim": {
+      "detected": true,
+      "verification": {
+        "checkpoint_signature_valid": true,
+        "claim_chain_valid": false,
+        "overall_integrity_valid": false,
+        "reason_codes": [
+          "NON_CONTIGUOUS_SEQUENCE",
+          "PREVIOUS_HASH_MISMATCH",
+          "TERMINAL_HASH_OR_SEQUENCE_MISMATCH"
+        ],
+        "receipt_checkpoint_matches": true,
+        "receipt_references_consistent": true,
+        "receipt_signature_valid": true,
+        "terminal_hash_matches": false
+      }
+    },
+    "edited_claim": {
+      "detected": true,
+      "verification": {
+        "checkpoint_signature_valid": true,
+        "claim_chain_valid": false,
+        "overall_integrity_valid": false,
+        "reason_codes": [
+          "CLAIM_HASH_MISMATCH",
+          "PAYLOAD_HASH_MISMATCH",
+          "TERMINAL_HASH_OR_SEQUENCE_MISMATCH"
+        ],
+        "receipt_checkpoint_matches": true,
+        "receipt_references_consistent": true,
+        "receipt_signature_valid": true,
+        "terminal_hash_matches": false
+      }
+    },
+    "injected_claim": {
+      "detected": true,
+      "verification": {
+        "checkpoint_signature_valid": true,
+        "claim_chain_valid": false,
+        "overall_integrity_valid": false,
+        "reason_codes": [
+          "DUPLICATE_SEQUENCE",
+          "NON_CONTIGUOUS_SEQUENCE",
+          "PREVIOUS_HASH_MISMATCH",
+          "TERMINAL_HASH_OR_SEQUENCE_MISMATCH"
+        ],
+        "receipt_checkpoint_matches": true,
+        "receipt_references_consistent": true,
+        "receipt_signature_valid": true,
+        "terminal_hash_matches": false
+      }
+    },
+    "modified_receipt_amount": {
+      "detected": true,
+      "verification": {
+        "checkpoint_signature_valid": true,
+        "claim_chain_valid": true,
+        "overall_integrity_valid": false,
+        "reason_codes": [
+          "SIGNATURE_INVALID"
+        ],
+        "receipt_checkpoint_matches": true,
+        "receipt_references_consistent": true,
+        "receipt_signature_valid": false,
+        "terminal_hash_matches": true
+      }
+    },
+    "reordered_claims": {
+      "detected": true,
+      "verification": {
+        "checkpoint_signature_valid": true,
+        "claim_chain_valid": false,
+        "overall_integrity_valid": false,
+        "reason_codes": [
+          "NON_CONTIGUOUS_SEQUENCE",
+          "PREVIOUS_HASH_MISMATCH",
+          "TERMINAL_HASH_OR_SEQUENCE_MISMATCH"
+        ],
+        "receipt_checkpoint_matches": true,
+        "receipt_references_consistent": true,
+        "receipt_signature_valid": true,
+        "terminal_hash_matches": false
+      }
+    },
+    "wrong_public_key": {
+      "detected": true,
+      "verification": {
+        "checkpoint_signature_valid": false,
+        "claim_chain_valid": true,
+        "overall_integrity_valid": false,
+        "reason_codes": [
+          "SIGNATURE_INVALID"
+        ],
+        "receipt_checkpoint_matches": true,
+        "receipt_references_consistent": true,
+        "receipt_signature_valid": false,
+        "terminal_hash_matches": true
+      }
+    }
+  },
+  "stale_checkpoint_substitution": {
+    "detected": true,
+    "verification": {
+      "checkpoint_signature_valid": true,
+      "claim_chain_valid": true,
+      "overall_integrity_valid": false,
+      "reason_codes": [
+        "RECEIPT_CHECKPOINT_BINDING_MISMATCH",
+        "RECEIPT_REFERENCE_INCONSISTENCY"
+      ],
+      "receipt_checkpoint_matches": false,
+      "receipt_references_consistent": false,
+      "receipt_signature_valid": true,
+      "terminal_hash_matches": true
+    }
+  }
+}

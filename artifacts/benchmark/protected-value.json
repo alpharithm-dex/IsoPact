@@ -1,0 +1,7 @@
+{
+  "authorized_value_recovered_minor_units": 100000,
+  "canonical_projected_invalid_value_prevented_minor_units": 40000,
+  "double_count_cases": 0,
+  "invalid_action_prevented_minor_units": 300000,
+  "legitimate_value_delayed_minor_units": 25000
+}

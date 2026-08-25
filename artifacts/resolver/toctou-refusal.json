@@ -1,0 +1,32 @@
+{
+  "decision": "PRECONDITION_FAILED",
+  "execution": {
+    "approval_id": null,
+    "authority_tier": "AUTOMATIC",
+    "conflict_ids": [
+      "conflict_f1ee145e39c54c0f21d311069729f855"
+    ],
+    "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+    "evidence_ids": [],
+    "executed_against_state": "ACCEPTED",
+    "execution_id": "compensation_execution_6d09627077ce44262fbe236263f1c32d",
+    "external_call_executed": false,
+    "pact_id": "pact_stage7_local",
+    "plan_id": "resolution_plan_ad869870ceeda2c4d0572fb4c7186ef7",
+    "planned_against_state": "CREATED",
+    "precondition_result": "EXECUTION_STATE_INELIGIBLE",
+    "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+    "registry_version": "1",
+    "semantic_operation_key": "compensation_operation_599ec90143eea4cca0ac143a0bb272bd",
+    "state": "PRECONDITION_FAILED",
+    "target_id": "SHIP-001",
+    "target_system": "carrier",
+    "trace_id": "local-proof",
+    "updated_at": "2026-08-23T20:00:00Z",
+    "validated_against_state": "CREATED"
+  },
+  "execution_state": "ACCEPTED",
+  "external_calls": 0,
+  "pact_state": "VIOLATED",
+  "planned_state": "CREATED"
+}

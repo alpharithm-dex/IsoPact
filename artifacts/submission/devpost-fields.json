@@ -1,0 +1,26 @@
+{
+  "project_name": "IsoPact",
+  "tagline": "Outcome settlement infrastructure that keeps independent enterprise agents from succeeding locally while the business fails globally.",
+  "category": "Fortified Enterprise Fleet",
+  "hosted_project": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app/",
+  "repository_url": "REPO_REMOTE_REQUIRED",
+  "reproducible_testing_instructions": true,
+  "google_sdks": ["Agent Development Kit (ADK)", "Google GenAI SDK (google-genai)"],
+  "google_cloud_services": ["Cloud Run", "Firestore", "Pub/Sub"],
+  "google_ai_model": "Gemini 3.5 Flash via Vertex AI",
+  "architecture_file": "artifacts/submission/isopact-architecture.png",
+  "description_file": "docs/submission/devpost.md",
+  "testing_time_minutes": 3,
+  "needs_user_confirmation": [
+    "submitter type",
+    "country",
+    "organization name / N/A behavior",
+    "exact project start date",
+    "final repository URL",
+    "Startup Prize eligibility",
+    "corporate email",
+    "final video URL"
+  ],
+  "official_live_form_verified": false,
+  "official_live_form_note": "Local .devpost-hackathon-state.json was absent; verify against the current form before submission."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED",
+  "checks": {
+    "all_required_artifacts": true,
+    "privacy_canary_absent": true,
+    "primary_custom_trace_live": false,
+    "trace_log_correlation": true,
+    "representative_metrics_live": true,
+    "dashboard_live": true,
+    "reconciliation_live_complete": false,
+    "toctou_live_complete": false,
+    "outcome_unknown_live_complete": false,
+    "overhead_measured": false
+  },
+  "missing": []
+}

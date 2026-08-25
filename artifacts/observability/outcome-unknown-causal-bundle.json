@@ -1,0 +1,137 @@
+{
+  "scenario": "outcome_unknown",
+  "pact": "pact_stage10c_unknown_20260824212114",
+  "source": "LIVE_CLOUD_TRACE_AND_FIRESTORE",
+  "trace_ids": [
+    "5a8401b34f59729fb7f3fa05212613ec",
+    "6380d0f296ea2d927367a78a64da6029",
+    "a5607802efcd640243b5135975be6a91",
+    "d28882d7678f718a16ae17f3124a700d",
+    "9ef95218dd5c7fe4ff5ee5a915de23ef"
+  ],
+  "live_spans": [
+    "isopact.compensation.execute",
+    "isopact.compensation.precondition",
+    "isopact.invariants.evaluate",
+    "isopact.resolution.validate"
+  ],
+  "traces": [
+    {
+      "trace_id": "5a8401b34f59729fb7f3fa05212613ec",
+      "spans": [
+        {
+          "span_id": "16023185283263460453",
+          "parent_span_id": null,
+          "name": "isopact.invariants.evaluate",
+          "start_time": "2026-08-24T21:21:33.941791445Z",
+          "end_time": "2026-08-24T21:21:33.942173145Z",
+          "labels": {
+            "isopact.rule.id": "commerce_missing_order_rules",
+            "isopact.pact_id": "pact_stage10c_unknown_20260824212114",
+            "isopact.rule.version": "1"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "6380d0f296ea2d927367a78a64da6029",
+      "spans": [
+        {
+          "span_id": "11214428600416939195",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.942672896Z",
+          "end_time": "2026-08-24T21:21:33.942708857Z",
+          "labels": {
+            "isopact.plan.id": "resolution_plan_97a3e654cbeeee97091edcf133940984",
+            "isopact.pact_id": "pact_stage10c_unknown_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "a5607802efcd640243b5135975be6a91",
+      "spans": [
+        {
+          "span_id": "10306426714282632526",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.942486666Z",
+          "end_time": "2026-08-24T21:21:33.942573486Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage10c_unknown_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "d28882d7678f718a16ae17f3124a700d",
+      "spans": [
+        {
+          "span_id": "12280703858431806728",
+          "parent_span_id": null,
+          "name": "isopact.compensation.execute",
+          "start_time": "2026-08-24T21:21:33.942810847Z",
+          "end_time": "2026-08-24T21:21:33.942968887Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage10c_unknown_20260824212114",
+            "isopact.compensation.id": "carrier_cancel_unaccepted_label_v1"
+          }
+        },
+        {
+          "span_id": "10073223011636665849",
+          "parent_span_id": "12280703858431806728",
+          "name": "isopact.compensation.precondition",
+          "start_time": "2026-08-24T21:21:33.942881167Z",
+          "end_time": "2026-08-24T21:21:33.942891447Z",
+          "labels": {
+            "isopact.compensation.id": "carrier_cancel_unaccepted_label_v1",
+            "isopact.pact_id": "pact_stage10c_unknown_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "9ef95218dd5c7fe4ff5ee5a915de23ef",
+      "spans": [
+        {
+          "span_id": "7179190168751676878",
+          "parent_span_id": null,
+          "name": "isopact.compensation.execute",
+          "start_time": "2026-08-24T21:21:33.943135188Z",
+          "end_time": "2026-08-24T21:21:33.943148048Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage10c_unknown_20260824212114",
+            "isopact.compensation.id": "carrier_cancel_unaccepted_label_v1"
+          }
+        }
+      ]
+    }
+  ],
+  "business_snapshot": {
+    "root": {
+      "proof_scenario": "OUTCOME_UNKNOWN",
+      "stage10c_proof": {
+        "retry_after_restart": "DEFER",
+        "immediate_state": "OUTCOME_UNKNOWN",
+        "external_execution_count": 1,
+        "pact_id": "pact_stage10c_unknown_20260824212114",
+        "external_action_occurred": true,
+        "final_state": "CONFIRMED",
+        "authoritative_evidence": "ev_carrier_query",
+        "equivalent_retry": "DEFER"
+      },
+      "graph_state": "CONFIRMED",
+      "pact_id": "pact_stage10c_unknown_20260824212114"
+    },
+    "collections": {
+      "claims": [],
+      "evidence": [],
+      "invariant_conflicts": [],
+      "compensation_executions": [],
+      "settlement_receipts": [],
+      "graph_checkpoints": []
+    }
+  },
+  "completeness_result": "PASS_LIVE_RETRIEVED"
+}

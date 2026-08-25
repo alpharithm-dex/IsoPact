@@ -1,0 +1,132 @@
+{
+  "after_approval": {
+    "approval_id": "approval_bd51595594f4fae6307c9b78918eb658",
+    "authority_tier": "HUMAN_APPROVAL_REQUIRED",
+    "conflict_ids": [
+      "conflict_f1ee145e39c54c0f21d311069729f855"
+    ],
+    "economic_effect_category": "GOODWILL_REVERSAL",
+    "evidence_ids": [],
+    "executed_against_state": "ISSUED",
+    "execution_id": "compensation_execution_ff702707915ce8671fa8edc5c206ed62",
+    "external_call_executed": true,
+    "pact_id": "pact_stage7_local",
+    "plan_id": "resolution_plan_3ae5aabc7f5c1aa7257a91a270f94f51",
+    "planned_against_state": "ISSUED",
+    "precondition_result": "PASS",
+    "registry_action_id": "crm_reverse_unused_goodwill_v1",
+    "registry_version": "1",
+    "semantic_operation_key": "compensation_operation_07ab9d21c777f951a4024d316d10efed",
+    "state": "CONFIRMED",
+    "target_id": "CR-001",
+    "target_system": "crm",
+    "trace_id": "local-proof",
+    "updated_at": "2026-08-23T20:00:00Z",
+    "validated_against_state": "ISSUED"
+  },
+  "approval": {
+    "approval_id": "approval_bd51595594f4fae6307c9b78918eb658",
+    "compensation_execution_id": "compensation_execution_ff702707915ce8671fa8edc5c206ed62",
+    "decided_by": "stage7-approver@example.com",
+    "decision": "APPROVED",
+    "decision_reason": "approved",
+    "decision_timestamp": "2026-08-23T20:00:00Z",
+    "economic_impact": {
+      "currency": "USD",
+      "minor_units": 5000
+    },
+    "pact_id": "pact_stage7_local",
+    "policy_version": "commerce_missing_order_v1@1",
+    "reason": "Registry requires scoped human approval",
+    "registry_action_id": "crm_reverse_unused_goodwill_v1",
+    "registry_version": "1",
+    "requested_action": "crm.reverse_credit",
+    "requested_at": "2026-08-23T20:00:00Z",
+    "required_authority": "COMMERCE_FINANCIAL_REVERSAL_APPROVER",
+    "resolution_plan_id": "resolution_plan_3ae5aabc7f5c1aa7257a91a270f94f51",
+    "status": "APPROVED",
+    "target": "CR-001"
+  },
+  "before_approval": {
+    "approval_id": "approval_bd51595594f4fae6307c9b78918eb658",
+    "authority_tier": "HUMAN_APPROVAL_REQUIRED",
+    "conflict_ids": [
+      "conflict_f1ee145e39c54c0f21d311069729f855"
+    ],
+    "economic_effect_category": "GOODWILL_REVERSAL",
+    "evidence_ids": [],
+    "executed_against_state": null,
+    "execution_id": "compensation_execution_ff702707915ce8671fa8edc5c206ed62",
+    "external_call_executed": false,
+    "pact_id": "pact_stage7_local",
+    "plan_id": "resolution_plan_3ae5aabc7f5c1aa7257a91a270f94f51",
+    "planned_against_state": "ISSUED",
+    "precondition_result": null,
+    "registry_action_id": "crm_reverse_unused_goodwill_v1",
+    "registry_version": "1",
+    "semantic_operation_key": "compensation_operation_07ab9d21c777f951a4024d316d10efed",
+    "state": "AWAITING_APPROVAL",
+    "target_id": "CR-001",
+    "target_system": "crm",
+    "trace_id": "local-proof",
+    "updated_at": "2026-08-23T20:00:00Z",
+    "validated_against_state": "ISSUED"
+  },
+  "external_calls_after_approval": 1,
+  "external_calls_before_approval": 0,
+  "plan": {
+    "actions": [
+      {
+        "approval_requirement": "COMMERCE_FINANCIAL_REVERSAL_APPROVER",
+        "authority_tier": "HUMAN_APPROVAL_REQUIRED",
+        "compensation_action_type": "crm.reverse_credit",
+        "economic_effect_category": "GOODWILL_REVERSAL",
+        "forward_action_type": "crm.issue_credit",
+        "ordinal": 1,
+        "planned_against_state": "ISSUED",
+        "registry_action_id": "crm_reverse_unused_goodwill_v1",
+        "registry_version": "1",
+        "required_evidence_after_execution": [
+          "crm.credit.reversed"
+        ],
+        "semantic_operation_key": "compensation_operation_07ab9d21c777f951a4024d316d10efed",
+        "target_id": "CR-001",
+        "target_system": "crm",
+        "validated_against_state": "ISSUED"
+      }
+    ],
+    "conflict_ids": [
+      "conflict_f1ee145e39c54c0f21d311069729f855"
+    ],
+    "created_at": "2026-08-23T20:00:00Z",
+    "model": "stage7-proof",
+    "model_contribution": {
+      "conditions_or_uncertainties": [
+        "Authoritative recovery evidence remains required"
+      ],
+      "conflict_ids": [
+        "conflict_f1ee145e39c54c0f21d311069729f855"
+      ],
+      "expected_resolution_effect": "Remove replacement divergence without asserting refund settlement.",
+      "ordered_action_preferences": [
+        "crm_reverse_unused_goodwill_v1"
+      ],
+      "pact_id": "pact_stage7_local",
+      "reasoning_summary": "Select registered reversible reconciliation actions only.",
+      "requires_human_attention": true,
+      "selected_registry_action_ids": [
+        "crm_reverse_unused_goodwill_v1"
+      ]
+    },
+    "pact_id": "pact_stage7_local",
+    "plan_id": "resolution_plan_3ae5aabc7f5c1aa7257a91a270f94f51",
+    "policy_version": "commerce_missing_order_v1@1",
+    "proposed_by": "deterministic-fixture",
+    "reason_codes": [
+      "SCOPED_APPROVAL_REQUIRED"
+    ],
+    "registry_version": "1",
+    "status": "VALID_REQUIRES_APPROVAL",
+    "validator_model_calls": 0
+  }
+}

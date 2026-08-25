@@ -1,0 +1,130 @@
+{
+  "approval_references": [],
+  "authoritative_evidence_ids": [
+    "ev_c080c1216fc6c45924737aabfc1d79f7"
+  ],
+  "economic_position": {
+    "authorized_primary_value": 20000,
+    "blocked_value": 20000,
+    "captured_value": 20000,
+    "currency": "USD",
+    "failed_primary_value": 0,
+    "goodwill_authorized_value": 5000,
+    "goodwill_settled_value": 5000,
+    "legitimately_delayed_value": 0,
+    "other_exception_value": 0,
+    "pending_primary_value": 0,
+    "projected_excess_exposure": 5000,
+    "projected_total_compensation": 25000,
+    "protected_value": 40000,
+    "provenance": [
+      "fact_claim_ev_c080c1216fc6c45924737aabfc1d79f7",
+      "fact_claim_gateway_req-stage8b-e2e-fulfillment",
+      "fact_claim_gateway_req-stage8b-e2e-retention"
+    ],
+    "recoverable_candidate_value": 0,
+    "recovered_value": 0,
+    "replacement_committed_value": 0,
+    "replacement_projected_value": 0,
+    "settled_excess_exposure": 5000,
+    "settled_primary_value": 20000,
+    "settled_total_compensation": 25001
+  },
+  "exceptions": [],
+  "final_authoritative_external_states": {
+    "43b8220e8f24dc42f593b084bd57d861b91401d37296f621974e3d976a07d589": {
+      "attempt": 1,
+      "evidence_id": "ev_c080c1216fc6c45924737aabfc1d79f7",
+      "evidence_type": "stripe.refund.succeeded",
+      "external_object_id": "REF-43b8220e8f24",
+      "occurred_at": "2026-08-24T20:01:29.392634+00:00",
+      "rank": 1,
+      "resolution_path": "successful_refund",
+      "source_sequence": null,
+      "source_system": "stripe",
+      "state": "SUCCEEDED"
+    }
+  },
+  "final_checkpoint": {
+    "checkpoint_id": "checkpoint_pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2_00000008",
+    "terminal_claim_hash": "740a87e78a66a36a3d8e9b645a60e5dea3671a5ef7f1d5734a82c89d066b3de8",
+    "through_sequence": 8
+  },
+  "final_pact_lifecycle": "SETTLED",
+  "issuance_status": "SIGNED",
+  "original_requested_outcome": "resolve_missing_order",
+  "pact_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2",
+  "participants": [
+    {
+      "authenticated_principal": "isopact-fulfillment-v1",
+      "derived_from_claim_ids": [
+        "claim_gateway_req-stage8b-e2e-fulfillment"
+      ],
+      "display_name": "isopact-fulfillment-v1",
+      "kind": "AGENT",
+      "participant_id": "participant_isopact-fulfillment-v1",
+      "roles": [
+        "FULFILLMENT"
+      ]
+    },
+    {
+      "authenticated_principal": "isopact-resolver-v1",
+      "consequential_execution_performed": false,
+      "derived_from_claim_ids": [],
+      "derived_from_remote_invocation_ids": [
+        "e-2f643581-2f32-42ed-83bc-d791418cf1a6"
+      ],
+      "display_name": "isopact-resolver-v1",
+      "kind": "AGENT",
+      "participant_id": "participant_isopact-resolver-v1",
+      "roles": [
+        "RESOLVER"
+      ]
+    },
+    {
+      "authenticated_principal": "isopact-retention-v1",
+      "derived_from_claim_ids": [
+        "claim_gateway_req-stage8b-e2e-retention",
+        "claim_remote_req-stage8b-e2e-retention"
+      ],
+      "display_name": "isopact-retention-v1",
+      "kind": "AGENT",
+      "participant_id": "participant_isopact-retention-v1",
+      "roles": [
+        "RETENTION"
+      ]
+    },
+    {
+      "authenticated_principal": "isopact-support-v1",
+      "derived_from_claim_ids": [
+        "claim_gateway_req-stage8b-e2e-support",
+        "claim_gateway_req-stage8b-e2e-support-second",
+        "claim_remote_req-stage8b-e2e-support"
+      ],
+      "display_name": "isopact-support-v1",
+      "kind": "AGENT",
+      "participant_id": "participant_isopact-support-v1",
+      "roles": [
+        "SUPPORT"
+      ]
+    }
+  ],
+  "policy_version": "commerce_missing_order_v1@1",
+  "receipt_id": "receipt_pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2_00000008_all-participants",
+  "receipt_schema_version": "isopact.settlement-receipt.v1",
+  "reconciliation_actions": [],
+  "rule_versions": [
+    "commerce_missing_order_rules@1"
+  ],
+  "selected_resolution_path": "successful_refund",
+  "settlement_timestamp": "2026-08-24T20:01:29.392634+00:00",
+  "signature": "MEQCIEU1X6OzSUsD9j9NQ8op1duVQwXwhUFm+Tle861mc4G8AiBKI267Nfq2RG7PRHo1jsoBBv/QsD/hpsoTBxWrjeKsxQ==",
+  "signature_algorithm": "EC_SIGN_P256_SHA256",
+  "signing_key_resource": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing",
+  "signing_key_version": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2",
+  "subject_identifiers": {
+    "customer_id": "CUS-104",
+    "order_id": "ORD-8472",
+    "ticket_id": "JIRA-8472"
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "database": "(default)",
+  "dual_winners": 0,
+  "location": "africa-south1",
+  "project": "isopact-agentic-20260823",
+  "refund_wins": 5,
+  "replacement_wins": 5,
+  "round_results": [
+    {
+      "results": [
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103567.8476481,
+          "external_token": "external-refund-0",
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "943ff8c96188d8f0d947a257e9845f7d01723fe71d00ad503b4fc52c96efc5dc",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103563.5858472
+        },
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103567.289214,
+          "external_token": null,
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "bf7b1cea5068e695b304f7c5aba60f4751d0a117f80afc676c322db865393deb",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103563.5858824
+        }
+      ],
+      "round": 1,
+      "winners": [
+        "refund"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103575.2918529,
+          "external_token": null,
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "42e5e52d6d6afe73c42f90d6ec087f2d3f6141e95cfd13c98e3ed646be4a1b6b",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103572.9053226
+        },
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103575.672866,
+          "external_token": "external-replacement-1",
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "d9e447c22604e6e8af4a97404795faf05d473d17e16fa52522d4448318438f20",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103572.9052491
+        }
+      ],
+      "round": 2,
+      "winners": [
+        "replacement"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103582.2197534,
+          "external_token": null,
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "c34bd1fff671f61bf6ef31b24dad262fb10b8a413a4c3a09c4b23b616db9cb76",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103579.705776
+        },
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103582.222875,
+          "external_token": "external-replacement-1",
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "f3a6f23529fc43b11581ef39bf2b66620ed69e138ebdcc04db54c32bea9c28b3",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103579.7056837
+        }
+      ],
+      "round": 3,
+      "winners": [
+        "replacement"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103590.0093389,
+          "external_token": "external-refund-0",
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "6926c5d30dc89de9fa19abe086290fc16cbee54899c8d50f35e76d2c2e561108",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103586.3145105
+        },
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103589.1522634,
+          "external_token": null,
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "df041ccc41acc763a6944212ecdc3cef2cdbe02683f3e9a8a9a6c56c06cbaf5a",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103586.3144334
+        }
+      ],
+      "round": 4,
+      "winners": [
+        "refund"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103596.7927058,
+          "external_token": "external-refund-0",
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "ec040212ab329a20d3060c08ad26ab30534480b41b704387bd64dd02b80aa271",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103593.8713706
+        },
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103596.586842,
+          "external_token": null,
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "f40c634891ad59d7032fae00abdb1c2120bf9dcd08ebe817f18fb97b66239154",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103593.8714943
+        }
+      ],
+      "round": 5,
+      "winners": [
+        "refund"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103604.9152208,
+          "external_token": null,
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "87a730a076a8b9aa0fa0ef18401b52b771a5d2a48f919e4593e92a81d05858cc",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103600.6422162
+        },
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103605.7092825,
+          "external_token": "external-replacement-1",
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "6c0a0d565222931a4ebddc6b6f0f2280af2db73a7d805bdf913403abb2d60e1f",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103600.6422801
+        }
+      ],
+      "round": 6,
+      "winners": [
+        "replacement"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 1,
+          "decision": "BLOCK",
+          "ended": 103614.3519842,
+          "external_token": null,
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "18a2f50360b7fa8ee49c433fb3571cc86d48547a4e874ad2e1a46d392fe4d9c5",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103611.0716125
+        },
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103614.0277763,
+          "external_token": "external-replacement-1",
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "73ea6abaeb53832d05ee6b3f25907fb46a4f2d5f7d78c1ccc7095bea27d1b561",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103611.0715466
+        }
+      ],
+      "round": 7,
+      "winners": [
+        "replacement"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103621.4299116,
+          "external_token": "external-refund-0",
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "1a6129ca84a98e062a32f2f7529bb7558815efcd4f4e42bc7ae1e6e6f992b32c",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103618.3648046
+        },
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103620.6770702,
+          "external_token": null,
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "47499d0cf1c8d8757a775c87085e751e49f7c7742037a36a74f5c4c03404bdf5",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103618.3647632
+        }
+      ],
+      "round": 8,
+      "winners": [
+        "refund"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103627.7903369,
+          "external_token": "external-refund-0",
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "237148e36c9f0c5d792cf13d1d28666d8d6c6f3281692bb9f3e21e028d7bd8b5",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103625.1697012
+        },
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103627.5890704,
+          "external_token": null,
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "e52b0b58f55ba6715a2111cfee69909750bb1123f1ea924fe102eb0683069634",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103625.1697941
+        }
+      ],
+      "round": 9,
+      "winners": [
+        "refund"
+      ]
+    },
+    {
+      "results": [
+        {
+          "callback_invocations": 2,
+          "decision": "BLOCK",
+          "ended": 103634.133045,
+          "external_token": null,
+          "index": 0,
+          "kind": "refund",
+          "ok": true,
+          "operation_identity": "568b9cda6ea3e66bdf1a58f955f3886cb866d20cf1e6a49186300881622c7839",
+          "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+          "reservation_state_after": "RESERVED",
+          "started": 103631.8963438
+        },
+        {
+          "callback_invocations": 3,
+          "decision": "ALLOW",
+          "ended": 103634.5327632,
+          "external_token": "external-replacement-1",
+          "index": 1,
+          "kind": "replacement",
+          "ok": true,
+          "operation_identity": "51aa31d5754cf068afbd7c7209504b3923105490db366b380bfdb14d0c790ba9",
+          "reason_code": "AUTHORITY_RESERVED",
+          "reservation_state_after": "CONFIRMED",
+          "started": 103631.8962628
+        }
+      ],
+      "round": 10,
+      "winners": [
+        "replacement"
+      ]
+    }
+  ],
+  "rounds": 10,
+  "run_id": "20260823204536_81299571",
+  "timestamp": "2026-08-23T20:45:38.545607+00:00",
+  "transaction_callback_invocations": 49
+}

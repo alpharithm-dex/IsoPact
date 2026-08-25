@@ -1,0 +1,60 @@
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: isopact-stage10c-proof
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/container-dependencies: '{"proof":["otel-collector"]}'
+    spec:
+      taskCount: 1
+      template:
+        spec:
+          serviceAccountName: isopact-stage10c-proof@isopact-agentic-20260823.iam.gserviceaccount.com
+          maxRetries: 0
+          timeoutSeconds: '1800'
+          containers:
+          - name: proof
+            image: africa-south1-docker.pkg.dev/isopact-agentic-20260823/cloud-run-source-deploy/isopact-stage10c-proof@sha256:e84619630652a9d030375fce46223853838c0d758ff071daa2d95a3ea676421f
+            command: [python]
+            args:
+            - /app/scripts/run_stage10c_cloud.py
+            - --project
+            - isopact-agentic-20260823
+            - --primary-pact
+            - pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793
+            - --signer-service-account
+            - isopact-checkpoint-signer@isopact-agentic-20260823.iam.gserviceaccount.com
+            - --key-version-1
+            - projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/1
+            - --key-version-2
+            - projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2
+            env:
+            - {name: GOOGLE_CLOUD_PROJECT, value: isopact-agentic-20260823}
+            - {name: GOOGLE_CLOUD_LOCATION, value: global}
+            - {name: GEMINI_MODEL, value: gemini-3.5-flash}
+            - {name: ISOPACT_TELEMETRY_ENABLED, value: 'true'}
+            - {name: OTEL_EXPORTER_OTLP_ENDPOINT, value: 'http://localhost:4317'}
+            - {name: OTEL_TRACES_SAMPLER, value: always_on}
+            - {name: ISOPACT_SPAN_LINK_AUDIT, value: 'true'}
+            - {name: ISOPACT_REGION, value: africa-south1}
+            resources:
+              limits: {cpu: '1', memory: 1Gi}
+          - name: otel-collector
+            image: us-docker.pkg.dev/cloud-ops-agents-artifacts/google-cloud-opentelemetry-collector/otelcol-google:0.156.0
+            args: ['--config=/etc/otelcol-google/config.yaml']
+            volumeMounts:
+            - {name: otel-config, mountPath: /etc/otelcol-google}
+            resources:
+              limits: {cpu: '1', memory: 512Mi}
+            startupProbe:
+              httpGet: {path: /, port: 13133}
+              periodSeconds: 5
+              failureThreshold: 12
+          volumes:
+          - name: otel-config
+            secret:
+              secretName: isopact-otel-collector-config
+              items:
+              - {key: latest, path: config.yaml}

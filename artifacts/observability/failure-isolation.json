@@ -1,0 +1,14 @@
+{
+  "source": "CONTROLLED_FULL_REGRESSION_FAILURE_INJECTION",
+  "normal": "114 passed, 1 warning, 5 subtests passed in 8.91s",
+  "telemetry_disabled": "114 passed, 1 warning, 5 subtests passed in 7.75s",
+  "unreachable_otlp_endpoint": "114 passed, 1 warning, 5 subtests passed in 8.23s",
+  "logging_sink_failure_test": "test_logging_sink_failure_is_fail_open",
+  "gateway_unchanged": true,
+  "evidence_unchanged": true,
+  "invariants_unchanged": true,
+  "compensation_unchanged": true,
+  "settlement_unchanged": true,
+  "receipt_unchanged": true,
+  "result": "PASS"
+}

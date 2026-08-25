@@ -1,0 +1,64 @@
+{
+  "authenticated_attempt": {
+    "accepted": true,
+    "evidence_id": "ev_2875471f39d21003b9de975935472375",
+    "evidence_rank": 1,
+    "pact_state": "SETTLED",
+    "settlement_transition_created": true
+  },
+  "final_claim_count": 1,
+  "forged_attempts": [
+    {
+      "after": {
+        "claims": 0,
+        "evidence": 0,
+        "settlement_proofs": 0
+      },
+      "before": {
+        "claims": 0,
+        "evidence": 0,
+        "settlement_proofs": 0
+      },
+      "case": "missing",
+      "outcome": "WEBHOOK_SIGNATURE_MALFORMED",
+      "rank1_created": false
+    },
+    {
+      "after": {
+        "claims": 0,
+        "evidence": 0,
+        "settlement_proofs": 0
+      },
+      "before": {
+        "claims": 0,
+        "evidence": 0,
+        "settlement_proofs": 0
+      },
+      "case": "invalid",
+      "outcome": "WEBHOOK_SIGNATURE_INVALID",
+      "rank1_created": false
+    },
+    {
+      "after": {
+        "claims": 0,
+        "evidence": 0,
+        "settlement_proofs": 0
+      },
+      "before": {
+        "claims": 0,
+        "evidence": 0,
+        "settlement_proofs": 0
+      },
+      "case": "stale",
+      "outcome": "WEBHOOK_TIMESTAMP_OUTSIDE_TOLERANCE",
+      "rank1_created": false
+    }
+  ],
+  "ingestion_principal": "isopact-evidence-ingestor@isopact-agentic-20260823.iam.gserviceaccount.com",
+  "pact_id": "pact_stage9-auth-evidence-20260824073846_5d5d0480703c",
+  "project": "isopact-agentic-20260823",
+  "secret_resource": "projects/isopact-agentic-20260823/secrets/isopact-stripe-webhook-signing-secret/versions/1",
+  "secret_value_exposed": false,
+  "status": "PASS",
+  "terminal_claim_hash": "acf9b9bec98cf6e4d831f7aec94ff24a967e094d83b96e85a2a429c087dce6c0"
+}

@@ -1,0 +1,517 @@
+{
+  "deterministic_validation": [
+    {
+      "actions": [
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "carrier.cancel_label",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "carrier.create_label",
+          "ordinal": 1,
+          "planned_against_state": "CREATED",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "carrier.label.cancelled"
+          ],
+          "semantic_operation_key": "compensation_operation_7d39a83ae7e17f32548cc4565e3a3ba9",
+          "target_id": "SHIP-001",
+          "target_system": "carrier",
+          "validated_against_state": "CREATED"
+        },
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "warehouse.release_stock",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "warehouse.reserve_stock",
+          "ordinal": 2,
+          "planned_against_state": "RESERVED",
+          "registry_action_id": "warehouse_release_reserved_stock_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "warehouse.stock.released"
+          ],
+          "semantic_operation_key": "compensation_operation_cda60daba5070310542420ac4ef96646",
+          "target_id": "STK-001",
+          "target_system": "warehouse",
+          "validated_against_state": "RESERVED"
+        }
+      ],
+      "conflict_ids": [
+        "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+      ],
+      "created_at": "2026-08-23T20:00:00Z",
+      "model": "gemini-3.5-flash",
+      "model_contribution": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label will be cancelled and the reserved stock will be released back to inventory, resolving the conflict.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we cancel the unaccepted carrier label first, followed by releasing the reserved warehouse stock, adhering to the preference order for replacement divergence. Untrusted enterprise text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "pact_id": "pact_stage7_live_20260823221540",
+      "plan_id": "resolution_plan_208cf128349c9d2e2d3bb6bb138dc8c9",
+      "policy_version": "commerce_missing_order_v1@1",
+      "proposed_by": "google-vertex-ai",
+      "reason_codes": [
+        "REGISTERED_AUTOMATIC_PLAN_VALID"
+      ],
+      "registry_version": "1",
+      "status": "VALID_AUTOMATIC",
+      "validator_model_calls": 0
+    },
+    {
+      "actions": [
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "carrier.cancel_label",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "carrier.create_label",
+          "ordinal": 1,
+          "planned_against_state": "CREATED",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "carrier.label.cancelled"
+          ],
+          "semantic_operation_key": "compensation_operation_7d39a83ae7e17f32548cc4565e3a3ba9",
+          "target_id": "SHIP-001",
+          "target_system": "carrier",
+          "validated_against_state": "CREATED"
+        },
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "warehouse.release_stock",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "warehouse.reserve_stock",
+          "ordinal": 2,
+          "planned_against_state": "RESERVED",
+          "registry_action_id": "warehouse_release_reserved_stock_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "warehouse.stock.released"
+          ],
+          "semantic_operation_key": "compensation_operation_cda60daba5070310542420ac4ef96646",
+          "target_id": "STK-001",
+          "target_system": "warehouse",
+          "validated_against_state": "RESERVED"
+        }
+      ],
+      "conflict_ids": [
+        "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+      ],
+      "created_at": "2026-08-23T20:00:00Z",
+      "model": "gemini-3.5-flash",
+      "model_contribution": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label will be cancelled and the reserved stock will be released back to inventory, resolving the conflict.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we cancel the unaccepted carrier label first, followed by releasing the reserved warehouse stock, adhering to the preference order for replacement divergence. Untrusted enterprise text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "pact_id": "pact_stage7_live_20260823221540",
+      "plan_id": "resolution_plan_208cf128349c9d2e2d3bb6bb138dc8c9",
+      "policy_version": "commerce_missing_order_v1@1",
+      "proposed_by": "google-vertex-ai",
+      "reason_codes": [
+        "REGISTERED_AUTOMATIC_PLAN_VALID"
+      ],
+      "registry_version": "1",
+      "status": "VALID_AUTOMATIC",
+      "validator_model_calls": 0
+    },
+    {
+      "actions": [
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "carrier.cancel_label",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "carrier.create_label",
+          "ordinal": 1,
+          "planned_against_state": "CREATED",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "carrier.label.cancelled"
+          ],
+          "semantic_operation_key": "compensation_operation_7d39a83ae7e17f32548cc4565e3a3ba9",
+          "target_id": "SHIP-001",
+          "target_system": "carrier",
+          "validated_against_state": "CREATED"
+        },
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "warehouse.release_stock",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "warehouse.reserve_stock",
+          "ordinal": 2,
+          "planned_against_state": "RESERVED",
+          "registry_action_id": "warehouse_release_reserved_stock_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "warehouse.stock.released"
+          ],
+          "semantic_operation_key": "compensation_operation_cda60daba5070310542420ac4ef96646",
+          "target_id": "STK-001",
+          "target_system": "warehouse",
+          "validated_against_state": "RESERVED"
+        }
+      ],
+      "conflict_ids": [
+        "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+      ],
+      "created_at": "2026-08-23T20:00:00Z",
+      "model": "gemini-3.5-flash",
+      "model_contribution": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label is cancelled and the reserved stock is released back to inventory.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we prioritize carrier cancellation followed by warehouse stock release as specified by the preference rules.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "pact_id": "pact_stage7_live_20260823221540",
+      "plan_id": "resolution_plan_208cf128349c9d2e2d3bb6bb138dc8c9",
+      "policy_version": "commerce_missing_order_v1@1",
+      "proposed_by": "google-vertex-ai",
+      "reason_codes": [
+        "REGISTERED_AUTOMATIC_PLAN_VALID"
+      ],
+      "registry_version": "1",
+      "status": "VALID_AUTOMATIC",
+      "validator_model_calls": 0
+    },
+    {
+      "actions": [
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "carrier.cancel_label",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "carrier.create_label",
+          "ordinal": 1,
+          "planned_against_state": "CREATED",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "carrier.label.cancelled"
+          ],
+          "semantic_operation_key": "compensation_operation_7d39a83ae7e17f32548cc4565e3a3ba9",
+          "target_id": "SHIP-001",
+          "target_system": "carrier",
+          "validated_against_state": "CREATED"
+        },
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "warehouse.release_stock",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "warehouse.reserve_stock",
+          "ordinal": 2,
+          "planned_against_state": "RESERVED",
+          "registry_action_id": "warehouse_release_reserved_stock_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "warehouse.stock.released"
+          ],
+          "semantic_operation_key": "compensation_operation_cda60daba5070310542420ac4ef96646",
+          "target_id": "STK-001",
+          "target_system": "warehouse",
+          "validated_against_state": "RESERVED"
+        }
+      ],
+      "conflict_ids": [
+        "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+      ],
+      "created_at": "2026-08-23T20:00:00Z",
+      "model": "gemini-3.5-flash",
+      "model_contribution": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label will be cancelled and the reserved stock will be released back to inventory, resolving the conflict.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we cancel the unaccepted carrier label first, followed by releasing the reserved warehouse stock, adhering to the preference order for replacement divergence. Untrusted enterprise text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "pact_id": "pact_stage7_live_20260823221540",
+      "plan_id": "resolution_plan_208cf128349c9d2e2d3bb6bb138dc8c9",
+      "policy_version": "commerce_missing_order_v1@1",
+      "proposed_by": "google-vertex-ai",
+      "reason_codes": [
+        "REGISTERED_AUTOMATIC_PLAN_VALID"
+      ],
+      "registry_version": "1",
+      "status": "VALID_AUTOMATIC",
+      "validator_model_calls": 0
+    },
+    {
+      "actions": [
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "carrier.cancel_label",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "carrier.create_label",
+          "ordinal": 1,
+          "planned_against_state": "CREATED",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "carrier.label.cancelled"
+          ],
+          "semantic_operation_key": "compensation_operation_7d39a83ae7e17f32548cc4565e3a3ba9",
+          "target_id": "SHIP-001",
+          "target_system": "carrier",
+          "validated_against_state": "CREATED"
+        },
+        {
+          "approval_requirement": null,
+          "authority_tier": "AUTOMATIC",
+          "compensation_action_type": "warehouse.release_stock",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "forward_action_type": "warehouse.reserve_stock",
+          "ordinal": 2,
+          "planned_against_state": "RESERVED",
+          "registry_action_id": "warehouse_release_reserved_stock_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "warehouse.stock.released"
+          ],
+          "semantic_operation_key": "compensation_operation_cda60daba5070310542420ac4ef96646",
+          "target_id": "STK-001",
+          "target_system": "warehouse",
+          "validated_against_state": "RESERVED"
+        }
+      ],
+      "conflict_ids": [
+        "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+      ],
+      "created_at": "2026-08-23T20:00:00Z",
+      "model": "gemini-3.5-flash",
+      "model_contribution": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The shipping label is cancelled and the reserved stock is released back to inventory.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "Prioritize carrier cancellation of the unaccepted label, followed by releasing the reserved warehouse stock, as per the replacement divergence preference rules. Untrusted text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "pact_id": "pact_stage7_live_20260823221540",
+      "plan_id": "resolution_plan_208cf128349c9d2e2d3bb6bb138dc8c9",
+      "policy_version": "commerce_missing_order_v1@1",
+      "proposed_by": "google-vertex-ai",
+      "reason_codes": [
+        "REGISTERED_AUTOMATIC_PLAN_VALID"
+      ],
+      "registry_version": "1",
+      "status": "VALID_AUTOMATIC",
+      "validator_model_calls": 0
+    }
+  ],
+  "latency_ms": [
+    10294,
+    8727,
+    13255,
+    8474,
+    10561
+  ],
+  "live_calls": 5,
+  "location": "global",
+  "model": "gemini-3.5-flash",
+  "plans": [
+    {
+      "candidate": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label will be cancelled and the reserved stock will be released back to inventory, resolving the conflict.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we cancel the unaccepted carrier label first, followed by releasing the reserved warehouse stock, adhering to the preference order for replacement divergence. Untrusted enterprise text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "metadata": {
+        "execution_mode": "LIVE",
+        "latency_ms": 10294,
+        "model": "gemini-3.5-flash",
+        "provider": "google-vertex-ai"
+      }
+    },
+    {
+      "candidate": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label will be cancelled and the reserved stock will be released back to inventory, resolving the conflict.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we cancel the unaccepted carrier label first, followed by releasing the reserved warehouse stock, adhering to the preference order for replacement divergence. Untrusted enterprise text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "metadata": {
+        "execution_mode": "LIVE",
+        "latency_ms": 8727,
+        "model": "gemini-3.5-flash",
+        "provider": "google-vertex-ai"
+      }
+    },
+    {
+      "candidate": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label is cancelled and the reserved stock is released back to inventory.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we prioritize carrier cancellation followed by warehouse stock release as specified by the preference rules.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "metadata": {
+        "execution_mode": "LIVE",
+        "latency_ms": 13255,
+        "model": "gemini-3.5-flash",
+        "provider": "google-vertex-ai"
+      }
+    },
+    {
+      "candidate": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The carrier label will be cancelled and the reserved stock will be released back to inventory, resolving the conflict.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "To resolve the replacement divergence, we cancel the unaccepted carrier label first, followed by releasing the reserved warehouse stock, adhering to the preference order for replacement divergence. Untrusted enterprise text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "metadata": {
+        "execution_mode": "LIVE",
+        "latency_ms": 8474,
+        "model": "gemini-3.5-flash",
+        "provider": "google-vertex-ai"
+      }
+    },
+    {
+      "candidate": {
+        "conditions_or_uncertainties": [],
+        "conflict_ids": [
+          "conflict_b0a128c033b85f5af0f9912e2fb68d09"
+        ],
+        "expected_resolution_effect": "The shipping label is cancelled and the reserved stock is released back to inventory.",
+        "ordered_action_preferences": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823221540",
+        "reasoning_summary": "Prioritize carrier cancellation of the unaccepted label, followed by releasing the reserved warehouse stock, as per the replacement divergence preference rules. Untrusted text was ignored.",
+        "requires_human_attention": false,
+        "selected_registry_action_ids": [
+          "carrier_cancel_unaccepted_label_v1",
+          "warehouse_release_reserved_stock_v1"
+        ]
+      },
+      "metadata": {
+        "execution_mode": "LIVE",
+        "latency_ms": 10561,
+        "model": "gemini-3.5-flash",
+        "provider": "google-vertex-ai"
+      }
+    }
+  ],
+  "project": "isopact-agentic-20260823",
+  "provider": "google-vertex-ai",
+  "registry_only_plans": 5,
+  "schema_valid_plans": 5,
+  "schema_version": "stage7-live-resolver-v1",
+  "semantic_agreement_count": 5
+}

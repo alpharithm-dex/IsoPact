@@ -1,0 +1,56 @@
+{
+  "pact_id": "pact_stage10c_toctou_20260824212114",
+  "current_lifecycle": "VIOLATED",
+  "selected_resolution": null,
+  "entries": [
+    {
+      "entry_id": "derived_toctou_pact_stage10c_toctou_20260824212114",
+      "pact_id": "pact_stage10c_toctou_20260824212114",
+      "category": "DERIVED_PROOF_EVENT",
+      "action": "TOCTOU",
+      "caused_by": [
+        "761cca0325b79a918a11f5bc77d8d566",
+        "47d6e63b6c58e5f2997252b179c9e60a",
+        "5cf44fce18e6af5dee8a0d0145cba963",
+        "4b0682b0b005294ecd151b94c3736679"
+      ],
+      "proof": {
+        "decision": "PRECONDITION_FAILED",
+        "planned_state": "CREATED",
+        "execution": {
+          "planned_against_state": "CREATED",
+          "precondition_result": "EXECUTION_STATE_INELIGIBLE",
+          "trace_id": "local-proof",
+          "executed_against_state": "ACCEPTED",
+          "evidence_ids": [],
+          "state": "PRECONDITION_FAILED",
+          "conflict_ids": [
+            "conflict_7ed6187b4196c3bea69272999d757f2c"
+          ],
+          "execution_id": "compensation_execution_014c13f0bd39bb16aed61bf8ed904867",
+          "target_id": "SHIP-001",
+          "external_call_executed": false,
+          "target_system": "carrier",
+          "validated_against_state": "CREATED",
+          "updated_at": "2026-08-23T20:00:00Z",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "pact_id": "pact_stage10c_toctou_20260824212114",
+          "authority_tier": "AUTOMATIC",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "plan_id": "resolution_plan_e6f3d34df70dcbd06b4d6641ee22d367",
+          "registry_version": "1",
+          "semantic_operation_key": "compensation_operation_af9f01a3402954a36a5d3961ab764741",
+          "approval_id": null
+        },
+        "execution_state": "ACCEPTED",
+        "external_calls": 0,
+        "pact_id": "pact_stage10c_toctou_20260824212114",
+        "pact_state": "VIOLATED"
+      }
+    }
+  ],
+  "conflicts": [],
+  "trace_ids": [],
+  "receipt_verification": [],
+  "authoritative_store_created": false
+}

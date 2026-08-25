@@ -1,0 +1,55 @@
+{
+  "environment": "controlled local warm benchmark with OpenTelemetry BatchSpanProcessor and nonblocking in-memory exporter; not a production throughput claim",
+  "samples_per_path": 500,
+  "telemetry_disabled": {
+    "gateway_authorization": {
+      "samples": 500,
+      "p50_ms": 0.02135,
+      "p95_ms": 0.0324
+    },
+    "http_gateway": {
+      "samples": 500,
+      "p50_ms": 0.8601,
+      "p95_ms": 1.1831
+    },
+    "invariant_evaluation": {
+      "samples": 500,
+      "p50_ms": 1.0463,
+      "p95_ms": 1.5693
+    }
+  },
+  "telemetry_enabled_batch": {
+    "gateway_authorization": {
+      "samples": 500,
+      "p50_ms": 0.15935,
+      "p95_ms": 0.3332
+    },
+    "http_gateway": {
+      "samples": 500,
+      "p50_ms": 1.0968,
+      "p95_ms": 1.8249
+    },
+    "invariant_evaluation": {
+      "samples": 500,
+      "p50_ms": 1.33125,
+      "p95_ms": 2.1869
+    }
+  },
+  "delta": {
+    "gateway_authorization": {
+      "p50_delta_ms": 0.138,
+      "p95_delta_ms": 0.3008
+    },
+    "http_gateway": {
+      "p50_delta_ms": 0.2367,
+      "p95_delta_ms": 0.6418
+    },
+    "invariant_evaluation": {
+      "p50_delta_ms": 0.28495,
+      "p95_delta_ms": 0.6176
+    }
+  },
+  "exported_spans": 1500,
+  "synchronous_multi_second_export_dependency": false,
+  "result": "PASS"
+}

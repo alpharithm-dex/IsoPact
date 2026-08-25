@@ -1,0 +1,53 @@
+{
+  "live_firestore": {
+    "attempted": true,
+    "collection_counts": {
+      "economic_snapshots": 3,
+      "invariant_conflicts": 1,
+      "invariant_evaluations": 27,
+      "protection_events": 2
+    },
+    "database": "(default)",
+    "historical_conflict_statuses": [
+      "RESOLVED"
+    ],
+    "pact_id": "pact_stage6_live_economic_integrity",
+    "project": "isopact-agentic-20260823",
+    "snapshot_id": "economic_snapshot_96eba2f58d3b110da767e8adedbe0474",
+    "stored_lifecycle": "SETTLED",
+    "stored_rule_set": "commerce_missing_order_rules@1",
+    "verified": true
+  },
+  "model_calls": 0,
+  "performance": {
+    "environment": "local single-process Python; not a production scale claim",
+    "evaluations": 1000,
+    "max": 1.374,
+    "model_calls": 0,
+    "p50": 0.1856,
+    "p95": 0.5309,
+    "unit": "milliseconds"
+  },
+  "preexisting_recoverable": 20000,
+  "preexisting_recovered": 0,
+  "properties": {
+    "canonical_reducer_failures": 0,
+    "generated_cases": 300,
+    "insertion_order_failures": 0,
+    "invalid_cases": 81,
+    "invalid_cases_correctly_detected": 81,
+    "invariant_failures_in_valid_cases": 0,
+    "model_calls": 0,
+    "seed": 6006,
+    "valid_cases": 219
+  },
+  "protected_final_authorized": 25000,
+  "protected_value": 40000,
+  "rule_versions": [
+    "1.0.0"
+  ],
+  "rules": 9,
+  "status": "PASS",
+  "unmanaged_excess": 45000,
+  "unmanaged_projected": 65000
+}

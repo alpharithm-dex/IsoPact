@@ -1,0 +1,33 @@
+{
+  "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "retrieved_trace_count": 1,
+  "present": [
+    "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/actions/refund",
+    "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/status",
+    "call_llm",
+    "execute_tool request_refund_through_isopact",
+    "execute_tool support_inspect_pact_state",
+    "generate_content gemini-3.5-flash",
+    "invoke_agent support_agent",
+    "invoke_workflow support_agent",
+    "isopact.agent.invoke",
+    "isopact.gateway.authenticate",
+    "isopact.gateway.authorize",
+    "isopact.gateway.request",
+    "isopact.reservation.transaction"
+  ],
+  "checks": {
+    "primary_gateway_trace_retrieved_now": true,
+    "required_spans_live": true,
+    "four_live_scenario_bundles": true,
+    "trace_correlated_logs_live": true,
+    "required_metrics_live": true,
+    "privacy_canary_clean": true,
+    "privacy_audit_clean": true,
+    "dashboard_live_and_complete": true,
+    "w3c_sync_propagation_live": true,
+    "async_span_link_live": true
+  },
+  "blocking_checks": [],
+  "result": "PASS"
+}

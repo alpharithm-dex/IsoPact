@@ -1,0 +1,1064 @@
+{
+  "after_refund_success": {
+    "authorization_policy_version": "commerce_missing_order_v1@1",
+    "conflicts": [],
+    "current_policy_version": "commerce_missing_order_v1@2",
+    "economic_position": {
+      "authorized_primary_value": 20000,
+      "blocked_value": 0,
+      "captured_value": 20000,
+      "currency": "USD",
+      "failed_primary_value": 0,
+      "goodwill_authorized_value": 5000,
+      "goodwill_settled_value": 5000,
+      "legitimately_delayed_value": 0,
+      "other_exception_value": 0,
+      "pending_primary_value": 0,
+      "projected_excess_exposure": 5000,
+      "projected_total_compensation": 25000,
+      "protected_value": 20000,
+      "provenance": [
+        "fact_goodwill_1_settled",
+        "fact_refund_2_settled",
+        "fact_replacement_2_reversed"
+      ],
+      "recoverable_candidate_value": 0,
+      "recovered_value": 20000,
+      "replacement_committed_value": 0,
+      "replacement_projected_value": 0,
+      "settled_excess_exposure": 5000,
+      "settled_primary_value": 20000,
+      "settled_total_compensation": 25000
+    },
+    "evaluated_at": "2026-08-23T20:00:00Z",
+    "evaluations": [
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_refund_a"
+        ],
+        "economic_amounts": {
+          "refund_limit": 20000,
+          "refund_value": 20000
+        },
+        "evaluation_id": "rule_eval_ee016a81f6e3768e891242562a0f4701",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [
+          "ev_refund_succeeded_live"
+        ],
+        "explanation": "Active refund value 20000 is within trusted limit 20000.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_refund_2_settled"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "REFUND_VALUE_WITHIN_BOUND",
+        "result": "PASS",
+        "rule_id": "COMMERCE_REFUND_VALUE_BOUND",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_refund_a"
+        ],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_4bc9c9b7ebb54251fa66d382e45e22f8",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [
+          "ev_refund_succeeded_live"
+        ],
+        "explanation": "No unapproved refund/replacement overlap exists.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_refund_2_settled"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "PRIMARY_RESOLUTION_EXCLUSIVE",
+        "result": "PASS",
+        "rule_id": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_4ecfbe4df5c1d1b3eedc9f68a4dfab2d",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Each active primary compensation has a distinct approved economic intent scope.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "NO_DUPLICATE_SEMANTIC_COMPENSATION",
+        "result": "PASS",
+        "rule_id": "COMMERCE_DUPLICATE_COMPENSATION",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_d37fd6fe62009161f8192e98c0a3c676",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "The selected resolution has policy-qualified authoritative evidence.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "COMPLETION_EVIDENCE_SATISFIED",
+        "result": "PASS",
+        "rule_id": "COMMERCE_COMPLETION_REQUIRES_EVIDENCE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_goodwill"
+        ],
+        "economic_amounts": {
+          "goodwill_limit": 5000,
+          "goodwill_value": 5000
+        },
+        "evaluation_id": "rule_eval_37bc10c5cc9197d3622cc5764d312ae4",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Cumulative goodwill 5000 is within limit 5000.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_goodwill_1_settled"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "GOODWILL_WITHIN_CUMULATIVE_LIMIT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_GOODWILL_LIMIT",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_c4b2ca4afa55e46a593b6422e89f940a",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "No equivalent unresolved primary refund is duplicated.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "NO_EQUIVALENT_PENDING_PRIMARY_CONFLICT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_PENDING_PRIMARY_CONFLICT",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_6e50944186f5a9c941df5c88f3b0afe7",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Any replacement compensation candidate remains reversibly CREATED/RESERVED.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "AUTOMATIC_COMPENSATION_REVERSIBILITY_KNOWN",
+        "result": "PASS",
+        "rule_id": "COMMERCE_AUTO_COMPENSATION_REQUIRES_REVERSIBILITY",
+        "rule_version": "1.0.0",
+        "severity": "WARNING"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_bf32ece97b9f983236b42e913bf481b7",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "All facts use pinned currency USD.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "ECONOMIC_CURRENCY_CONSISTENT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_CURRENCY_CONSISTENCY",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_9b86c8d3e6637f40923f37c00c73c52b",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "No competing path challenges the authoritatively settled primary resolution.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "SETTLED_PRIMARY_PATH_UNCHALLENGED",
+        "result": "PASS",
+        "rule_id": "COMMERCE_SETTLED_PRIMARY_PATH_IMMUTABLE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      }
+    ],
+    "graph_revision": 3,
+    "lifecycle_recommendation": "SETTLED",
+    "model_calls": 0,
+    "pact_id": "pact_stage7_live_20260823222133",
+    "protection_summary": {
+      "authorized_value_recovered": 20000,
+      "currency": "USD",
+      "event_ids": [
+        "protection_96ec62009120e1782327b30e6697aa7a"
+      ],
+      "invalid_actions_prevented": 0,
+      "legitimate_value_delayed": 0,
+      "protected_value": 20000,
+      "unique_event_count": 1
+    },
+    "rule_set_id": "commerce_missing_order_rules",
+    "rule_set_version": "1"
+  },
+  "authoritative_recovery_evidence_ids": [
+    "ev_carrier_cancelled_live",
+    "ev_warehouse_released_live"
+  ],
+  "compensation_results": [
+    {
+      "decision": "EXECUTE",
+      "execution": {
+        "approval_id": null,
+        "authority_tier": "AUTOMATIC",
+        "conflict_ids": [
+          "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+        ],
+        "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+        "evidence_ids": [],
+        "executed_against_state": "CREATED",
+        "execution_id": "compensation_execution_065014d5476f25aa6bdab5189b98ad52",
+        "external_call_executed": true,
+        "pact_id": "pact_stage7_live_20260823222133",
+        "plan_id": "resolution_plan_778b3e45d38a49abaf9e16f3aad652fb",
+        "planned_against_state": "CREATED",
+        "precondition_result": "PASS",
+        "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+        "registry_version": "1",
+        "semantic_operation_key": "compensation_operation_acb04712393c94c744f12a359a43448e",
+        "state": "CONFIRMED",
+        "target_id": "SHIP-001",
+        "target_system": "carrier",
+        "trace_id": "stage7-live-primary",
+        "updated_at": "2026-08-23T20:00:00Z",
+        "validated_against_state": "CREATED"
+      }
+    },
+    {
+      "decision": "EXECUTE",
+      "execution": {
+        "approval_id": null,
+        "authority_tier": "AUTOMATIC",
+        "conflict_ids": [
+          "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+        ],
+        "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+        "evidence_ids": [],
+        "executed_against_state": "RESERVED",
+        "execution_id": "compensation_execution_e051c4d60a710e811c8d0cac47a9333f",
+        "external_call_executed": true,
+        "pact_id": "pact_stage7_live_20260823222133",
+        "plan_id": "resolution_plan_778b3e45d38a49abaf9e16f3aad652fb",
+        "planned_against_state": "RESERVED",
+        "precondition_result": "PASS",
+        "registry_action_id": "warehouse_release_reserved_stock_v1",
+        "registry_version": "1",
+        "semantic_operation_key": "compensation_operation_5dce13367378e2f5f24ee4af30b6bd6b",
+        "state": "CONFIRMED",
+        "target_id": "STK-001",
+        "target_system": "warehouse",
+        "trace_id": "stage7-live-primary",
+        "updated_at": "2026-08-23T20:00:00Z",
+        "validated_against_state": "RESERVED"
+      }
+    }
+  ],
+  "conflict_history": [
+    {
+      "conflict_id": "conflict_ca3c0e598c9af9960b3ba2c15a569c2f",
+      "economic_impact": {
+        "currency": "USD",
+        "minor_units": 20000
+      },
+      "first_detected_at": "2026-08-23T20:00:00Z",
+      "human_approval_requirement": null,
+      "last_evaluated_at": "2026-08-23T20:00:00Z",
+      "pact_id": "pact_stage7_live_20260823222133",
+      "related_evidence_ids": [],
+      "related_operation_ids": [
+        "op_refund_a",
+        "op_replacement"
+      ],
+      "resolution_eligibility": "REGISTERED_COMPENSATION_CANDIDATE",
+      "rule_id": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+      "rule_version": "1.0.0",
+      "severity": "CRITICAL",
+      "status": "RESOLVED"
+    }
+  ],
+  "database": "(default)",
+  "initial": {
+    "authorization_policy_version": "commerce_missing_order_v1@1",
+    "conflicts": [
+      {
+        "conflict_id": "conflict_ca3c0e598c9af9960b3ba2c15a569c2f",
+        "economic_impact": {
+          "currency": "USD",
+          "minor_units": 20000
+        },
+        "first_detected_at": "2026-08-23T20:00:00Z",
+        "human_approval_requirement": null,
+        "last_evaluated_at": "2026-08-23T20:00:00Z",
+        "pact_id": "pact_stage7_live_20260823222133",
+        "related_evidence_ids": [],
+        "related_operation_ids": [
+          "op_refund_a",
+          "op_replacement"
+        ],
+        "resolution_eligibility": "REGISTERED_COMPENSATION_CANDIDATE",
+        "rule_id": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL",
+        "status": "OPEN"
+      }
+    ],
+    "current_policy_version": "commerce_missing_order_v1@2",
+    "economic_position": {
+      "authorized_primary_value": 40000,
+      "blocked_value": 0,
+      "captured_value": 20000,
+      "currency": "USD",
+      "failed_primary_value": 0,
+      "goodwill_authorized_value": 5000,
+      "goodwill_settled_value": 5000,
+      "legitimately_delayed_value": 0,
+      "other_exception_value": 0,
+      "pending_primary_value": 20000,
+      "projected_excess_exposure": 25000,
+      "projected_total_compensation": 45000,
+      "protected_value": 0,
+      "provenance": [
+        "fact_goodwill_1_settled",
+        "fact_refund_a_1_pending",
+        "fact_replacement_1_proposed"
+      ],
+      "recoverable_candidate_value": 20000,
+      "recovered_value": 0,
+      "replacement_committed_value": 0,
+      "replacement_projected_value": 20000,
+      "settled_excess_exposure": 0,
+      "settled_primary_value": 0,
+      "settled_total_compensation": 5000
+    },
+    "evaluated_at": "2026-08-23T20:00:00Z",
+    "evaluations": [
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_refund_a"
+        ],
+        "economic_amounts": {
+          "refund_limit": 20000,
+          "refund_value": 20000
+        },
+        "evaluation_id": "rule_eval_51ade39ee9f54b24d26959a9c025d4f9",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Active refund value 20000 is within trusted limit 20000.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_refund_a_1_pending"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "REFUND_VALUE_WITHIN_BOUND",
+        "result": "PASS",
+        "rule_id": "COMMERCE_REFUND_VALUE_BOUND",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_refund_a",
+          "op_replacement"
+        ],
+        "economic_amounts": {
+          "overlap": 20000,
+          "refund_value": 20000,
+          "replacement_value": 20000
+        },
+        "evaluation_id": "rule_eval_75e2e0249e20466518cb26d5a7a42394",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Refund and replacement coexist without a trusted dual-compensation exception.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_refund_a_1_pending",
+            "fact_replacement_1_proposed"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [
+          "BLOCK_NEW_ACTION",
+          "EVALUATE_REGISTERED_COMPENSATION"
+        ],
+        "reason_code": "PRIMARY_RESOLUTION_OVERLAP",
+        "result": "FAIL",
+        "rule_id": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_7ea403d06d0c9289c658723d0a18ef5f",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Each active primary compensation has a distinct approved economic intent scope.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "NO_DUPLICATE_SEMANTIC_COMPENSATION",
+        "result": "PASS",
+        "rule_id": "COMMERCE_DUPLICATE_COMPENSATION",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_d41b2c11b6f3a27ccf7bbf7bfbe2c7e2",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Ticket or agent completion cannot substitute for required settlement evidence.",
+        "input_facts": {
+          "agent_complete": true,
+          "ticket_closed": true
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [
+          "WAIT_FOR_EVIDENCE"
+        ],
+        "reason_code": "UNSUPPORTED_COMPLETION_CLAIM",
+        "result": "UNKNOWN",
+        "rule_id": "COMMERCE_COMPLETION_REQUIRES_EVIDENCE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_goodwill"
+        ],
+        "economic_amounts": {
+          "goodwill_limit": 5000,
+          "goodwill_value": 5000
+        },
+        "evaluation_id": "rule_eval_df823d9c061b0fe59ee4c6315d39ba67",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Cumulative goodwill 5000 is within limit 5000.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_goodwill_1_settled"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "GOODWILL_WITHIN_CUMULATIVE_LIMIT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_GOODWILL_LIMIT",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_ae5e1e20d3de8c64300521fe6b998f3a",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "No equivalent unresolved primary refund is duplicated.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "NO_EQUIVALENT_PENDING_PRIMARY_CONFLICT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_PENDING_PRIMARY_CONFLICT",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_replacement"
+        ],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_722694be5b5765a5a6d4629bd04f88ef",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Any replacement compensation candidate remains reversibly CREATED/RESERVED.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_replacement_1_proposed"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "AUTOMATIC_COMPENSATION_REVERSIBILITY_KNOWN",
+        "result": "PASS",
+        "rule_id": "COMMERCE_AUTO_COMPENSATION_REQUIRES_REVERSIBILITY",
+        "rule_version": "1.0.0",
+        "severity": "WARNING"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_2acedb6b8d2d50f3e4ae9badf1d31dbb",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "All facts use pinned currency USD.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "ECONOMIC_CURRENCY_CONSISTENT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_CURRENCY_CONSISTENCY",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_ba76401ee1d314cdce6caf92e5a0c519",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "No competing path challenges the authoritatively settled primary resolution.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "SETTLED_PRIMARY_PATH_UNCHALLENGED",
+        "result": "PASS",
+        "rule_id": "COMMERCE_SETTLED_PRIMARY_PATH_IMMUTABLE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      }
+    ],
+    "graph_revision": 1,
+    "lifecycle_recommendation": "VIOLATED",
+    "model_calls": 0,
+    "pact_id": "pact_stage7_live_20260823222133",
+    "protection_summary": {
+      "authorized_value_recovered": 0,
+      "currency": "USD",
+      "event_ids": [],
+      "invalid_actions_prevented": 0,
+      "legitimate_value_delayed": 0,
+      "protected_value": 0,
+      "unique_event_count": 0
+    },
+    "rule_set_id": "commerce_missing_order_rules",
+    "rule_set_version": "1"
+  },
+  "live_approval": {
+    "after": {
+      "approval_id": "approval_1a2c3f59e60de66fdce6a6b2577fc03d",
+      "authority_tier": "HUMAN_APPROVAL_REQUIRED",
+      "conflict_ids": [
+        "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+      ],
+      "economic_effect_category": "GOODWILL_REVERSAL",
+      "evidence_ids": [],
+      "executed_against_state": "ISSUED",
+      "execution_id": "compensation_execution_4615395469eb5cfd713e32151d92979a",
+      "external_call_executed": true,
+      "pact_id": "pact_stage7_live_20260823222133",
+      "plan_id": "resolution_plan_934ab1946b7e4ad4304be2659b1125c1",
+      "planned_against_state": "ISSUED",
+      "precondition_result": "PASS",
+      "registry_action_id": "crm_reverse_unused_goodwill_v1",
+      "registry_version": "1",
+      "semantic_operation_key": "compensation_operation_6e1ba2d3d56eba43b175aa81bba7cb17",
+      "state": "CONFIRMED",
+      "target_id": "CR-001",
+      "target_system": "crm",
+      "trace_id": "stage7-live-approval",
+      "updated_at": "2026-08-23T20:00:00Z",
+      "validated_against_state": "ISSUED"
+    },
+    "approval": {
+      "approval_id": "approval_1a2c3f59e60de66fdce6a6b2577fc03d",
+      "compensation_execution_id": "compensation_execution_4615395469eb5cfd713e32151d92979a",
+      "decided_by": "stage7-approver@example.com",
+      "decision": "APPROVED",
+      "decision_reason": "live scoped approval proof",
+      "decision_timestamp": "2026-08-23T20:00:00Z",
+      "economic_impact": {
+        "currency": "USD",
+        "minor_units": 5000
+      },
+      "pact_id": "pact_stage7_live_20260823222133",
+      "policy_version": "commerce_missing_order_v1@1",
+      "reason": "Registry requires scoped human approval",
+      "registry_action_id": "crm_reverse_unused_goodwill_v1",
+      "registry_version": "1",
+      "requested_action": "crm.reverse_credit",
+      "requested_at": "2026-08-23T20:00:00Z",
+      "required_authority": "COMMERCE_FINANCIAL_REVERSAL_APPROVER",
+      "resolution_plan_id": "resolution_plan_934ab1946b7e4ad4304be2659b1125c1",
+      "status": "APPROVED",
+      "target": "CR-001"
+    },
+    "before": {
+      "approval_id": "approval_1a2c3f59e60de66fdce6a6b2577fc03d",
+      "authority_tier": "HUMAN_APPROVAL_REQUIRED",
+      "conflict_ids": [
+        "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+      ],
+      "economic_effect_category": "GOODWILL_REVERSAL",
+      "evidence_ids": [],
+      "executed_against_state": null,
+      "execution_id": "compensation_execution_4615395469eb5cfd713e32151d92979a",
+      "external_call_executed": false,
+      "pact_id": "pact_stage7_live_20260823222133",
+      "plan_id": "resolution_plan_934ab1946b7e4ad4304be2659b1125c1",
+      "planned_against_state": "ISSUED",
+      "precondition_result": null,
+      "registry_action_id": "crm_reverse_unused_goodwill_v1",
+      "registry_version": "1",
+      "semantic_operation_key": "compensation_operation_6e1ba2d3d56eba43b175aa81bba7cb17",
+      "state": "AWAITING_APPROVAL",
+      "target_id": "CR-001",
+      "target_system": "crm",
+      "trace_id": "stage7-live-approval",
+      "updated_at": "2026-08-23T20:00:00Z",
+      "validated_against_state": "ISSUED"
+    },
+    "plan": {
+      "actions": [
+        {
+          "approval_requirement": "COMMERCE_FINANCIAL_REVERSAL_APPROVER",
+          "authority_tier": "HUMAN_APPROVAL_REQUIRED",
+          "compensation_action_type": "crm.reverse_credit",
+          "economic_effect_category": "GOODWILL_REVERSAL",
+          "forward_action_type": "crm.issue_credit",
+          "ordinal": 1,
+          "planned_against_state": "ISSUED",
+          "registry_action_id": "crm_reverse_unused_goodwill_v1",
+          "registry_version": "1",
+          "required_evidence_after_execution": [
+            "crm.credit.reversed"
+          ],
+          "semantic_operation_key": "compensation_operation_6e1ba2d3d56eba43b175aa81bba7cb17",
+          "target_id": "CR-001",
+          "target_system": "crm",
+          "validated_against_state": "ISSUED"
+        }
+      ],
+      "conflict_ids": [
+        "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+      ],
+      "created_at": "2026-08-23T20:00:00Z",
+      "model": "stage7-proof",
+      "model_contribution": {
+        "conditions_or_uncertainties": [
+          "Authoritative recovery evidence remains required"
+        ],
+        "conflict_ids": [
+          "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+        ],
+        "expected_resolution_effect": "Remove replacement divergence without asserting refund settlement.",
+        "ordered_action_preferences": [
+          "crm_reverse_unused_goodwill_v1"
+        ],
+        "pact_id": "pact_stage7_live_20260823222133",
+        "reasoning_summary": "Select registered reversible reconciliation actions only.",
+        "requires_human_attention": true,
+        "selected_registry_action_ids": [
+          "crm_reverse_unused_goodwill_v1"
+        ]
+      },
+      "pact_id": "pact_stage7_live_20260823222133",
+      "plan_id": "resolution_plan_934ab1946b7e4ad4304be2659b1125c1",
+      "policy_version": "commerce_missing_order_v1@1",
+      "proposed_by": "deterministic-fixture",
+      "reason_codes": [
+        "SCOPED_APPROVAL_REQUIRED"
+      ],
+      "registry_version": "1",
+      "status": "VALID_REQUIRES_APPROVAL",
+      "validator_model_calls": 0
+    }
+  },
+  "live_firestore_verified": true,
+  "live_plan": {
+    "actions": [
+      {
+        "approval_requirement": null,
+        "authority_tier": "AUTOMATIC",
+        "compensation_action_type": "carrier.cancel_label",
+        "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+        "forward_action_type": "carrier.create_label",
+        "ordinal": 1,
+        "planned_against_state": "CREATED",
+        "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+        "registry_version": "1",
+        "required_evidence_after_execution": [
+          "carrier.label.cancelled"
+        ],
+        "semantic_operation_key": "compensation_operation_acb04712393c94c744f12a359a43448e",
+        "target_id": "SHIP-001",
+        "target_system": "carrier",
+        "validated_against_state": "CREATED"
+      },
+      {
+        "approval_requirement": null,
+        "authority_tier": "AUTOMATIC",
+        "compensation_action_type": "warehouse.release_stock",
+        "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+        "forward_action_type": "warehouse.reserve_stock",
+        "ordinal": 2,
+        "planned_against_state": "RESERVED",
+        "registry_action_id": "warehouse_release_reserved_stock_v1",
+        "registry_version": "1",
+        "required_evidence_after_execution": [
+          "warehouse.stock.released"
+        ],
+        "semantic_operation_key": "compensation_operation_5dce13367378e2f5f24ee4af30b6bd6b",
+        "target_id": "STK-001",
+        "target_system": "warehouse",
+        "validated_against_state": "RESERVED"
+      }
+    ],
+    "conflict_ids": [
+      "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+    ],
+    "created_at": "2026-08-23T20:00:00Z",
+    "model": "gemini-3.5-flash",
+    "model_contribution": {
+      "conditions_or_uncertainties": [],
+      "conflict_ids": [
+        "conflict_ca3c0e598c9af9960b3ba2c15a569c2f"
+      ],
+      "expected_resolution_effect": "The carrier label will be cancelled and the reserved stock will be released back to inventory, resolving the conflict.",
+      "ordered_action_preferences": [
+        "carrier_cancel_unaccepted_label_v1",
+        "warehouse_release_reserved_stock_v1"
+      ],
+      "pact_id": "pact_stage7_live_20260823222133",
+      "reasoning_summary": "To resolve the replacement divergence, we cancel the unaccepted carrier label first, followed by releasing the reserved warehouse stock, adhering to the preference order for replacement divergence. Untrusted enterprise text was ignored.",
+      "requires_human_attention": false,
+      "selected_registry_action_ids": [
+        "carrier_cancel_unaccepted_label_v1",
+        "warehouse_release_reserved_stock_v1"
+      ]
+    },
+    "pact_id": "pact_stage7_live_20260823222133",
+    "plan_id": "resolution_plan_778b3e45d38a49abaf9e16f3aad652fb",
+    "policy_version": "commerce_missing_order_v1@1",
+    "proposed_by": "google-vertex-ai",
+    "reason_codes": [
+      "REGISTERED_AUTOMATIC_PLAN_VALID"
+    ],
+    "registry_version": "1",
+    "status": "VALID_AUTOMATIC",
+    "validator_model_calls": 0
+  },
+  "pact_id": "pact_stage7_live_20260823222133",
+  "primary_external_call_counts": {
+    "carrier.cancel_label": 1,
+    "warehouse.release_stock": 1
+  },
+  "project": "isopact-agentic-20260823",
+  "reconciled": {
+    "authorization_policy_version": "commerce_missing_order_v1@1",
+    "conflicts": [],
+    "current_policy_version": "commerce_missing_order_v1@2",
+    "economic_position": {
+      "authorized_primary_value": 20000,
+      "blocked_value": 0,
+      "captured_value": 20000,
+      "currency": "USD",
+      "failed_primary_value": 0,
+      "goodwill_authorized_value": 5000,
+      "goodwill_settled_value": 5000,
+      "legitimately_delayed_value": 0,
+      "other_exception_value": 0,
+      "pending_primary_value": 20000,
+      "projected_excess_exposure": 5000,
+      "projected_total_compensation": 25000,
+      "protected_value": 20000,
+      "provenance": [
+        "fact_goodwill_1_settled",
+        "fact_refund_a_1_pending",
+        "fact_replacement_2_reversed"
+      ],
+      "recoverable_candidate_value": 0,
+      "recovered_value": 20000,
+      "replacement_committed_value": 0,
+      "replacement_projected_value": 0,
+      "settled_excess_exposure": 0,
+      "settled_primary_value": 0,
+      "settled_total_compensation": 5000
+    },
+    "evaluated_at": "2026-08-23T20:00:00Z",
+    "evaluations": [
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_refund_a"
+        ],
+        "economic_amounts": {
+          "refund_limit": 20000,
+          "refund_value": 20000
+        },
+        "evaluation_id": "rule_eval_70f35fc22e3d4b527c14d7f5daa4b276",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Active refund value 20000 is within trusted limit 20000.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_refund_a_1_pending"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "REFUND_VALUE_WITHIN_BOUND",
+        "result": "PASS",
+        "rule_id": "COMMERCE_REFUND_VALUE_BOUND",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_refund_a"
+        ],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_88b8af314541b00b20b124e0e5c4fb81",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "No unapproved refund/replacement overlap exists.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_refund_a_1_pending"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "PRIMARY_RESOLUTION_EXCLUSIVE",
+        "result": "PASS",
+        "rule_id": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_123670d88aad0f444e6c4ada6358fa71",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Each active primary compensation has a distinct approved economic intent scope.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "NO_DUPLICATE_SEMANTIC_COMPENSATION",
+        "result": "PASS",
+        "rule_id": "COMMERCE_DUPLICATE_COMPENSATION",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_e3f6cf473022a64d086291c801ec3228",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Ticket or agent completion cannot substitute for required settlement evidence.",
+        "input_facts": {
+          "agent_complete": true,
+          "ticket_closed": true
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [
+          "WAIT_FOR_EVIDENCE"
+        ],
+        "reason_code": "UNSUPPORTED_COMPLETION_CLAIM",
+        "result": "UNKNOWN",
+        "rule_id": "COMMERCE_COMPLETION_REQUIRES_EVIDENCE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [
+          "op_goodwill"
+        ],
+        "economic_amounts": {
+          "goodwill_limit": 5000,
+          "goodwill_value": 5000
+        },
+        "evaluation_id": "rule_eval_ee93bbd482da1427e206eeb3d8f6f13f",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Cumulative goodwill 5000 is within limit 5000.",
+        "input_facts": {
+          "fact_ids": [
+            "fact_goodwill_1_settled"
+          ]
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "GOODWILL_WITHIN_CUMULATIVE_LIMIT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_GOODWILL_LIMIT",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_c08f622c6413e0caa65e509bf9631cba",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "No equivalent unresolved primary refund is duplicated.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "NO_EQUIVALENT_PENDING_PRIMARY_CONFLICT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_PENDING_PRIMARY_CONFLICT",
+        "rule_version": "1.0.0",
+        "severity": "ERROR"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_50e8c62149c63de61e8deb1304e64bfd",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "Any replacement compensation candidate remains reversibly CREATED/RESERVED.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "AUTOMATIC_COMPENSATION_REVERSIBILITY_KNOWN",
+        "result": "PASS",
+        "rule_id": "COMMERCE_AUTO_COMPENSATION_REQUIRES_REVERSIBILITY",
+        "rule_version": "1.0.0",
+        "severity": "WARNING"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_5da478887d07fb6915ba3800483e7fff",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "All facts use pinned currency USD.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "ECONOMIC_CURRENCY_CONSISTENT",
+        "result": "PASS",
+        "rule_id": "COMMERCE_CURRENCY_CONSISTENCY",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      },
+      {
+        "authorization_policy_version": "commerce_missing_order_v1@1",
+        "conflicting_operation_ids": [],
+        "economic_amounts": {},
+        "evaluation_id": "rule_eval_1f62252c6979794a1a2b3d1fcdfdb954",
+        "evaluation_policy_version": "commerce_missing_order_rules@1",
+        "evidence_ids": [],
+        "explanation": "No competing path challenges the authoritatively settled primary resolution.",
+        "input_facts": {
+          "fact_ids": []
+        },
+        "pact_id": "pact_stage7_live_20260823222133",
+        "permitted_response_categories": [],
+        "reason_code": "SETTLED_PRIMARY_PATH_UNCHALLENGED",
+        "result": "PASS",
+        "rule_id": "COMMERCE_SETTLED_PRIMARY_PATH_IMMUTABLE",
+        "rule_version": "1.0.0",
+        "severity": "CRITICAL"
+      }
+    ],
+    "graph_revision": 2,
+    "lifecycle_recommendation": "PENDING",
+    "model_calls": 0,
+    "pact_id": "pact_stage7_live_20260823222133",
+    "protection_summary": {
+      "authorized_value_recovered": 20000,
+      "currency": "USD",
+      "event_ids": [
+        "protection_96ec62009120e1782327b30e6697aa7a"
+      ],
+      "invalid_actions_prevented": 0,
+      "legitimate_value_delayed": 0,
+      "protected_value": 20000,
+      "unique_event_count": 1
+    },
+    "rule_set_id": "commerce_missing_order_rules",
+    "rule_set_version": "1"
+  }
+}

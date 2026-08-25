@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-08-24T20:52:51.022153+00:00",
+  "gateway_url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+  "gateway_region": "africa-south1",
+  "firestore_region": "africa-south1",
+  "agent_runtime_region": "europe-west1",
+  "invalid_identity_rejected": true,
+  "race_one_primary_external_execution": true,
+  "duplicate_one_refund_external_execution": true,
+  "body_spoof_ignored": true,
+  "settled_only_after_rank1": true,
+  "end_to_end_duplicate_blocked": true,
+  "latency_ms": {
+    "samples": [
+      488.012,
+      488.627,
+      531.595,
+      691.78,
+      817.992,
+      1181.641,
+      1204.947,
+      1322.007
+    ],
+    "p50": 754.886,
+    "p95_nearest_rank": 1204.947
+  },
+  "pacts": {
+    "race": "pact_stage8b-race-20260824205251_ea0ae6d3e801184d7eb2",
+    "duplicate": "pact_stage8b-duplicate-20260824205251_2c78dd8c99e5b803e667",
+    "end_to_end": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+  }
+}

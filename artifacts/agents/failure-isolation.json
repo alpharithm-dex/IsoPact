@@ -1,0 +1,13 @@
+{
+  "tested_failures": [
+    "support model unavailable",
+    "fulfillment model unavailable",
+    "resolver model unavailable",
+    "model timeout"
+  ],
+  "method": "provider omitted/failed before typed adapter; deterministic Gateway invoked independently in regression",
+  "gateway_enforcement_affected": false,
+  "pact_graph_durability_affected": false,
+  "false_settlements": 0,
+  "pending_work_remains_durable": true
+}

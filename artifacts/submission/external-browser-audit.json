@@ -1,0 +1,21 @@
+{
+  "schema_version": "isopact-stage14-browser-audit-v1",
+  "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app/",
+  "audited_at": "2026-08-25",
+  "http": 200,
+  "isolated_profile": "Codex in-app browser",
+  "warm_page_load_ms": 882,
+  "viewports": ["1440x900", "1920x1080"],
+  "critical_console_errors": 0,
+  "console_warnings": 0,
+  "critical_network_failures": 0,
+  "protected_live_mode": "PASS",
+  "agent_complete_business_unsettled": "PASS",
+  "replacement_blocked": "PASS",
+  "rank_1_settlement": "PASS",
+  "receipt_verification": "VERIFIED",
+  "tamper_verification": "INVALID/SIGNATURE_INVALID",
+  "exposed_secrets": 0,
+  "exposed_local_paths": 0,
+  "result": "PASS"
+}

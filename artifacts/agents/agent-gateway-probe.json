@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-24T02:14:54.689234+00:00",
+  "project": "isopact-agentic-20260823",
+  "location": "europe-west1",
+  "requested_mode": "AGENT_TO_ANYWHERE",
+  "registry": "//agentregistry.googleapis.com/projects/isopact-agentic-20260823/locations/europe-west1",
+  "target": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+  "endpoint": {
+    "status": "REGISTERED",
+    "service": {
+      "name": "projects/442539309409/locations/europe-west1/services/isopact-outcome-gateway-egress",
+      "displayName": "IsoPact Outcome Gateway Egress Target",
+      "description": "europe-west1 registry target for the africa-south1 IsoPact settlement plane.",
+      "interfaces": [
+        {
+          "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+          "protocolBinding": "HTTP_JSON"
+        }
+      ],
+      "endpointSpec": {
+        "type": "NO_SPEC"
+      },
+      "createTime": "2026-08-24T01:39:35.624357540Z",
+      "updateTime": "2026-08-24T01:39:35.719219777Z",
+      "registryResource": "projects/442539309409/locations/europe-west1/endpoints/agentregistry-00000000-0000-0000-b029-685085dd7fae"
+    }
+  },
+  "project_access": true,
+  "status": "CREATED_DEFAULT_DENY_NOT_BOUND",
+  "resource": {
+    "name": "projects/isopact-agentic-20260823/locations/europe-west1/agentGateways/isopact-egress",
+    "createTime": "2026-08-24T01:40:23.302785974Z",
+    "updateTime": "2026-08-24T01:41:46.863624067Z",
+    "labels": {
+      "system": "isopact",
+      "stage": "8b"
+    },
+    "description": "IsoPact Agent Runtime default-deny egress governance gateway.",
+    "etag": "ZNbUxp1LYsZASgl2_pQMRG6Pj5WU-SHdTEid1ipmElc",
+    "googleManaged": {
+      "governedAccessPath": "AGENT_TO_ANYWHERE"
+    },
+    "agentGatewayCard": {
+      "mtlsEndpoint": "projects/i7632d1a721ca5c93p-tp/regions/europe-west1/serviceAttachments/unitkind1-swp-mtls-psc-sa",
+      "serviceExtensionsServiceAccount": "service-45660456408@gcp-sa-dep.iam.gserviceaccount.com",
+      "rootCertificates": [
+        "-----BEGIN CERTIFICATE-----\nMIIDxjCCAq6gAwIBAgIUALgaTXFpXbA3zM2+fZINO75U6fIwDQYJKoZIhvcNAQEL\nBQAwYDElMCMGA1UEChMcR29vZ2xlIENsb3VkIE1hbmFnZWQgU2VydmljZTE3MDUG\nA1UEAxMuQWdlbnQgR2F0ZXdheSBUTFMgSW5zcGVjdGlvbiBDQSAoZXVyb3BlLXdl\nc3QxKTAeFw0yNjA4MTUyMDUwNDBaFw0zNjA4MTIyMDUwMzlaMGAxJTAjBgNVBAoT\nHEdvb2dsZSBDbG91ZCBNYW5hZ2VkIFNlcnZpY2UxNzA1BgNVBAMTLkFnZW50IEdh\ndGV3YXkgVExTIEluc3BlY3Rpb24gQ0EgKGV1cm9wZS13ZXN0MSkwggEiMA0GCSqG\nSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqtIm9ZP6ZZooTYCxck0MJPq0V17YkHIho\n1y5caCGqC/3fkO1ljj5Z/n3SuXmVlb4n1l8xGjQFKQb0+IpK79ZjlxNc+ih0Ooyl\nqNhDA8Gl7nbCR9TgRGgYMtWKzPjCJrXMfJiD1IopKVxOIK2ZnGJHJw24kJcd2KTg\n1091i6Wec8kVpRllMvnuuq/qSRZHlTTWFCmAZBRJ1NTK4pV3d1Kq/LPk3CUUvu49\nw3T4Y23uhm68GU29hQnGgMaVyWsF7hODaxM+wNpgNQrTRK8J2p2BrigZs3Ven/uH\n+/6bZ47PZM7ZU7W56lhG9dN7Qjqm48w3ScTin2qn+K2fmpg8LdeBAgMBAAGjeDB2\nMA4GA1UdDwEB/wQEAwIBJjATBgNVHSUEDDAKBggrBgEFBQcDATAPBgNVHRMBAf8E\nBTADAQH/MB0GA1UdDgQWBBS2DVWpYM+SQt4/xG1AncxARQAjVjAfBgNVHSMEGDAW\ngBS2DVWpYM+SQt4/xG1AncxARQAjVjANBgkqhkiG9w0BAQsFAAOCAQEAUAhKWU/U\ndZcLeynKp/DvBAm3RsRQeiMp1deVsaNgYROzPr2EHnREJHUFa3qBBUhUweBghtTK\noEBOM/iFdfHV3Z6u1b0FTZUSxI7D0fVwNxSRhVeizh4d8oN0NgNkG9qRjyyafTNk\nft89AfgkYBydOEtgS6VAE2Zmu8nMnQKhoxxnFCOY+M+GgfZZYDP/dHvRKEAtXDRZ\nHySZxSkxiVS3uSiYCr5WE2n++w84RvuLLPvbKi8UDNuBeOk5N6PmDqNbMowyyqUl\nIX2ZJ4FAZ95jYpcql3rSVgJhtaNvCkOypz0C3p5lUva9eFkDEbXbLqyXZLa1PdSL\ne0vWFSDuUkAyrQ==\n-----END CERTIFICATE-----\n"
+      ]
+    },
+    "registries": [
+      "//agentregistry.googleapis.com/projects/isopact-agentic-20260823/locations/europe-west1"
+    ]
+  },
+  "endpoint_resource": "projects/442539309409/locations/europe-west1/endpoints/agentregistry-00000000-0000-0000-b029-685085dd7fae",
+  "mode": "AGENT_TO_ANYWHERE",
+  "identity_policy": "DEFAULT_DENY; NO roles/iap.egressor destination grant",
+  "denied_flow_proof": "No destination identity binding exists, so the documented iap.webServiceVersions.egressViaIAP permission is absent and egress is denied by default.",
+  "runtime_binding": "NOT_APPLIED",
+  "runtime_binding_reason": "A safe existing-agent binding redirects all Runtime egress and requires the complete IAP authz extension plus explicit LLM, Registry, telemetry, Sessions/Memory and destination allowlists. The installed gcloud 553.0.0 iap web commands also do not yet accept the documented agent-registry resource type. Binding the canonical fleet would therefore risk breaking its proven operation.",
+  "integration_claimed": false
+}

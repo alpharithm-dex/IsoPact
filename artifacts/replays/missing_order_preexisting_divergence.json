@@ -1,0 +1,560 @@
+{
+  "action_results": [
+    {
+      "action_id": "p00",
+      "actor": "customer",
+      "external_call_executed": true,
+      "external_object_id": "JIRA-8472",
+      "immediate_result": {
+        "object": {
+          "close_reason": null,
+          "closed_at": null,
+          "closed_by": null,
+          "comments": [],
+          "customer_id": "CUS-104",
+          "order_id": "ORD-8472",
+          "settlement_metadata": null,
+          "status": "OPEN",
+          "ticket_id": "JIRA-8472"
+        },
+        "status": "OK"
+      },
+      "inputs": {
+        "request": "My $200 order never arrived. I was told yesterday that it would be refunded or replaced. Can someone please resolve this?"
+      },
+      "interceptor_decision": {
+        "decision": "ALLOW",
+        "reason_code": "UNMANAGED_ALLOW_ALL"
+      },
+      "logical_time": 0,
+      "scheduled_follow_up_events": [],
+      "target_system": "jira",
+      "tool": "create_ticket"
+    },
+    {
+      "action_id": "p01",
+      "actor": "external-fulfillment",
+      "external_call_executed": true,
+      "external_object_id": "SHIP-001",
+      "immediate_result": {
+        "object": {
+          "actor": "external-fulfillment",
+          "currency": "USD",
+          "order_id": "ORD-8472",
+          "shipment_id": "SHIP-001",
+          "state": "CREATED",
+          "value_minor_units": 20000
+        },
+        "status": "OK"
+      },
+      "inputs": {
+        "currency": "USD",
+        "origin": "preexisting_external_path",
+        "value_minor_units": 20000
+      },
+      "interceptor_decision": {
+        "decision": "ALLOW",
+        "reason_code": "UNMANAGED_ALLOW_ALL"
+      },
+      "logical_time": 25,
+      "scheduled_follow_up_events": [],
+      "target_system": "carrier",
+      "tool": "create_label"
+    },
+    {
+      "action_id": "p02",
+      "actor": "external-fulfillment",
+      "external_call_executed": true,
+      "external_object_id": "STK-001",
+      "immediate_result": {
+        "object": {
+          "actor": "external-fulfillment",
+          "order_id": "ORD-8472",
+          "quantity": 1,
+          "reservation_id": "STK-001",
+          "resource": "replacement-order",
+          "state": "RESERVED"
+        },
+        "status": "OK"
+      },
+      "inputs": {
+        "origin": "preexisting_external_path",
+        "quantity": 1,
+        "resource": "replacement-order"
+      },
+      "interceptor_decision": {
+        "decision": "ALLOW",
+        "reason_code": "UNMANAGED_ALLOW_ALL"
+      },
+      "logical_time": 30,
+      "scheduled_follow_up_events": [],
+      "target_system": "warehouse",
+      "tool": "reserve_stock"
+    },
+    {
+      "action_id": "p03",
+      "actor": "support-a",
+      "external_call_executed": true,
+      "external_object_id": "REF-001",
+      "immediate_result": {
+        "object": {
+          "actor": "support-a",
+          "amount_minor_units": 20000,
+          "currency": "USD",
+          "idempotency_key": "stripe-key-A",
+          "order_id": "ORD-8472",
+          "refund_id": "REF-001",
+          "session_id": "support-session-A",
+          "state": "PENDING"
+        },
+        "status": "OK"
+      },
+      "inputs": {
+        "amount_minor_units": 20000,
+        "currency": "USD",
+        "idempotency_key": "stripe-key-A",
+        "session_id": "support-session-A",
+        "settle_at": 1000,
+        "settlement_outcome": "SUCCEEDED"
+      },
+      "interceptor_decision": {
+        "decision": "ALLOW",
+        "reason_code": "UNMANAGED_ALLOW_ALL"
+      },
+      "logical_time": 100,
+      "scheduled_follow_up_events": [
+        {
+          "event_id": "stripe.settlement.REF-001",
+          "logical_time": 1000,
+          "outcome": "SUCCEEDED",
+          "refund_id": "REF-001"
+        }
+      ],
+      "target_system": "stripe",
+      "tool": "create_refund"
+    },
+    {
+      "action_id": "p04",
+      "actor": "support-a",
+      "external_call_executed": true,
+      "external_object_id": "JIRA-8472",
+      "immediate_result": {
+        "object": {
+          "close_reason": "Refund request accepted by payment API",
+          "closed_at": 200,
+          "closed_by": "support-a",
+          "comments": [],
+          "customer_id": "CUS-104",
+          "order_id": "ORD-8472",
+          "settlement_metadata": null,
+          "status": "CLOSED",
+          "ticket_id": "JIRA-8472"
+        },
+        "status": "OK"
+      },
+      "inputs": {
+        "reason": "Refund request accepted by payment API",
+        "reference": "REF-001"
+      },
+      "interceptor_decision": {
+        "decision": "ALLOW",
+        "reason_code": "UNMANAGED_ALLOW_ALL"
+      },
+      "logical_time": 200,
+      "scheduled_follow_up_events": [],
+      "target_system": "jira",
+      "tool": "close_ticket"
+    },
+    {
+      "action_id": "p05",
+      "actor": "retention",
+      "external_call_executed": true,
+      "external_object_id": "CR-001",
+      "immediate_result": {
+        "object": {
+          "actor": "retention",
+          "amount_minor_units": 5000,
+          "credit_id": "CR-001",
+          "currency": "USD",
+          "customer_id": "CUS-104",
+          "order_id": "ORD-8472",
+          "source_action": "authorized_missing_order_goodwill",
+          "state": "ISSUED"
+        },
+        "status": "OK"
+      },
+      "inputs": {
+        "amount_minor_units": 5000,
+        "authorized": true,
+        "currency": "USD"
+      },
+      "interceptor_decision": {
+        "decision": "ALLOW",
+        "reason_code": "UNMANAGED_ALLOW_ALL"
+      },
+      "logical_time": 400,
+      "scheduled_follow_up_events": [],
+      "target_system": "crm",
+      "tool": "issue_credit"
+    }
+  ],
+  "checkpoints": {
+    "contradiction": {
+      "economic_position": {
+        "as_of": 500,
+        "authorized_exception_minor_units": 5000,
+        "currency": "USD",
+        "original_minor_units": 20000,
+        "pending_minor_units": 20000,
+        "projected_excess_minor_units": 25000,
+        "projected_only_minor_units": 20000,
+        "projected_total_minor_units": 45000,
+        "provenance": [
+          {
+            "amount_minor_units": 5000,
+            "event_id": "ECO-0003",
+            "event_type": "GOODWILL_CREDIT_ISSUED",
+            "external_object_id": "CR-001",
+            "phase": "SETTLED"
+          },
+          {
+            "amount_minor_units": 20000,
+            "event_id": "ECO-0002",
+            "event_type": "REFUND_PENDING",
+            "external_object_id": "REF-001",
+            "phase": "PENDING"
+          },
+          {
+            "amount_minor_units": 20000,
+            "event_id": "ECO-0001",
+            "event_type": "REPLACEMENT_CREATED",
+            "external_object_id": "SHIP-001",
+            "phase": "PROJECTED"
+          }
+        ],
+        "settled_minor_units": 5000
+      },
+      "logical_time": 500,
+      "services": {
+        "carrier": {
+          "SHIP-001": {
+            "actor": "external-fulfillment",
+            "currency": "USD",
+            "order_id": "ORD-8472",
+            "shipment_id": "SHIP-001",
+            "state": "CREATED",
+            "value_minor_units": 20000
+          }
+        },
+        "crm": {
+          "CR-001": {
+            "actor": "retention",
+            "amount_minor_units": 5000,
+            "credit_id": "CR-001",
+            "currency": "USD",
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "source_action": "authorized_missing_order_goodwill",
+            "state": "ISSUED"
+          }
+        },
+        "jira": {
+          "JIRA-8472": {
+            "close_reason": "Refund request accepted by payment API",
+            "closed_at": 200,
+            "closed_by": "support-a",
+            "comments": [],
+            "customer_id": "CUS-104",
+            "order_id": "ORD-8472",
+            "settlement_metadata": null,
+            "status": "CLOSED",
+            "ticket_id": "JIRA-8472"
+          }
+        },
+        "stripe": {
+          "REF-001": {
+            "actor": "support-a",
+            "amount_minor_units": 20000,
+            "currency": "USD",
+            "idempotency_key": "stripe-key-A",
+            "order_id": "ORD-8472",
+            "refund_id": "REF-001",
+            "session_id": "support-session-A",
+            "state": "PENDING"
+          }
+        },
+        "warehouse": {
+          "STK-001": {
+            "actor": "external-fulfillment",
+            "order_id": "ORD-8472",
+            "quantity": 1,
+            "reservation_id": "STK-001",
+            "resource": "replacement-order",
+            "state": "RESERVED"
+          }
+        }
+      }
+    }
+  },
+  "economic_events": [
+    {
+      "actor": "external-fulfillment",
+      "amount_minor_units": 20000,
+      "authorized_exception": false,
+      "currency": "USD",
+      "event_id": "ECO-0001",
+      "event_type": "REPLACEMENT_CREATED",
+      "external_object_id": "SHIP-001",
+      "logical_timestamp": 25,
+      "phase": "PROJECTED",
+      "resource": null,
+      "session_id": null,
+      "source_system": "carrier",
+      "subject_id": "ORD-8472"
+    },
+    {
+      "actor": "support-a",
+      "amount_minor_units": 20000,
+      "authorized_exception": false,
+      "currency": "USD",
+      "event_id": "ECO-0002",
+      "event_type": "REFUND_PENDING",
+      "external_object_id": "REF-001",
+      "logical_timestamp": 100,
+      "phase": "PENDING",
+      "resource": null,
+      "session_id": "support-session-A",
+      "source_system": "stripe",
+      "subject_id": "ORD-8472"
+    },
+    {
+      "actor": "retention",
+      "amount_minor_units": 5000,
+      "authorized_exception": true,
+      "currency": "USD",
+      "event_id": "ECO-0003",
+      "event_type": "GOODWILL_CREDIT_ISSUED",
+      "external_object_id": "CR-001",
+      "logical_timestamp": 400,
+      "phase": "SETTLED",
+      "resource": null,
+      "session_id": null,
+      "source_system": "crm",
+      "subject_id": "ORD-8472"
+    },
+    {
+      "actor": "stripe-system",
+      "amount_minor_units": 20000,
+      "authorized_exception": false,
+      "currency": "USD",
+      "event_id": "ECO-0004",
+      "event_type": "REFUND_SETTLED",
+      "external_object_id": "REF-001",
+      "logical_timestamp": 1000,
+      "phase": "SETTLED",
+      "resource": null,
+      "session_id": null,
+      "source_system": "stripe",
+      "subject_id": "ORD-8472"
+    }
+  ],
+  "final": {
+    "economic_position": {
+      "as_of": 1000,
+      "authorized_exception_minor_units": 5000,
+      "currency": "USD",
+      "original_minor_units": 20000,
+      "pending_minor_units": 0,
+      "projected_excess_minor_units": 25000,
+      "projected_only_minor_units": 20000,
+      "projected_total_minor_units": 45000,
+      "provenance": [
+        {
+          "amount_minor_units": 5000,
+          "event_id": "ECO-0003",
+          "event_type": "GOODWILL_CREDIT_ISSUED",
+          "external_object_id": "CR-001",
+          "phase": "SETTLED"
+        },
+        {
+          "amount_minor_units": 20000,
+          "event_id": "ECO-0004",
+          "event_type": "REFUND_SETTLED",
+          "external_object_id": "REF-001",
+          "phase": "SETTLED"
+        },
+        {
+          "amount_minor_units": 20000,
+          "event_id": "ECO-0001",
+          "event_type": "REPLACEMENT_CREATED",
+          "external_object_id": "SHIP-001",
+          "phase": "PROJECTED"
+        }
+      ],
+      "settled_minor_units": 25000
+    },
+    "logical_time": 1000,
+    "services": {
+      "carrier": {
+        "SHIP-001": {
+          "actor": "external-fulfillment",
+          "currency": "USD",
+          "order_id": "ORD-8472",
+          "shipment_id": "SHIP-001",
+          "state": "CREATED",
+          "value_minor_units": 20000
+        }
+      },
+      "crm": {
+        "CR-001": {
+          "actor": "retention",
+          "amount_minor_units": 5000,
+          "credit_id": "CR-001",
+          "currency": "USD",
+          "customer_id": "CUS-104",
+          "order_id": "ORD-8472",
+          "source_action": "authorized_missing_order_goodwill",
+          "state": "ISSUED"
+        }
+      },
+      "jira": {
+        "JIRA-8472": {
+          "close_reason": "Refund request accepted by payment API",
+          "closed_at": 200,
+          "closed_by": "support-a",
+          "comments": [],
+          "customer_id": "CUS-104",
+          "order_id": "ORD-8472",
+          "settlement_metadata": null,
+          "status": "CLOSED",
+          "ticket_id": "JIRA-8472"
+        }
+      },
+      "stripe": {
+        "REF-001": {
+          "actor": "support-a",
+          "amount_minor_units": 20000,
+          "currency": "USD",
+          "idempotency_key": "stripe-key-A",
+          "order_id": "ORD-8472",
+          "refund_id": "REF-001",
+          "session_id": "support-session-A",
+          "state": "SUCCEEDED"
+        }
+      },
+      "warehouse": {
+        "STK-001": {
+          "actor": "external-fulfillment",
+          "order_id": "ORD-8472",
+          "quantity": 1,
+          "reservation_id": "STK-001",
+          "resource": "replacement-order",
+          "state": "RESERVED"
+        }
+      }
+    }
+  },
+  "queued_at_contradiction": [
+    {
+      "event_id": "stripe.settlement.REF-001",
+      "logical_time": 1000,
+      "metadata": {
+        "outcome": "SUCCEEDED",
+        "refund_id": "REF-001"
+      },
+      "sequence": 7
+    }
+  ],
+  "scenario": {
+    "contradiction_time": 500,
+    "currency": "USD",
+    "customer_id": "CUS-104",
+    "description": "A non-participating fulfillment path created a reversible replacement label and stock reservation before the case entered the future enforcement boundary.",
+    "order_id": "ORD-8472",
+    "original_minor_units": 20000,
+    "scenario_id": "missing_order_preexisting_divergence",
+    "ticket_id": "JIRA-8472"
+  },
+  "schedule": [
+    {
+      "action_id": "p00",
+      "actor": "customer",
+      "enforcement_boundary": true,
+      "inputs": {
+        "request": "My $200 order never arrived. I was told yesterday that it would be refunded or replaced. Can someone please resolve this?"
+      },
+      "logical_time": 0,
+      "target_system": "jira",
+      "tool": "create_ticket"
+    },
+    {
+      "action_id": "p01",
+      "actor": "external-fulfillment",
+      "enforcement_boundary": false,
+      "inputs": {
+        "currency": "USD",
+        "origin": "preexisting_external_path",
+        "value_minor_units": 20000
+      },
+      "logical_time": 25,
+      "target_system": "carrier",
+      "tool": "create_label"
+    },
+    {
+      "action_id": "p02",
+      "actor": "external-fulfillment",
+      "enforcement_boundary": false,
+      "inputs": {
+        "origin": "preexisting_external_path",
+        "quantity": 1,
+        "resource": "replacement-order"
+      },
+      "logical_time": 30,
+      "target_system": "warehouse",
+      "tool": "reserve_stock"
+    },
+    {
+      "action_id": "p03",
+      "actor": "support-a",
+      "enforcement_boundary": true,
+      "inputs": {
+        "amount_minor_units": 20000,
+        "currency": "USD",
+        "idempotency_key": "stripe-key-A",
+        "session_id": "support-session-A",
+        "settle_at": 1000,
+        "settlement_outcome": "SUCCEEDED"
+      },
+      "logical_time": 100,
+      "target_system": "stripe",
+      "tool": "create_refund"
+    },
+    {
+      "action_id": "p04",
+      "actor": "support-a",
+      "enforcement_boundary": true,
+      "inputs": {
+        "reason": "Refund request accepted by payment API",
+        "reference": "REF-001"
+      },
+      "logical_time": 200,
+      "target_system": "jira",
+      "tool": "close_ticket"
+    },
+    {
+      "action_id": "p05",
+      "actor": "retention",
+      "enforcement_boundary": true,
+      "inputs": {
+        "amount_minor_units": 5000,
+        "authorized": true,
+        "currency": "USD"
+      },
+      "logical_time": 400,
+      "target_system": "crm",
+      "tool": "issue_credit"
+    }
+  ],
+  "schema_version": "stage2-replay-v1",
+  "semantic_digest": "7012777a31a694b59f1a82ced1fb3d05f93628f932d706a067c470c857968c9e"
+}

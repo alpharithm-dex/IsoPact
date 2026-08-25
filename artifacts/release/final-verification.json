@@ -1,0 +1,67 @@
+{
+  "failed": [],
+  "non_destructive": true,
+  "status": "PASS",
+  "steps": [
+    {
+      "name": "secret_scan",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"candidate_matches\": [],\n  \"files_scanned\": 416,\n  \"genuine_credentials\": 0,\n  \"public_project_ids_are_secrets\": false,\n  \"schema_version\": \"stage13-secret-scan-v1\",\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "name": "backend_tests",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": ".....................................................................................................................                       [100%]\n============================== warnings summary ===============================\n<frozen abc>:106\n  <frozen abc>:106: DeprecationWarning: BaseAgentConfig is deprecated and will be removed in future versions. Config is now loaded via reflection so the separate config class is no longer needed.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n117 passed, 1 warning, 5 subtests passed in 15.12s\n"
+    },
+    {
+      "name": "frontend_tests",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "\n> isopact-judge-interface@11.0.0 test\n> vitest run --run\n\n\n RUN  v4.1.11 C:/Users/HP/Documents/Codex/2026-08-23/files-mentioned-by-the-user-isopact/frontend\n\n\n Test Files  2 passed (2)\n      Tests  12 passed (12)\n   Start at  14:34:16\n   Duration  35.23s (transform 1.06s, setup 14.37s, import 2.58s, tests 1.35s, environment 47.32s)\n\n"
+    },
+    {
+      "name": "frontend_build",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "\n> isopact-judge-interface@11.0.0 build\n> tsc -b && vite build\n\nvite v8.2.2 building client environment for production...\ntransforming...\n\u00e2\u0153\u201c 18 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.45 kB \u00e2\u201d\u201a gzip:  0.30 kB\ndist/assets/index-BeXXSrcr.css   11.64 kB \u00e2\u201d\u201a gzip:  3.38 kB\ndist/assets/index-BfC84rRX.js   206.21 kB \u00e2\u201d\u201a gzip: 64.83 kB\n\n\u00e2\u0153\u201c built in 1.56s\n"
+    },
+    {
+      "name": "inventory",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"query_status\": {\n    \"artifact_images\": \"OK\",\n    \"artifact_repositories\": \"OK\",\n    \"cloud_run_jobs\": \"OK\",\n    \"cloud_run_revisions\": \"OK\",\n    \"cloud_run_services\": \"OK\",\n    \"dashboards\": \"OK\",\n    \"enabled_apis\": \"OK\",\n    \"firestore\": \"OK\",\n    \"kms_keyrings\": \"OK\",\n    \"kms_keys\": \"OK\",\n    \"kms_versions\": \"OK\",\n    \"model_armor\": \"OK\",\n    \"project_iam\": \"OK\",\n    \"pubsub_subscriptions\": \"OK\",\n    \"pubsub_topics\": \"OK\",\n    \"reasoning_engines\": \"OK\",\n    \"secrets\": \"OK\",\n    \"service_accounts\": \"OK\"\n  },\n  \"resources\": 118,\n  \"sha256\": \"13e25672e381f1f2dc755626cf8fc52a0d31dcb68e67c1c3488e0e18c0a18584\",\n  \"unknown\": 0\n}\n"
+    },
+    {
+      "name": "deployment",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\n  \"checks\": {\n    \"benchmark_smoke\": true,\n    \"dashboard\": true,\n    \"firestore\": true,\n    \"four_agents\": true,\n    \"gateway_ready\": true,\n    \"gateway_revision\": true,\n    \"gateway_service_account\": true,\n    \"health\": true,\n    \"immutable_digest\": true,\n    \"invalid_token_401\": true,\n    \"kms_key\": true,\n    \"kms_versions\": true,\n    \"managed_identity_evidence\": true,\n    \"missing_token_401\": true,\n    \"model_armor\": true,\n    \"no_runtime_windows_paths\": true,\n    \"project\": true,\n    \"public_demo_sanitized\": true,\n    \"public_network_documented\": true,\n    \"pubsub_subscription\": true,\n    \"pubsub_topic\": true,\n    \"receipt_valid\": true,\n    \"regions\": true,\n    \"required_apis\": true,\n    \"secret_scan\": true,\n    \"secrets\": true,\n    \"security_headers\": true,\n    \"tamper_invalid\": true,\n    \"wrong_role_403\": true\n  },\n  \"failed\": [],\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "name": "receipt",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"error_type\": \"ModuleNotFoundError\", \"message\": \"telemetry initialization failed; enforcement remains active\", \"severity\": \"WARNING\", \"timestamp\": \"2026-08-25T12:36:59.805705+00:00\"}\n{\n  \"receipt_signature_valid\": true,\n  \"checkpoint_signature_valid\": true,\n  \"claim_chain_valid\": true,\n  \"terminal_hash_matches\": true,\n  \"receipt_checkpoint_matches\": true,\n  \"receipt_references_consistent\": true,\n  \"overall_integrity_valid\": true,\n  \"reason_codes\": [],\n  \"scope\": \"FULL_INTEGRITY\",\n  \"external_source_truth_queried\": false,\n  \"meaning\": \"Integrity/provenance verified; source truth remains the authenticated adapter's responsibility.\"\n}\nOVERALL INTEGRITY: VALID\n"
+    },
+    {
+      "name": "benchmark_smoke",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "scenario=missing_order_unmanaged\nsemantic_digest=86ef2253cf9406901f4cbf833f1d90e55eb396f74cc75190aea006fc1c1e02db\nprojected_total_minor_units=65000\nprojected_excess_minor_units=45000\nartifact=C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\files-mentioned-by-the-user-isopact\\artifacts\\replays\\missing_order_unmanaged.json\n"
+    },
+    {
+      "name": "vulnerability_audit",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "hains.\",\n        \"evidence\": \"pip-audit advisory description\",\n        \"fix_versions\": [\n          \"49.0.0\"\n        ],\n        \"id\": \"PYSEC-2026-3553\",\n        \"package\": \"cryptography\",\n        \"version\": \"46.0.7\"\n      },\n      {\n        \"assessment\": \"Not reachable: IsoPact does not use cryptography.x509.verification name-constraint or TLS server-certificate validation APIs.\",\n        \"evidence\": \"pip-audit advisory description\",\n        \"fix_versions\": [\n          \"49.0.0\"\n        ],\n        \"id\": \"PYSEC-2026-3554\",\n        \"package\": \"cryptography\",\n        \"version\": \"46.0.7\"\n      },\n      {\n        \"assessment\": \"Not reachable in the deployed application paths: the official 2026-06-09 OpenSSL advisory affects PKCS7/S-MIME, CMS, QUIC, OCSP, CMP, DHX, and specialized cipher/API paths; IsoPact uses ECDSA P-256 signing/verification and ordinary HTTPS through the platform. Reassess on any crypto/TLS feature expansion and upgrade cryptography in a separately validated release.\",\n        \"evidence\": \"https://openssl-library.org/news/secadv/20260609.txt\",\n        \"fix_versions\": [\n          \"48.0.1\"\n        ],\n        \"id\": \"GHSA-537c-gmf6-5ccf\",\n        \"package\": \"cryptography\",\n        \"version\": \"46.0.7\"\n      }\n    ],\n    \"findings\": [\n      {\n        \"fix_versions\": [\n          \"50.0.0\"\n        ],\n        \"id\": \"PYSEC-2026-3552\",\n        \"package\": \"cryptography\",\n        \"version\": \"46.0.7\"\n      },\n      {\n        \"fix_versions\": [\n          \"49.0.0\"\n        ],\n        \"id\": \"PYSEC-2026-3553\",\n        \"package\": \"cryptography\",\n        \"version\": \"46.0.7\"\n      },\n      {\n        \"fix_versions\": [\n          \"49.0.0\"\n        ],\n        \"id\": \"PYSEC-2026-3554\",\n        \"package\": \"cryptography\",\n        \"version\": \"46.0.7\"\n      },\n      {\n        \"fix_versions\": [\n          \"48.0.1\"\n        ],\n        \"id\": \"GHSA-537c-gmf6-5ccf\",\n        \"package\": \"cryptography\",\n        \"version\": \"46.0.7\"\n      }\n    ],\n    \"unresolved_other\": []\n  },\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "name": "sbom",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"python_components\": 106, \"frontend_components\": 160, \"format\": \"CycloneDX 1.5\"}\n"
+    }
+  ]
+}

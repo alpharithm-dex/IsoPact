@@ -1,0 +1,10 @@
+{
+  "checkpoint_signature_valid": true,
+  "claim_chain_valid": true,
+  "overall_integrity_valid": true,
+  "reason_codes": [],
+  "receipt_checkpoint_matches": true,
+  "receipt_references_consistent": true,
+  "receipt_signature_valid": true,
+  "terminal_hash_matches": true
+}

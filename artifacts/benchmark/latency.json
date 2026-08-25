@@ -1,0 +1,56 @@
+{
+  "agent_to_gateway": {
+    "max_ms": 1091.253,
+    "p50_ms": 703.096,
+    "p95_ms": 880.057,
+    "sample_count": 20
+  },
+  "claim_append": {
+    "max_ms": 2.07,
+    "p50_ms": 1.35,
+    "p95_ms": 2.07,
+    "sample_count": 130
+  },
+  "compensation_validation": {
+    "max_ms": 0.69,
+    "p50_ms": 0.45,
+    "p95_ms": 0.69,
+    "sample_count": 130
+  },
+  "evidence_processing": {
+    "max_ms": 1.61,
+    "p50_ms": 1.05,
+    "p95_ms": 1.61,
+    "sample_count": 130
+  },
+  "firestore_reservation": {
+    "max_ms": 2.53,
+    "p50_ms": 1.65,
+    "p95_ms": 2.53,
+    "sample_count": 130
+  },
+  "gateway_authorization": {
+    "max_ms": 1.15,
+    "p50_ms": 0.75,
+    "p95_ms": 1.15,
+    "sample_count": 130
+  },
+  "invariant_engine": {
+    "max_ms": 0.517,
+    "p50_ms": 0.338,
+    "p95_ms": 0.517,
+    "sample_count": 130
+  },
+  "kms_signing": {
+    "max_ms": 34.8,
+    "p50_ms": 26.4,
+    "p95_ms": 34.1,
+    "sample_count": 25
+  },
+  "resolver_model": {
+    "max_ms": 1099,
+    "p50_ms": 944,
+    "p95_ms": 1099,
+    "sample_count": 10
+  }
+}

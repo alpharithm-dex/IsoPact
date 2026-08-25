@@ -1,0 +1,25 @@
+{
+  "checkpoint_id": "checkpoint_pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2_00000008",
+  "checkpoint_schema_version": "isopact.graph-checkpoint.v1",
+  "claim_count": 8,
+  "created_at": "2026-08-24T20:02:04.583166+00:00",
+  "economic_snapshot_digest": "a71fc9a5be4d275b325f0aaaae27e939a060d4737967a46b7a8f8beafd54672e",
+  "evidence_ids_included": [
+    "ev_c080c1216fc6c45924737aabfc1d79f7"
+  ],
+  "invariant_evaluation_digest": "77ba43d8ef69b6793c415429f1051ffcb19b0419b4d1f41875d3af337dd1f969",
+  "issuance_status": "SIGNED",
+  "pact_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2",
+  "policy_references": [
+    "commerce_missing_order_v1@1"
+  ],
+  "rule_references": [
+    "commerce_missing_order_rules@1"
+  ],
+  "signature": "MEUCIHqJYYcdAzC+arBIJ4okrAPgiB8BaTDinQ9Q9DbcWlkiAiEAlx6keiWtDGFJ2Q2GWHEleioDVDIuephaPKmb6o1Xhxo=",
+  "signature_algorithm": "EC_SIGN_P256_SHA256",
+  "signing_key_resource": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing",
+  "signing_key_version": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2",
+  "terminal_claim_hash": "740a87e78a66a36a3d8e9b645a60e5dea3671a5ef7f1d5734a82c89d066b3de8",
+  "through_sequence": 8
+}

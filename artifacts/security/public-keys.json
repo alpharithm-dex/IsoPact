@@ -1,0 +1,4 @@
+{
+  "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/1": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEABkWNOqJLBc6pTkr3mDxFv9pVFQl\nG/hSgfRBsMEJv6iN8SL4TtUMNZRg3r5A9xoTDyGI3FVx+za43KPX8tP5cg==\n-----END PUBLIC KEY-----\n",
+  "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGt0nqQKmVbCmB5KUnEJfiUkyaXJE\nS9ggOjatcn6pcuvx01XPsfgmyIkuiMKGih9vb57IF4QNbt0IFezG5bTCZw==\n-----END PUBLIC KEY-----\n"
+}

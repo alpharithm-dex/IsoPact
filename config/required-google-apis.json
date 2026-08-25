@@ -1,0 +1,21 @@
+{
+  "project": "isopact-agentic-20260823",
+  "required": [
+    "aiplatform.googleapis.com",
+    "agentregistry.googleapis.com",
+    "artifactregistry.googleapis.com",
+    "cloudbuild.googleapis.com",
+    "cloudkms.googleapis.com",
+    "cloudtrace.googleapis.com",
+    "firestore.googleapis.com",
+    "iam.googleapis.com",
+    "iamcredentials.googleapis.com",
+    "logging.googleapis.com",
+    "modelarmor.googleapis.com",
+    "monitoring.googleapis.com",
+    "pubsub.googleapis.com",
+    "run.googleapis.com",
+    "secretmanager.googleapis.com",
+    "telemetry.googleapis.com"
+  ]
+}

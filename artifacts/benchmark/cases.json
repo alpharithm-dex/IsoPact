@@ -1,0 +1,915 @@
+{
+  "cases": [
+    {
+      "case_id": "S12-A-01",
+      "description": "normal legitimate resolution variant 1",
+      "family": "A",
+      "seed": 120000,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-A-02",
+      "description": "normal legitimate resolution variant 2",
+      "family": "A",
+      "seed": 120001,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-A-03",
+      "description": "normal legitimate resolution variant 3",
+      "family": "A",
+      "seed": 120002,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-A-04",
+      "description": "normal legitimate resolution variant 4",
+      "family": "A",
+      "seed": 120003,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-A-05",
+      "description": "normal legitimate resolution variant 5",
+      "family": "A",
+      "seed": 120004,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-B-01",
+      "description": "primary resolution conflict variant 1",
+      "family": "B",
+      "seed": 120100,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-B-02",
+      "description": "primary resolution conflict variant 2",
+      "family": "B",
+      "seed": 120101,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-B-03",
+      "description": "primary resolution conflict variant 3",
+      "family": "B",
+      "seed": 120102,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-B-04",
+      "description": "primary resolution conflict variant 4",
+      "family": "B",
+      "seed": 120103,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-B-05",
+      "description": "primary resolution conflict variant 5",
+      "family": "B",
+      "seed": 120104,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-C-01",
+      "description": "partial refund boundary variant 1",
+      "family": "C",
+      "seed": 120200,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-C-02",
+      "description": "partial refund boundary variant 2",
+      "family": "C",
+      "seed": 120201,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-C-03",
+      "description": "partial refund boundary variant 3",
+      "family": "C",
+      "seed": 120202,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-C-04",
+      "description": "partial refund boundary variant 4",
+      "family": "C",
+      "seed": 120203,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-C-05",
+      "description": "partial refund boundary variant 5",
+      "family": "C",
+      "seed": 120204,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-D-01",
+      "description": "goodwill boundary variant 1",
+      "family": "D",
+      "seed": 120300,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-D-02",
+      "description": "goodwill boundary variant 2",
+      "family": "D",
+      "seed": 120301,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-D-03",
+      "description": "goodwill boundary variant 3",
+      "family": "D",
+      "seed": 120302,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-D-04",
+      "description": "goodwill boundary variant 4",
+      "family": "D",
+      "seed": 120303,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-D-05",
+      "description": "goodwill boundary variant 5",
+      "family": "D",
+      "seed": 120304,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-E-01",
+      "description": "semantic duplicate across transport variation variant 1",
+      "family": "E",
+      "seed": 120400,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-E-02",
+      "description": "semantic duplicate across transport variation variant 2",
+      "family": "E",
+      "seed": 120401,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-E-03",
+      "description": "semantic duplicate across transport variation variant 3",
+      "family": "E",
+      "seed": 120402,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-E-04",
+      "description": "semantic duplicate across transport variation variant 4",
+      "family": "E",
+      "seed": 120403,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-E-05",
+      "description": "semantic duplicate across transport variation variant 5",
+      "family": "E",
+      "seed": 120404,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-F-01",
+      "description": "true distinct operation variant 1",
+      "family": "F",
+      "seed": 120500,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-F-02",
+      "description": "true distinct operation variant 2",
+      "family": "F",
+      "seed": 120501,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-F-03",
+      "description": "true distinct operation variant 3",
+      "family": "F",
+      "seed": 120502,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-F-04",
+      "description": "true distinct operation variant 4",
+      "family": "F",
+      "seed": 120503,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-F-05",
+      "description": "true distinct operation variant 5",
+      "family": "F",
+      "seed": 120504,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-G-01",
+      "description": "concurrent agent race variant 1",
+      "family": "G",
+      "seed": 120600,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-G-02",
+      "description": "concurrent agent race variant 2",
+      "family": "G",
+      "seed": 120601,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-G-03",
+      "description": "concurrent agent race variant 3",
+      "family": "G",
+      "seed": 120602,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-G-04",
+      "description": "concurrent agent race variant 4",
+      "family": "G",
+      "seed": 120603,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-G-05",
+      "description": "concurrent agent race variant 5",
+      "family": "G",
+      "seed": 120604,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-H-01",
+      "description": "pre-existing divergence variant 1",
+      "family": "H",
+      "seed": 120700,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-H-02",
+      "description": "pre-existing divergence variant 2",
+      "family": "H",
+      "seed": 120701,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-H-03",
+      "description": "pre-existing divergence variant 3",
+      "family": "H",
+      "seed": 120702,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-H-04",
+      "description": "pre-existing divergence variant 4",
+      "family": "H",
+      "seed": 120703,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-H-05",
+      "description": "pre-existing divergence variant 5",
+      "family": "H",
+      "seed": 120704,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-I-01",
+      "description": "safe reconciliation variant 1",
+      "family": "I",
+      "seed": 120800,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-I-02",
+      "description": "safe reconciliation variant 2",
+      "family": "I",
+      "seed": 120801,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-I-03",
+      "description": "safe reconciliation variant 3",
+      "family": "I",
+      "seed": 120802,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-I-04",
+      "description": "safe reconciliation variant 4",
+      "family": "I",
+      "seed": 120803,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-I-05",
+      "description": "safe reconciliation variant 5",
+      "family": "I",
+      "seed": 120804,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-J-01",
+      "description": "irreversible non-automatic state variant 1",
+      "family": "J",
+      "seed": 120900,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-J-02",
+      "description": "irreversible non-automatic state variant 2",
+      "family": "J",
+      "seed": 120901,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-J-03",
+      "description": "irreversible non-automatic state variant 3",
+      "family": "J",
+      "seed": 120902,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-J-04",
+      "description": "irreversible non-automatic state variant 4",
+      "family": "J",
+      "seed": 120903,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-J-05",
+      "description": "irreversible non-automatic state variant 5",
+      "family": "J",
+      "seed": 120904,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-K-01",
+      "description": "TOCTOU world change variant 1",
+      "family": "K",
+      "seed": 121000,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-K-02",
+      "description": "TOCTOU world change variant 2",
+      "family": "K",
+      "seed": 121001,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-K-03",
+      "description": "TOCTOU world change variant 3",
+      "family": "K",
+      "seed": 121002,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-K-04",
+      "description": "TOCTOU world change variant 4",
+      "family": "K",
+      "seed": 121003,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-K-05",
+      "description": "TOCTOU world change variant 5",
+      "family": "K",
+      "seed": 121004,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-L-01",
+      "description": "OUTCOME_UNKNOWN restart/retry variant 1",
+      "family": "L",
+      "seed": 121100,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-L-02",
+      "description": "OUTCOME_UNKNOWN restart/retry variant 2",
+      "family": "L",
+      "seed": 121101,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-L-03",
+      "description": "OUTCOME_UNKNOWN restart/retry variant 3",
+      "family": "L",
+      "seed": 121102,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-L-04",
+      "description": "OUTCOME_UNKNOWN restart/retry variant 4",
+      "family": "L",
+      "seed": 121103,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-L-05",
+      "description": "OUTCOME_UNKNOWN restart/retry variant 5",
+      "family": "L",
+      "seed": 121104,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-M-01",
+      "description": "authoritative evidence ordering variant 1",
+      "family": "M",
+      "seed": 121200,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-M-02",
+      "description": "authoritative evidence ordering variant 2",
+      "family": "M",
+      "seed": 121201,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-M-03",
+      "description": "authoritative evidence ordering variant 3",
+      "family": "M",
+      "seed": 121202,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-M-04",
+      "description": "authoritative evidence ordering variant 4",
+      "family": "M",
+      "seed": 121203,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-M-05",
+      "description": "authoritative evidence ordering variant 5",
+      "family": "M",
+      "seed": 121204,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-N-01",
+      "description": "duplicate Pub/Sub delivery variant 1",
+      "family": "N",
+      "seed": 121300,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-N-02",
+      "description": "duplicate Pub/Sub delivery variant 2",
+      "family": "N",
+      "seed": 121301,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-N-03",
+      "description": "duplicate Pub/Sub delivery variant 3",
+      "family": "N",
+      "seed": 121302,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-N-04",
+      "description": "duplicate Pub/Sub delivery variant 4",
+      "family": "N",
+      "seed": 121303,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-N-05",
+      "description": "duplicate Pub/Sub delivery variant 5",
+      "family": "N",
+      "seed": 121304,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-O-01",
+      "description": "forged evidence variant 1",
+      "family": "O",
+      "seed": 121400,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-O-02",
+      "description": "forged evidence variant 2",
+      "family": "O",
+      "seed": 121401,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-O-03",
+      "description": "forged evidence variant 3",
+      "family": "O",
+      "seed": 121402,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-O-04",
+      "description": "forged evidence variant 4",
+      "family": "O",
+      "seed": 121403,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-O-05",
+      "description": "forged evidence variant 5",
+      "family": "O",
+      "seed": 121404,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-P-01",
+      "description": "agent claim versus reality variant 1",
+      "family": "P",
+      "seed": 121500,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-P-02",
+      "description": "agent claim versus reality variant 2",
+      "family": "P",
+      "seed": 121501,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-P-03",
+      "description": "agent claim versus reality variant 3",
+      "family": "P",
+      "seed": 121502,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-P-04",
+      "description": "agent claim versus reality variant 4",
+      "family": "P",
+      "seed": 121503,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-P-05",
+      "description": "agent claim versus reality variant 5",
+      "family": "P",
+      "seed": 121504,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-Q-01",
+      "description": "model failure variant 1",
+      "family": "Q",
+      "seed": 121600,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Q-02",
+      "description": "model failure variant 2",
+      "family": "Q",
+      "seed": 121601,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Q-03",
+      "description": "model failure variant 3",
+      "family": "Q",
+      "seed": 121602,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Q-04",
+      "description": "model failure variant 4",
+      "family": "Q",
+      "seed": 121603,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Q-05",
+      "description": "model failure variant 5",
+      "family": "Q",
+      "seed": 121604,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-R-01",
+      "description": "memory poisoning variant 1",
+      "family": "R",
+      "seed": 121700,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-R-02",
+      "description": "memory poisoning variant 2",
+      "family": "R",
+      "seed": 121701,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-R-03",
+      "description": "memory poisoning variant 3",
+      "family": "R",
+      "seed": 121702,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-R-04",
+      "description": "memory poisoning variant 4",
+      "family": "R",
+      "seed": 121703,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-R-05",
+      "description": "memory poisoning variant 5",
+      "family": "R",
+      "seed": 121704,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-S-01",
+      "description": "Firestore failure variant 1",
+      "family": "S",
+      "seed": 121800,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-S-02",
+      "description": "Firestore failure variant 2",
+      "family": "S",
+      "seed": 121801,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-S-03",
+      "description": "Firestore failure variant 3",
+      "family": "S",
+      "seed": 121802,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-S-04",
+      "description": "Firestore failure variant 4",
+      "family": "S",
+      "seed": 121803,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-S-05",
+      "description": "Firestore failure variant 5",
+      "family": "S",
+      "seed": 121804,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-T-01",
+      "description": "Pub/Sub failure variant 1",
+      "family": "T",
+      "seed": 121900,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-T-02",
+      "description": "Pub/Sub failure variant 2",
+      "family": "T",
+      "seed": 121901,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-T-03",
+      "description": "Pub/Sub failure variant 3",
+      "family": "T",
+      "seed": 121902,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-T-04",
+      "description": "Pub/Sub failure variant 4",
+      "family": "T",
+      "seed": 121903,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-T-05",
+      "description": "Pub/Sub failure variant 5",
+      "family": "T",
+      "seed": 121904,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-U-01",
+      "description": "KMS signing failure variant 1",
+      "family": "U",
+      "seed": 122000,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-U-02",
+      "description": "KMS signing failure variant 2",
+      "family": "U",
+      "seed": 122001,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-U-03",
+      "description": "KMS signing failure variant 3",
+      "family": "U",
+      "seed": 122002,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-U-04",
+      "description": "KMS signing failure variant 4",
+      "family": "U",
+      "seed": 122003,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-U-05",
+      "description": "KMS signing failure variant 5",
+      "family": "U",
+      "seed": 122004,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-V-01",
+      "description": "telemetry failure variant 1",
+      "family": "V",
+      "seed": 122100,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-V-02",
+      "description": "telemetry failure variant 2",
+      "family": "V",
+      "seed": 122101,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-V-03",
+      "description": "telemetry failure variant 3",
+      "family": "V",
+      "seed": 122102,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-V-04",
+      "description": "telemetry failure variant 4",
+      "family": "V",
+      "seed": 122103,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-V-05",
+      "description": "telemetry failure variant 5",
+      "family": "V",
+      "seed": 122104,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-W-01",
+      "description": "identity attack variant 1",
+      "family": "W",
+      "seed": 122200,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-W-02",
+      "description": "identity attack variant 2",
+      "family": "W",
+      "seed": 122201,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-W-03",
+      "description": "identity attack variant 3",
+      "family": "W",
+      "seed": 122202,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-W-04",
+      "description": "identity attack variant 4",
+      "family": "W",
+      "seed": 122203,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-W-05",
+      "description": "identity attack variant 5",
+      "family": "W",
+      "seed": 122204,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-X-01",
+      "description": "provenance tampering variant 1",
+      "family": "X",
+      "seed": 122300,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-X-02",
+      "description": "provenance tampering variant 2",
+      "family": "X",
+      "seed": 122301,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-X-03",
+      "description": "provenance tampering variant 3",
+      "family": "X",
+      "seed": 122302,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-X-04",
+      "description": "provenance tampering variant 4",
+      "family": "X",
+      "seed": 122303,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-X-05",
+      "description": "provenance tampering variant 5",
+      "family": "X",
+      "seed": 122304,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-Y-01",
+      "description": "policy version pinning variant 1",
+      "family": "Y",
+      "seed": 122400,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Y-02",
+      "description": "policy version pinning variant 2",
+      "family": "Y",
+      "seed": 122401,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Y-03",
+      "description": "policy version pinning variant 3",
+      "family": "Y",
+      "seed": 122402,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Y-04",
+      "description": "policy version pinning variant 4",
+      "family": "Y",
+      "seed": 122403,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Y-05",
+      "description": "policy version pinning variant 5",
+      "family": "Y",
+      "seed": 122404,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Z-01",
+      "description": "pact isolation variant 1",
+      "family": "Z",
+      "seed": 122500,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Z-02",
+      "description": "pact isolation variant 2",
+      "family": "Z",
+      "seed": 122501,
+      "split": "DEVELOPMENT"
+    },
+    {
+      "case_id": "S12-Z-03",
+      "description": "pact isolation variant 3",
+      "family": "Z",
+      "seed": 122502,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-Z-04",
+      "description": "pact isolation variant 4",
+      "family": "Z",
+      "seed": 122503,
+      "split": "HELD_OUT"
+    },
+    {
+      "case_id": "S12-Z-05",
+      "description": "pact isolation variant 5",
+      "family": "Z",
+      "seed": 122504,
+      "split": "HELD_OUT"
+    }
+  ],
+  "version": "stage12-v1.0.0"
+}

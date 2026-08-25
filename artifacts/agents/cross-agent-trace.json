@@ -1,0 +1,34 @@
+[
+  {
+    "pact_id": "pact_stage8-race_ff21d9461bf01a5157ec",
+    "agent_id": "isopact-support-v1",
+    "google_agent_resource": null,
+    "agent_role": "SUPPORT",
+    "session_id": "session-stage8-race-support",
+    "a2a_interaction_id": null,
+    "tool_call": "request_refund_through_isopact",
+    "gateway_decision": "ALLOW",
+    "operation_identity": "897c6d3e3c70648490f36fb414d584ef7c31a0b8c7358ba0e235554a05314602",
+    "evidence_ids": [],
+    "rule_evaluation_ids": [],
+    "compensation_execution_ids": [],
+    "settlement_status": "PENDING",
+    "trace_id": "trace-stage8-race-support"
+  },
+  {
+    "pact_id": "pact_stage8-race_ff21d9461bf01a5157ec",
+    "agent_id": "isopact-fulfillment-v1",
+    "google_agent_resource": null,
+    "agent_role": "FULFILLMENT",
+    "session_id": "session-stage8-race-fulfillment",
+    "a2a_interaction_id": null,
+    "tool_call": "request_replacement_through_isopact",
+    "gateway_decision": "BLOCK",
+    "operation_identity": "59de503eecc42c4282a37929c4ea8f9d456f4ada0975de44cfe54efc26eec78e",
+    "evidence_ids": [],
+    "rule_evaluation_ids": [],
+    "compensation_execution_ids": [],
+    "settlement_status": "PENDING",
+    "trace_id": "trace-stage8-race-fulfillment"
+  }
+]

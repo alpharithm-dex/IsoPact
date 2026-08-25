@@ -1,0 +1,1 @@
+{"result":"PARTIAL","pact_id":"pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2","cross_region_latency_ms":[336.224,505.1,523.125,537.263,539.719,670.524,687.159,1738.436],"p50_ms":538.491,"p95_nearest_rank_ms":687.159,"telemetry_overhead_attribution_available":false}

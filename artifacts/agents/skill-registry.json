@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-08-24T02:19:07.354971+00:00",
+  "packages": [
+    {
+      "name": "resolve-missing-order-financially",
+      "version": "1.0.0",
+      "package": "skills/registry/resolve-missing-order-financially/SKILL.md",
+      "prepared": true,
+      "live_registered": false
+    },
+    {
+      "name": "manage-replacement-fulfillment",
+      "version": "1.0.0",
+      "package": "skills/registry/manage-replacement-fulfillment/SKILL.md",
+      "prepared": true,
+      "live_registered": false
+    },
+    {
+      "name": "apply-customer-retention-remedy",
+      "version": "1.0.0",
+      "package": "skills/registry/apply-customer-retention-remedy/SKILL.md",
+      "prepared": true,
+      "live_registered": false
+    },
+    {
+      "name": "reconcile-outcome-conflict",
+      "version": "1.0.0",
+      "package": "skills/registry/reconcile-outcome-conflict/SKILL.md",
+      "prepared": true,
+      "live_registered": false
+    }
+  ],
+  "live_registered_count": 0,
+  "discovery_attempts": [
+    {
+      "location": "us-central1",
+      "method": "ListSkills",
+      "authentication": "gcloud OAuth access token",
+      "result": "ReadTimeout",
+      "timeout_seconds": 15
+    },
+    {
+      "location": "us-east5",
+      "method": "ListSkills",
+      "authentication": "gcloud OAuth access token",
+      "result": "ReadTimeout",
+      "timeout_seconds": 15
+    },
+    {
+      "location": "europe-west4",
+      "method": "ListSkills",
+      "authentication": "gcloud OAuth access token",
+      "result": "ReadTimeout",
+      "timeout_seconds": 15
+    }
+  ],
+  "long_retry": {
+    "location": "europe-west4",
+    "result": "ReadTimeout",
+    "timeout_seconds": 120
+  },
+  "control_observation": "Unauthenticated ListSkills returned HTTP 401 immediately; authenticated calls timed out while Agent Registry calls succeeded.",
+  "claim": "Packages are valid and versioned locally; no live Skill Registry resource IDs or revisions are claimed."
+}

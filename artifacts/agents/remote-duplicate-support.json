@@ -1,0 +1,135 @@
+{
+  "pact_id": "pact_stage8b-duplicate-20260824021629_056140fc3ed66809b837",
+  "session_a": {
+    "role": "SUPPORT",
+    "resource": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "user_id": "stage8b-dup-user-a",
+    "invocation_ids": [
+      "e-bd8a50a3-31d1-4272-9034-ac045d24ddbf"
+    ],
+    "gateway": {
+      "action": "refund",
+      "body_agent_id_supplied": "",
+      "body_identity_used_for_authority": false,
+      "external_call_executed": true,
+      "external_object": {
+        "actor": "isopact-support-v1",
+        "adapter": "FIRESTORE_BACKED_ENTERPRISE_SIMULATOR",
+        "created_at": "2026-08-24T02:16:57.052245+00:00",
+        "external_object_id": "REF-44696de15d47",
+        "kind": "refund",
+        "operation_identity": "44696de15d473b7000125f71bf5a14ab4d4a2024d89fcde9afc522b9aadefc98",
+        "request_id": "req-stage8b-dup-a",
+        "state": "PENDING"
+      },
+      "gateway_decision": "ALLOW",
+      "operation_identity": "44696de15d473b7000125f71bf5a14ab4d4a2024d89fcde9afc522b9aadefc98",
+      "pact_graph_state": "PENDING",
+      "pact_id": "pact_stage8b-duplicate-20260824021629_056140fc3ed66809b837",
+      "reason_code": "AUTHORITY_RESERVED",
+      "regions": {
+        "firestore": "africa-south1",
+        "outcome_gateway": "africa-south1"
+      },
+      "request_id": "req-stage8b-dup-a",
+      "session_id": "stage8b-dup-a",
+      "timing_ms": {
+        "external_adapter_and_claim": 99.356,
+        "full_server": 187.426,
+        "gateway_authorization_including_firestore": 71.579,
+        "identity_verification": 0.266
+      },
+      "trace_id": "trace-stage8b-dup-a",
+      "verified_agent_id": "isopact-support-v1",
+      "verified_caller": {
+        "token_audience": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ],
+        "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "verification": "GOOGLE_STS_JWKS_RS256"
+      },
+      "verified_role": "SUPPORT",
+      "http_status": 200,
+      "agent_runtime_region": "europe-west1",
+      "cross_region_round_trip_ms": 571.135,
+      "safe_token_claims": {
+        "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "aud": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ]
+      }
+    },
+    "agent_statement": "The call to `request_refund_through_isopact` was successfully executed exactly once. Here is the exact result of the operation:\n\n### Refund Request Details:\n*   **Pact ID:** `pact_stage8b-duplicate-20260824021629_056140fc3ed66809b837`\n*   **Order ID:** `ORD-8472`\n*   **Request ID:** `req-stage8b-dup-a`\n*   **Session ID:** `stage8b-dup-a`\n*   **Trace ID:** `trace-stage8b-dup-a`\n*   **Gateway Decision:** `ALLOW`\n*   **External Refund ID:** `REF-44696de15d47`\n*   **External Refund State:** `PENDING`\n*   **Pact Graph State:** `PENDING`\n\n### Authoritative Pact State:\nAn inspection of the pact's authoritative status confirms that the pact state is currently **`PENDING`** (and is not yet settled).",
+    "errors": []
+  },
+  "session_b": {
+    "role": "SUPPORT",
+    "resource": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "user_id": "stage8b-dup-user-b",
+    "invocation_ids": [
+      "e-2da8a7fc-ede5-4929-aa6a-17cd8851cc03"
+    ],
+    "gateway": {
+      "action": "refund",
+      "body_agent_id_supplied": "",
+      "body_identity_used_for_authority": false,
+      "external_call_executed": false,
+      "external_object": null,
+      "gateway_decision": "BLOCK",
+      "operation_identity": "44696de15d473b7000125f71bf5a14ab4d4a2024d89fcde9afc522b9aadefc98",
+      "pact_graph_state": "PENDING",
+      "pact_id": "pact_stage8b-duplicate-20260824021629_056140fc3ed66809b837",
+      "reason_code": "DUPLICATE_OPERATION",
+      "regions": {
+        "firestore": "africa-south1",
+        "outcome_gateway": "africa-south1"
+      },
+      "request_id": "req-stage8b-dup-b",
+      "session_id": "stage8b-dup-b",
+      "timing_ms": {
+        "external_adapter_and_claim": 0.0,
+        "full_server": 42.118,
+        "gateway_authorization_including_firestore": 25.785,
+        "identity_verification": 0.275
+      },
+      "trace_id": "trace-stage8b-dup-b",
+      "verified_agent_id": "isopact-support-v1",
+      "verified_caller": {
+        "token_audience": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ],
+        "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "verification": "GOOGLE_STS_JWKS_RS256"
+      },
+      "verified_role": "SUPPORT",
+      "http_status": 409,
+      "agent_runtime_region": "europe-west1",
+      "cross_region_round_trip_ms": 446.592,
+      "safe_token_claims": {
+        "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "aud": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ]
+      }
+    },
+    "agent_statement": "The execution of `request_refund_through_isopact` returned the following exact result:\n\n* **HTTP Status**: `409` (Conflict)\n* **Gateway Decision**: `BLOCK`\n* **Reason Code**: `DUPLICATE_OPERATION`\n* **Pact Graph State**: `PENDING`\n* **Trace ID**: `trace-stage8b-dup-b`\n* **Request ID**: `req-stage8b-dup-b`\n\nAn inspection of the pact state using `support_inspect_pact_state` confirms that the overall status of pact `pact_stage8b-duplicate-20260824021629_056140fc3ed66809b837` remains **PENDING**. Because the pact is in a `PENDING` state, this transaction is not settled.",
+    "errors": []
+  },
+  "external_objects": [
+    {
+      "created_at": "2026-08-24T02:16:57.052245+00:00",
+      "actor": "isopact-support-v1",
+      "external_object_id": "REF-44696de15d47",
+      "operation_identity": "44696de15d473b7000125f71bf5a14ab4d4a2024d89fcde9afc522b9aadefc98",
+      "state": "PENDING",
+      "kind": "refund",
+      "request_id": "req-stage8b-dup-a",
+      "adapter": "FIRESTORE_BACKED_ENTERPRISE_SIMULATOR"
+    }
+  ],
+  "external_refund_execution_count": 1
+}

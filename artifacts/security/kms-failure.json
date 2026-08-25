@@ -1,0 +1,13 @@
+{
+  "failure_reason": "KMS_SIGNING_FAILED:ServiceUnavailable",
+  "false_signed_receipt_emitted": false,
+  "injected_failure": true,
+  "pact_state_remained_settled": true,
+  "pending_receipt_state": {
+    "final_pact_lifecycle": "SETTLED",
+    "issuance_failure_reason": "KMS_SIGNING_FAILED:ServiceUnavailable",
+    "issuance_status": "SETTLED_RECEIPT_PENDING",
+    "pact_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2",
+    "signature": null
+  }
+}

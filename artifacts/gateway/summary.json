@@ -1,0 +1,77 @@
+{
+  "authoritative_failure": {
+    "authoritative_external_failure_state": "FAILED_AUTHORITATIVELY",
+    "database": "(default)",
+    "downstream_calls_during_firestore_failure": 0,
+    "firestore_unavailable_decision": "DEFER",
+    "location": "africa-south1",
+    "project": "isopact-agentic-20260823",
+    "run_id": "20260823204536_81299571",
+    "safe_retry_decision": "ALLOW",
+    "safe_retry_reason": "AUTHORITATIVE_FAILURE_RETRY",
+    "timestamp": "2026-08-23T20:45:38.545607+00:00"
+  },
+  "database": "(default)",
+  "duplicate_race": {
+    "ALLOW": 1,
+    "external_executions": 1,
+    "non_ALLOW": 24
+  },
+  "exclusive_races": {
+    "dual_winners": 0,
+    "refund_wins": 5,
+    "replacement_wins": 5,
+    "rounds": 10
+  },
+  "independent_pacts": {
+    "count": 20,
+    "global_serialization_detected": false,
+    "successful": 20
+  },
+  "location": "africa-south1",
+  "model_hot_path_calls": 0,
+  "project": "isopact-agentic-20260823",
+  "protected_replay": {
+    "refund_objects_protected": 1,
+    "refund_objects_unmanaged": 2,
+    "same_schedule": true,
+    "schedule_digest": "6bfba8125f850027429efde5c03938cbe0327e9f67796c7870aeb1492db827e8"
+  },
+  "run_id": "20260823204536_81299571",
+  "status": "PASS",
+  "timestamp": "2026-08-23T20:45:38.545607+00:00",
+  "transaction_retry": {
+    "committed_execution_authorities": 1,
+    "database": "(default)",
+    "deterministic_retry_safety_proof": {
+      "callback_logic_invocations": 5,
+      "external_executions_after_selected_commit": 1,
+      "external_executions_during_callback_logic": 0,
+      "method": "the repository's pure callback decision function evaluated the same snapshot five times; all plans matched and no downstream adapter exists in that function",
+      "unique_plan_digests": 1,
+      "result": "PASS"
+    },
+    "external_executions": 1,
+    "live_retries_observed": true,
+    "location": "africa-south1",
+    "model_calls_during_consequential_interception": 0,
+    "project": "isopact-agentic-20260823",
+    "run_id": "20260823204536_81299571",
+    "timestamp": "2026-08-23T20:45:38.545607+00:00",
+    "transaction_callback_invocations": 35
+  },
+  "unknown_outcome": {
+    "database": "(default)",
+    "equivalent_retry_decision": "DEFER",
+    "external_object_actually_created": true,
+    "external_object_count": 1,
+    "firestore_state": "OUTCOME_UNKNOWN",
+    "location": "africa-south1",
+    "project": "isopact-agentic-20260823",
+    "response_observed": "LOST_AFTER_CREATE",
+    "retry_after_gateway_restart": "DEFER",
+    "retry_reason": "EXTERNAL_OUTCOME_UNKNOWN",
+    "run_id": "20260823204536_81299571",
+    "timestamp": "2026-08-23T20:45:38.545607+00:00"
+  }
+}

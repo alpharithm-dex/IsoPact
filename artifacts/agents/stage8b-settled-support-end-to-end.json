@@ -1,0 +1,140 @@
+{
+  "pact_id": "pact_stage8b-settlement-20260824011557_a584ae9dbc9d42bec2e6",
+  "support": {
+    "role": "SUPPORT",
+    "resource": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "user_id": "stage8b-settlement-support-user",
+    "invocation_ids": [
+      "e-b52fe5a8-bf70-4378-81e1-ed4460fda374"
+    ],
+    "gateway": {
+      "action": "refund",
+      "body_agent_id_supplied": "support_agent",
+      "body_identity_used_for_authority": false,
+      "external_call_executed": true,
+      "external_object": {
+        "actor": "isopact-support-v1",
+        "adapter": "FIRESTORE_BACKED_ENTERPRISE_SIMULATOR",
+        "created_at": "2026-08-24T01:16:31.066173+00:00",
+        "external_object_id": "REF-ecbbe09fba81",
+        "kind": "refund",
+        "operation_identity": "ecbbe09fba81021d173bd9ffcc15c4677eb5d7c2bb0901a944d53d7a39bc4aef",
+        "request_id": "req-stage8b-settlement-support",
+        "state": "PENDING"
+      },
+      "gateway_decision": "ALLOW",
+      "operation_identity": "ecbbe09fba81021d173bd9ffcc15c4677eb5d7c2bb0901a944d53d7a39bc4aef",
+      "pact_graph_state": "PENDING",
+      "pact_id": "pact_stage8b-settlement-20260824011557_a584ae9dbc9d42bec2e6",
+      "reason_code": "AUTHORITY_RESERVED",
+      "regions": {
+        "firestore": "africa-south1",
+        "outcome_gateway": "africa-south1"
+      },
+      "request_id": "req-stage8b-settlement-support",
+      "session_id": "stage8b-settlement-support",
+      "timing_ms": {
+        "external_adapter_and_claim": 456.751,
+        "full_server": 752.853,
+        "gateway_authorization_including_firestore": 266.988,
+        "identity_verification": 0.342
+      },
+      "trace_id": "trace-stage8b-settlement-support",
+      "verified_agent_id": "isopact-support-v1",
+      "verified_caller": {
+        "token_audience": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ],
+        "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "verification": "GOOGLE_STS_JWKS_RS256"
+      },
+      "verified_role": "SUPPORT",
+      "http_status": 200,
+      "agent_runtime_region": "europe-west1",
+      "cross_region_round_trip_ms": 1143.612,
+      "safe_token_claims": {
+        "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+        "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+        "aud": [
+          "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        ]
+      }
+    },
+    "agent_statement": "The request to refund through IsoPact was successfully executed. Here is the exact result of the call:\n\n* **Action:** `refund`\n* **HTTP Status:** `200`\n* **Gateway Decision:** `ALLOW`\n* **Pact Graph State:** `PENDING`\n* **External Object ID:** `REF-ecbbe09fba81`\n* **External Object State:** `PENDING`\n* **Pact ID:** `pact_stage8b-settlement-20260824011557_a584ae9dbc9d42bec2e6`\n* **Request ID:** `req-stage8b-settlement-support`\n* **Session ID:** `stage8b-settlement-support`\n* **Trace ID:** `trace-stage8b-settlement-support`\n\n*(Note: The transaction state is currently **PENDING** and is not yet settled.)*",
+    "errors": []
+  },
+  "rank4_statement": "The request to refund through IsoPact was successfully executed. Here is the exact result of the call:\n\n* **Action:** `refund`\n* **HTTP Status:** `200`\n* **Gateway Decision:** `ALLOW`\n* **Pact Graph State:** `PENDING`\n* **External Object ID:** `REF-ecbbe09fba81`\n* **External Object State:** `PENDING`\n* **Pact ID:** `pact_stage8b-settlement-20260824011557_a584ae9dbc9d42bec2e6`\n* **Request ID:** `req-stage8b-settlement-support`\n* **Session ID:** `stage8b-settlement-support`\n* **Trace ID:** `trace-stage8b-settlement-support`\n\n*(Note: The transaction state is currently **PENDING** and is not yet settled.)*",
+  "state_after_rank4": "PENDING",
+  "rank1_event": "stripe.refund.succeeded",
+  "ingestion_result": {
+    "evidence_id": "ev_584f1bcbb361e19062806d6494fe4ac9",
+    "logical_evidence_created": true,
+    "transport_record_created": true,
+    "economic_event_created": true,
+    "state_claim_created": true,
+    "settlement_transition_created": true,
+    "reservation_reconciled": false,
+    "pact_state": "SETTLED",
+    "resolved_external_state": "SUCCEEDED",
+    "graph_revision": 3
+  },
+  "state_after_rank1": "SETTLED",
+  "before": {
+    "pact_id": "pact_stage8b-settlement-20260824011557_a584ae9dbc9d42bec2e6",
+    "state": "PENDING",
+    "selected_resolution": "successful_refund",
+    "revision": 2,
+    "settlement_transition_count": 0,
+    "resolved_operations": {},
+    "claim_count": 2,
+    "evidence_count": 0,
+    "economic_event_count": 0,
+    "delivery_count": 0,
+    "participant_count": 0,
+    "conflict_count": 0,
+    "evaluation_count": 2,
+    "settlement_proof_count": 0
+  },
+  "after": {
+    "pact_id": "pact_stage8b-settlement-20260824011557_a584ae9dbc9d42bec2e6",
+    "state": "SETTLED",
+    "selected_resolution": "successful_refund",
+    "revision": 3,
+    "settlement_transition_count": 1,
+    "resolved_operations": {
+      "ecbbe09fba81021d173bd9ffcc15c4677eb5d7c2bb0901a944d53d7a39bc4aef": {
+        "attempt": 1,
+        "evidence_id": "ev_584f1bcbb361e19062806d6494fe4ac9",
+        "source_sequence": null,
+        "resolution_path": "successful_refund",
+        "source_system": "stripe",
+        "external_object_id": "REF-ecbbe09fba81",
+        "state": "SUCCEEDED",
+        "occurred_at": "2026-08-24T01:16:35.629009+00:00",
+        "rank": 1,
+        "evidence_type": "stripe.refund.succeeded"
+      }
+    },
+    "claim_count": 3,
+    "evidence_count": 1,
+    "economic_event_count": 1,
+    "delivery_count": 1,
+    "participant_count": 0,
+    "conflict_count": 0,
+    "evaluation_count": 3,
+    "settlement_proof_count": 1
+  },
+  "external_objects": [
+    {
+      "created_at": "2026-08-24T01:16:31.066173+00:00",
+      "actor": "isopact-support-v1",
+      "external_object_id": "REF-ecbbe09fba81",
+      "operation_identity": "ecbbe09fba81021d173bd9ffcc15c4677eb5d7c2bb0901a944d53d7a39bc4aef",
+      "state": "PENDING",
+      "kind": "refund",
+      "request_id": "req-stage8b-settlement-support",
+      "adapter": "FIRESTORE_BACKED_ENTERPRISE_SIMULATOR"
+    }
+  ]
+}

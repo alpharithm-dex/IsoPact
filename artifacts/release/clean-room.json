@@ -1,0 +1,120 @@
+{
+  "clean_directory": "stage13-clean-room-attempt-2",
+  "docker_local": "UNAVAILABLE; clean source is submitted to Cloud Build separately",
+  "excluded_hidden_state": [
+    ".pytest_cache",
+    ".venv",
+    ".venv-win",
+    "__pycache__",
+    "dist",
+    "node_modules",
+    "work"
+  ],
+  "source_tree_sha256": "92f7b8f49925783c51b545d801e1a11cd06e865858f57477c43521f4d7c05caf",
+  "status": "PASS",
+  "steps": [
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\files-mentioned-by-the-user-isopact\\.venv-win\\Scripts\\python.exe",
+        "-m",
+        "venv",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\stage13-clean-room-attempt-2\\.clean-venv"
+      ],
+      "finished": "2026-08-25T12:39:19.906151+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:38:54.573896+00:00",
+      "stderr_tail": "",
+      "stdout_tail": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\stage13-clean-room-attempt-2\\.clean-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--timeout",
+        "60",
+        "-r",
+        "requirements-lock.txt"
+      ],
+      "finished": "2026-08-25T12:47:13.708030+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:39:19.906151+00:00",
+      "stderr_tail": "\n[notice] A new release of pip is available: 25.0.1 -> 26.2.1\n[notice] To update, run: C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\stage13-clean-room-attempt-2\\.clean-venv\\Scripts\\python.exe -m pip install --upgrade pip\n",
+      "stdout_tail": "1 aiohttp-3.14.3 aiologic-0.17.1 aiosignal-1.4.0 aiosqlite-0.22.1 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.14.2 attrs-26.1.0 blinker-1.9.0 certifi-2026.7.22 cffi-2.1.1 charset-normalizer-3.5.1 click-8.4.2 cloudpickle-3.1.2 colorama-0.4.6 cryptography-46.0.7 culsans-0.11.0 distro-1.9.0 docstring_parser-0.18.0 fastapi-0.141.1 frozenlist-1.8.0 google-adk-2.7.1 google-api-core-2.34.0 google-auth-2.56.3 google-cloud-aiplatform-1.165.1 google-cloud-appengine-logging-1.10.0 google-cloud-audit-log-0.6.1 google-cloud-bigquery-3.43.0 google-cloud-core-2.6.1 google-cloud-firestore-2.28.1 google-cloud-kms-3.16.0 google-cloud-logging-3.16.2 google-cloud-modelarmor-0.7.1 google-cloud-pubsub-2.39.1 google-cloud-resource-manager-1.18.0 google-cloud-secret-manager-2.30.0 google-cloud-storage-3.13.1 google-crc32c-1.8.0 google-genai-2.19.0 google-resumable-media-2.10.1 googleapis-common-protos-1.75.1 graphviz-0.21 grpc-google-iam-v1-0.14.5 grpcio-1.83.0 grpcio-status-1.83.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.19 iniconfig-2.3.0 itsdangerous-2.2.0 joserfc-1.7.4 json-rpc-1.15.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 multidict-6.7.1 opentelemetry-api-1.42.1 opentelemetry-exporter-gcp-logging-1.15.0a0 opentelemetry-exporter-otlp-proto-common-1.42.1 opentelemetry-exporter-otlp-proto-http-1.42.1 opentelemetry-proto-1.42.1 opentelemetry-resourcedetector-gcp-1.14.0 opentelemetry-sdk-1.42.1 opentelemetry-semantic-conventions-0.63b1 packaging-26.3 pluggy-1.6.0 propcache-0.5.2 proto-plus-1.28.3 protobuf-6.33.6 pyasn1-0.6.4 pyasn1_modules-0.4.2 pycparser-3.0 pydantic-2.13.4 pydantic_core-2.46.4 pytest-9.1.1 python-dateutil-2.9.0.post0 python-dotenv-1.2.3 python-multipart-0.0.32 referencing-0.37.0 requests-2.34.2 rpds-py-2026.6.3 six-1.17.0 sniffio-1.3.1 sse-starlette-3.4.8 starlette-1.6.0 tenacity-9.1.4 typing-inspection-0.4.4 typing_extensions-4.16.0 tzdata-2026.3 tzlocal-5.4.4 urllib3-2.7.0 uvicorn-0.52.4 watchdog-6.0.0 websockets-15.0.1 wrapt-2.3.0 yarl-1.24.5\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\stage13-clean-room-attempt-2\\.clean-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "finished": "2026-08-25T12:47:34.193304+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:47:13.709029+00:00",
+      "stderr_tail": "",
+      "stdout_tail": ".....................................................................................................................                       [100%]\n============================== warnings summary ===============================\n<frozen abc>:106\n  <frozen abc>:106: DeprecationWarning: BaseAgentConfig is deprecated and will be removed in future versions. Config is now loaded via reflection so the separate config class is no longer needed.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n117 passed, 1 warning, 5 subtests passed in 17.00s\n"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "ci"
+      ],
+      "finished": "2026-08-25T12:47:42.609737+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:47:34.222328+00:00",
+      "stderr_tail": "npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation\n",
+      "stdout_tail": "\nadded 116 packages, and audited 117 packages in 8s\n\n25 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "test",
+        "--",
+        "--run"
+      ],
+      "finished": "2026-08-25T12:48:42.380086+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:47:42.609737+00:00",
+      "stderr_tail": "",
+      "stdout_tail": "\n> isopact-judge-interface@11.0.0 test\n> vitest run --run\n\n\n RUN  v4.1.11 C:/Users/HP/Documents/Codex/2026-08-23/stage13-clean-room-attempt-2/frontend\n\n\n Test Files  2 passed (2)\n      Tests  12 passed (12)\n   Start at  14:47:47\n   Duration  55.00s (transform 1.27s, setup 24.89s, import 2.55s, tests 1.41s, environment 75.87s)\n\n"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "run",
+        "build"
+      ],
+      "finished": "2026-08-25T12:48:48.607853+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:48:42.380086+00:00",
+      "stderr_tail": "",
+      "stdout_tail": "\n> isopact-judge-interface@11.0.0 build\n> tsc -b && vite build\n\nvite v8.2.2 building client environment for production...\ntransforming...\n\u00e2\u0153\u201c 18 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.45 kB \u00e2\u201d\u201a gzip:  0.30 kB\ndist/assets/index-BeXXSrcr.css   11.64 kB \u00e2\u201d\u201a gzip:  3.38 kB\ndist/assets/index-BfC84rRX.js   206.21 kB \u00e2\u201d\u201a gzip: 64.83 kB\n\n\u00e2\u0153\u201c built in 2.79s\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\stage13-clean-room-attempt-2\\.clean-venv\\Scripts\\python.exe",
+        "scripts/verify_settlement_receipt.py",
+        "artifacts/security/final-settlement-receipt.json"
+      ],
+      "finished": "2026-08-25T12:48:49.403063+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:48:48.607853+00:00",
+      "stderr_tail": "",
+      "stdout_tail": "{\"error_type\": \"ModuleNotFoundError\", \"message\": \"telemetry initialization failed; enforcement remains active\", \"severity\": \"WARNING\", \"timestamp\": \"2026-08-25T12:48:49.220733+00:00\"}\n{\n  \"receipt_signature_valid\": true,\n  \"checkpoint_signature_valid\": true,\n  \"claim_chain_valid\": true,\n  \"terminal_hash_matches\": true,\n  \"receipt_checkpoint_matches\": true,\n  \"receipt_references_consistent\": true,\n  \"overall_integrity_valid\": true,\n  \"reason_codes\": [],\n  \"scope\": \"FULL_INTEGRITY\",\n  \"external_source_truth_queried\": false,\n  \"meaning\": \"Integrity/provenance verified; source truth remains the authenticated adapter's responsibility.\"\n}\nOVERALL INTEGRITY: VALID\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\stage13-clean-room-attempt-2\\.clean-venv\\Scripts\\python.exe",
+        "scripts/run_scenario.py",
+        "missing_order_unmanaged"
+      ],
+      "finished": "2026-08-25T12:48:49.626751+00:00",
+      "returncode": 0,
+      "started": "2026-08-25T12:48:49.403063+00:00",
+      "stderr_tail": "",
+      "stdout_tail": "scenario=missing_order_unmanaged\nsemantic_digest=86ef2253cf9406901f4cbf833f1d90e55eb396f74cc75190aea006fc1c1e02db\nprojected_total_minor_units=65000\nprojected_excess_minor_units=45000\nartifact=C:\\Users\\HP\\Documents\\Codex\\2026-08-23\\stage13-clean-room-attempt-2\\artifacts\\replays\\missing_order_unmanaged.json\n"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "agent_identity": "isopact-support-v1",
+  "claim_hash": "f52842a03bc3318ab1474babde4358ebc4e50df51a8d80ff3df74dcf42553fa9",
+  "claim_id": "claim_gateway_req-stage8b-e2e-support",
+  "claim_schema_version": "isopact.stateclaim.v1",
+  "claim_type": "GATEWAY_AUTHORIZATION",
+  "evidence_rank": 4,
+  "external_object_id": null,
+  "immediate_state": "ACCEPTED",
+  "ingested_at": "2026-08-24T19:59:06.408027+00:00",
+  "normalized_payload": {
+    "action_kind": "refund",
+    "authorization_result": "ALLOW",
+    "inputs": {
+      "amount_minor_units": 20001,
+      "currency": "USD",
+      "session_id": "stage8b-e2e-support"
+    },
+    "reason_code": "AUTHORITY_RESERVED",
+    "request_id": "req-stage8b-e2e-support",
+    "role": "SUPPORT"
+  },
+  "normalized_payload_hash": "c06de6f27b739473f27e6cf220b99932b5f419099ef8a670df0b789410d8fdc0",
+  "occurred_at": "2026-08-24T19:59:06.408027+00:00",
+  "operation_identity": "43b8220e8f24dc42f593b084bd57d861b91401d37296f621974e3d976a07d589",
+  "pact_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2",
+  "policy_references": [
+    "commerce_missing_order_v1@1"
+  ],
+  "previous_claim_hash": "7c8fa671215de9e943c367861f8857ae46c33304c2e7e5f58ec3ede61da1b18c",
+  "protected_references": [],
+  "references": [
+    "gateway-decision:AUTHORITY_RESERVED"
+  ],
+  "resolution_path": "successful_refund",
+  "rule_references": [
+    "commerce_missing_order_rules@1"
+  ],
+  "sequence_number": 1,
+  "source_actor": "isopact-support-v1",
+  "source_event_id": null,
+  "source_system": "isopact-outcome-gateway",
+  "subject": "refund",
+  "trace_id": "trace-stage8b-e2e-support"
+}

@@ -1,0 +1,14 @@
+{
+  "database": "(default)",
+  "equivalent_retry_decision": "DEFER",
+  "external_object_actually_created": true,
+  "external_object_count": 1,
+  "firestore_state": "OUTCOME_UNKNOWN",
+  "location": "africa-south1",
+  "project": "isopact-agentic-20260823",
+  "response_observed": "LOST_AFTER_CREATE",
+  "retry_after_gateway_restart": "DEFER",
+  "retry_reason": "EXTERNAL_OUTCOME_UNKNOWN",
+  "run_id": "20260823204536_81299571",
+  "timestamp": "2026-08-23T20:45:38.545607+00:00"
+}

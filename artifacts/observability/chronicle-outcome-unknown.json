@@ -1,0 +1,34 @@
+{
+  "pact_id": "pact_stage10c_unknown_20260824212114",
+  "current_lifecycle": "CONFIRMED",
+  "selected_resolution": null,
+  "entries": [
+    {
+      "entry_id": "derived_outcome_unknown_pact_stage10c_unknown_20260824212114",
+      "pact_id": "pact_stage10c_unknown_20260824212114",
+      "category": "DERIVED_PROOF_EVENT",
+      "action": "OUTCOME_UNKNOWN",
+      "caused_by": [
+        "5a8401b34f59729fb7f3fa05212613ec",
+        "6380d0f296ea2d927367a78a64da6029",
+        "a5607802efcd640243b5135975be6a91",
+        "d28882d7678f718a16ae17f3124a700d",
+        "9ef95218dd5c7fe4ff5ee5a915de23ef"
+      ],
+      "proof": {
+        "retry_after_restart": "DEFER",
+        "immediate_state": "OUTCOME_UNKNOWN",
+        "external_execution_count": 1,
+        "pact_id": "pact_stage10c_unknown_20260824212114",
+        "external_action_occurred": true,
+        "final_state": "CONFIRMED",
+        "authoritative_evidence": "ev_carrier_query",
+        "equivalent_retry": "DEFER"
+      }
+    }
+  ],
+  "conflicts": [],
+  "trace_ids": [],
+  "receipt_verification": [],
+  "authoritative_store_created": false
+}

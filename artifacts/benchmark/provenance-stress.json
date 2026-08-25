@@ -1,0 +1,64 @@
+{
+  "disclosure": "25-way same-pact append is artificial contention and is not a production throughput claim.",
+  "forks": 0,
+  "levels": [
+    1,
+    2,
+    5,
+    10,
+    25
+  ],
+  "results": [
+    {
+      "concurrency": 1,
+      "forks": 0,
+      "max_ms": 0.239,
+      "p50_ms": 0.07,
+      "p95_ms": 0.197,
+      "samples": 25,
+      "sequence_duplicates": 0,
+      "sequence_gaps": 0
+    },
+    {
+      "concurrency": 2,
+      "forks": 0,
+      "max_ms": 0.132,
+      "p50_ms": 0.069,
+      "p95_ms": 0.113,
+      "samples": 25,
+      "sequence_duplicates": 0,
+      "sequence_gaps": 0
+    },
+    {
+      "concurrency": 5,
+      "forks": 0,
+      "max_ms": 0.118,
+      "p50_ms": 0.097,
+      "p95_ms": 0.117,
+      "samples": 25,
+      "sequence_duplicates": 0,
+      "sequence_gaps": 0
+    },
+    {
+      "concurrency": 10,
+      "forks": 0,
+      "max_ms": 0.121,
+      "p50_ms": 0.073,
+      "p95_ms": 0.114,
+      "samples": 40,
+      "sequence_duplicates": 0,
+      "sequence_gaps": 0
+    },
+    {
+      "concurrency": 25,
+      "forks": 0,
+      "max_ms": 0.244,
+      "p50_ms": 0.072,
+      "p95_ms": 0.121,
+      "samples": 100,
+      "sequence_duplicates": 0,
+      "sequence_gaps": 0
+    }
+  ],
+  "sequence_errors": 0
+}

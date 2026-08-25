@@ -1,0 +1,18 @@
+{
+  "arrival_sequence": [
+    "stripe.refund.succeeded Rank 1",
+    "older stripe.refund.pending Rank 3",
+    "older local pending claim"
+  ],
+  "database": "(default)",
+  "pact_id": "pact_stage5_20260823212828_3b1754ac_ordering_0a7ae6340e1a47fa1010",
+  "pact_state": "SETTLED",
+  "project": "isopact-agentic-20260823",
+  "regression_occurred": false,
+  "resolved_final_rank": 1,
+  "resolved_final_state": "SUCCEEDED",
+  "run_id": "20260823212828_3b1754ac",
+  "subscription": "projects/isopact-agentic-20260823/subscriptions/isopact-stage5-evidence-proof",
+  "timestamp": "2026-08-23T21:28:28.345162+00:00",
+  "topic": "projects/isopact-agentic-20260823/topics/isopact-stage5-evidence"
+}

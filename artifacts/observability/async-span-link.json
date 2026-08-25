@@ -1,0 +1,179 @@
+{
+  "source": "LIVE_CLOUD_TRACE_AND_PUBSUB_SDK_AUDIT",
+  "project": "isopact-agentic-20260823",
+  "execution": "isopact-stage10c-proof-vt4c7",
+  "pact": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "topic": "projects/isopact-agentic-20260823/topics/isopact-stage5-evidence",
+  "subscription": "projects/isopact-agentic-20260823/subscriptions/isopact-stage5-evidence-proof",
+  "message_id": "20648378675153105",
+  "source_event_id": "evt-stage8b-20260824205251",
+  "proof_service_account": "isopact-stage10c-proof@isopact-agentic-20260823.iam.gserviceaccount.com",
+  "topic_role": "roles/pubsub.publisher",
+  "subscription_role": "roles/pubsub.subscriber",
+  "publishers": [
+    {
+      "trace_id": "7dc674d4131e6f07a1833fdc5486c999",
+      "span_id": "12082260630672347854",
+      "parent_span_id": null,
+      "name": "isopact.agent.invoke",
+      "labels": {
+        "telemetry.sdk.version": "1.39.1",
+        "cloud.provider": "gcp",
+        "cloud.account.id": "isopact-agentic-20260823",
+        "gcp.cloud_run.job.task_index": "0",
+        "cloud.region": "africa-south1",
+        "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+        "cloud.platform": "gcp_cloud_run",
+        "telemetry.sdk.language": "python",
+        "service.name": "isopact",
+        "telemetry.sdk.name": "opentelemetry",
+        "faas.name": "isopact-stage10c-proof",
+        "faas.instance": "00a41e8c1d4097c06e6d6edb0553cd27c506680728efc616351218e7a4c401f6eea0f607e891e2a2a1dd9ddf690b4cd74a7dc0a45119a509b44e08ad732a85e812e3b60128d83271b48400bc13efbc74ddf432ce7ba61674baaed170443d",
+        "gcp.cloud_run.job.execution": "isopact-stage10c-proof-vt4c7",
+        "gcp.project_id": "isopact-agentic-20260823"
+      },
+      "links": []
+    }
+  ],
+  "consumers": [
+    {
+      "trace_id": "26770964428ef481d66100e228f07a12",
+      "span_id": "2930330954287455227",
+      "parent_span_id": null,
+      "name": "isopact.evidence.ingest",
+      "labels": {
+        "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+        "isopact.evidence.rank": "1",
+        "telemetry.sdk.language": "python",
+        "faas.name": "isopact-stage10c-proof",
+        "isopact.evidence.source": "stripe",
+        "cloud.account.id": "isopact-agentic-20260823",
+        "telemetry.sdk.version": "1.39.1",
+        "cloud.region": "africa-south1",
+        "telemetry.sdk.name": "opentelemetry",
+        "gcp.cloud_run.job.execution": "isopact-stage10c-proof-vt4c7",
+        "cloud.platform": "gcp_cloud_run",
+        "cloud.provider": "gcp",
+        "gcp.project_id": "isopact-agentic-20260823",
+        "service.name": "isopact",
+        "faas.instance": "00a41e8c1d4097c06e6d6edb0553cd27c506680728efc616351218e7a4c401f6eea0f607e891e2a2a1dd9ddf690b4cd74a7dc0a45119a509b44e08ad732a85e812e3b60128d83271b48400bc13efbc74ddf432ce7ba61674baaed170443d",
+        "gcp.cloud_run.job.task_index": "0"
+      },
+      "links": []
+    },
+    {
+      "trace_id": "c4a56fb4414a39ab660cf3fd62d551be",
+      "span_id": "2593252846098491900",
+      "parent_span_id": null,
+      "name": "isopact.evidence.ingest",
+      "labels": {
+        "service.name": "isopact",
+        "cloud.region": "africa-south1",
+        "isopact.evidence.rank": "1",
+        "faas.name": "isopact-stage10c-proof",
+        "gcp.project_id": "isopact-agentic-20260823",
+        "telemetry.sdk.name": "opentelemetry",
+        "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+        "cloud.platform": "gcp_cloud_run",
+        "telemetry.sdk.version": "1.39.1",
+        "cloud.provider": "gcp",
+        "gcp.cloud_run.job.execution": "isopact-stage10c-proof-vt4c7",
+        "gcp.cloud_run.job.task_index": "0",
+        "faas.instance": "00a41e8c1d4097c06e6d6edb0553cd27c506680728efc616351218e7a4c401f6eea0f607e891e2a2a1dd9ddf690b4cd74a7dc0a45119a509b44e08ad732a85e812e3b60128d83271b48400bc13efbc74ddf432ce7ba61674baaed170443d",
+        "cloud.account.id": "isopact-agentic-20260823",
+        "telemetry.sdk.language": "python",
+        "isopact.evidence.source": "stripe"
+      },
+      "links": []
+    }
+  ],
+  "cloud_trace_links": [],
+  "cloud_trace_read_api_exposes_links": false,
+  "sdk_audit_publishers": [
+    {
+      "timestamp": "2026-08-25T00:18:01.363882+00:00",
+      "isopact.span.span_id": "a7acd0076ee992ce",
+      "isopact.span.trace_id": "7dc674d4131e6f07a1833fdc5486c999",
+      "message": "opentelemetry span-link audit",
+      "isopact.span.links": [],
+      "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "isopact.span.parent_span_id": null,
+      "isopact.span.name": "isopact.agent.invoke"
+    }
+  ],
+  "sdk_audit_consumers": [
+    {
+      "timestamp": "2026-08-25T00:18:00.892030+00:00",
+      "isopact.span.links": [],
+      "isopact.span.span_id": "28aaa07a34a29bfb",
+      "isopact.span.trace_id": "26770964428ef481d66100e228f07a12",
+      "isopact.span.parent_span_id": null,
+      "message": "opentelemetry span-link audit",
+      "isopact.span.name": "isopact.evidence.ingest",
+      "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+    },
+    {
+      "timestamp": "2026-08-25T00:18:03.379787+00:00",
+      "isopact.span.trace_id": "c4a56fb4414a39ab660cf3fd62d551be",
+      "isopact.span.span_id": "23fd15b95078a9fc",
+      "isopact.span.name": "isopact.evidence.ingest",
+      "isopact.span.parent_span_id": null,
+      "isopact.span.links": [
+        {
+          "trace_id": "7dc674d4131e6f07a1833fdc5486c999",
+          "attributes": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.source_event_id": "evt-stage8b-20260824205251"
+          },
+          "span_id": "a7acd0076ee992ce"
+        }
+      ],
+      "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "message": "opentelemetry span-link audit"
+    }
+  ],
+  "matched_links": [
+    {
+      "consumer_trace_id": "c4a56fb4414a39ab660cf3fd62d551be",
+      "consumer_span_id": "23fd15b95078a9fc",
+      "publisher_trace_id": "7dc674d4131e6f07a1833fdc5486c999",
+      "publisher_span_id": "a7acd0076ee992ce",
+      "link": {
+        "trace_id": "7dc674d4131e6f07a1833fdc5486c999",
+        "attributes": {
+          "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "isopact.source_event_id": "evt-stage8b-20260824205251"
+        },
+        "span_id": "a7acd0076ee992ce"
+      }
+    }
+  ],
+  "audit_spans_in_cloud_trace": [
+    [
+      "26770964428ef481d66100e228f07a12",
+      "2930330954287455227"
+    ],
+    [
+      "7dc674d4131e6f07a1833fdc5486c999",
+      "12082260630672347854"
+    ],
+    [
+      "c4a56fb4414a39ab660cf3fd62d551be",
+      "2593252846098491900"
+    ]
+  ],
+  "pubsub_completion_logs": [
+    {
+      "timestamp": "2026-08-25T00:18:03.406841+00:00",
+      "isopact.source_event_id": "evt-stage8b-20260824205251",
+      "isopact.pubsub.message_id": "20648378675153105",
+      "message": "asynchronous evidence linked",
+      "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+    }
+  ],
+  "consumer_root_count": 2,
+  "fake_parent_child_relationships": 0,
+  "ack_after_processing": true,
+  "proof_method": "real Pub/Sub delivery + OTel SDK on_end link audit + Cloud Trace root-span reconciliation",
+  "result": "PASS"
+}

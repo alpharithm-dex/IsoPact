@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-08-24T02:11:50.598483+00:00",
+  "inventory_before": [
+    "projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/2859988073519775744",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/3755782186901438464",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/378504678838632448",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/8176065221165580288"
+  ],
+  "verified_canonical_before_delete": [
+    "projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648"
+  ],
+  "removed_runtime_resources": [
+    "projects/442539309409/locations/europe-west1/reasoningEngines/2859988073519775744",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/3755782186901438464",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/378504678838632448",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/8176065221165580288"
+  ],
+  "removed_cloud_run_services": [
+    "isopact-pact-status"
+  ],
+  "canonical_runtime_agents_remaining": [
+    "projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360",
+    "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648"
+  ],
+  "unexpected_resources_remaining": [],
+  "deletion_scope": "exact resource names only; historical evidence retained"
+}

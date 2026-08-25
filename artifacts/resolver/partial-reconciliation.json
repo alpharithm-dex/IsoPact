@@ -1,0 +1,56 @@
+{
+  "carrier": {
+    "approval_id": null,
+    "authority_tier": "AUTOMATIC",
+    "conflict_ids": [
+      "conflict_f1ee145e39c54c0f21d311069729f855"
+    ],
+    "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+    "evidence_ids": [],
+    "executed_against_state": "CREATED",
+    "execution_id": "compensation_execution_6d09627077ce44262fbe236263f1c32d",
+    "external_call_executed": true,
+    "pact_id": "pact_stage7_local",
+    "plan_id": "resolution_plan_b17cbdd667864593a7ea1be51a7f5550",
+    "planned_against_state": "CREATED",
+    "precondition_result": "PASS",
+    "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+    "registry_version": "1",
+    "semantic_operation_key": "compensation_operation_599ec90143eea4cca0ac143a0bb272bd",
+    "state": "CONFIRMED",
+    "target_id": "SHIP-001",
+    "target_system": "carrier",
+    "trace_id": "local-proof",
+    "updated_at": "2026-08-23T20:00:00Z",
+    "validated_against_state": "CREATED"
+  },
+  "economic_conflict_state": "OPEN",
+  "operational_conflict_state": "OPEN",
+  "policy": "Both carrier cancellation and warehouse release evidence are required for $200 recovery.",
+  "recovered_value": 0,
+  "warehouse": {
+    "approval_id": null,
+    "authority_tier": "AUTOMATIC",
+    "conflict_ids": [
+      "conflict_f1ee145e39c54c0f21d311069729f855"
+    ],
+    "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+    "evidence_ids": [],
+    "executed_against_state": "RESERVED",
+    "execution_id": "compensation_execution_b5983799882fa6a18dd5b05642b010ab",
+    "external_call_executed": true,
+    "pact_id": "pact_stage7_local",
+    "plan_id": "resolution_plan_b17cbdd667864593a7ea1be51a7f5550",
+    "planned_against_state": "RESERVED",
+    "precondition_result": "PASS",
+    "registry_action_id": "warehouse_release_reserved_stock_v1",
+    "registry_version": "1",
+    "semantic_operation_key": "compensation_operation_a3ff88225ea511649a22cd6dff4493a3",
+    "state": "FAILED_AUTHORITATIVELY",
+    "target_id": "STK-001",
+    "target_system": "warehouse",
+    "trace_id": "local-proof",
+    "updated_at": "2026-08-23T20:00:00Z",
+    "validated_against_state": "RESERVED"
+  }
+}

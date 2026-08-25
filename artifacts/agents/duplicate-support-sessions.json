@@ -1,0 +1,27 @@
+{
+  "session_a": {
+    "gateway_decision": "ALLOW",
+    "reason_code": "AUTHORITY_RESERVED",
+    "external_call_executed": true,
+    "external_object_id": "REF-001",
+    "external_state": "PENDING",
+    "pact_id": "pact_stage8-duplicate_f4e70a2d5bdcd2e8a669",
+    "agent_id": "isopact-support-v1",
+    "session_id": "session-stage8-duplicate-support",
+    "trace_id": "trace-stage8-duplicate-support",
+    "operation_identity": "b1276165c7bfe06d86f69e92345ab891175eb9029e7952a49631fbb05d0bd636"
+  },
+  "session_b": {
+    "gateway_decision": "BLOCK",
+    "reason_code": "DUPLICATE_OPERATION",
+    "external_call_executed": false,
+    "external_object_id": null,
+    "external_state": "NOT_EXECUTED",
+    "pact_id": "pact_stage8-duplicate_f4e70a2d5bdcd2e8a669",
+    "agent_id": "isopact-support-v1",
+    "session_id": "session-stage8-support-b",
+    "trace_id": "trace-stage8-support-b",
+    "operation_identity": "b1276165c7bfe06d86f69e92345ab891175eb9029e7952a49631fbb05d0bd636"
+  },
+  "external_refund_executions": 1
+}

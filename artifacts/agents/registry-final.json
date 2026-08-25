@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-08-24T01:31:16.373618+00:00",
+  "runtime_agents": [
+    {
+      "role": "FULFILLMENT",
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-4ba0-ec1a518efa7b",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:7471674091947163648",
+      "framework": "google-adk",
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "a2a_skills": [],
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648"
+    },
+    {
+      "role": "RESOLVER",
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-4656-8d85d163ec69",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:4435825730634383360",
+      "framework": "google-adk",
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "a2a_skills": [],
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360"
+    },
+    {
+      "role": "RETENTION",
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-95af-4ad93ca9b5c8",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:1103584218845282304",
+      "framework": "google-adk",
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "a2a_skills": [],
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304"
+    },
+    {
+      "role": "SUPPORT",
+      "name": "projects/442539309409/locations/europe-west1/agents/agentregistry-00000000-0000-0000-07e7-fd9da58fb549",
+      "agent_id": "urn:agent:projects-442539309409:projects:442539309409:locations:europe-west1:aiplatform:reasoningEngines:1997126532413259776",
+      "framework": "google-adk",
+      "protocols": [
+        {
+          "type": "CUSTOM",
+          "interfaces": [
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776:query",
+              "protocolBinding": "HTTP_JSON"
+            },
+            {
+              "url": "https://europe-west1-aiplatform.googleapis.com/v1/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776:streamQuery",
+              "protocolBinding": "HTTP_JSON"
+            }
+          ]
+        }
+      ],
+      "a2a_skills": [],
+      "runtime_identity": "principal://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776"
+    }
+  ],
+  "endpoint": {
+    "create_operation": {
+      "name": "projects/442539309409/locations/africa-south1/operations/operation-1787535080374-659c0f17d40cb-0816221d-4d2610ac",
+      "metadata": {
+        "@type": "type.googleapis.com/google.cloud.agentregistry.v1alpha.OperationMetadata",
+        "createTime": "2026-08-24T01:31:20.393488569Z",
+        "endTime": "2026-08-24T01:31:20.470671458Z",
+        "target": "projects/442539309409/locations/africa-south1/services/isopact-outcome-gateway",
+        "verb": "create",
+        "requestedCancellation": false,
+        "apiVersion": "v1alpha"
+      },
+      "done": true,
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.agentregistry.v1alpha.Service",
+        "name": "projects/isopact-agentic-20260823/locations/africa-south1/services/isopact-outcome-gateway",
+        "displayName": "IsoPact Outcome Gateway",
+        "description": "Authenticated africa-south1 settlement-plane HTTP API for deterministic IsoPact actions.",
+        "interfaces": [
+          {
+            "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+            "protocolBinding": "HTTP_JSON"
+          }
+        ],
+        "endpointSpec": {
+          "type": "NO_SPEC"
+        },
+        "createTime": "2026-08-24T01:31:20.390213944Z",
+        "updateTime": "2026-08-24T01:31:20.390213944Z",
+        "registryResource": "projects/442539309409/locations/africa-south1/endpoints/agentregistry-00000000-0000-0000-62d8-54b9d4a5166d"
+      }
+    },
+    "status": "REGISTERED",
+    "service": {
+      "name": "projects/442539309409/locations/africa-south1/services/isopact-outcome-gateway",
+      "displayName": "IsoPact Outcome Gateway",
+      "description": "Authenticated africa-south1 settlement-plane HTTP API for deterministic IsoPact actions.",
+      "interfaces": [
+        {
+          "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+          "protocolBinding": "HTTP_JSON"
+        }
+      ],
+      "endpointSpec": {
+        "type": "NO_SPEC"
+      },
+      "createTime": "2026-08-24T01:31:20.390213944Z",
+      "updateTime": "2026-08-24T01:31:20.486873951Z",
+      "registryResource": "projects/442539309409/locations/africa-south1/endpoints/agentregistry-00000000-0000-0000-62d8-54b9d4a5166d"
+    },
+    "endpoint": {
+      "name": "projects/442539309409/locations/africa-south1/endpoints/agentregistry-00000000-0000-0000-62d8-54b9d4a5166d",
+      "displayName": "IsoPact Outcome Gateway",
+      "description": "Authenticated africa-south1 settlement-plane HTTP API for deterministic IsoPact actions.",
+      "interfaces": [
+        {
+          "url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+          "protocolBinding": "HTTP_JSON"
+        }
+      ],
+      "createTime": "2026-08-24T01:31:20.461067Z",
+      "updateTime": "2026-08-24T01:31:20.461067Z",
+      "attributes": {
+        "agentregistry.googleapis.com/system/RuntimeReference": {
+          "uri": "//agentregistry.googleapis.com/projects/442539309409/locations/africa-south1/services/isopact-outcome-gateway"
+        }
+      },
+      "endpointId": "urn:endpoint:projects-442539309409:projects:442539309409:locations:africa-south1:agentregistry:services:isopact-outcome-gateway"
+    }
+  }
+}

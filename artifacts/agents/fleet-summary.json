@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-08-24T21:52:45.594984+00:00",
+  "status": "BLOCKED",
+  "gate_blocker": "Agent Registry indexed skill arrays are empty for CUSTOM AdkApp resources; genuine A2aAgent deployment was rejected because the runtime server does not support a2a_extension. Remote consequential tools stop at authenticated IsoPact control-plane envelopes; live remote-to-Gateway submission is not yet deployed.",
+  "provider": "Google ADK on Vertex AI Agent Runtime",
+  "adk_version": "2.7.1",
+  "model": "gemini-3.5-flash",
+  "project": "isopact-agentic-20260823",
+  "runtime_region": "europe-west1",
+  "model_endpoint": "global",
+  "cross_region_firestore": {
+    "firestore_region": "africa-south1",
+    "runtime_region": "europe-west1",
+    "hidden": false
+  },
+  "logical_agent_count": 4,
+  "remote_role_count": 4,
+  "registry_role_count": 4,
+  "indexed_registry_skill_count": 0,
+  "successful_live_invocations": 4,
+  "evaluation_case_count": 26,
+  "evaluation_passed": 26,
+  "memory_bank_integrated": false,
+  "a2a_exposed": false,
+  "deterministic_proofs": {
+    "primary_external_executions": 1,
+    "duplicate_refund_executions": 1,
+    "claim_before_state": "PENDING",
+    "claim_final_state": "SETTLED",
+    "identity_denials": 3,
+    "unsafe_resolver_actions": 0
+  }
+}

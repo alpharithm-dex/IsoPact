@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-08-24T01:54:28.133177+00:00",
+  "method": "temporary diagnostic tool exposed on each canonical Runtime resource, removed after proof",
+  "results": {
+    "support_to_replacement": {
+      "runtime_resource": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "runtime_invocation_ids": [
+        "e-05966a4e-cd78-4f0d-9441-0e0e0f5825da"
+      ],
+      "tool": "stage8b_support_attempt_replacement",
+      "response": {
+        "error": "CAPABILITY_DENIED",
+        "external_call_executed": false,
+        "message": "isopact-support-v1 role SUPPORT lacks REQUEST_REPLACEMENT",
+        "http_status": 403,
+        "agent_runtime_region": "europe-west1",
+        "cross_region_round_trip_ms": 2100.061,
+        "safe_token_claims": {
+          "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+          "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+          "aud": [
+            "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+          ]
+        }
+      },
+      "denied_before_pact_lookup": true,
+      "external_call": false
+    },
+    "fulfillment_to_refund": {
+      "runtime_resource": "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+      "runtime_invocation_ids": [
+        "e-3d3aad0f-de2b-4833-8151-ff11f6466461"
+      ],
+      "tool": "stage8b_fulfillment_attempt_refund",
+      "response": {
+        "error": "CAPABILITY_DENIED",
+        "external_call_executed": false,
+        "message": "isopact-fulfillment-v1 role FULFILLMENT lacks REQUEST_REFUND",
+        "http_status": 403,
+        "agent_runtime_region": "europe-west1",
+        "cross_region_round_trip_ms": 609.766,
+        "safe_token_claims": {
+          "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+          "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+          "aud": [
+            "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+          ]
+        }
+      },
+      "denied_before_pact_lookup": true,
+      "external_call": false
+    },
+    "retention_to_refund": {
+      "runtime_resource": "projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+      "runtime_invocation_ids": [
+        "e-98da9595-ea4b-4e0f-84cf-12ebf9278ac7"
+      ],
+      "tool": "stage8b_retention_attempt_refund",
+      "response": {
+        "error": "CAPABILITY_DENIED",
+        "external_call_executed": false,
+        "message": "isopact-retention-v1 role RETENTION lacks REQUEST_REFUND",
+        "http_status": 403,
+        "agent_runtime_region": "europe-west1",
+        "cross_region_round_trip_ms": 388.267,
+        "safe_token_claims": {
+          "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+          "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+          "aud": [
+            "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+          ]
+        }
+      },
+      "denied_before_pact_lookup": true,
+      "external_call": false
+    }
+  },
+  "all_cross_role_denied": true,
+  "unauthorized_external_calls": 0
+}

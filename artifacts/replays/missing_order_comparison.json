@@ -1,0 +1,117 @@
+{
+  "same_schedule": true,
+  "scenario_id": "missing_order_unmanaged",
+  "schedule_digest_protected": "6bfba8125f850027429efde5c03938cbe0327e9f67796c7870aeb1492db827e8",
+  "schedule_digest_unmanaged": "6bfba8125f850027429efde5c03938cbe0327e9f67796c7870aeb1492db827e8",
+  "schema_version": "stage4-comparison-v1",
+  "with_isopact_stage4": {
+    "attempted_actions": 7,
+    "blocked_actions": 3,
+    "decision_reasons": [
+      "OUTSIDE_STAGE4_SAFETY_KERNEL",
+      "AUTHORITY_RESERVED",
+      "OUTSIDE_STAGE4_SAFETY_KERNEL",
+      "EXCLUSIVE_RESOLUTION_CONFLICT",
+      "EXCLUSIVE_RESOLUTION_CONFLICT",
+      "AUTHORITY_RESERVED",
+      "DUPLICATE_OPERATION"
+    ],
+    "economic_projected_position": {
+      "as_of": 500,
+      "authorized_exception_minor_units": 5000,
+      "currency": "USD",
+      "original_minor_units": 20000,
+      "pending_minor_units": 20000,
+      "projected_excess_minor_units": 5000,
+      "projected_only_minor_units": 0,
+      "projected_total_minor_units": 25000,
+      "provenance": [
+        {
+          "amount_minor_units": 5000,
+          "event_id": "ECO-0002",
+          "event_type": "GOODWILL_CREDIT_ISSUED",
+          "external_object_id": "CR-001",
+          "phase": "SETTLED"
+        },
+        {
+          "amount_minor_units": 20000,
+          "event_id": "ECO-0001",
+          "event_type": "REFUND_PENDING",
+          "external_object_id": "REF-001",
+          "phase": "PENDING"
+        }
+      ],
+      "settled_minor_units": 5000
+    },
+    "executed_external_actions": 4,
+    "external_object_counts": {
+      "carrier": 0,
+      "crm": 1,
+      "jira": 1,
+      "stripe": 1,
+      "warehouse": 0
+    }
+  },
+  "without_isopact": {
+    "attempted_actions": 7,
+    "blocked_actions": 0,
+    "decision_reasons": [
+      "UNMANAGED_ALLOW_ALL",
+      "UNMANAGED_ALLOW_ALL",
+      "UNMANAGED_ALLOW_ALL",
+      "UNMANAGED_ALLOW_ALL",
+      "UNMANAGED_ALLOW_ALL",
+      "UNMANAGED_ALLOW_ALL",
+      "UNMANAGED_ALLOW_ALL"
+    ],
+    "economic_projected_position": {
+      "as_of": 500,
+      "authorized_exception_minor_units": 5000,
+      "currency": "USD",
+      "original_minor_units": 20000,
+      "pending_minor_units": 40000,
+      "projected_excess_minor_units": 45000,
+      "projected_only_minor_units": 20000,
+      "projected_total_minor_units": 65000,
+      "provenance": [
+        {
+          "amount_minor_units": 5000,
+          "event_id": "ECO-0003",
+          "event_type": "GOODWILL_CREDIT_ISSUED",
+          "external_object_id": "CR-001",
+          "phase": "SETTLED"
+        },
+        {
+          "amount_minor_units": 20000,
+          "event_id": "ECO-0001",
+          "event_type": "REFUND_PENDING",
+          "external_object_id": "REF-001",
+          "phase": "PENDING"
+        },
+        {
+          "amount_minor_units": 20000,
+          "event_id": "ECO-0004",
+          "event_type": "REFUND_PENDING",
+          "external_object_id": "REF-002",
+          "phase": "PENDING"
+        },
+        {
+          "amount_minor_units": 20000,
+          "event_id": "ECO-0002",
+          "event_type": "REPLACEMENT_CREATED",
+          "external_object_id": "SHIP-001",
+          "phase": "PROJECTED"
+        }
+      ],
+      "settled_minor_units": 5000
+    },
+    "executed_external_actions": 7,
+    "external_object_counts": {
+      "carrier": 1,
+      "crm": 1,
+      "jira": 1,
+      "stripe": 2,
+      "warehouse": 1
+    }
+  }
+}

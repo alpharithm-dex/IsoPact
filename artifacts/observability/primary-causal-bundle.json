@@ -1,0 +1,1427 @@
+{
+  "scenario": "primary",
+  "pact": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "source": "LIVE_CLOUD_TRACE_AND_FIRESTORE",
+  "trace_ids": [
+    "14e9f327c2d3ba7eddbfdcd4f8667d6f",
+    "4b0fe1368bccf253207a1278dbbb9fa9",
+    "4b601bb496443541993988c738190384",
+    "6432c5c6ea622e3a82b0d2c6d4fb3a40",
+    "0b47ac33622d482fa1e108b3862cf373",
+    "0fe4592936d93dcc3930e4d7bff7fd3c",
+    "845e73850e45fa8e9867968c49dda5e3",
+    "ada42cb2af7cebfc78cdba0a8156a920",
+    "c94288241699b05dfcdb948db3a3de8f",
+    "e1ce8f7eaeeb924f61a486b115b67e22",
+    "020eaf70595c460bced4fdf66ab4f63d",
+    "1fe9c4f3fe5b5783a2a57f3c45855800",
+    "291997c4defb19724feb7d6e4436a905",
+    "091fbf6d2adc22e9759fe9202cec198b",
+    "ff535cb6af3a1db88d397b189cae6a77",
+    "17bc3fc56a5695400b4cc9f3f4670f50",
+    "8135292df5212c4efa939d0106349a10",
+    "55d5cba21fdbf31426290a1563ac895a",
+    "e4ec03810d641a152751398db64f55a6",
+    "fdb6d8a4cbb6794ecfc576ebe3586086",
+    "4db3817d34aac539798b6002994ffe21",
+    "870aca526d2745574469bb2d447e7c8c",
+    "c27fae4fb07fd4d2872455331de1e08c",
+    "03676ef2512877576e4bbc8d937ced99",
+    "03aa4ed1508b895898e9b3227b7d4b8e",
+    "047f3a28da87e1518ea38a9b0e1eae3a",
+    "05f236b7630b50e5c7e98bdce9cc9fa4",
+    "09665014fef11a89e7bcba2035c52a7b",
+    "0b37c2c8661e08509c65235b33db0847",
+    "0ca94c60ae22b76f7ccaa01f6f0ee3e4",
+    "0ccdca7d603b8c9a63d905a34f179b73",
+    "0f7aa26f25cc66b66f4d497b9707e00a",
+    "0fdb9571ba121316de6010fcf9191352",
+    "102aeebab2a7874a13ddfde28a1e5fb1",
+    "10edee39f40da17798284941ef54a6db",
+    "11a62529c4f927176994a0f7ecd0a58c",
+    "13861b5a940df5d94b2c4b5b04f1a1eb",
+    "13a719a6f7b2db548d4e9464de12d173",
+    "15e6bed4ba0247081439fd274553dee2",
+    "16505f577a41d80462372ff0294e6aa7",
+    "16c98158d8bdb3d03d2481c238bd18b1",
+    "17bb110a58afd6430f11aa6281d3a7dd",
+    "17ebe689372eec183c0019a34a949dad",
+    "a6307ea2c83607a645713df32389f331"
+  ],
+  "live_spans": [
+    "isopact.claim.append",
+    "isopact.evidence.ingest",
+    "isopact.evidence.reduce",
+    "isopact.external.goodwill",
+    "isopact.external.refund",
+    "isopact.external.replacement",
+    "isopact.gateway.authenticate",
+    "isopact.gateway.authorize",
+    "isopact.gateway.request",
+    "isopact.invariants.evaluate",
+    "isopact.kms.checkpoint.sign",
+    "isopact.kms.receipt.sign",
+    "isopact.receipt.verify",
+    "isopact.reservation.transaction",
+    "isopact.settlement.evaluate"
+  ],
+  "traces": [
+    {
+      "trace_id": "14e9f327c2d3ba7eddbfdcd4f8667d6f",
+      "spans": [
+        {
+          "span_id": "13877617414627859180",
+          "parent_span_id": null,
+          "name": "isopact.gateway.request",
+          "start_time": "2026-08-24T20:54:41.801431007Z",
+          "end_time": "2026-08-24T20:54:41.801874483Z",
+          "labels": {
+            "isopact.action": "refund",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        },
+        {
+          "span_id": "14506086998196566028",
+          "parent_span_id": "13877617414627859180",
+          "name": "isopact.gateway.authenticate",
+          "start_time": "2026-08-24T20:54:41.801475972Z",
+          "end_time": "2026-08-24T20:54:41.801847758Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "4b0fe1368bccf253207a1278dbbb9fa9",
+      "spans": [
+        {
+          "span_id": "13056882453587949132",
+          "parent_span_id": null,
+          "name": "isopact.gateway.request",
+          "start_time": "2026-08-24T20:55:42.615768875Z",
+          "end_time": "2026-08-24T20:55:42.616097760Z",
+          "labels": {
+            "isopact.action": "refund",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        },
+        {
+          "span_id": "2841530677286256215",
+          "parent_span_id": "13056882453587949132",
+          "name": "isopact.gateway.authenticate",
+          "start_time": "2026-08-24T20:55:42.615807972Z",
+          "end_time": "2026-08-24T20:55:42.616075346Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "4b601bb496443541993988c738190384",
+      "spans": [
+        {
+          "span_id": "2663533026022823552",
+          "parent_span_id": null,
+          "name": "isopact.gateway.request",
+          "start_time": "2026-08-24T20:54:56.129977640Z",
+          "end_time": "2026-08-24T20:54:56.130317207Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.action": "replacement"
+          }
+        },
+        {
+          "span_id": "6464251486927510672",
+          "parent_span_id": "2663533026022823552",
+          "name": "isopact.gateway.authenticate",
+          "start_time": "2026-08-24T20:54:56.130016841Z",
+          "end_time": "2026-08-24T20:54:56.130293997Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "6432c5c6ea622e3a82b0d2c6d4fb3a40",
+      "spans": [
+        {
+          "span_id": "16266511554647378032",
+          "parent_span_id": null,
+          "name": "isopact.gateway.request",
+          "start_time": "2026-08-24T20:55:29.665508926Z",
+          "end_time": "2026-08-24T20:55:29.665845984Z",
+          "labels": {
+            "isopact.action": "goodwill",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        },
+        {
+          "span_id": "5536500032909553023",
+          "parent_span_id": "16266511554647378032",
+          "name": "isopact.gateway.authenticate",
+          "start_time": "2026-08-24T20:55:29.665549426Z",
+          "end_time": "2026-08-24T20:55:29.665823445Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "0b47ac33622d482fa1e108b3862cf373",
+      "spans": [
+        {
+          "span_id": "16599342131112247078",
+          "parent_span_id": null,
+          "name": "isopact.gateway.authorize",
+          "start_time": "2026-08-24T20:54:56.141062602Z",
+          "end_time": "2026-08-24T20:54:56.179102221Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.agent.role": "FULFILLMENT"
+          }
+        },
+        {
+          "span_id": "15171297002868615889",
+          "parent_span_id": "16599342131112247078",
+          "name": "isopact.reservation.transaction",
+          "start_time": "2026-08-24T20:54:56.141113651Z",
+          "end_time": "2026-08-24T20:54:56.178864477Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "0fe4592936d93dcc3930e4d7bff7fd3c",
+      "spans": [
+        {
+          "span_id": "7877150530207749399",
+          "parent_span_id": null,
+          "name": "isopact.gateway.authorize",
+          "start_time": "2026-08-24T20:55:29.842832717Z",
+          "end_time": "2026-08-24T20:55:29.926764384Z",
+          "labels": {
+            "isopact.agent.role": "RETENTION",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        },
+        {
+          "span_id": "4723414556752553797",
+          "parent_span_id": "7877150530207749399",
+          "name": "isopact.reservation.transaction",
+          "start_time": "2026-08-24T20:55:29.842870864Z",
+          "end_time": "2026-08-24T20:55:29.926550742Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "845e73850e45fa8e9867968c49dda5e3",
+      "spans": [
+        {
+          "span_id": "3291730623287523217",
+          "parent_span_id": null,
+          "name": "isopact.gateway.authorize",
+          "start_time": "2026-08-24T20:54:41.882098718Z",
+          "end_time": "2026-08-24T20:54:41.961544935Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.agent.role": "SUPPORT"
+          }
+        },
+        {
+          "span_id": "13302752394809515338",
+          "parent_span_id": "3291730623287523217",
+          "name": "isopact.reservation.transaction",
+          "start_time": "2026-08-24T20:54:41.882134276Z",
+          "end_time": "2026-08-24T20:54:41.961346387Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "ada42cb2af7cebfc78cdba0a8156a920",
+      "spans": [
+        {
+          "span_id": "1647219446692888127",
+          "parent_span_id": null,
+          "name": "isopact.gateway.authorize",
+          "start_time": "2026-08-24T20:55:42.630936854Z",
+          "end_time": "2026-08-24T20:55:42.678698388Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.agent.role": "SUPPORT"
+          }
+        },
+        {
+          "span_id": "2396600367630843716",
+          "parent_span_id": "1647219446692888127",
+          "name": "isopact.reservation.transaction",
+          "start_time": "2026-08-24T20:55:42.630974069Z",
+          "end_time": "2026-08-24T20:55:42.678490952Z",
+          "labels": {}
+        }
+      ]
+    },
+    {
+      "trace_id": "c94288241699b05dfcdb948db3a3de8f",
+      "spans": [
+        {
+          "span_id": "3538855944878737765",
+          "parent_span_id": null,
+          "name": "isopact.external.refund",
+          "start_time": "2026-08-24T20:54:42.012896462Z",
+          "end_time": "2026-08-24T20:54:42.027575110Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.external.executed": "true"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "e1ce8f7eaeeb924f61a486b115b67e22",
+      "spans": [
+        {
+          "span_id": "3214488919230642394",
+          "parent_span_id": null,
+          "name": "isopact.external.goodwill",
+          "start_time": "2026-08-24T20:55:30.147165795Z",
+          "end_time": "2026-08-24T20:55:30.163309123Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.external.executed": "true"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "020eaf70595c460bced4fdf66ab4f63d",
+      "spans": [
+        {
+          "span_id": "2343673441876060739",
+          "parent_span_id": null,
+          "name": "isopact.evidence.ingest",
+          "start_time": "2026-08-24T21:00:11.697201944Z",
+          "end_time": "2026-08-24T21:00:12.186704324Z",
+          "labels": {
+            "isopact.evidence.source": "stripe",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.evidence.rank": "1"
+          }
+        },
+        {
+          "span_id": "8235029064397565424",
+          "parent_span_id": "2343673441876060739",
+          "name": "isopact.evidence.reduce",
+          "start_time": "2026-08-24T21:00:11.697289684Z",
+          "end_time": "2026-08-24T21:00:12.186678224Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.evidence.rank": "1"
+          }
+        },
+        {
+          "span_id": "12021644485108714858",
+          "parent_span_id": "8235029064397565424",
+          "name": "isopact.settlement.evaluate",
+          "start_time": "2026-08-24T21:00:11.697342364Z",
+          "end_time": "2026-08-24T21:00:12.186625724Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "1fe9c4f3fe5b5783a2a57f3c45855800",
+      "spans": [
+        {
+          "span_id": "13177193816111416139",
+          "parent_span_id": null,
+          "name": "isopact.evidence.ingest",
+          "start_time": "2026-08-24T21:21:14.116480176Z",
+          "end_time": "2026-08-24T21:21:14.527741041Z",
+          "labels": {
+            "isopact.evidence.rank": "1",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.evidence.source": "stripe"
+          }
+        },
+        {
+          "span_id": "7541571659911310196",
+          "parent_span_id": "13177193816111416139",
+          "name": "isopact.evidence.reduce",
+          "start_time": "2026-08-24T21:21:14.116595316Z",
+          "end_time": "2026-08-24T21:21:14.527720671Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.evidence.rank": "1"
+          }
+        },
+        {
+          "span_id": "17602063725294225911",
+          "parent_span_id": "7541571659911310196",
+          "name": "isopact.settlement.evaluate",
+          "start_time": "2026-08-24T21:21:14.116704416Z",
+          "end_time": "2026-08-24T21:21:14.527668421Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "291997c4defb19724feb7d6e4436a905",
+      "spans": [
+        {
+          "span_id": "16772028138976033257",
+          "parent_span_id": null,
+          "name": "isopact.evidence.ingest",
+          "start_time": "2026-08-24T21:05:12.555933182Z",
+          "end_time": "2026-08-24T21:05:13.042093934Z",
+          "labels": {
+            "isopact.evidence.rank": "1",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.evidence.source": "stripe"
+          }
+        },
+        {
+          "span_id": "2530945963670413668",
+          "parent_span_id": "16772028138976033257",
+          "name": "isopact.evidence.reduce",
+          "start_time": "2026-08-24T21:05:12.556093832Z",
+          "end_time": "2026-08-24T21:05:13.042069164Z",
+          "labels": {
+            "isopact.evidence.rank": "1",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        },
+        {
+          "span_id": "9414475162154611428",
+          "parent_span_id": "2530945963670413668",
+          "name": "isopact.settlement.evaluate",
+          "start_time": "2026-08-24T21:05:12.556180903Z",
+          "end_time": "2026-08-24T21:05:13.042005464Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "091fbf6d2adc22e9759fe9202cec198b",
+      "spans": [
+        {
+          "span_id": "10458802282929077765",
+          "parent_span_id": null,
+          "name": "isopact.invariants.evaluate",
+          "start_time": "2026-08-24T21:05:13.043265756Z",
+          "end_time": "2026-08-24T21:05:13.043762517Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.rule.version": "1",
+            "isopact.rule.id": "commerce_missing_order_rules"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "ff535cb6af3a1db88d397b189cae6a77",
+      "spans": [
+        {
+          "span_id": "12499511619607551343",
+          "parent_span_id": null,
+          "name": "isopact.invariants.evaluate",
+          "start_time": "2026-08-24T21:21:14.529552855Z",
+          "end_time": "2026-08-24T21:21:14.530028066Z",
+          "labels": {
+            "isopact.rule.id": "commerce_missing_order_rules",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.rule.version": "1"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "17bc3fc56a5695400b4cc9f3f4670f50",
+      "spans": [
+        {
+          "span_id": "7972336233601290667",
+          "parent_span_id": null,
+          "name": "isopact.claim.append",
+          "start_time": "2026-08-24T20:54:42.076793164Z",
+          "end_time": "2026-08-24T20:54:42.162492655Z",
+          "labels": {
+            "isopact.evidence.rank": "3",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "8135292df5212c4efa939d0106349a10",
+      "spans": [
+        {
+          "span_id": "16921467547259030586",
+          "parent_span_id": null,
+          "name": "isopact.claim.append",
+          "start_time": "2026-08-24T20:55:30.364175555Z",
+          "end_time": "2026-08-24T20:55:30.403059530Z",
+          "labels": {
+            "isopact.evidence.rank": "3",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "55d5cba21fdbf31426290a1563ac895a",
+      "spans": [
+        {
+          "span_id": "3717432832603244528",
+          "parent_span_id": null,
+          "name": "isopact.kms.checkpoint.sign",
+          "start_time": "2026-08-24T21:21:35.666124718Z",
+          "end_time": "2026-08-24T21:21:35.702297277Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "e4ec03810d641a152751398db64f55a6",
+      "spans": [
+        {
+          "span_id": "833301610421915243",
+          "parent_span_id": null,
+          "name": "isopact.kms.checkpoint.sign",
+          "start_time": "2026-08-24T21:21:35.746826765Z",
+          "end_time": "2026-08-24T21:21:35.776943729Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "fdb6d8a4cbb6794ecfc576ebe3586086",
+      "spans": [
+        {
+          "span_id": "11366986010555306993",
+          "parent_span_id": null,
+          "name": "isopact.kms.checkpoint.sign",
+          "start_time": "2026-08-24T21:21:35.629853010Z",
+          "end_time": "2026-08-24T21:21:35.664455134Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "4db3817d34aac539798b6002994ffe21",
+      "spans": [
+        {
+          "span_id": "15954069749425603874",
+          "parent_span_id": null,
+          "name": "isopact.kms.receipt.sign",
+          "start_time": "2026-08-24T21:21:35.702480997Z",
+          "end_time": "2026-08-24T21:21:35.739223217Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "870aca526d2745574469bb2d447e7c8c",
+      "spans": [
+        {
+          "span_id": "1698873174687190987",
+          "parent_span_id": null,
+          "name": "isopact.kms.receipt.sign",
+          "start_time": "2026-08-24T21:21:35.777177540Z",
+          "end_time": "2026-08-24T21:21:35.803008133Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "c27fae4fb07fd4d2872455331de1e08c",
+      "spans": [
+        {
+          "span_id": "16134351553115806402",
+          "parent_span_id": null,
+          "name": "isopact.kms.receipt.sign",
+          "start_time": "2026-08-24T21:21:35.816957657Z",
+          "end_time": "2026-08-24T21:21:35.826279160Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "03676ef2512877576e4bbc8d937ced99",
+      "spans": [
+        {
+          "span_id": "13791866913651391692",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.056220312Z",
+          "end_time": "2026-08-24T21:21:36.056422572Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "03aa4ed1508b895898e9b3227b7d4b8e",
+      "spans": [
+        {
+          "span_id": "16966249912688431278",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.096528200Z",
+          "end_time": "2026-08-24T21:21:36.096744051Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "047f3a28da87e1518ea38a9b0e1eae3a",
+      "spans": [
+        {
+          "span_id": "15803254333965090502",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.025617117Z",
+          "end_time": "2026-08-24T21:21:36.025818137Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "05f236b7630b50e5c7e98bdce9cc9fa4",
+      "spans": [
+        {
+          "span_id": "4097016224791256809",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:35.979394964Z",
+          "end_time": "2026-08-24T21:21:35.979616434Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "09665014fef11a89e7bcba2035c52a7b",
+      "spans": [
+        {
+          "span_id": "4188704924284600796",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:35.930944655Z",
+          "end_time": "2026-08-24T21:21:35.931271606Z",
+          "labels": {
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0b37c2c8661e08509c65235b33db0847",
+      "spans": [
+        {
+          "span_id": "8938980846143528564",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:35.995292623Z",
+          "end_time": "2026-08-24T21:21:35.995515853Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0ca94c60ae22b76f7ccaa01f6f0ee3e4",
+      "spans": [
+        {
+          "span_id": "14417585114675465760",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.003456173Z",
+          "end_time": "2026-08-24T21:21:36.003744613Z",
+          "labels": {
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0ccdca7d603b8c9a63d905a34f179b73",
+      "spans": [
+        {
+          "span_id": "11987367592572149711",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:35.989734219Z",
+          "end_time": "2026-08-24T21:21:35.989944380Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0f7aa26f25cc66b66f4d497b9707e00a",
+      "spans": [
+        {
+          "span_id": "14289043667504894130",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.062043136Z",
+          "end_time": "2026-08-24T21:21:36.062260516Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "0fdb9571ba121316de6010fcf9191352",
+      "spans": [
+        {
+          "span_id": "3579912165990516989",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:35.988161705Z",
+          "end_time": "2026-08-24T21:21:35.988361236Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "102aeebab2a7874a13ddfde28a1e5fb1",
+      "spans": [
+        {
+          "span_id": "5387731017797045521",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.040728934Z",
+          "end_time": "2026-08-24T21:21:36.040927794Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "10edee39f40da17798284941ef54a6db",
+      "spans": [
+        {
+          "span_id": "4967703247057161064",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.082215595Z",
+          "end_time": "2026-08-24T21:21:36.082507496Z",
+          "labels": {
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "11a62529c4f927176994a0f7ecd0a58c",
+      "spans": [
+        {
+          "span_id": "17642311592197140740",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:35.811392063Z",
+          "end_time": "2026-08-24T21:21:35.811697074Z",
+          "labels": {
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "13861b5a940df5d94b2c4b5b04f1a1eb",
+      "spans": [
+        {
+          "span_id": "13917410000803383722",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.035355471Z",
+          "end_time": "2026-08-24T21:21:36.035570161Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "13a719a6f7b2db548d4e9464de12d173",
+      "spans": [
+        {
+          "span_id": "18272858613411247134",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.067148168Z",
+          "end_time": "2026-08-24T21:21:36.067357399Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "15e6bed4ba0247081439fd274553dee2",
+      "spans": [
+        {
+          "span_id": "8775415399370448514",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.043815091Z",
+          "end_time": "2026-08-24T21:21:36.044113882Z",
+          "labels": {
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "16505f577a41d80462372ff0294e6aa7",
+      "spans": [
+        {
+          "span_id": "14764601776705808623",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.054207637Z",
+          "end_time": "2026-08-24T21:21:36.054494797Z",
+          "labels": {
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "16c98158d8bdb3d03d2481c238bd18b1",
+      "spans": [
+        {
+          "span_id": "4210729904933539080",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:35.958716643Z",
+          "end_time": "2026-08-24T21:21:35.959014294Z",
+          "labels": {
+            "isopact.receipt.id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "17bb110a58afd6430f11aa6281d3a7dd",
+      "spans": [
+        {
+          "span_id": "5187014016739727859",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.054559257Z",
+          "end_time": "2026-08-24T21:21:36.054760868Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "17ebe689372eec183c0019a34a949dad",
+      "spans": [
+        {
+          "span_id": "3576252710630905872",
+          "parent_span_id": null,
+          "name": "isopact.receipt.verify",
+          "start_time": "2026-08-24T21:21:36.051288549Z",
+          "end_time": "2026-08-24T21:21:36.051496380Z",
+          "labels": {
+            "isopact.receipt.id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "a6307ea2c83607a645713df32389f331",
+      "spans": [
+        {
+          "span_id": "2227603690834963674",
+          "parent_span_id": null,
+          "name": "isopact.external.replacement",
+          "start_time": "2026-08-24T21:21:34.201814010Z",
+          "end_time": "2026-08-24T21:21:34.201835770Z",
+          "labels": {
+            "isopact.external.executed": "false",
+            "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+            "isopact.reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT"
+          }
+        }
+      ]
+    }
+  ],
+  "business_snapshot": {
+    "root": {
+      "claim_count": 8,
+      "graph_schema_version": "stage5-pact-graph-v1",
+      "customer_id": "CUS-104",
+      "completion_evidence": {
+        "successful_refund": [
+          "stripe.refund.succeeded"
+        ],
+        "confirmed_replacement": [
+          "carrier.shipment.accepted"
+        ]
+      },
+      "authorization_policy_version": "commerce_missing_order_v1@1",
+      "goodwill_limit_minor_units": 5000,
+      "policy_id": "commerce_missing_order_v1",
+      "updated_at": "2026-08-24T20:56:19.621263+00:00",
+      "settlement_generation": 1,
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "transaction": {
+        "currency": "USD",
+        "minor_units": 20000
+      },
+      "ticket_id": "JIRA-8472",
+      "status": "ACTIVE",
+      "order_id": "ORD-8472",
+      "policy_version": "1",
+      "activation_source": "VALIDATED_DRAFT_AND_TRUSTED_POLICY",
+      "created_at": "2026-08-24T20:54:12.582910+00:00",
+      "evidence_max_rank": {
+        "successful_refund": 2,
+        "confirmed_replacement": 1
+      },
+      "settlement_transition_count": 1,
+      "claim_sequence": 8,
+      "evaluation_rule_set_id": "commerce_missing_order_rules",
+      "exclusive_slots": {
+        "goodwill": [
+          "authorized_goodwill"
+        ],
+        "primary_compensation": [
+          "confirmed_replacement",
+          "successful_refund"
+        ]
+      },
+      "selected_resolution": "successful_refund",
+      "settlement_evidence_ids": [
+        "ev_055917cb6b302bd3227daef006aa47a5"
+      ],
+      "allowed_resolution_paths": [
+        "authorized_goodwill",
+        "confirmed_replacement",
+        "successful_refund"
+      ],
+      "terminal_claim_hash": "a1b6f9213c0b2ca488c75ca32b77e95236cd7475197acbd3e61138ea3f2c5623",
+      "evaluation_rule_set_version": "1",
+      "graph_state": "SETTLED",
+      "graph_revision": 8,
+      "goodwill_currency": "USD",
+      "resolved_operations": {
+        "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61": {
+          "attempt": 1,
+          "evidence_id": "ev_055917cb6b302bd3227daef006aa47a5",
+          "source_sequence": null,
+          "resolution_path": "successful_refund",
+          "source_system": "stripe",
+          "external_object_id": "REF-35642102aa6e",
+          "state": "SUCCEEDED",
+          "occurred_at": "2026-08-24T20:56:19.621263+00:00",
+          "rank": 1,
+          "evidence_type": "stripe.refund.succeeded"
+        }
+      }
+    },
+    "collections": {
+      "claims": [
+        {
+          "normalized_payload": {
+            "immediate_state": "COMPLETE",
+            "evidence_rank": 4,
+            "subject": "The request to execute a support refund through the IsoPact Gateway has been processed successfully exactly once. Here is the report on the verified caller and the exact result.\n\n### 1. Verified Caller Information\n* **Verified Agent ID**: `isopact-support-v1`\n* **Verified Role**: `SUPPORT`\n* **Token Subject (SPIFFE ID)**: `spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776`\n* **Token Issuer**: `https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog`\n* **Verification Method**: `GOOGLE_STS_JWKS_RS256`\n\n---\n\n### 2. Exact Result of the Refund Request\n* **Gateway Decision**: `ALLOW`\n* **Reason Code**: `AUTHORITY_RESERVED`\n* **Action**: `refund`\n* **Operation Identity**: `35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61`\n* **External Object ID**: `REF-35642102aa6e`\n* **Current State**: **`PENDING`** (Please note that the refund process is initiated but the work is currently pending and **not yet settled**).",
+            "external_object_id": null,
+            "resolution_path": null
+          },
+          "trace_id": "trace-stage8b-e2e-support-statement",
+          "immediate_state": "COMPLETE",
+          "claim_type": "AGENT_ASSERTION",
+          "sequence_number": 7,
+          "operation_identity": null,
+          "ingested_at": "2026-08-24T20:56:17.518333+00:00",
+          "policy_references": [],
+          "rule_references": [],
+          "occurred_at": "2026-08-24T20:56:17.518333+00:00",
+          "normalized_payload_hash": "315a64808c87c3ddf7ca9dd8cd898cca9eb3ff217352fd1d0e51faceb38aec4d",
+          "external_object_id": null,
+          "resolution_path": null,
+          "source_event_id": null,
+          "subject": "The request to execute a support refund through the IsoPact Gateway has been processed successfully exactly once. Here is the report on the verified caller and the exact result.\n\n### 1. Verified Caller Information\n* **Verified Agent ID**: `isopact-support-v1`\n* **Verified Role**: `SUPPORT`\n* **Token Subject (SPIFFE ID)**: `spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776`\n* **Token Issuer**: `https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog`\n* **Verification Method**: `GOOGLE_STS_JWKS_RS256`\n\n---\n\n### 2. Exact Result of the Refund Request\n* **Gateway Decision**: `ALLOW`\n* **Reason Code**: `AUTHORITY_RESERVED`\n* **Action**: `refund`\n* **Operation Identity**: `35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61`\n* **External Object ID**: `REF-35642102aa6e`\n* **Current State**: **`PENDING`** (Please note that the refund process is initiated but the work is currently pending and **not yet settled**).",
+          "agent_identity": null,
+          "source_system": "agent",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [],
+          "claim_hash": "054f3d936ae5ddd1273e79a0164eeb6af186acc122fd440889aa00acf6644474",
+          "evidence_rank": 4,
+          "previous_claim_hash": "8ab35bb4130b73fb8ad2020c0491e462c66b127b57d50461f72ec41968a220bd",
+          "claim_id": "claim_24e14258eda4456682ec22ec3f838460",
+          "source_actor": "isopact-support-v1",
+          "references": []
+        },
+        {
+          "normalized_payload": {
+            "immediate_state": "SUCCEEDED",
+            "evidence_rank": 1,
+            "subject": "ORD-8472",
+            "external_object_id": "REF-35642102aa6e",
+            "resolution_path": "successful_refund"
+          },
+          "trace_id": "trace-stage8b-e2e-stripe",
+          "immediate_state": "SUCCEEDED",
+          "claim_type": "AUTHORITATIVE_EVENT",
+          "sequence_number": 8,
+          "operation_identity": "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61",
+          "ingested_at": "2026-08-24T20:56:19.621263+00:00",
+          "policy_references": [],
+          "rule_references": [],
+          "occurred_at": "2026-08-24T20:56:19.621263+00:00",
+          "normalized_payload_hash": "a59a89d9fc36d18e6ccd7c89e61f1f2c983138f2894e5f7e140e364eb7269362",
+          "external_object_id": "REF-35642102aa6e",
+          "resolution_path": "successful_refund",
+          "source_event_id": "evt-stage8b-20260824205251",
+          "subject": "ORD-8472",
+          "agent_identity": null,
+          "source_system": "stripe",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [],
+          "claim_hash": "a1b6f9213c0b2ca488c75ca32b77e95236cd7475197acbd3e61138ea3f2c5623",
+          "evidence_rank": 1,
+          "previous_claim_hash": "054f3d936ae5ddd1273e79a0164eeb6af186acc122fd440889aa00acf6644474",
+          "claim_id": "claim_ev_055917cb6b302bd3227daef006aa47a5",
+          "source_actor": null,
+          "references": [
+            "ev_055917cb6b302bd3227daef006aa47a5"
+          ]
+        },
+        {
+          "normalized_payload": {
+            "authorization_result": "BLOCK",
+            "action_kind": "replacement",
+            "role": "FULFILLMENT",
+            "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+            "inputs": {
+              "value_minor_units": 20000,
+              "currency": "USD",
+              "session_id": "stage8b-e2e-fulfillment"
+            },
+            "request_id": "req-stage8b-e2e-fulfillment"
+          },
+          "immediate_state": "UNKNOWN",
+          "trace_id": "trace-stage8b-e2e-fulfillment",
+          "claim_type": "GATEWAY_AUTHORIZATION",
+          "external_object_id": null,
+          "operation_identity": "fef070322ebd7b355ec1ca102eb14334654ca2f8ec52b3ab9866ce14a0feae93",
+          "ingested_at": "2026-08-24T20:54:56.179116+00:00",
+          "policy_references": [
+            "commerce_missing_order_v1@1"
+          ],
+          "occurred_at": "2026-08-24T20:54:56.179116+00:00",
+          "normalized_payload_hash": "00975a100f863953f947c48a76047ea0d1971d7a48ed01546eae75e6500883e4",
+          "rule_references": [
+            "commerce_missing_order_rules@1"
+          ],
+          "sequence_number": 3,
+          "resolution_path": "confirmed_replacement",
+          "source_event_id": null,
+          "subject": "replacement",
+          "agent_identity": "isopact-fulfillment-v1",
+          "claim_hash": "751a1bb91c0d3d7280be9c1606ed5b8f9b2502cbd12e1b9b01f9ce2fae4f226d",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [],
+          "source_system": "isopact-outcome-gateway",
+          "evidence_rank": 4,
+          "previous_claim_hash": "9a4c0ca24301b9138e608397b16a14580f20ab2e6ba6576853d4286f5c2a3307",
+          "claim_id": "claim_gateway_req-stage8b-e2e-fulfillment",
+          "source_actor": "isopact-fulfillment-v1",
+          "references": [
+            "gateway-decision:EXCLUSIVE_RESOLUTION_CONFLICT"
+          ]
+        },
+        {
+          "normalized_payload": {
+            "authorization_result": "ALLOW",
+            "action_kind": "goodwill",
+            "role": "RETENTION",
+            "reason_code": "AUTHORITY_RESERVED",
+            "inputs": {
+              "authorized": true,
+              "currency": "USD",
+              "session_id": "stage8b-e2e-retention",
+              "amount_minor_units": 5000
+            },
+            "request_id": "req-stage8b-e2e-retention"
+          },
+          "immediate_state": "ACCEPTED",
+          "trace_id": "trace-stage8b-e2e-retention",
+          "claim_type": "GATEWAY_AUTHORIZATION",
+          "external_object_id": null,
+          "operation_identity": "3126391f7b3ef1ed49e45cc2d37d7809c2a792173d97dd32e99d44ded640b506",
+          "ingested_at": "2026-08-24T20:55:29.926780+00:00",
+          "policy_references": [
+            "commerce_missing_order_v1@1"
+          ],
+          "occurred_at": "2026-08-24T20:55:29.926780+00:00",
+          "normalized_payload_hash": "8874ba1d17de20cd2b3bbbdf567f119ccb084b40953f1c59fabd59b5f1b7f1d7",
+          "rule_references": [
+            "commerce_missing_order_rules@1"
+          ],
+          "sequence_number": 4,
+          "resolution_path": "authorized_goodwill",
+          "source_event_id": null,
+          "subject": "goodwill",
+          "agent_identity": "isopact-retention-v1",
+          "claim_hash": "d483ad07af91a00495e4846d5dc1875f8132c60feece499a634b823ba21fc544",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [],
+          "source_system": "isopact-outcome-gateway",
+          "evidence_rank": 4,
+          "previous_claim_hash": "751a1bb91c0d3d7280be9c1606ed5b8f9b2502cbd12e1b9b01f9ce2fae4f226d",
+          "claim_id": "claim_gateway_req-stage8b-e2e-retention",
+          "source_actor": "isopact-retention-v1",
+          "references": [
+            "gateway-decision:AUTHORITY_RESERVED"
+          ]
+        },
+        {
+          "normalized_payload": {
+            "authorization_result": "ALLOW",
+            "action_kind": "refund",
+            "role": "SUPPORT",
+            "reason_code": "AUTHORITY_RESERVED",
+            "inputs": {
+              "currency": "USD",
+              "session_id": "stage8b-e2e-support",
+              "amount_minor_units": 20000
+            },
+            "request_id": "req-stage8b-e2e-support"
+          },
+          "immediate_state": "ACCEPTED",
+          "trace_id": "trace-stage8b-e2e-support",
+          "claim_type": "GATEWAY_AUTHORIZATION",
+          "external_object_id": null,
+          "operation_identity": "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61",
+          "ingested_at": "2026-08-24T20:54:41.961559+00:00",
+          "policy_references": [
+            "commerce_missing_order_v1@1"
+          ],
+          "occurred_at": "2026-08-24T20:54:41.961559+00:00",
+          "normalized_payload_hash": "c06de6f27b739473f27e6cf220b99932b5f419099ef8a670df0b789410d8fdc0",
+          "rule_references": [
+            "commerce_missing_order_rules@1"
+          ],
+          "sequence_number": 1,
+          "resolution_path": "successful_refund",
+          "source_event_id": null,
+          "subject": "refund",
+          "agent_identity": "isopact-support-v1",
+          "claim_hash": "989c16f715b1299974b8149d2db5c20846ef9ef80faf15d29e0c970f3a35903d",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [],
+          "source_system": "isopact-outcome-gateway",
+          "evidence_rank": 4,
+          "previous_claim_hash": "7c8fa671215de9e943c367861f8857ae46c33304c2e7e5f58ec3ede61da1b18c",
+          "claim_id": "claim_gateway_req-stage8b-e2e-support",
+          "source_actor": "isopact-support-v1",
+          "references": [
+            "gateway-decision:AUTHORITY_RESERVED"
+          ]
+        },
+        {
+          "normalized_payload": {
+            "authorization_result": "BLOCK",
+            "action_kind": "refund",
+            "role": "SUPPORT",
+            "reason_code": "DUPLICATE_OPERATION",
+            "inputs": {
+              "currency": "USD",
+              "session_id": "stage8b-e2e-support-second",
+              "amount_minor_units": 20000
+            },
+            "request_id": "req-stage8b-e2e-support-second"
+          },
+          "immediate_state": "UNKNOWN",
+          "trace_id": "trace-stage8b-e2e-support-second",
+          "claim_type": "GATEWAY_AUTHORIZATION",
+          "external_object_id": null,
+          "operation_identity": "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61",
+          "ingested_at": "2026-08-24T20:55:42.678713+00:00",
+          "policy_references": [
+            "commerce_missing_order_v1@1"
+          ],
+          "occurred_at": "2026-08-24T20:55:42.678713+00:00",
+          "normalized_payload_hash": "c66d007c7c6f8423b2c5a678b04b780e9927c53ddb13867c8b523a753f307d8a",
+          "rule_references": [
+            "commerce_missing_order_rules@1"
+          ],
+          "sequence_number": 6,
+          "resolution_path": "successful_refund",
+          "source_event_id": null,
+          "subject": "refund",
+          "agent_identity": "isopact-support-v1",
+          "claim_hash": "8ab35bb4130b73fb8ad2020c0491e462c66b127b57d50461f72ec41968a220bd",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [],
+          "source_system": "isopact-outcome-gateway",
+          "evidence_rank": 4,
+          "previous_claim_hash": "bd616c13d82c7e7984bc7480cde5534130310ce990b25d5c97b5ef923b4c95f4",
+          "claim_id": "claim_gateway_req-stage8b-e2e-support-second",
+          "source_actor": "isopact-support-v1",
+          "references": [
+            "gateway-decision:DUPLICATE_OPERATION"
+          ]
+        },
+        {
+          "normalized_payload": {
+            "immediate_state": "ACCEPTED",
+            "action_kind": "goodwill",
+            "external_state": "ISSUED",
+            "external_object_id": "CR-3126391f7b3e"
+          },
+          "immediate_state": "ACCEPTED",
+          "trace_id": "trace-stage8b-e2e-retention",
+          "claim_type": "API_RESPONSE",
+          "external_object_id": "CR-3126391f7b3e",
+          "operation_identity": "3126391f7b3ef1ed49e45cc2d37d7809c2a792173d97dd32e99d44ded640b506",
+          "ingested_at": "2026-08-24T20:55:30.364049+00:00",
+          "policy_references": [
+            "commerce_missing_order_v1@1"
+          ],
+          "occurred_at": "2026-08-24T20:55:30.364049+00:00",
+          "normalized_payload_hash": "b975e6a3b91471f8d4485876d4815065f770031488fd45a405aa365e1965bf3b",
+          "rule_references": [
+            "commerce_missing_order_rules@1"
+          ],
+          "sequence_number": 5,
+          "resolution_path": "authorized_goodwill",
+          "source_event_id": null,
+          "subject": "goodwill",
+          "agent_identity": "isopact-retention-v1",
+          "claim_hash": "bd616c13d82c7e7984bc7480cde5534130310ce990b25d5c97b5ef923b4c95f4",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [
+            "external:CR-3126391f7b3e"
+          ],
+          "source_system": "crm",
+          "evidence_rank": 3,
+          "previous_claim_hash": "d483ad07af91a00495e4846d5dc1875f8132c60feece499a634b823ba21fc544",
+          "claim_id": "claim_remote_req-stage8b-e2e-retention",
+          "source_actor": "isopact-retention-v1",
+          "references": [
+            "remote-role:RETENTION"
+          ]
+        },
+        {
+          "normalized_payload": {
+            "immediate_state": "PENDING",
+            "action_kind": "refund",
+            "external_state": "PENDING",
+            "external_object_id": "REF-35642102aa6e"
+          },
+          "immediate_state": "PENDING",
+          "trace_id": "trace-stage8b-e2e-support",
+          "claim_type": "API_RESPONSE",
+          "external_object_id": "REF-35642102aa6e",
+          "operation_identity": "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61",
+          "ingested_at": "2026-08-24T20:54:42.076675+00:00",
+          "policy_references": [
+            "commerce_missing_order_v1@1"
+          ],
+          "occurred_at": "2026-08-24T20:54:42.076675+00:00",
+          "normalized_payload_hash": "de4af164e2b115d271574104aad0835150a905e2e2b82bf70a2b84a8dcefdb4f",
+          "rule_references": [
+            "commerce_missing_order_rules@1"
+          ],
+          "sequence_number": 2,
+          "resolution_path": "successful_refund",
+          "source_event_id": null,
+          "subject": "refund",
+          "agent_identity": "isopact-support-v1",
+          "claim_hash": "9a4c0ca24301b9138e608397b16a14580f20ab2e6ba6576853d4286f5c2a3307",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "claim_schema_version": "isopact.stateclaim.v1",
+          "protected_references": [
+            "external:REF-35642102aa6e"
+          ],
+          "source_system": "stripe",
+          "evidence_rank": 3,
+          "previous_claim_hash": "989c16f715b1299974b8149d2db5c20846ef9ef80faf15d29e0c970f3a35903d",
+          "claim_id": "claim_remote_req-stage8b-e2e-support",
+          "source_actor": "isopact-support-v1",
+          "references": [
+            "remote-role:SUPPORT"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "trace_id": "trace-stage8b-e2e-stripe",
+          "payload_hash": "87998687584ff0599d361c452bf71839a6cdf90316b65f6fc4c3705150bdff45",
+          "operation_attempt": 1,
+          "external_object_id": "REF-35642102aa6e",
+          "operation_identity": "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61",
+          "ingested_at": "2026-08-24T20:56:19.621263+00:00",
+          "occurred_at": "2026-08-24T20:56:19.621263+00:00",
+          "resolved_state": "SUCCEEDED",
+          "resolution_path": "successful_refund",
+          "source_event_id": "evt-stage8b-20260824205251",
+          "evidence_id": "ev_055917cb6b302bd3227daef006aa47a5",
+          "subject": "ORD-8472",
+          "evidence_type": "stripe.refund.succeeded",
+          "source_system": "stripe",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "source_sequence": null,
+          "authenticity": "VERIFIED",
+          "verification_mechanism": "SIGNED_OR_AUTHENTICATED_SYSTEM_EVENT",
+          "evidence_rank": 1
+        }
+      ],
+      "invariant_conflicts": [],
+      "compensation_executions": [],
+      "settlement_receipts": [
+        {
+          "final_pact_lifecycle": "SETTLED",
+          "final_authoritative_external_states": {
+            "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61": {
+              "attempt": 1,
+              "evidence_id": "ev_055917cb6b302bd3227daef006aa47a5",
+              "evidence_type": "stripe.refund.succeeded",
+              "resolution_path": "successful_refund",
+              "source_system": "stripe",
+              "external_object_id": "REF-35642102aa6e",
+              "state": "SUCCEEDED",
+              "occurred_at": "2026-08-24T20:56:19.621263+00:00",
+              "rank": 1,
+              "source_sequence": null
+            }
+          },
+          "policy_version": "commerce_missing_order_v1@1",
+          "reconciliation_actions": [],
+          "selected_resolution_path": "successful_refund",
+          "signing_key_version": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2",
+          "subject_identifiers": {
+            "customer_id": "CUS-104",
+            "ticket_id": "JIRA-8472",
+            "order_id": "ORD-8472"
+          },
+          "signature": "MEUCIFyShfBPU0rj908FPB37ZYXh+0w848Q8gL/eMXiehC4oAiEA9vK1UCyWpGITG3kS5MEcShE8zqNeklc5wFBw6ROeKt8=",
+          "issuance_status": "SIGNED",
+          "settlement_timestamp": "2026-08-24T20:56:19.621263+00:00",
+          "economic_position": {
+            "replacement_projected_value": 0,
+            "pending_primary_value": 0,
+            "currency": "USD",
+            "replacement_committed_value": 0,
+            "failed_primary_value": 0,
+            "provenance": [
+              "fact_claim_ev_055917cb6b302bd3227daef006aa47a5",
+              "fact_claim_gateway_req-stage8b-e2e-fulfillment",
+              "fact_claim_gateway_req-stage8b-e2e-retention"
+            ],
+            "recovered_value": 0,
+            "goodwill_settled_value": 5000,
+            "protected_value": 40000,
+            "goodwill_authorized_value": 5000,
+            "recoverable_candidate_value": 0,
+            "authorized_primary_value": 20000,
+            "projected_excess_exposure": 5000,
+            "settled_primary_value": 20000,
+            "projected_total_compensation": 25000,
+            "settled_excess_exposure": 5000,
+            "other_exception_value": 0,
+            "captured_value": 20000,
+            "blocked_value": 20000,
+            "legitimately_delayed_value": 0,
+            "settled_total_compensation": 25000
+          },
+          "participants": [],
+          "final_checkpoint": {
+            "terminal_claim_hash": "a1b6f9213c0b2ca488c75ca32b77e95236cd7475197acbd3e61138ea3f2c5623",
+            "checkpoint_id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008",
+            "through_sequence": 8
+          },
+          "approval_references": [],
+          "receipt_schema_version": "isopact.settlement-receipt.v1",
+          "authoritative_evidence_ids": [
+            "ev_055917cb6b302bd3227daef006aa47a5"
+          ],
+          "original_requested_outcome": "resolve_missing_order",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "rule_versions": [
+            "commerce_missing_order_rules@1"
+          ],
+          "signing_key_resource": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing",
+          "signature_algorithm": "EC_SIGN_P256_SHA256",
+          "exceptions": [],
+          "receipt_id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008"
+        }
+      ],
+      "graph_checkpoints": [
+        {
+          "economic_snapshot_digest": "4cce475884c80d99e5fe8e75c49f4e2eee8b7c5b062b2b691dcbef00946ae6d9",
+          "signing_key_version": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2",
+          "created_at": "2026-08-24T21:00:26.600805+00:00",
+          "claim_count": 8,
+          "checkpoint_id": "checkpoint_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008",
+          "through_sequence": 8,
+          "signature": "MEYCIQCLWmCicMu51+XkjILDYrfIVWXIyZtEgHU5wlT15l5NFQIhAO35oy66/Lh6jc8pkqfI7ibd+AaYuYfmbKIdv0iFJQej",
+          "policy_references": [
+            "commerce_missing_order_v1@1"
+          ],
+          "evidence_ids_included": [
+            "ev_055917cb6b302bd3227daef006aa47a5"
+          ],
+          "rule_references": [
+            "commerce_missing_order_rules@1"
+          ],
+          "issuance_status": "SIGNED",
+          "checkpoint_schema_version": "isopact.graph-checkpoint.v1",
+          "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "signing_key_resource": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing",
+          "signature_algorithm": "EC_SIGN_P256_SHA256",
+          "terminal_claim_hash": "a1b6f9213c0b2ca488c75ca32b77e95236cd7475197acbd3e61138ea3f2c5623",
+          "invariant_evaluation_digest": "48cdff5630920ca3ad899af07a6aabb141d695f165d4779cf790df2a5dbaddea"
+        }
+      ]
+    }
+  },
+  "completeness_result": "PASS_LIVE_RETRIEVED"
+}

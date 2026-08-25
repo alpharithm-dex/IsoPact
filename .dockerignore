@@ -1,0 +1,7 @@
+.venv*
+frontend/node_modules
+frontend/dist
+**/__pycache__
+work
+.pytest_cache
+artifacts/ui/screenshots

@@ -1,0 +1,352 @@
+{
+  "identity": {
+    "agent_id": "isopact-fulfillment-v1",
+    "role": "FULFILLMENT",
+    "display_name": "IsoPact Fulfillment Agent",
+    "skill_id": "manage_replacement_fulfillment",
+    "google_agent_resource": null,
+    "google_managed_identity": null
+  },
+  "runtime": {
+    "name": "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+    "display_name": "IsoPact Fulfillment Agent v1",
+    "description": "Specialized fulfillment worker; skill=manage_replacement_fulfillment; consequential requests route through IsoPact.",
+    "create_time": "2026-08-23T23:28:04.296916Z",
+    "update_time": "2026-08-24T18:59:50.050152Z",
+    "agent_framework": "google-adk",
+    "identity_type": "AGENT_IDENTITY",
+    "effective_identity": "agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+    "deployment_spec": {
+      "env": [
+        {
+          "name": "GOOGLE_GENAI_USE_VERTEXAI",
+          "value": "true"
+        },
+        {
+          "name": "GOOGLE_CLOUD_LOCATION",
+          "value": "global"
+        },
+        {
+          "name": "ISOPACT_OUTCOME_GATEWAY_URL",
+          "value": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        },
+        {
+          "name": "GOOGLE_CLOUD_AGENT_ENGINE_ENABLE_TELEMETRY",
+          "value": "true"
+        },
+        {
+          "name": "OTEL_SEMCONV_STABILITY_OPT_IN",
+          "value": "gen_ai_latest_experimental"
+        },
+        {
+          "name": "OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT",
+          "value": "NO_CONTENT"
+        },
+        {
+          "name": "ADK_CAPTURE_MESSAGE_CONTENT_IN_SPANS",
+          "value": "false"
+        }
+      ],
+      "max_instances": 2,
+      "min_instances": 0
+    }
+  },
+  "live_invocation": {
+    "resource": "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+    "role": "FULFILLMENT",
+    "provider": "Vertex AI Agent Runtime",
+    "model": "gemini-3.5-flash",
+    "live": true,
+    "event_count": 5,
+    "events": [
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_375037",
+                "args": {
+                  "pact_id": "PACT-STAGE8-001"
+                },
+                "name": "inspect_pact_state"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 29,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 29
+            }
+          ],
+          "prompt_token_count": 228,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 228
+            }
+          ],
+          "thoughts_token_count": 129,
+          "total_token_count": 386,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-017403db-84ac-4125-8104-ad712c68512b",
+        "author": "fulfillment_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "fulfillment_agent@1"
+        },
+        "long_running_tool_ids": [],
+        "id": "f1806501-7855-4afc-b1b6-b5fbec1893a7",
+        "timestamp": 1787528940.8118644
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_response": {
+                "id": "call_375037",
+                "name": "inspect_pact_state",
+                "response": {
+                  "pact_id": "PACT-STAGE8-001",
+                  "status": "CONTROL_PLANE_LOOKUP_REQUIRED",
+                  "authoritative_source": "PACT_GRAPH"
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocation_id": "e-017403db-84ac-4125-8104-ad712c68512b",
+        "author": "fulfillment_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "fulfillment_agent@1"
+        },
+        "id": "8fcf4886-a155-44c9-9c93-c48030de56c9",
+        "timestamp": 1787528942.4139683
+      },
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_344443",
+                "args": {
+                  "pact_id": "PACT-STAGE8-001",
+                  "order_id": "ORD-8472"
+                },
+                "name": "request_replacement_through_isopact"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 45,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 45
+            }
+          ],
+          "prompt_token_count": 417,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 417
+            }
+          ],
+          "thoughts_token_count": 98,
+          "total_token_count": 560,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-017403db-84ac-4125-8104-ad712c68512b",
+        "author": "fulfillment_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "fulfillment_agent@1"
+        },
+        "long_running_tool_ids": [],
+        "id": "c2ef3339-80df-4c7f-ad22-bccbb273eca3",
+        "timestamp": 1787528942.4905968
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_response": {
+                "id": "call_344443",
+                "name": "request_replacement_through_isopact",
+                "response": {
+                  "pact_id": "PACT-STAGE8-001",
+                  "order_id": "ORD-8472",
+                  "route": "ISOPACT_GATEWAY",
+                  "raw_carrier_access": false,
+                  "status": "CONTROL_PLANE_SUBMISSION_REQUIRED"
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocation_id": "e-017403db-84ac-4125-8104-ad712c68512b",
+        "author": "fulfillment_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "fulfillment_agent@1"
+        },
+        "id": "ed19f6c5-9870-48c9-8ea0-32c7bc0624ec",
+        "timestamp": 1787528943.9259782
+      },
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "text": "I have inspected the pact state for `PACT-STAGE8-001` and requested the replacement fulfillment for order `ORD-8472` through the IsoPact Gateway. \n\nThe request has been processed with the status **`CONTROL_PLANE_SUBMISSION_REQUIRED`** via the IsoPact routing."
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 68,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 68
+            }
+          ],
+          "prompt_token_count": 605,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 605
+            }
+          ],
+          "thoughts_token_count": 38,
+          "total_token_count": 711,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-017403db-84ac-4125-8104-ad712c68512b",
+        "author": "fulfillment_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "fulfillment_agent@1"
+        },
+        "id": "d48f9858-2985-43bb-b8da-363238de714e",
+        "timestamp": 1787528943.9943295
+      }
+    ],
+    "success": true
+  },
+  "authority": {
+    "capability_matrix": {
+      "SUPPORT": [
+        "READ_ORDER",
+        "READ_PACT",
+        "READ_TICKET",
+        "REQUEST_REFUND",
+        "UPDATE_TICKET"
+      ],
+      "FULFILLMENT": [
+        "READ_FULFILLMENT",
+        "READ_ORDER",
+        "READ_PACT",
+        "REQUEST_REPLACEMENT"
+      ],
+      "RETENTION": [
+        "READ_CUSTOMER",
+        "READ_PACT",
+        "REQUEST_GOODWILL"
+      ],
+      "RESOLVER": [
+        "READ_APPROVAL",
+        "READ_CONFLICTS",
+        "READ_PACT",
+        "REQUEST_VALIDATED_PLAN",
+        "SUBMIT_VALIDATED_PLAN"
+      ]
+    },
+    "tool_inventories": {
+      "SUPPORT": [
+        "inspect_pact_state",
+        "read_ticket",
+        "request_refund_through_isopact"
+      ],
+      "FULFILLMENT": [
+        "inspect_fulfillment_state",
+        "inspect_pact_state",
+        "request_replacement_through_isopact"
+      ],
+      "RETENTION": [
+        "inspect_customer_context",
+        "inspect_pact_state",
+        "request_goodwill_through_isopact"
+      ],
+      "RESOLVER": [
+        "get_available_compensation_candidates",
+        "get_open_conflicts",
+        "inspect_pact_state",
+        "request_validated_resolution_plan"
+      ]
+    },
+    "identity_negative_tests": [
+      {
+        "agent_id": "isopact-support-v1",
+        "attempted": "REQUEST_REPLACEMENT",
+        "decision": "DENY",
+        "reason": "isopact-support-v1 role SUPPORT lacks REQUEST_REPLACEMENT"
+      },
+      {
+        "agent_id": "isopact-fulfillment-v1",
+        "attempted": "REQUEST_REFUND",
+        "decision": "DENY",
+        "reason": "isopact-fulfillment-v1 role FULFILLMENT lacks REQUEST_REFUND"
+      },
+      {
+        "agent_id": "isopact-retention-v1",
+        "attempted": "REQUEST_REFUND",
+        "decision": "DENY",
+        "reason": "isopact-retention-v1 role RETENTION lacks REQUEST_REFUND"
+      }
+    ],
+    "deterministic_model_calls": 0,
+    "raw_firestore_authority": false,
+    "raw_consequential_bypass_tools": [],
+    "policy_edit_capability": false
+  }
+}

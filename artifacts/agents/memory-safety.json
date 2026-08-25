@@ -1,0 +1,7 @@
+{
+  "integrated": false,
+  "purpose": null,
+  "authoritative_state_stored_in_memory": [],
+  "stale_policy_memory_test": "NOT_APPLICABLE_MEMORY_BANK_NOT_USED",
+  "deterministic_outcome": "Trusted policy, Pact Graph, reservations, and evidence remain outside ADK memory."
+}

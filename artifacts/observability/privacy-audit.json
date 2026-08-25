@@ -1,0 +1,14 @@
+{
+  "scope": "sanitized Stage 10 observability JSON artifacts",
+  "matches": {
+    "jwt": [],
+    "authorization": [],
+    "webhook_secret": [],
+    "private_key": [],
+    "payment_secret": [],
+    "privacy_canary": [],
+    "raw_model_payload": []
+  },
+  "prohibited_match_count": 0,
+  "result": "PASS"
+}

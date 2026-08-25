@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-08-24T02:19:07.355972+00:00",
+  "status": "PASS",
+  "criteria_total": 31,
+  "criteria_passed": 31,
+  "proofs": {
+    "canonical_runtime_agents": 4,
+    "registry_agents": 4,
+    "runtime_a2a_skill_arrays": "EMPTY_EXPECTED_NON_A2A",
+    "remote_action": true,
+    "remote_role_flows": [
+      "SUPPORT",
+      "FULFILLMENT",
+      "RETENTION",
+      "RESOLVER"
+    ],
+    "signed_identity_mapping": true,
+    "body_identity_spoofed": false,
+    "network_role_denials": 3,
+    "race_external_primary_executions": 1,
+    "duplicate_external_refund_executions": 1,
+    "rank4_cannot_settle": true,
+    "rank1_settled": true,
+    "agent_raw_firestore_access": false,
+    "memory_bank_cross_session": true,
+    "memory_policy_mutations": 0,
+    "registry_metadata_honest": true,
+    "a2a_claimed": false,
+    "google_agent_gateway": "CREATED_DEFAULT_DENY_NOT_BOUND_SAFETY_CONSTRAINT_DOCUMENTED",
+    "exploratory_runtime_resources_removed": 4,
+    "stage1_to_7_tests": "94/94 PASS",
+    "stage8_evaluation": "26/26 PASS",
+    "credentials_committed": false,
+    "safety_criteria_weakened": false
+  },
+  "conditional_product_limits": {
+    "skill_registry": "Authenticated ListSkills timed out; versioned packages prepared, no live registration claimed.",
+    "google_agent_gateway_binding": "Resource and target exist, but canonical Runtime binding was withheld until the complete documented allowlist/IAP extension can be configured safely.",
+    "a2a": "Optional; genuine Runtime deployment rejected a2a_extension, no A2A claim."
+  }
+}

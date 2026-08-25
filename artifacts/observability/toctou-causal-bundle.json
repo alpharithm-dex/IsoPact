@@ -1,0 +1,143 @@
+{
+  "scenario": "toctou",
+  "pact": "pact_stage10c_toctou_20260824212114",
+  "source": "LIVE_CLOUD_TRACE_AND_FIRESTORE",
+  "trace_ids": [
+    "761cca0325b79a918a11f5bc77d8d566",
+    "47d6e63b6c58e5f2997252b179c9e60a",
+    "5cf44fce18e6af5dee8a0d0145cba963",
+    "4b0682b0b005294ecd151b94c3736679"
+  ],
+  "live_spans": [
+    "isopact.compensation.execute",
+    "isopact.compensation.precondition",
+    "isopact.invariants.evaluate",
+    "isopact.resolution.validate"
+  ],
+  "traces": [
+    {
+      "trace_id": "761cca0325b79a918a11f5bc77d8d566",
+      "spans": [
+        {
+          "span_id": "16195196022712679759",
+          "parent_span_id": null,
+          "name": "isopact.invariants.evaluate",
+          "start_time": "2026-08-24T21:21:33.918726028Z",
+          "end_time": "2026-08-24T21:21:33.919205269Z",
+          "labels": {
+            "isopact.rule.id": "commerce_missing_order_rules",
+            "isopact.rule.version": "1",
+            "isopact.pact_id": "pact_stage10c_toctou_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "47d6e63b6c58e5f2997252b179c9e60a",
+      "spans": [
+        {
+          "span_id": "15131234172889715345",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.919607340Z",
+          "end_time": "2026-08-24T21:21:33.919701911Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage10c_toctou_20260824212114"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "5cf44fce18e6af5dee8a0d0145cba963",
+      "spans": [
+        {
+          "span_id": "17430790595030759689",
+          "parent_span_id": null,
+          "name": "isopact.resolution.validate",
+          "start_time": "2026-08-24T21:21:33.919803541Z",
+          "end_time": "2026-08-24T21:21:33.919848831Z",
+          "labels": {
+            "isopact.pact_id": "pact_stage10c_toctou_20260824212114",
+            "isopact.plan.id": "resolution_plan_e6f3d34df70dcbd06b4d6641ee22d367"
+          }
+        }
+      ]
+    },
+    {
+      "trace_id": "4b0682b0b005294ecd151b94c3736679",
+      "spans": [
+        {
+          "span_id": "9358387050344894251",
+          "parent_span_id": null,
+          "name": "isopact.compensation.execute",
+          "start_time": "2026-08-24T21:21:33.919942101Z",
+          "end_time": "2026-08-24T21:21:33.920082341Z",
+          "labels": {
+            "isopact.compensation.id": "carrier_cancel_unaccepted_label_v1",
+            "isopact.pact_id": "pact_stage10c_toctou_20260824212114"
+          }
+        },
+        {
+          "span_id": "17166139601585487477",
+          "parent_span_id": "9358387050344894251",
+          "name": "isopact.compensation.precondition",
+          "start_time": "2026-08-24T21:21:33.920030391Z",
+          "end_time": "2026-08-24T21:21:33.920042471Z",
+          "labels": {
+            "isopact.compensation.id": "carrier_cancel_unaccepted_label_v1",
+            "isopact.pact_id": "pact_stage10c_toctou_20260824212114"
+          }
+        }
+      ]
+    }
+  ],
+  "business_snapshot": {
+    "root": {
+      "proof_scenario": "TOCTOU",
+      "stage10c_proof": {
+        "decision": "PRECONDITION_FAILED",
+        "planned_state": "CREATED",
+        "execution": {
+          "planned_against_state": "CREATED",
+          "precondition_result": "EXECUTION_STATE_INELIGIBLE",
+          "trace_id": "local-proof",
+          "executed_against_state": "ACCEPTED",
+          "evidence_ids": [],
+          "state": "PRECONDITION_FAILED",
+          "conflict_ids": [
+            "conflict_7ed6187b4196c3bea69272999d757f2c"
+          ],
+          "execution_id": "compensation_execution_014c13f0bd39bb16aed61bf8ed904867",
+          "target_id": "SHIP-001",
+          "external_call_executed": false,
+          "target_system": "carrier",
+          "validated_against_state": "CREATED",
+          "updated_at": "2026-08-23T20:00:00Z",
+          "economic_effect_category": "PRIMARY_REPLACEMENT_REMOVAL",
+          "pact_id": "pact_stage10c_toctou_20260824212114",
+          "authority_tier": "AUTOMATIC",
+          "registry_action_id": "carrier_cancel_unaccepted_label_v1",
+          "plan_id": "resolution_plan_e6f3d34df70dcbd06b4d6641ee22d367",
+          "registry_version": "1",
+          "semantic_operation_key": "compensation_operation_af9f01a3402954a36a5d3961ab764741",
+          "approval_id": null
+        },
+        "execution_state": "ACCEPTED",
+        "external_calls": 0,
+        "pact_id": "pact_stage10c_toctou_20260824212114",
+        "pact_state": "VIOLATED"
+      },
+      "graph_state": "VIOLATED",
+      "pact_id": "pact_stage10c_toctou_20260824212114"
+    },
+    "collections": {
+      "claims": [],
+      "evidence": [],
+      "invariant_conflicts": [],
+      "compensation_executions": [],
+      "settlement_receipts": [],
+      "graph_checkpoints": []
+    }
+  },
+  "completeness_result": "PASS_LIVE_RETRIEVED"
+}

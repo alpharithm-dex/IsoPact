@@ -1,0 +1,92 @@
+{
+  "source": "LIVE_CLOUD_LOGGING",
+  "execution": "isopact-stage10c-proof-fv97x",
+  "gateway_trace": "7cf150602994fa1029fc855b953d380e",
+  "categories": {
+    "Gateway": {
+      "message": "gateway action decision",
+      "retrieved": 1,
+      "trace_correlated": 1,
+      "traces": [
+        "projects/isopact-agentic-20260823/traces/7cf150602994fa1029fc855b953d380e"
+      ],
+      "span_ids": [
+        "06f068a09c67096d"
+      ],
+      "result": "PASS"
+    },
+    "evidence": {
+      "message": "evidence ingestion decision",
+      "retrieved": 1,
+      "trace_correlated": 1,
+      "traces": [
+        "projects/isopact-agentic-20260823/traces/d851d4b7c70eef9b4b6acd602f659949"
+      ],
+      "span_ids": [
+        "6c8eeb29d4bc79c6"
+      ],
+      "result": "PASS"
+    },
+    "invariants": {
+      "message": "invariant evaluation failed",
+      "retrieved": 5,
+      "trace_correlated": 5,
+      "traces": [
+        "projects/isopact-agentic-20260823/traces/3b68d49f74e4b7ef5f1332dcd23a4de0",
+        "projects/isopact-agentic-20260823/traces/a23e283a79189471935732ea370c3343",
+        "projects/isopact-agentic-20260823/traces/a7c27a9956af21a269663d7d32141865",
+        "projects/isopact-agentic-20260823/traces/a87dbdc081689c7b1564cd9c432b646f",
+        "projects/isopact-agentic-20260823/traces/b4d46d263f8259d8cbb2b11d30ae5ddb"
+      ],
+      "span_ids": [
+        "160e4b65e8473644",
+        "8ebfe14d55a30889",
+        "990a198c5f010c18",
+        "a63c125667d88f41",
+        "f346cdc1fdb92cc2"
+      ],
+      "result": "PASS"
+    },
+    "settlement": {
+      "message": "settlement lifecycle transition",
+      "retrieved": 2,
+      "trace_correlated": 2,
+      "traces": [
+        "projects/isopact-agentic-20260823/traces/a58ce53a1aec4b91f4b73888d7160f51",
+        "projects/isopact-agentic-20260823/traces/bf85e8564deb801e68304e29db434fb9"
+      ],
+      "span_ids": [
+        "1d49a1980b8f6c85",
+        "9cbbea4af71eb437"
+      ],
+      "result": "PASS"
+    },
+    "compensation": {
+      "message": "compensation precondition failed",
+      "retrieved": 1,
+      "trace_correlated": 1,
+      "traces": [
+        "projects/isopact-agentic-20260823/traces/3672252df6c9059b1d40f4965761628a"
+      ],
+      "span_ids": [
+        "02cd6c902bed1644"
+      ],
+      "result": "PASS"
+    },
+    "receipt": {
+      "message": "settlement receipt signed",
+      "retrieved": 2,
+      "trace_correlated": 2,
+      "traces": [
+        "projects/isopact-agentic-20260823/traces/5444851defaa13988be360cf4a071de2",
+        "projects/isopact-agentic-20260823/traces/66dba1a0626c01fcb10774e8acaa60fa"
+      ],
+      "span_ids": [
+        "38dc6efb600c24f8",
+        "d17b65e7683cbf6a"
+      ],
+      "result": "PASS"
+    }
+  },
+  "result": "PASS"
+}

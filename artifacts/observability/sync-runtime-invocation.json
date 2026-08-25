@@ -1,0 +1,60 @@
+{
+  "source": "LIVE_AGENT_RUNTIME_AND_GATEWAY",
+  "generated_at": "2026-08-24T23:28:49.062541+00:00",
+  "pact": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "invocation_ids": [
+    "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+  ],
+  "gateway": {
+    "action": "refund",
+    "body_agent_id_supplied": "",
+    "body_identity_used_for_authority": false,
+    "external_call_executed": false,
+    "external_object": null,
+    "gateway_decision": "BLOCK",
+    "operation_identity": "35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61",
+    "pact_graph_state": "SETTLED",
+    "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+    "reason_code": "DUPLICATE_OPERATION",
+    "regions": {
+      "firestore": "africa-south1",
+      "outcome_gateway": "africa-south1"
+    },
+    "request_id": "req-stage10c-sync-20260824T232810Z",
+    "session_id": "stage10c-sync-20260824T232810Z",
+    "timing_ms": {
+      "external_adapter_and_claim": 0.0,
+      "full_server": 1134.508,
+      "gateway_authorization_including_firestore": 255.773,
+      "identity_verification": 221.416
+    },
+    "trace_id": "logical-stage10c-sync-20260824T232810Z",
+    "verified_agent_id": "isopact-support-v1",
+    "verified_caller": {
+      "token_audience": [
+        "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+      ],
+      "token_expiration": 1787617715,
+      "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+      "token_not_before": null,
+      "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "verification": "GOOGLE_STS_JWKS_RS256"
+    },
+    "verified_role": "SUPPORT",
+    "http_status": 409,
+    "agent_runtime_region": "europe-west1",
+    "cross_region_round_trip_ms": 3285.39,
+    "safe_token_claims": {
+      "iss": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+      "sub": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "aud": [
+        "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+      ]
+    },
+    "w3c_trace_context_injected": true,
+    "otel_trace_id": "7cf150602994fa1029fc855b953d380e",
+    "otel_span_id": "705ad20b09746e48"
+  },
+  "errors": [],
+  "result": "PASS"
+}

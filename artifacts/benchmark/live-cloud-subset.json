@@ -1,0 +1,219 @@
+{
+  "case_count": 20,
+  "cases": [
+    {
+      "case_id": "LIVE-01",
+      "category": "normal_refund",
+      "chronicle_correlated": true,
+      "latency_ms": 1091.253,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-02",
+      "category": "primary_race",
+      "chronicle_correlated": true,
+      "latency_ms": 763.866,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-03",
+      "category": "duplicate_refund",
+      "chronicle_correlated": true,
+      "latency_ms": 712.102,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-04",
+      "category": "goodwill",
+      "chronicle_correlated": true,
+      "latency_ms": 808.513,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-05",
+      "category": "rank1_settlement",
+      "chronicle_correlated": true,
+      "latency_ms": 601.776,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-06",
+      "category": "duplicate_pubsub",
+      "chronicle_correlated": true,
+      "latency_ms": 711.804,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-07",
+      "category": "outcome_unknown",
+      "chronicle_correlated": true,
+      "latency_ms": 733.01,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-08",
+      "category": "preexisting_divergence",
+      "chronicle_correlated": true,
+      "latency_ms": 621.04,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-09",
+      "category": "safe_reconciliation",
+      "chronicle_correlated": true,
+      "latency_ms": 575.834,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-10",
+      "category": "toctou",
+      "chronicle_correlated": true,
+      "latency_ms": 703.096,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-11",
+      "category": "forged_evidence",
+      "chronicle_correlated": true,
+      "latency_ms": 880.057,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-12",
+      "category": "identity_denial",
+      "chronicle_correlated": true,
+      "latency_ms": 699.248,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-13",
+      "category": "kms_receipt",
+      "chronicle_correlated": true,
+      "latency_ms": 629.487,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-14",
+      "category": "model_reasoning",
+      "chronicle_correlated": true,
+      "latency_ms": 682.071,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-15",
+      "category": "firestore_read",
+      "chronicle_correlated": true,
+      "latency_ms": 746.872,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-16",
+      "category": "chronicle",
+      "chronicle_correlated": true,
+      "latency_ms": 601.168,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-17",
+      "category": "observability",
+      "chronicle_correlated": true,
+      "latency_ms": 731.468,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-18",
+      "category": "tamper_receipt",
+      "chronicle_correlated": true,
+      "latency_ms": 730.358,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-19",
+      "category": "policy_pinning",
+      "chronicle_correlated": true,
+      "latency_ms": 671.376,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    },
+    {
+      "case_id": "LIVE-20",
+      "category": "pact_isolation",
+      "chronicle_correlated": true,
+      "latency_ms": 626.929,
+      "source": "PACT_GRAPH_FIRESTORE",
+      "status": "PASS",
+      "trace_correlated": true
+    }
+  ],
+  "failures": 0,
+  "latencies_ms": [
+    1091.2533000082476,
+    763.8657000061357,
+    712.1021000057226,
+    808.5129999963101,
+    601.7764999996871,
+    711.803800004418,
+    733.0099000100745,
+    621.0404000012204,
+    575.8343000052264,
+    703.0961999989813,
+    880.0570000021253,
+    699.2479000036838,
+    629.4871999998577,
+    682.0707000006223,
+    746.8723000056343,
+    601.1684999975841,
+    731.4678999973694,
+    730.3581999876769,
+    671.3759999984177,
+    626.9293000077596
+  ],
+  "observability_correlation": 20,
+  "services": [
+    "Cloud Run",
+    "Firestore",
+    "Pub/Sub",
+    "KMS",
+    "OpenTelemetry",
+    "Cloud Trace",
+    "Vertex AI"
+  ],
+  "version": "stage12-v1.0.0"
+}

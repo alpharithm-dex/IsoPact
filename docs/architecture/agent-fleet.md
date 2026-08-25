@@ -1,0 +1,11 @@
+# Specialized Google ADK agent fleet
+
+Stage 8 places four reasoning workers above the existing IsoPact authority stack. Support pursues a financial remedy, Fulfillment pursues delivery, Retention applies bounded goodwill, and Resolver coordinates Stage 7 recovery. They are real `google.adk.agents.Agent` instances with different instructions and different function catalogs; they are not aliases for one unrestricted agent.
+
+The model is `gemini-3.5-flash`. Agent Runtime is deployed in `europe-west1`, a currently supported GA runtime region and a deliberate European choice relative to the South African workload. The model is invoked through Vertex AI's `global` endpoint because the model is not served from the `europe-west1` publisher endpoint in this project; this was verified by a live 404 followed by a successful global-routed invocation. Firestore remains in `africa-south1`. This creates an explicit cross-region boundary. A minimal read-only status service in `africa-south1` performs the Firestore read and exposes no write authority or business fields beyond pact ID/status. The live Support tool measured 673.359 ms Agent Runtime-to-service round trip and 475.719 ms Firestore read on the captured invocation. Consequential remote tools return control-plane envelopes; the deterministic live Firestore Gateway execution proof remains Stage 4.
+
+Remote deployment uses one Agent Runtime resource and one managed Agent Identity per logical role. Automatic Agent Registry discovery exposes the managed resources and their authenticated HTTP/JSON query/streamQuery interfaces. The deployed `AdkApp` resources are registered as `CUSTOM`, not `A2A_AGENT`; Stage 8 does not relabel those endpoints as A2A.
+
+Live model execution and deterministic judge replay are separate. Live invocations prove model reasoning and actual tool selection. The fixed replay proves concurrency, duplicate semantic identity, evidence ranking, authority denials, and failure isolation. Replayed traces are labelled `DETERMINISTIC_RECORDED_FIXTURE`.
+
+Memory Bank is not integrated. Agent Runtime exposes memory methods by default, but IsoPact does not add sessions to memory or search it. Session state supports conversation continuity only.

@@ -1,0 +1,139 @@
+{
+  "assertions": {
+    "captured_value": 20000,
+    "goodwill_settled_value": 5000,
+    "protected_value": 40000,
+    "replacement_committed_value": 0,
+    "settled_primary_value": 20000,
+    "settled_total_compensation": 25000
+  },
+  "facts": [
+    {
+      "amount": {
+        "currency": "USD",
+        "minor_units": 5000
+      },
+      "authorized": true,
+      "economic_object_id": "0f6d9f4d351d438409df0ccb951d193a2997d3ab6033f80e63b83166f1cd06ae",
+      "economic_scope": "exception:delay",
+      "executed": true,
+      "external_object_id": null,
+      "external_state": "SETTLED",
+      "fact_id": "fact_claim_gateway_req-stage8b-e2e-retention",
+      "kind": "GOODWILL",
+      "occurred_at": "2026-08-24T19:59:52.339257+00:00",
+      "operation_identity": "0f6d9f4d351d438409df0ccb951d193a2997d3ab6033f80e63b83166f1cd06ae",
+      "phase": "SETTLED",
+      "preexisting_outside_gateway": false,
+      "related_evidence_ids": [],
+      "reversible": null,
+      "semantic_intent_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2:authorized_goodwill",
+      "source_system": "isopact-outcome-gateway",
+      "source_version": 4,
+      "subject_id": "ORD-8472"
+    },
+    {
+      "amount": {
+        "currency": "USD",
+        "minor_units": 20000
+      },
+      "authorized": true,
+      "economic_object_id": "43b8220e8f24dc42f593b084bd57d861b91401d37296f621974e3d976a07d589",
+      "economic_scope": "primary:full",
+      "executed": true,
+      "external_object_id": "REF-43b8220e8f24",
+      "external_state": "SETTLED",
+      "fact_id": "fact_claim_ev_c080c1216fc6c45924737aabfc1d79f7",
+      "kind": "REFUND",
+      "occurred_at": "2026-08-24T20:01:29.392634+00:00",
+      "operation_identity": "43b8220e8f24dc42f593b084bd57d861b91401d37296f621974e3d976a07d589",
+      "phase": "SETTLED",
+      "preexisting_outside_gateway": false,
+      "related_evidence_ids": [],
+      "reversible": null,
+      "semantic_intent_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2:successful_refund",
+      "source_system": "stripe",
+      "source_version": 8,
+      "subject_id": "ORD-8472"
+    },
+    {
+      "amount": {
+        "currency": "USD",
+        "minor_units": 20000
+      },
+      "authorized": false,
+      "economic_object_id": "df746dd9ece7a92cd46170ca9915662d14109cb6af7446e5b5bcf5a5dc1e323b",
+      "economic_scope": "primary:full",
+      "executed": false,
+      "external_object_id": null,
+      "external_state": "BLOCKED",
+      "fact_id": "fact_claim_gateway_req-stage8b-e2e-fulfillment",
+      "kind": "REPLACEMENT",
+      "occurred_at": "2026-08-24T19:59:20.252028+00:00",
+      "operation_identity": "df746dd9ece7a92cd46170ca9915662d14109cb6af7446e5b5bcf5a5dc1e323b",
+      "phase": "BLOCKED",
+      "preexisting_outside_gateway": false,
+      "related_evidence_ids": [],
+      "reversible": null,
+      "semantic_intent_id": "pact_stage8b-e2e-20260824195754_3b98d4392bf4100a1de2:confirmed_replacement",
+      "source_system": "isopact-outcome-gateway",
+      "source_version": 3,
+      "subject_id": "ORD-8472"
+    }
+  ],
+  "policy": {
+    "authorization": "commerce_missing_order_v1@commerce_missing_order_v1@1",
+    "evaluation": "commerce_missing_order_rules@1"
+  },
+  "protection_events": [
+    {
+      "amount": {
+        "currency": "USD",
+        "minor_units": 20000
+      },
+      "compensation_execution_ids": [],
+      "economic_object_id": "df746dd9ece7a92cd46170ca9915662d14109cb6af7446e5b5bcf5a5dc1e323b",
+      "event_type": "INVALID_ACTION_PREVENTED",
+      "evidence_ids": [],
+      "occurred_at": "2026-08-24T19:59:20.252028+00:00",
+      "operation_identity": "df746dd9ece7a92cd46170ca9915662d14109cb6af7446e5b5bcf5a5dc1e323b",
+      "protection_event_id": "protection_9d1abd4c331680b240fd708cd724c34c",
+      "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+      "related_conflict_ids": [],
+      "related_fact_ids": [
+        "fact_claim_gateway_req-stage8b-e2e-fulfillment"
+      ]
+    },
+    {
+      "amount": {
+        "currency": "USD",
+        "minor_units": 20000
+      },
+      "compensation_execution_ids": [],
+      "economic_object_id": "43b8220e8f24dc42f593b084bd57d861b91401d37296f621974e3d976a07d589",
+      "event_type": "INVALID_ACTION_PREVENTED",
+      "evidence_ids": [],
+      "occurred_at": "2026-08-24T20:00:02.283277+00:00",
+      "operation_identity": "43b8220e8f24dc42f593b084bd57d861b91401d37296f621974e3d976a07d589",
+      "protection_event_id": "protection_63f6087082b9986024c864a3cecd5251",
+      "reason_code": "DUPLICATE_OPERATION",
+      "related_conflict_ids": [],
+      "related_fact_ids": [
+        "fact_claim_gateway_req-stage8b-e2e-support-second"
+      ]
+    }
+  ],
+  "protection_summary": {
+    "authorized_value_recovered": 0,
+    "currency": "USD",
+    "event_ids": [
+      "protection_63f6087082b9986024c864a3cecd5251",
+      "protection_9d1abd4c331680b240fd708cd724c34c"
+    ],
+    "invalid_actions_prevented": 40000,
+    "legitimate_value_delayed": 0,
+    "protected_value": 40000,
+    "unique_event_count": 2
+  },
+  "source": "live Stage 8B pact + chained claims, reduced by Stage 6 EconomicReducer"
+}

@@ -1,0 +1,9 @@
+{
+  "agent_statement": "The refund has been completed.",
+  "actual_external_state_at_statement": "PENDING",
+  "agent_statement_evidence_rank": 4,
+  "pact_state_before_authoritative_evidence": "PENDING",
+  "authoritative_event": "stripe.refund.succeeded",
+  "final_pact_state": "SETTLED",
+  "agent_text_modified_business_state": false
+}

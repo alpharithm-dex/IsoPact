@@ -1,0 +1,76 @@
+{
+  "agent_kms_signing_permission": false,
+  "agent_runtime_resources": {
+    "Fulfillment Agent": "projects/442539309409/locations/europe-west1/reasoningEngines/7471674091947163648",
+    "Resolver Agent": "projects/442539309409/locations/europe-west1/reasoningEngines/4435825730634383360",
+    "Retention Agent": "projects/442539309409/locations/europe-west1/reasoningEngines/1103584218845282304",
+    "Support Agent": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776"
+  },
+  "broad_service_roles": [
+    {
+      "member": "serviceAccount:442539309409-compute@developer.gserviceaccount.com",
+      "role": "roles/editor"
+    }
+  ],
+  "committed_credential_matches": [],
+  "flagged_existing_broad_role": [
+    {
+      "member": "serviceAccount:442539309409-compute@developer.gserviceaccount.com",
+      "role": "roles/editor"
+    }
+  ],
+  "human_owner_editor_roles_not_revoked": true,
+  "kms_key_members": [
+    "serviceAccount:isopact-checkpoint-signer@isopact-agentic-20260823.iam.gserviceaccount.com"
+  ],
+  "project": "isopact-agentic-20260823",
+  "secret_boundary": {
+    "configuration": [
+      "project ID",
+      "regions",
+      "service URLs",
+      "KMS resource names",
+      "Model Armor template name",
+      "public keys"
+    ],
+    "secret": "Stripe-shaped webhook HMAC key in Secret Manager; evidence ingestor only"
+  },
+  "service_identities": {
+    "Checkpoint signer": {
+      "kms_key_roles": [
+        "roles/cloudkms.signerVerifier"
+      ],
+      "principal": "isopact-checkpoint-signer@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "project_roles": [],
+      "secret_roles": []
+    },
+    "Evidence ingestor": {
+      "kms_key_roles": [],
+      "principal": "isopact-evidence-ingestor@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "project_roles": [
+        "roles/datastore.user"
+      ],
+      "secret_roles": [
+        "roles/secretmanager.secretAccessor"
+      ]
+    },
+    "Model input screener": {
+      "kms_key_roles": [],
+      "principal": "isopact-model-input-screener@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "project_roles": [
+        "roles/modelarmor.user",
+        "roles/modelarmor.viewer"
+      ],
+      "secret_roles": []
+    },
+    "Outcome Gateway": {
+      "kms_key_roles": [],
+      "principal": "isopact-outcome-gateway@isopact-agentic-20260823.iam.gserviceaccount.com",
+      "project_roles": [
+        "roles/datastore.user"
+      ],
+      "secret_roles": []
+    }
+  },
+  "status": "PASS_WITH_EXISTING_ROLE_FLAG"
+}

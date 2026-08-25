@@ -1,0 +1,16 @@
+{
+  "invalid_token": {
+    "http_status": 401,
+    "response": {
+      "error": "CALLER_IDENTITY_INVALID",
+      "external_call_executed": false,
+      "message": "caller token verification failed"
+    },
+    "proof": "body identity cannot substitute for a signed runtime token"
+  },
+  "body_spoof": {
+    "supplied": "isopact-resolver-v1",
+    "verified": "isopact-support-v1",
+    "body_identity_used_for_authority": false
+  }
+}

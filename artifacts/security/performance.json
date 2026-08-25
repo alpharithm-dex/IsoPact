@@ -1,0 +1,13 @@
+{
+  "environment": "live Google Cloud KMS signing; local independent public-key and chain verification",
+  "independent_full_verification": {
+    "p50_ms": 1.636,
+    "p95_ms": 2.569,
+    "samples": 100
+  },
+  "kms_signing": {
+    "p50_ms": 63.057,
+    "p95_ms": 74.437,
+    "samples": 5
+  }
+}

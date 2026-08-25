@@ -1,0 +1,11 @@
+{
+  "canonical_reducer_failures": 0,
+  "generated_cases": 300,
+  "insertion_order_failures": 0,
+  "invalid_cases": 81,
+  "invalid_cases_correctly_detected": 81,
+  "invariant_failures_in_valid_cases": 0,
+  "model_calls": 0,
+  "seed": 6006,
+  "valid_cases": 219
+}

@@ -1,0 +1,171 @@
+{
+  "source": "LIVE_CLOUD_TRACE",
+  "pact": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "runtime_invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9",
+  "pact_gateway_trace_ids": [
+    "7cf150602994fa1029fc855b953d380e"
+  ],
+  "runtime_invocation_trace_ids": [
+    "7cf150602994fa1029fc855b953d380e"
+  ],
+  "gateway_trace_details": [
+    {
+      "trace_id": "7cf150602994fa1029fc855b953d380e",
+      "spans": [
+        {
+          "name": "invoke_workflow support_agent",
+          "span_id": "8892544925083689234",
+          "parent_span_id": null,
+          "invocation_id": null
+        },
+        {
+          "name": "invoke_agent support_agent",
+          "span_id": "9109698059416133862",
+          "parent_span_id": "8892544925083689234",
+          "invocation_id": null
+        },
+        {
+          "name": "call_llm",
+          "span_id": "8429631575018580716",
+          "parent_span_id": "9109698059416133862",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        },
+        {
+          "name": "generate_content gemini-3.5-flash",
+          "span_id": "12587061289351788880",
+          "parent_span_id": "8429631575018580716",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        },
+        {
+          "name": "execute_tool request_refund_through_isopact",
+          "span_id": "8007138707607800160",
+          "parent_span_id": "12587061289351788880",
+          "invocation_id": null
+        },
+        {
+          "name": "isopact.agent.invoke",
+          "span_id": "8096014224996986440",
+          "parent_span_id": "8007138707607800160",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        },
+        {
+          "name": "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/actions/refund",
+          "span_id": "7887419670373725739",
+          "parent_span_id": "8096014224996986440",
+          "invocation_id": null
+        },
+        {
+          "name": "isopact.gateway.request",
+          "span_id": "16813305125331058901",
+          "parent_span_id": "7887419670373725739",
+          "invocation_id": null
+        },
+        {
+          "name": "isopact.gateway.authenticate",
+          "span_id": "3847441125678677342",
+          "parent_span_id": "16813305125331058901",
+          "invocation_id": null
+        },
+        {
+          "name": "isopact.gateway.authorize",
+          "span_id": "500014597666179437",
+          "parent_span_id": "16813305125331058901",
+          "invocation_id": null
+        },
+        {
+          "name": "isopact.reservation.transaction",
+          "span_id": "4937071576982149668",
+          "parent_span_id": "500014597666179437",
+          "invocation_id": null
+        },
+        {
+          "name": "call_llm",
+          "span_id": "1774560013594500439",
+          "parent_span_id": "9109698059416133862",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        },
+        {
+          "name": "generate_content gemini-3.5-flash",
+          "span_id": "3195992120858592140",
+          "parent_span_id": "1774560013594500439",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        },
+        {
+          "name": "execute_tool support_inspect_pact_state",
+          "span_id": "17852406543530944511",
+          "parent_span_id": "3195992120858592140",
+          "invocation_id": null
+        },
+        {
+          "name": "isopact.agent.invoke",
+          "span_id": "14744205960592980295",
+          "parent_span_id": "17852406543530944511",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        },
+        {
+          "name": "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/status",
+          "span_id": "7191573010982719260",
+          "parent_span_id": "14744205960592980295",
+          "invocation_id": null
+        },
+        {
+          "name": "call_llm",
+          "span_id": "14857061252257880354",
+          "parent_span_id": "9109698059416133862",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        },
+        {
+          "name": "generate_content gemini-3.5-flash",
+          "span_id": "8301053621459928475",
+          "parent_span_id": "14857061252257880354",
+          "invocation_id": "e-625e840b-e1fc-435b-bbfd-fc71be7cccc9"
+        }
+      ]
+    }
+  ],
+  "trace_id_intersection": [
+    "7cf150602994fa1029fc855b953d380e"
+  ],
+  "matches": [
+    {
+      "trace_id": "7cf150602994fa1029fc855b953d380e",
+      "invocation_span_ids": [
+        "8429631575018580716",
+        "12587061289351788880",
+        "8096014224996986440",
+        "1774560013594500439",
+        "3195992120858592140",
+        "14744205960592980295",
+        "14857061252257880354",
+        "8301053621459928475"
+      ],
+      "gateway_span_ids": [
+        "16813305125331058901"
+      ],
+      "gateway_parent_span_ids": [
+        "7887419670373725739"
+      ],
+      "runtime_ancestor_matches": [
+        "16813305125331058901"
+      ],
+      "span_names": [
+        "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/actions/refund",
+        "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/status",
+        "call_llm",
+        "execute_tool request_refund_through_isopact",
+        "execute_tool support_inspect_pact_state",
+        "generate_content gemini-3.5-flash",
+        "invoke_agent support_agent",
+        "invoke_workflow support_agent",
+        "isopact.agent.invoke",
+        "isopact.gateway.authenticate",
+        "isopact.gateway.authorize",
+        "isopact.gateway.request",
+        "isopact.reservation.transaction"
+      ]
+    }
+  ],
+  "same_trace_proven": true,
+  "runtime_ancestor_proven": true,
+  "result": "PASS"
+}

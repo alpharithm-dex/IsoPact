@@ -1,0 +1,48 @@
+{
+  "attack_results": {
+    "expired_token": "DENY",
+    "modified_token_payload": "DENY",
+    "not_before_in_future": "DENY",
+    "unknown_spiffe_subject": "DENY",
+    "unsigned_token": "DENY",
+    "wrong_audience": "DENY",
+    "wrong_issuer": "DENY"
+  },
+  "authenticated_business_replay": {
+    "bearer_tokens_may_be_reused_within_lifetime": true,
+    "duplicate_external_execution": false,
+    "gateway_decision": "BLOCK",
+    "one_time_token_claim": false,
+    "reason_code": "DUPLICATE_OPERATION",
+    "semantic_operation_identity": "50199cea537b777e2eeea68296033e215c3d71fa727c5d328ecbe290474330c2"
+  },
+  "invalid_token_consequential_external_calls": 0,
+  "live_body_spoof": {
+    "body_identity_used_for_authority": false,
+    "supplied": "isopact-resolver-v1",
+    "verified": "isopact-support-v1"
+  },
+  "status": "PASS",
+  "verification": {
+    "algorithm_allowlist": [
+      "RS256"
+    ],
+    "audience_exact_match": true,
+    "expiration_required": true,
+    "issuer_exact_match": true,
+    "jwks": "Google STS JWKS; signing key selected before decode",
+    "not_before_checked_when_present": true,
+    "safe_valid_metadata": {
+      "token_audience": [
+        "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+      ],
+      "token_expiration": 1787557013,
+      "token_issuer": "https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog",
+      "token_not_before": 1787556712,
+      "token_subject": "spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "verification": "GOOGLE_STS_JWKS_RS256"
+    },
+    "subject_must_map_to_known_runtime": true,
+    "valid_role": "SUPPORT"
+  }
+}

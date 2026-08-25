@@ -1,0 +1,1112 @@
+{
+  "generated_at": "2026-08-24T03:10:37.137342+00:00",
+  "project": "isopact-agentic-20260823",
+  "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+  "concurrent_append_workers": 25,
+  "worker_results": [
+    {
+      "worker": 1,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 3150.627
+    },
+    {
+      "worker": 2,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 771.387
+    },
+    {
+      "worker": 3,
+      "created": true,
+      "retries": 2,
+      "latency_ms": 4248.69
+    },
+    {
+      "worker": 4,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 3783.936
+    },
+    {
+      "worker": 5,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 2116.458
+    },
+    {
+      "worker": 6,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 4655.799
+    },
+    {
+      "worker": 7,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 1503.539
+    },
+    {
+      "worker": 8,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 1692.272
+    },
+    {
+      "worker": 9,
+      "created": true,
+      "retries": 2,
+      "latency_ms": 5190.374
+    },
+    {
+      "worker": 10,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 2493.457
+    },
+    {
+      "worker": 11,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 969.357
+    },
+    {
+      "worker": 12,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 4837.815
+    },
+    {
+      "worker": 13,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 2674.362
+    },
+    {
+      "worker": 14,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 3513.343
+    },
+    {
+      "worker": 15,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 1885.082
+    },
+    {
+      "worker": 16,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 1219.266
+    },
+    {
+      "worker": 17,
+      "created": true,
+      "retries": 2,
+      "latency_ms": 5385.939
+    },
+    {
+      "worker": 18,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 2774.202
+    },
+    {
+      "worker": 19,
+      "created": true,
+      "retries": 2,
+      "latency_ms": 4994.848
+    },
+    {
+      "worker": 20,
+      "created": true,
+      "retries": 2,
+      "latency_ms": 4451.201
+    },
+    {
+      "worker": 21,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 485.17
+    },
+    {
+      "worker": 22,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 3682.328
+    },
+    {
+      "worker": 23,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 3317.993
+    },
+    {
+      "worker": 24,
+      "created": true,
+      "retries": 0,
+      "latency_ms": 2292.406
+    },
+    {
+      "worker": 25,
+      "created": true,
+      "retries": 1,
+      "latency_ms": 4038.241
+    }
+  ],
+  "claims": [
+    {
+      "normalized_payload": {
+        "worker": 21,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-21",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 1,
+      "operation_identity": "op-audit-21",
+      "ingested_at": "2026-08-24T03:10:21Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000021",
+      "normalized_payload_hash": "4e54ded4f0e9ce5e57f07f30c5bd9189225b56a41639265a07b4950eea36391a",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "14643a28b2c9dce537b082080d86d88bcce9007a0bb4b232c2a5ccc2ce943fc6",
+      "evidence_rank": 5,
+      "previous_claim_hash": "7c8fa671215de9e943c367861f8857ae46c33304c2e7e5f58ec3ede61da1b18c",
+      "claim_id": "claim_concurrent_21",
+      "source_actor": "worker-21",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 2,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-02",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 2,
+      "operation_identity": "op-audit-02",
+      "ingested_at": "2026-08-24T03:10:02Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000002",
+      "normalized_payload_hash": "d08475bdb9a35ee46c580c6a6df065f0edd0b5f218c951241b217be69e39ca7b",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "05289cc047184a8a05064f5e46c93ff2230da3dd559f622dd4a9f3e6d5f4e665",
+      "evidence_rank": 5,
+      "previous_claim_hash": "14643a28b2c9dce537b082080d86d88bcce9007a0bb4b232c2a5ccc2ce943fc6",
+      "claim_id": "claim_concurrent_02",
+      "source_actor": "worker-02",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 11,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-11",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 3,
+      "operation_identity": "op-audit-11",
+      "ingested_at": "2026-08-24T03:10:11Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000011",
+      "normalized_payload_hash": "5275559fc09153991b2514a0a370c82a6719b49daefac1d500ea58cae1612f76",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "857f39db2c5664ec002d538452699a58e997750e67a68c9fb3c5c186a2e4c336",
+      "evidence_rank": 5,
+      "previous_claim_hash": "05289cc047184a8a05064f5e46c93ff2230da3dd559f622dd4a9f3e6d5f4e665",
+      "claim_id": "claim_concurrent_11",
+      "source_actor": "worker-11",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 16,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-16",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 4,
+      "operation_identity": "op-audit-16",
+      "ingested_at": "2026-08-24T03:10:16Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000016",
+      "normalized_payload_hash": "5e17cc2be46c10e8e1656b736fb67c7326f2bc42268e0cbe9b758f17cc45ee15",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "268b5af182fd074cf38ffc2a3a080c2ec95373c0b97ae721edc33257e6e76afc",
+      "evidence_rank": 5,
+      "previous_claim_hash": "857f39db2c5664ec002d538452699a58e997750e67a68c9fb3c5c186a2e4c336",
+      "claim_id": "claim_concurrent_16",
+      "source_actor": "worker-16",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 7,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-07",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 5,
+      "operation_identity": "op-audit-07",
+      "ingested_at": "2026-08-24T03:10:07Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000007",
+      "normalized_payload_hash": "d266785471b0aa7dcc45a637c2d5026c4d9118c7a44e6c4fffe4ef64877c0305",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "8e9ddad8db2e242e2624f4c13b896a12458ea8a354e89740ac76ac05b0503923",
+      "evidence_rank": 5,
+      "previous_claim_hash": "268b5af182fd074cf38ffc2a3a080c2ec95373c0b97ae721edc33257e6e76afc",
+      "claim_id": "claim_concurrent_07",
+      "source_actor": "worker-07",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 8,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-08",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 6,
+      "operation_identity": "op-audit-08",
+      "ingested_at": "2026-08-24T03:10:08Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000008",
+      "normalized_payload_hash": "086ed79f5da652e1dc2e83f6c104d731d2fd708816139eaad23c65096eae3c49",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "2a76251ed23b3e270da2f266ad2030f91d204aa338d5bb08135534e18755ab55",
+      "evidence_rank": 5,
+      "previous_claim_hash": "8e9ddad8db2e242e2624f4c13b896a12458ea8a354e89740ac76ac05b0503923",
+      "claim_id": "claim_concurrent_08",
+      "source_actor": "worker-08",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 15,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-15",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 7,
+      "operation_identity": "op-audit-15",
+      "ingested_at": "2026-08-24T03:10:15Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000015",
+      "normalized_payload_hash": "86bd6165840aca886d8141fecc6111c3ee3233a8cc044eb3155fd4d3fff64b8a",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "74808920e8d56000fda55955e0e584fd6dea200364c4561aa1e00438a8a18c7a",
+      "evidence_rank": 5,
+      "previous_claim_hash": "2a76251ed23b3e270da2f266ad2030f91d204aa338d5bb08135534e18755ab55",
+      "claim_id": "claim_concurrent_15",
+      "source_actor": "worker-15",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 5,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-05",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 8,
+      "operation_identity": "op-audit-05",
+      "ingested_at": "2026-08-24T03:10:05Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000005",
+      "normalized_payload_hash": "d5c7fb759cc7ea201f4a7d0b66e812aec61d9709cc6ec50c797a74881511f176",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "dd84ecf2ecf3704392949db9827bcf745d8e2342ad0506898080b245b3d03a2b",
+      "evidence_rank": 5,
+      "previous_claim_hash": "74808920e8d56000fda55955e0e584fd6dea200364c4561aa1e00438a8a18c7a",
+      "claim_id": "claim_concurrent_05",
+      "source_actor": "worker-05",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 24,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-24",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 9,
+      "operation_identity": "op-audit-24",
+      "ingested_at": "2026-08-24T03:10:24Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000024",
+      "normalized_payload_hash": "5428e94481a5b9b13976a5648c2733ade29e3561f868f55a8f3bbf2db6f5109b",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "0b326a0669072067edd3f1d8aec5c167a0cb8acf7e06c592ebf6b1ae29c579d1",
+      "evidence_rank": 5,
+      "previous_claim_hash": "dd84ecf2ecf3704392949db9827bcf745d8e2342ad0506898080b245b3d03a2b",
+      "claim_id": "claim_concurrent_24",
+      "source_actor": "worker-24",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 10,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-10",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 10,
+      "operation_identity": "op-audit-10",
+      "ingested_at": "2026-08-24T03:10:10Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000010",
+      "normalized_payload_hash": "c549f98e0a7d96bde6f0b771ef28ef86f789aa0fcd156085a2278073a3209944",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "83bd9c8b1320380e29dadf7c12539cde5e0c5baaddb76bb329e894ff779055bf",
+      "evidence_rank": 5,
+      "previous_claim_hash": "0b326a0669072067edd3f1d8aec5c167a0cb8acf7e06c592ebf6b1ae29c579d1",
+      "claim_id": "claim_concurrent_10",
+      "source_actor": "worker-10",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 13,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-13",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 11,
+      "operation_identity": "op-audit-13",
+      "ingested_at": "2026-08-24T03:10:13Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000013",
+      "normalized_payload_hash": "9278d14b856a8a7798401d1cf4cb3a0d53a9172b0faa7ca48fed5d981c8d13fb",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "f74708764da705ba0897f40b174cfa8bc477fa6d9d45edd1d80a32c4705949cf",
+      "evidence_rank": 5,
+      "previous_claim_hash": "83bd9c8b1320380e29dadf7c12539cde5e0c5baaddb76bb329e894ff779055bf",
+      "claim_id": "claim_concurrent_13",
+      "source_actor": "worker-13",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 18,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-18",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 12,
+      "operation_identity": "op-audit-18",
+      "ingested_at": "2026-08-24T03:10:18Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000018",
+      "normalized_payload_hash": "d12ab71444e5d968605e928b23d8d36c8f4c1df29a4bc3bcb96048344a7b0336",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "17b40bbeeb6e2d3995ca46c861d865bad77b2c6d067f24859bf5b6e7634a7319",
+      "evidence_rank": 5,
+      "previous_claim_hash": "f74708764da705ba0897f40b174cfa8bc477fa6d9d45edd1d80a32c4705949cf",
+      "claim_id": "claim_concurrent_18",
+      "source_actor": "worker-18",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 1,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-01",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 13,
+      "operation_identity": "op-audit-01",
+      "ingested_at": "2026-08-24T03:10:01Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000001",
+      "normalized_payload_hash": "9573c1f98e3a36b980d4a08b5946bb47c44033c0abf28d5fa01c398dbb440c30",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "06fc1797fc9d607a07b7899a742bcc909612304aeb89ee448a4ceb0c3ade6cd0",
+      "evidence_rank": 5,
+      "previous_claim_hash": "17b40bbeeb6e2d3995ca46c861d865bad77b2c6d067f24859bf5b6e7634a7319",
+      "claim_id": "claim_concurrent_01",
+      "source_actor": "worker-01",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 23,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-23",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 14,
+      "operation_identity": "op-audit-23",
+      "ingested_at": "2026-08-24T03:10:23Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000023",
+      "normalized_payload_hash": "e0f90500cbacfc3543633dbb5b845e263e6ce1fd36d139ba531d92f91e22bcd4",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "003e9ec92e8f4e43317f8c70f7985db0946e115f88df61ce3c5b09d141277065",
+      "evidence_rank": 5,
+      "previous_claim_hash": "06fc1797fc9d607a07b7899a742bcc909612304aeb89ee448a4ceb0c3ade6cd0",
+      "claim_id": "claim_concurrent_23",
+      "source_actor": "worker-23",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 14,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-14",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 15,
+      "operation_identity": "op-audit-14",
+      "ingested_at": "2026-08-24T03:10:14Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000014",
+      "normalized_payload_hash": "af9733026f610bdb747a33db4c65b6403b058adf786788158b3e552fab9d6c44",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "95ef5bc37582804cb045b06f9f8b65f7571ae4b688ce12b428f6b7712735fbae",
+      "evidence_rank": 5,
+      "previous_claim_hash": "003e9ec92e8f4e43317f8c70f7985db0946e115f88df61ce3c5b09d141277065",
+      "claim_id": "claim_concurrent_14",
+      "source_actor": "worker-14",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 22,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-22",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 16,
+      "operation_identity": "op-audit-22",
+      "ingested_at": "2026-08-24T03:10:22Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000022",
+      "normalized_payload_hash": "2c66452f37adab778383e49aa79d816bd1e1780bb3cf646257897aecc6f211ba",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "f245a54893fa040a044256f0ff7690cd58b22608bae15267c52069a6e06f4835",
+      "evidence_rank": 5,
+      "previous_claim_hash": "95ef5bc37582804cb045b06f9f8b65f7571ae4b688ce12b428f6b7712735fbae",
+      "claim_id": "claim_concurrent_22",
+      "source_actor": "worker-22",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 4,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-04",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 17,
+      "operation_identity": "op-audit-04",
+      "ingested_at": "2026-08-24T03:10:04Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000004",
+      "normalized_payload_hash": "8c82bb0586a452b845aeb6794b0372b40523618b0bbd0f9af90023ef330e9952",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "6d7a2f5ca84a1cc08f56673cd471047a5ecf052d76ed1abc3174ef5ef773b42e",
+      "evidence_rank": 5,
+      "previous_claim_hash": "f245a54893fa040a044256f0ff7690cd58b22608bae15267c52069a6e06f4835",
+      "claim_id": "claim_concurrent_04",
+      "source_actor": "worker-04",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 25,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-25",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 18,
+      "operation_identity": "op-audit-25",
+      "ingested_at": "2026-08-24T03:10:25Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000025",
+      "normalized_payload_hash": "1b0ad72d7e94dcbb743992c2ce2508492e23b002e4d10044a6d07723139d1af3",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "8bddb6510a3036bcb29b9d901fb84490d158b0bdbb0dacc609084d07e1fdecb0",
+      "evidence_rank": 5,
+      "previous_claim_hash": "6d7a2f5ca84a1cc08f56673cd471047a5ecf052d76ed1abc3174ef5ef773b42e",
+      "claim_id": "claim_concurrent_25",
+      "source_actor": "worker-25",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 3,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-03",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 19,
+      "operation_identity": "op-audit-03",
+      "ingested_at": "2026-08-24T03:10:03Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000003",
+      "normalized_payload_hash": "ae7a159e603bc1f9c03b7224723f1d62599a0de516a4e552e8b9dc701917b582",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "b700c371990d30505f164e55ce9f2c7660ea9018201a8178acfeaca76f10de1b",
+      "evidence_rank": 5,
+      "previous_claim_hash": "8bddb6510a3036bcb29b9d901fb84490d158b0bdbb0dacc609084d07e1fdecb0",
+      "claim_id": "claim_concurrent_03",
+      "source_actor": "worker-03",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 20,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-20",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 20,
+      "operation_identity": "op-audit-20",
+      "ingested_at": "2026-08-24T03:10:20Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000020",
+      "normalized_payload_hash": "418fd135657116d5f68b8e95798a99013b5bd0ca6a03fbdcf3dbc748222339b7",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "853bfe598cfd926ac598a415c8c50266c323079b12d525f948b68a530b5651c6",
+      "evidence_rank": 5,
+      "previous_claim_hash": "b700c371990d30505f164e55ce9f2c7660ea9018201a8178acfeaca76f10de1b",
+      "claim_id": "claim_concurrent_20",
+      "source_actor": "worker-20",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 6,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-06",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 21,
+      "operation_identity": "op-audit-06",
+      "ingested_at": "2026-08-24T03:10:06Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000006",
+      "normalized_payload_hash": "18f22b8a54bd49f3ef06451acd6dc5ec5aa69446955800b2aa41b29c3cce9c88",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "8a9a85e5dfdc083964045e7daf08cdf6e581488da6b346a5b0c284f422fdf89a",
+      "evidence_rank": 5,
+      "previous_claim_hash": "853bfe598cfd926ac598a415c8c50266c323079b12d525f948b68a530b5651c6",
+      "claim_id": "claim_concurrent_06",
+      "source_actor": "worker-06",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 12,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-12",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 22,
+      "operation_identity": "op-audit-12",
+      "ingested_at": "2026-08-24T03:10:12Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000012",
+      "normalized_payload_hash": "055116747ee561e9df609bb43e15aca1dcb8b3402fc942f29ac5b25e1143b912",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "f2ca718991187ab8951c2d467811401fbd5cc7b6127f8237b721448c59c0271c",
+      "evidence_rank": 5,
+      "previous_claim_hash": "8a9a85e5dfdc083964045e7daf08cdf6e581488da6b346a5b0c284f422fdf89a",
+      "claim_id": "claim_concurrent_12",
+      "source_actor": "worker-12",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 19,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-19",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 23,
+      "operation_identity": "op-audit-19",
+      "ingested_at": "2026-08-24T03:10:19Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000019",
+      "normalized_payload_hash": "5359e6c299707fb01f563c093c18c4e706abdb40a9778f3bba391047fe093746",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "0b05efdb33bb05334143fd9ae4cc4e37b6e58eeb5fa3b15d80eaab6c88539062",
+      "evidence_rank": 5,
+      "previous_claim_hash": "f2ca718991187ab8951c2d467811401fbd5cc7b6127f8237b721448c59c0271c",
+      "claim_id": "claim_concurrent_19",
+      "source_actor": "worker-19",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 9,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-09",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 24,
+      "operation_identity": "op-audit-09",
+      "ingested_at": "2026-08-24T03:10:09Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000009",
+      "normalized_payload_hash": "916e3cdbb4094127d6ad4c41513af60942283555bab1e6f4329908de59e27169",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "cf4683d64ad8c213eff084e0ff4ea7bcd38e6033d98ae75727d17ff0f93269eb",
+      "evidence_rank": 5,
+      "previous_claim_hash": "0b05efdb33bb05334143fd9ae4cc4e37b6e58eeb5fa3b15d80eaab6c88539062",
+      "claim_id": "claim_concurrent_09",
+      "source_actor": "worker-09",
+      "references": []
+    },
+    {
+      "normalized_payload": {
+        "worker": 17,
+        "purpose": "claim-chain-concurrency-proof",
+        "amount_minor_units": 20000
+      },
+      "trace_id": "trace-stage9-concurrent-17",
+      "immediate_state": "UNKNOWN",
+      "claim_type": "SYSTEM_STATE",
+      "sequence_number": 25,
+      "operation_identity": "op-audit-17",
+      "ingested_at": "2026-08-24T03:10:17Z",
+      "policy_references": [
+        "commerce_missing_order_v1@1"
+      ],
+      "rule_references": [
+        "commerce_missing_order_rules@1"
+      ],
+      "occurred_at": "logical:00000017",
+      "normalized_payload_hash": "c1b3111bbe576d9a2aa4b01104ab25df39807aa01f8d52c748964bb6b35670f9",
+      "external_object_id": null,
+      "resolution_path": null,
+      "source_event_id": null,
+      "subject": "ORD-8472",
+      "agent_identity": null,
+      "source_system": "stage9-concurrency-worker",
+      "pact_id": "pact_stage9-chain-20260824031028_97d25490c208ffa91828",
+      "claim_schema_version": "isopact.stateclaim.v1",
+      "protected_references": [],
+      "claim_hash": "d7649eadf92f2f918c56c789f2b7a625977a216acd1ac1cfec562f16242efd44",
+      "evidence_rank": 5,
+      "previous_claim_hash": "cf4683d64ad8c213eff084e0ff4ea7bcd38e6033d98ae75727d17ff0f93269eb",
+      "claim_id": "claim_concurrent_17",
+      "source_actor": "worker-17",
+      "references": []
+    }
+  ],
+  "sequence_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "forks": 0,
+  "terminal_claim_hash": "d7649eadf92f2f918c56c789f2b7a625977a216acd1ac1cfec562f16242efd44",
+  "chain_verification": {
+    "claim_chain_valid": true,
+    "claim_count": 25,
+    "sequence_range": [
+      1,
+      25
+    ],
+    "terminal_claim_hash": "d7649eadf92f2f918c56c789f2b7a625977a216acd1ac1cfec562f16242efd44",
+    "reason_codes": []
+  },
+  "semantic_mutation_refused": true,
+  "performance_ms": {
+    "claim_hashing": {
+      "samples": 500,
+      "p50": 0.108,
+      "p95": 0.158
+    },
+    "firestore_claim_append": {
+      "samples": 25,
+      "p50": 3150.627,
+      "p95": 5190.374
+    }
+  }
+}

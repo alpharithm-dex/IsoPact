@@ -1,0 +1,21 @@
+{
+  "frontend_lockfile": "frontend/package-lock.json",
+  "install": "npm ci",
+  "node": "v22.13.0",
+  "npm": "10.9.2",
+  "python": "3.12.13",
+  "python_direct": {
+    "cryptography": "46.0.7",
+    "google-adk": "2.7.1",
+    "google-cloud-firestore": "2.28.1",
+    "google-cloud-kms": "3.16.0",
+    "google-cloud-modelarmor": "0.7.1",
+    "google-cloud-pubsub": "2.39.1",
+    "google-cloud-secret-manager": "2.30.0",
+    "google-genai": "2.19.0",
+    "opentelemetry-api": "1.42.1",
+    "opentelemetry-exporter-otlp-proto-grpc": "NOT_INSTALLED",
+    "opentelemetry-sdk": "1.42.1"
+  },
+  "python_locked_distributions": 106
+}

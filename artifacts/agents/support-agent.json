@@ -1,0 +1,361 @@
+{
+  "identity": {
+    "agent_id": "isopact-support-v1",
+    "role": "SUPPORT",
+    "display_name": "IsoPact Support Agent",
+    "skill_id": "resolve_missing_order_financially",
+    "google_agent_resource": null,
+    "google_managed_identity": null
+  },
+  "runtime": {
+    "name": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "display_name": "IsoPact Support Agent v1",
+    "description": "Specialized support worker; skill=resolve_missing_order_financially; consequential requests route through IsoPact.",
+    "create_time": "2026-08-23T23:45:20.588521Z",
+    "update_time": "2026-08-24T19:07:56.158040Z",
+    "agent_framework": "google-adk",
+    "identity_type": "AGENT_IDENTITY",
+    "effective_identity": "agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "deployment_spec": {
+      "env": [
+        {
+          "name": "GOOGLE_GENAI_USE_VERTEXAI",
+          "value": "true"
+        },
+        {
+          "name": "GOOGLE_CLOUD_LOCATION",
+          "value": "global"
+        },
+        {
+          "name": "ISOPACT_OUTCOME_GATEWAY_URL",
+          "value": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app"
+        },
+        {
+          "name": "GOOGLE_CLOUD_AGENT_ENGINE_ENABLE_TELEMETRY",
+          "value": "true"
+        },
+        {
+          "name": "OTEL_SEMCONV_STABILITY_OPT_IN",
+          "value": "gen_ai_latest_experimental"
+        },
+        {
+          "name": "OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT",
+          "value": "NO_CONTENT"
+        },
+        {
+          "name": "ADK_CAPTURE_MESSAGE_CONTENT_IN_SPANS",
+          "value": "false"
+        }
+      ],
+      "max_instances": 2,
+      "min_instances": 0
+    }
+  },
+  "live_invocation": {
+    "resource": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+    "role": "SUPPORT",
+    "provider": "Vertex AI Agent Runtime",
+    "model": "gemini-3.5-flash",
+    "live": true,
+    "event_count": 5,
+    "events": [
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_164174",
+                "args": {
+                  "pact_id": "PACT-STAGE8-001"
+                },
+                "name": "inspect_pact_state"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 29,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 29
+            }
+          ],
+          "prompt_token_count": 238,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 238
+            }
+          ],
+          "thoughts_token_count": 106,
+          "total_token_count": 373,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-55c71d25-cbd9-435a-821e-0911eecb9ca5",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "long_running_tool_ids": [],
+        "id": "72404279-3725-4b10-9b99-03cca1f3729d",
+        "timestamp": 1787528915.22124
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_response": {
+                "id": "call_164174",
+                "name": "inspect_pact_state",
+                "response": {
+                  "authoritative_source": "PACT_GRAPH_FIRESTORE",
+                  "fields_returned": [
+                    "pact_id",
+                    "status"
+                  ],
+                  "firestore_read_ms": 475.719,
+                  "firestore_region": "africa-south1",
+                  "pact_id": "PACT-STAGE8-001",
+                  "status": "NOT_FOUND",
+                  "write_authority": false,
+                  "agent_runtime_region": "europe-west1",
+                  "cross_region_round_trip_ms": 673.359
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocation_id": "e-55c71d25-cbd9-435a-821e-0911eecb9ca5",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "0c196e58-9e4f-4a44-9b3a-d9793cfcf4d5",
+        "timestamp": 1787528917.4509978
+      },
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_1938510",
+                "args": {
+                  "pact_id": "PACT-STAGE8-001",
+                  "order_id": "ORD-8472"
+                },
+                "name": "request_refund_through_isopact"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 45,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 45
+            }
+          ],
+          "prompt_token_count": 459,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 459
+            }
+          ],
+          "thoughts_token_count": 156,
+          "total_token_count": 660,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-55c71d25-cbd9-435a-821e-0911eecb9ca5",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "long_running_tool_ids": [],
+        "id": "959c976d-65f0-4b54-b4af-75574b023663",
+        "timestamp": 1787528917.5357301
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_response": {
+                "id": "call_1938510",
+                "name": "request_refund_through_isopact",
+                "response": {
+                  "pact_id": "PACT-STAGE8-001",
+                  "order_id": "ORD-8472",
+                  "route": "ISOPACT_GATEWAY",
+                  "raw_stripe_access": false,
+                  "status": "CONTROL_PLANE_SUBMISSION_REQUIRED"
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocation_id": "e-55c71d25-cbd9-435a-821e-0911eecb9ca5",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "bfb67ae5-f24b-470b-b675-0b72d2fc85a8",
+        "timestamp": 1787528919.4167376
+      },
+      {
+        "model_version": "gemini-3.5-flash",
+        "content": {
+          "parts": [
+            {
+              "text": "I have inspected the pact state and initiated the refund process for your missing order:\n\n1. **Pact Inspection**: Checked pact **PACT-STAGE8-001**, which is currently not found on the active Firestore pact graph registry.\n2. **Refund Request**: Submitted a financial remedy request for order **ORD-8472** through the IsoPact Gateway (avoiding any direct Stripe intervention as required).\n\nThe current status of this refund request is **CONTROL_PLANE_SUBMISSION_REQUIRED**. This means the request has been registered in the system but is pending control plane submission and is not yet fully settled."
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 129,
+          "candidates_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 129
+            }
+          ],
+          "prompt_token_count": 705,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 705
+            }
+          ],
+          "thoughts_token_count": 231,
+          "total_token_count": 1065,
+          "traffic_type": "ON_DEMAND"
+        },
+        "invocation_id": "e-55c71d25-cbd9-435a-821e-0911eecb9ca5",
+        "author": "support_agent",
+        "actions": {
+          "state_delta": {},
+          "artifact_delta": {},
+          "requested_auth_configs": {},
+          "requested_tool_confirmations": {}
+        },
+        "node_info": {
+          "path": "support_agent@1"
+        },
+        "id": "541341b4-2f08-4855-9119-e0f07d837d74",
+        "timestamp": 1787528919.4976537
+      }
+    ],
+    "success": true
+  },
+  "authority": {
+    "capability_matrix": {
+      "SUPPORT": [
+        "READ_ORDER",
+        "READ_PACT",
+        "READ_TICKET",
+        "REQUEST_REFUND",
+        "UPDATE_TICKET"
+      ],
+      "FULFILLMENT": [
+        "READ_FULFILLMENT",
+        "READ_ORDER",
+        "READ_PACT",
+        "REQUEST_REPLACEMENT"
+      ],
+      "RETENTION": [
+        "READ_CUSTOMER",
+        "READ_PACT",
+        "REQUEST_GOODWILL"
+      ],
+      "RESOLVER": [
+        "READ_APPROVAL",
+        "READ_CONFLICTS",
+        "READ_PACT",
+        "REQUEST_VALIDATED_PLAN",
+        "SUBMIT_VALIDATED_PLAN"
+      ]
+    },
+    "tool_inventories": {
+      "SUPPORT": [
+        "inspect_pact_state",
+        "read_ticket",
+        "request_refund_through_isopact"
+      ],
+      "FULFILLMENT": [
+        "inspect_fulfillment_state",
+        "inspect_pact_state",
+        "request_replacement_through_isopact"
+      ],
+      "RETENTION": [
+        "inspect_customer_context",
+        "inspect_pact_state",
+        "request_goodwill_through_isopact"
+      ],
+      "RESOLVER": [
+        "get_available_compensation_candidates",
+        "get_open_conflicts",
+        "inspect_pact_state",
+        "request_validated_resolution_plan"
+      ]
+    },
+    "identity_negative_tests": [
+      {
+        "agent_id": "isopact-support-v1",
+        "attempted": "REQUEST_REPLACEMENT",
+        "decision": "DENY",
+        "reason": "isopact-support-v1 role SUPPORT lacks REQUEST_REPLACEMENT"
+      },
+      {
+        "agent_id": "isopact-fulfillment-v1",
+        "attempted": "REQUEST_REFUND",
+        "decision": "DENY",
+        "reason": "isopact-fulfillment-v1 role FULFILLMENT lacks REQUEST_REFUND"
+      },
+      {
+        "agent_id": "isopact-retention-v1",
+        "attempted": "REQUEST_REFUND",
+        "decision": "DENY",
+        "reason": "isopact-retention-v1 role RETENTION lacks REQUEST_REFUND"
+      }
+    ],
+    "deterministic_model_calls": 0,
+    "raw_firestore_authority": false,
+    "raw_consequential_bypass_tools": [],
+    "policy_edit_capability": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "source": "LIVE_DEPLOYED_STAGE11_ENDPOINT",
+  "pact": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "backend_lifecycle": "SETTLED",
+  "checks": {
+    "live_firestore_read": true,
+    "live_mode_no_silent_fallback": true,
+    "pact_starts_open_pending_in_replay": true,
+    "refund_allow_visible": true,
+    "replacement_block_visible": true,
+    "goodwill_visible": true,
+    "duplicate_block_visible": true,
+    "rank4_does_not_settle": true,
+    "rank1_then_settled": true,
+    "unmanaged_650": true,
+    "unmanaged_excess_450": true,
+    "protected_250": true,
+    "prevented_400": true,
+    "never_calls_400_cash_saved": true,
+    "live_receipt_valid": true,
+    "tampered_receipt_invalid": true,
+    "production_data_unmodified": true
+  },
+  "result": "PASS"
+}

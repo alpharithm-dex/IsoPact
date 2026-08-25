@@ -1,0 +1,9 @@
+{
+  "count": 2500,
+  "failures": [],
+  "floating_point_failures": 0,
+  "insertion_order_failures": 0,
+  "result": "PASS",
+  "seed": 120012,
+  "version": "stage12-v1.0.0"
+}

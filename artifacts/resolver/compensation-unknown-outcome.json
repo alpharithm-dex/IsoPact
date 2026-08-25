@@ -1,0 +1,9 @@
+{
+  "authoritative_evidence": "ev_carrier_query",
+  "equivalent_retry": "DEFER",
+  "external_action_occurred": true,
+  "external_execution_count": 1,
+  "final_state": "CONFIRMED",
+  "immediate_state": "OUTCOME_UNKNOWN",
+  "retry_after_restart": "DEFER"
+}

@@ -1,0 +1,7 @@
+{
+  "pact_id": "pact_stage8b-e2e-20260824021629_04353dc6e7acd4db209b",
+  "rank4_statement": "The refund request has been successfully transmitted exactly once through the IsoPact Gateway. Below are the verified caller details and the exact results from the operation.\n\n### Verified Caller Details\n* **Verified Agent ID:** `isopact-support-v1`\n* **Verified Role:** `SUPPORT`\n* **Verification Method:** `GOOGLE_STS_JWKS_RS256`\n* **Token Subject (`sub`):** `spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776`\n* **Token Issuer (`iss`):** `https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog`\n* **Token Audience (`aud`):** `[\"https://isopact-outcome-gateway-442539309409.africa-south1.run.app\"]`\n\n---\n\n### Exact Result\n* **HTTP Status:** `200`\n* **Action:** `refund`\n* **Gateway Decision:** `ALLOW`\n* **Reason Code:** `AUTHORITY_RESERVED`\n* **Operation Identity:** `5abf1eb6a0696579fbe5aa85dd08edb2af7831f65b9d5eaaf2fb502ddf2c9303`\n* **External Object ID:** `REF-5abf1eb6a069`\n* **Pact ID:** `pact_stage8b-e2e-20260824021629_04353dc6e7acd4db209b`\n* **Refund Request Status:** `PENDING`\n* **Pact Graph State:** `PENDING`\n\n*Note: The refund operation and the Pact state are currently in a **PENDING** state and are not yet settled.*",
+  "state_after_rank4": "PENDING",
+  "rank1_event": "stripe.refund.succeeded",
+  "state_after_rank1": "SETTLED"
+}

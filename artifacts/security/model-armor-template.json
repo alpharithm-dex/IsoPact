@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-08-24T07:36:39.767763+00:00",
+  "project": "isopact-agentic-20260823",
+  "region": "europe-west1",
+  "template": {
+    "name": "projects/isopact-agentic-20260823/locations/europe-west1/templates/isopact-untrusted-input-v1",
+    "create_time": "2026-08-24T07:36:39.367381966Z",
+    "update_time": "2026-08-24T07:36:39.367381966Z",
+    "filter_config": {
+      "pi_and_jailbreak_filter_settings": {
+        "filter_enforcement": 1,
+        "confidence_level": 1
+      },
+      "malicious_uri_filter_settings": {
+        "filter_enforcement": 1
+      }
+    },
+    "template_metadata": {
+      "ignore_partial_invocation_failures": false,
+      "custom_prompt_safety_error_code": 0,
+      "custom_prompt_safety_error_message": "",
+      "custom_llm_response_safety_error_code": 0,
+      "custom_llm_response_safety_error_message": "",
+      "log_template_operations": false,
+      "log_sanitize_operations": false,
+      "enforcement_type": 0,
+      "modalities": []
+    },
+    "labels": {}
+  },
+  "created": true,
+  "filters": [
+    "PROMPT_INJECTION_AND_JAILBREAK_LOW_AND_ABOVE",
+    "MALICIOUS_URI"
+  ],
+  "security_boundary": "untrusted text before Gemini only"
+}

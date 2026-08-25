@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.venv/
+.venv-win/
+frontend/node_modules/
+frontend/dist/
+work/
+*.log
+*.tsbuildinfo
+.env
+.env.*
+application_default_credentials.json
+adc.json

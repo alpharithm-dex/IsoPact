@@ -1,0 +1,15 @@
+{
+  "authority_span_classes": [
+    "isopact.compensation.precondition",
+    "isopact.evidence.ingest",
+    "isopact.gateway.authorize",
+    "isopact.invariants.evaluate",
+    "isopact.receipt.verify",
+    "isopact.reservation.transaction",
+    "isopact.resolution.validate",
+    "isopact.settlement.evaluate"
+  ],
+  "model_descendants_inside_authority_spans": 0,
+  "violations": [],
+  "result": "PASS"
+}

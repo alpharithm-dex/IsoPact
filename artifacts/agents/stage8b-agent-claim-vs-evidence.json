@@ -1,0 +1,7 @@
+{
+  "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "rank4_statement": "The request to execute a support refund through the IsoPact Gateway has been processed successfully exactly once. Here is the report on the verified caller and the exact result.\n\n### 1. Verified Caller Information\n* **Verified Agent ID**: `isopact-support-v1`\n* **Verified Role**: `SUPPORT`\n* **Token Subject (SPIFFE ID)**: `spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776`\n* **Token Issuer**: `https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog`\n* **Verification Method**: `GOOGLE_STS_JWKS_RS256`\n\n---\n\n### 2. Exact Result of the Refund Request\n* **Gateway Decision**: `ALLOW`\n* **Reason Code**: `AUTHORITY_RESERVED`\n* **Action**: `refund`\n* **Operation Identity**: `35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61`\n* **External Object ID**: `REF-35642102aa6e`\n* **Current State**: **`PENDING`** (Please note that the refund process is initiated but the work is currently pending and **not yet settled**).",
+  "state_after_rank4": "PENDING",
+  "rank1_event": "stripe.refund.succeeded",
+  "state_after_rank1": "SETTLED"
+}

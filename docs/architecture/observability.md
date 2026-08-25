@@ -1,0 +1,13 @@
+# Observability
+
+IsoPact uses OpenTelemetry as a fail-open projection of authoritative business facts. Cloud Run sends spans and bounded-cardinality metrics over OTLP/gRPC to a local Google-built Collector sidecar, which batches export to Google Cloud. Structured JSON goes to stdout and includes Cloud Trace fields while an active span exists. Exporters, the Collector, Logging, Trace, and Monitoring are never consulted by Gateway authorization, evidence reduction, invariants, compensation, settlement, or provenance.
+
+Stable `isopact.*` spans cover the Gateway, reservations, external adapters, evidence, invariants, settlement, Resolver validation/execution, claim append, KMS signing, and receipt verification. Pact, trace, operation, evidence, and receipt identifiers belong in spans and logs; the metric label allowlist rejects those unbounded identifiers. The live descriptor audit reports zero cardinality violations.
+
+Agent Runtime tools create `isopact.agent.invoke`, attach the ADK invocation ID, and inject W3C `traceparent` into the HTTP request. Gateway header keys are normalized before extraction. Live trace `7cf150602994fa1029fc855b953d380e` proves Runtime model/tool spans, the HTTP client, Gateway request/authentication/authorization, and Firestore reservation in one valid ancestry. Pub/Sub does not fabricate parentage: execution `isopact-stage10c-proof-vt4c7` published and consumed real message `20648378675153105`; consumer trace `c4a56fb4414a39ab660cf3fd62d551be` is a root and its SDK-exported link targets publisher trace `7dc674d4131e6f07a1833fdc5486c999`, span `a7acd0076ee992ce`. Both spans reconcile to Cloud Trace. Because the Cloud Trace v1 read representation omits OpenTelemetry links, the proof-only fail-open SDK processor records the pre-export link in structured Cloud Run logs; it never participates in authorization or business state.
+
+Agent Runtime uses `OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT=NO_CONTENT`, `ADK_CAPTURE_MESSAGE_CONTENT_IN_SPANS=false`, and no completion storage sink. The fresh unique canary has zero Trace and Logging matches; the sanitized artifact scan has zero JWT, authorization, webhook, payment, private-key, raw-model, or Memory Bank matches.
+
+The 500-sample controlled warm benchmark found no synchronous multi-second exporter dependency. It is a latency experiment, not a throughput claim. The 25-way claim proof measured hashing at 0.108/0.158 ms p50/p95 and Firestore append at 3150.627/5190.374 ms; per-pact Firestore chain-head serialization dominates, and chain integrity remains enabled.
+
+The deployed topology is Agent Runtime in `europe-west1`, with Gateway, Firestore, proof job, and Collector in `africa-south1`. Cross-region values are proof-workload observations only.

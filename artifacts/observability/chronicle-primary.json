@@ -1,0 +1,224 @@
+{
+  "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+  "current_lifecycle": "SETTLED",
+  "selected_resolution": "successful_refund",
+  "entries": [
+    {
+      "entry_id": "claim_gateway_req-stage8b-e2e-support",
+      "logical_time": "2026-08-24T20:54:41.961559+00:00",
+      "observed_time": "2026-08-24T20:54:41.961559+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": "isopact-support-v1",
+      "actor_role": "SUPPORT",
+      "category": "GATEWAY_AUTHORIZATION",
+      "action": "refund",
+      "target_system": "isopact-outcome-gateway",
+      "gateway_decision": "ALLOW",
+      "reason_code": "AUTHORITY_RESERVED",
+      "external_execution": false,
+      "immediate_state": "ACCEPTED",
+      "evidence_rank": 4,
+      "trace_id": "trace-stage8b-e2e-support",
+      "stateclaim": {
+        "sequence": 1,
+        "hash": "989c16f715b1299974b8149d2db5c20846ef9ef80faf15d29e0c970f3a35903d"
+      },
+      "caused_by": [
+        "gateway-decision:AUTHORITY_RESERVED"
+      ],
+      "confirmed_by": []
+    },
+    {
+      "entry_id": "claim_remote_req-stage8b-e2e-support",
+      "logical_time": "2026-08-24T20:54:42.076675+00:00",
+      "observed_time": "2026-08-24T20:54:42.076675+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": "isopact-support-v1",
+      "actor_role": null,
+      "category": "API_RESPONSE",
+      "action": "refund",
+      "target_system": "stripe",
+      "gateway_decision": null,
+      "reason_code": null,
+      "external_execution": true,
+      "immediate_state": "PENDING",
+      "evidence_rank": 3,
+      "trace_id": "trace-stage8b-e2e-support",
+      "stateclaim": {
+        "sequence": 2,
+        "hash": "9a4c0ca24301b9138e608397b16a14580f20ab2e6ba6576853d4286f5c2a3307"
+      },
+      "caused_by": [
+        "remote-role:SUPPORT"
+      ],
+      "confirmed_by": []
+    },
+    {
+      "entry_id": "claim_gateway_req-stage8b-e2e-fulfillment",
+      "logical_time": "2026-08-24T20:54:56.179116+00:00",
+      "observed_time": "2026-08-24T20:54:56.179116+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": "isopact-fulfillment-v1",
+      "actor_role": "FULFILLMENT",
+      "category": "GATEWAY_AUTHORIZATION",
+      "action": "replacement",
+      "target_system": "isopact-outcome-gateway",
+      "gateway_decision": "BLOCK",
+      "reason_code": "EXCLUSIVE_RESOLUTION_CONFLICT",
+      "external_execution": false,
+      "immediate_state": "UNKNOWN",
+      "evidence_rank": 4,
+      "trace_id": "trace-stage8b-e2e-fulfillment",
+      "stateclaim": {
+        "sequence": 3,
+        "hash": "751a1bb91c0d3d7280be9c1606ed5b8f9b2502cbd12e1b9b01f9ce2fae4f226d"
+      },
+      "caused_by": [
+        "gateway-decision:EXCLUSIVE_RESOLUTION_CONFLICT"
+      ],
+      "confirmed_by": []
+    },
+    {
+      "entry_id": "claim_gateway_req-stage8b-e2e-retention",
+      "logical_time": "2026-08-24T20:55:29.926780+00:00",
+      "observed_time": "2026-08-24T20:55:29.926780+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": "isopact-retention-v1",
+      "actor_role": "RETENTION",
+      "category": "GATEWAY_AUTHORIZATION",
+      "action": "goodwill",
+      "target_system": "isopact-outcome-gateway",
+      "gateway_decision": "ALLOW",
+      "reason_code": "AUTHORITY_RESERVED",
+      "external_execution": false,
+      "immediate_state": "ACCEPTED",
+      "evidence_rank": 4,
+      "trace_id": "trace-stage8b-e2e-retention",
+      "stateclaim": {
+        "sequence": 4,
+        "hash": "d483ad07af91a00495e4846d5dc1875f8132c60feece499a634b823ba21fc544"
+      },
+      "caused_by": [
+        "gateway-decision:AUTHORITY_RESERVED"
+      ],
+      "confirmed_by": []
+    },
+    {
+      "entry_id": "claim_remote_req-stage8b-e2e-retention",
+      "logical_time": "2026-08-24T20:55:30.364049+00:00",
+      "observed_time": "2026-08-24T20:55:30.364049+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": "isopact-retention-v1",
+      "actor_role": null,
+      "category": "API_RESPONSE",
+      "action": "goodwill",
+      "target_system": "crm",
+      "gateway_decision": null,
+      "reason_code": null,
+      "external_execution": true,
+      "immediate_state": "ACCEPTED",
+      "evidence_rank": 3,
+      "trace_id": "trace-stage8b-e2e-retention",
+      "stateclaim": {
+        "sequence": 5,
+        "hash": "bd616c13d82c7e7984bc7480cde5534130310ce990b25d5c97b5ef923b4c95f4"
+      },
+      "caused_by": [
+        "remote-role:RETENTION"
+      ],
+      "confirmed_by": []
+    },
+    {
+      "entry_id": "claim_gateway_req-stage8b-e2e-support-second",
+      "logical_time": "2026-08-24T20:55:42.678713+00:00",
+      "observed_time": "2026-08-24T20:55:42.678713+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": "isopact-support-v1",
+      "actor_role": "SUPPORT",
+      "category": "GATEWAY_AUTHORIZATION",
+      "action": "refund",
+      "target_system": "isopact-outcome-gateway",
+      "gateway_decision": "BLOCK",
+      "reason_code": "DUPLICATE_OPERATION",
+      "external_execution": false,
+      "immediate_state": "UNKNOWN",
+      "evidence_rank": 4,
+      "trace_id": "trace-stage8b-e2e-support-second",
+      "stateclaim": {
+        "sequence": 6,
+        "hash": "8ab35bb4130b73fb8ad2020c0491e462c66b127b57d50461f72ec41968a220bd"
+      },
+      "caused_by": [
+        "gateway-decision:DUPLICATE_OPERATION"
+      ],
+      "confirmed_by": []
+    },
+    {
+      "entry_id": "claim_24e14258eda4456682ec22ec3f838460",
+      "logical_time": "2026-08-24T20:56:17.518333+00:00",
+      "observed_time": "2026-08-24T20:56:17.518333+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": "isopact-support-v1",
+      "actor_role": null,
+      "category": "AGENT_ASSERTION",
+      "action": "The request to execute a support refund through the IsoPact Gateway has been processed successfully exactly once. Here is the report on the verified caller and the exact result.\n\n### 1. Verified Caller Information\n* **Verified Agent ID**: `isopact-support-v1`\n* **Verified Role**: `SUPPORT`\n* **Token Subject (SPIFFE ID)**: `spiffe://agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776`\n* **Token Issuer**: `https://sts.googleapis.com/v1/projects/442539309409/locations/global/workloadIdentityPools/agents.global.proj-442539309409.system.id.goog`\n* **Verification Method**: `GOOGLE_STS_JWKS_RS256`\n\n---\n\n### 2. Exact Result of the Refund Request\n* **Gateway Decision**: `ALLOW`\n* **Reason Code**: `AUTHORITY_RESERVED`\n* **Action**: `refund`\n* **Operation Identity**: `35642102aa6e93f1cee14e0999ecd554534a73d082b306edde12cf313a7f5f61`\n* **External Object ID**: `REF-35642102aa6e`\n* **Current State**: **`PENDING`** (Please note that the refund process is initiated but the work is currently pending and **not yet settled**).",
+      "target_system": "agent",
+      "gateway_decision": null,
+      "reason_code": null,
+      "external_execution": false,
+      "immediate_state": "COMPLETE",
+      "evidence_rank": 4,
+      "trace_id": "trace-stage8b-e2e-support-statement",
+      "stateclaim": {
+        "sequence": 7,
+        "hash": "054f3d936ae5ddd1273e79a0164eeb6af186acc122fd440889aa00acf6644474"
+      },
+      "caused_by": [],
+      "confirmed_by": []
+    },
+    {
+      "entry_id": "claim_ev_055917cb6b302bd3227daef006aa47a5",
+      "logical_time": "2026-08-24T20:56:19.621263+00:00",
+      "observed_time": "2026-08-24T20:56:19.621263+00:00",
+      "pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+      "actor": null,
+      "actor_role": null,
+      "category": "AUTHORITATIVE_EVENT",
+      "action": "ORD-8472",
+      "target_system": "stripe",
+      "gateway_decision": null,
+      "reason_code": null,
+      "external_execution": false,
+      "immediate_state": "SUCCEEDED",
+      "evidence_rank": 1,
+      "trace_id": "trace-stage8b-e2e-stripe",
+      "stateclaim": {
+        "sequence": 8,
+        "hash": "a1b6f9213c0b2ca488c75ca32b77e95236cd7475197acbd3e61138ea3f2c5623"
+      },
+      "caused_by": [
+        "ev_055917cb6b302bd3227daef006aa47a5"
+      ],
+      "confirmed_by": [
+        "ev_055917cb6b302bd3227daef006aa47a5"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "trace_ids": [
+    "trace-stage8b-e2e-fulfillment",
+    "trace-stage8b-e2e-retention",
+    "trace-stage8b-e2e-stripe",
+    "trace-stage8b-e2e-support",
+    "trace-stage8b-e2e-support-second",
+    "trace-stage8b-e2e-support-statement"
+  ],
+  "receipt_verification": [
+    {
+      "receipt_id": "receipt_pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793_00000008",
+      "issuance_status": "SIGNED",
+      "signing_key_version": "projects/isopact-agentic-20260823/locations/africa-south1/keyRings/isopact-settlement-security/cryptoKeys/isopact-provenance-signing/cryptoKeyVersions/2"
+    }
+  ],
+  "authoritative_store_created": false
+}

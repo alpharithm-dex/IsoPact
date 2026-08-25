@@ -1,0 +1,56 @@
+{
+  "pact_id": "pact_stage7_live_20260824212114",
+  "current_lifecycle": null,
+  "selected_resolution": null,
+  "entries": [
+    {
+      "entry_id": "conflict_4a662ed2944956831cbb599034956d98",
+      "logical_time": null,
+      "observed_time": null,
+      "pact_id": "pact_stage7_live_20260824212114",
+      "category": "CONFLICT",
+      "action": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+      "conflict": "RESOLVED",
+      "blocked_by": [],
+      "reconciled_by": []
+    },
+    {
+      "entry_id": "conflict_4a662ed2944956831cbb599034956d98",
+      "logical_time": null,
+      "observed_time": null,
+      "pact_id": "pact_stage7_live_20260824212114",
+      "category": "CONFLICT",
+      "action": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+      "conflict": "RESOLVED",
+      "blocked_by": [],
+      "reconciled_by": []
+    }
+  ],
+  "conflicts": [
+    {
+      "entry_id": "conflict_4a662ed2944956831cbb599034956d98",
+      "logical_time": null,
+      "observed_time": null,
+      "pact_id": "pact_stage7_live_20260824212114",
+      "category": "CONFLICT",
+      "action": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+      "conflict": "RESOLVED",
+      "blocked_by": [],
+      "reconciled_by": []
+    },
+    {
+      "entry_id": "conflict_4a662ed2944956831cbb599034956d98",
+      "logical_time": null,
+      "observed_time": null,
+      "pact_id": "pact_stage7_live_20260824212114",
+      "category": "CONFLICT",
+      "action": "COMMERCE_PRIMARY_RESOLUTION_EXCLUSIVE",
+      "conflict": "RESOLVED",
+      "blocked_by": [],
+      "reconciled_by": []
+    }
+  ],
+  "trace_ids": [],
+  "receipt_verification": [],
+  "authoritative_store_created": false
+}

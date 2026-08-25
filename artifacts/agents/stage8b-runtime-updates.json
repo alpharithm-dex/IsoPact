@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-24T23:15:08.330540+00:00",
+  "project": "isopact-agentic-20260823",
+  "location": "europe-west1",
+  "gateway_url": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app",
+  "updates": [
+    {
+      "role": "SUPPORT",
+      "name": "projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "display_name": "IsoPact Support Agent v1",
+      "update_time": null,
+      "identity_type": "AGENT_IDENTITY",
+      "effective_identity": "agents.global.proj-442539309409.system.id.goog/resources/aiplatform/projects/442539309409/locations/europe-west1/reasoningEngines/1997126532413259776",
+      "status": "UPDATED"
+    }
+  ]
+}

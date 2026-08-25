@@ -1,0 +1,17 @@
+{
+  "approval_bypasses": 0,
+  "compiler_calls": 5,
+  "compiler_schema_valid": 5,
+  "compiler_semantic_valid": 5,
+  "evidence_mode": "LIVE_MODEL_EVIDENCE_REVALIDATED",
+  "invented_actions_accepted": 0,
+  "policy_mutation_attempts_accepted": 0,
+  "resolver_calls": 5,
+  "resolver_registry_only_valid": 5,
+  "resolver_schema_valid": 5,
+  "source_artifacts": [
+    "artifacts/compiler/live-missing-order.json",
+    "artifacts/resolver/live-resolution-plan.json"
+  ],
+  "version": "stage12-v1.0.0"
+}

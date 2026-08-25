@@ -1,0 +1,228 @@
+[
+  {
+    "projectId": "isopact-agentic-20260823",
+    "traceId": "7cf150602994fa1029fc855b953d380e",
+    "spans": [
+      {
+        "spanId": "8892544925083689234",
+        "parentSpanId": null,
+        "name": "invoke_workflow support_agent",
+        "startTime": "2026-08-24T23:28:28.738387731Z",
+        "endTime": "2026-08-24T23:28:48.334096291Z",
+        "labels": {
+          "cloud.region": "europe-west1",
+          "telemetry.sdk.version": "1.42.1",
+          "service.name": "1997126532413259776"
+        }
+      },
+      {
+        "spanId": "9109698059416133862",
+        "parentSpanId": "8892544925083689234",
+        "name": "invoke_agent support_agent",
+        "startTime": "2026-08-24T23:28:28.844537580Z",
+        "endTime": "2026-08-24T23:28:48.333781023Z",
+        "labels": {
+          "cloud.region": "europe-west1",
+          "telemetry.sdk.version": "1.42.1",
+          "service.name": "1997126532413259776"
+        }
+      },
+      {
+        "spanId": "8429631575018580716",
+        "parentSpanId": "9109698059416133862",
+        "name": "call_llm",
+        "startTime": "2026-08-24T23:28:28.858249013Z",
+        "endTime": "2026-08-24T23:28:38.561074829Z",
+        "labels": {
+          "telemetry.sdk.version": "1.42.1",
+          "cloud.region": "europe-west1",
+          "service.name": "1997126532413259776"
+        }
+      },
+      {
+        "spanId": "12587061289351788880",
+        "parentSpanId": "8429631575018580716",
+        "name": "generate_content gemini-3.5-flash",
+        "startTime": "2026-08-24T23:28:28.858420263Z",
+        "endTime": "2026-08-24T23:28:38.560777908Z",
+        "labels": {
+          "cloud.region": "europe-west1",
+          "service.name": "1997126532413259776",
+          "telemetry.sdk.version": "1.42.1"
+        }
+      },
+      {
+        "spanId": "8007138707607800160",
+        "parentSpanId": "12587061289351788880",
+        "name": "execute_tool request_refund_through_isopact",
+        "startTime": "2026-08-24T23:28:35.185417685Z",
+        "endTime": "2026-08-24T23:28:38.472356052Z",
+        "labels": {
+          "cloud.region": "europe-west1",
+          "service.name": "1997126532413259776",
+          "telemetry.sdk.version": "1.42.1"
+        }
+      },
+      {
+        "spanId": "8096014224996986440",
+        "parentSpanId": "8007138707607800160",
+        "name": "isopact.agent.invoke",
+        "startTime": "2026-08-24T23:28:35.188018782Z",
+        "endTime": "2026-08-24T23:28:38.471093037Z",
+        "labels": {
+          "isopact.tool.path": "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/actions/refund",
+          "isopact.agent.role": "SUPPORT",
+          "service.name": "1997126532413259776",
+          "telemetry.sdk.version": "1.42.1",
+          "cloud.region": "europe-west1"
+        }
+      },
+      {
+        "spanId": "7887419670373725739",
+        "parentSpanId": "8096014224996986440",
+        "name": "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/actions/refund",
+        "startTime": "2026-08-24T23:28:35.510988Z",
+        "endTime": "2026-08-24T23:28:38.383007677Z",
+        "labels": {
+          "cloud.region": "africa-south1"
+        }
+      },
+      {
+        "spanId": "16813305125331058901",
+        "parentSpanId": "7887419670373725739",
+        "name": "isopact.gateway.request",
+        "startTime": "2026-08-24T23:28:37.247909433Z",
+        "endTime": "2026-08-24T23:28:38.382672246Z",
+        "labels": {
+          "telemetry.sdk.version": "1.39.1",
+          "cloud.region": "africa-south1",
+          "isopact.action": "refund",
+          "service.name": "isopact-outcome-gateway",
+          "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793"
+        }
+      },
+      {
+        "spanId": "3847441125678677342",
+        "parentSpanId": "16813305125331058901",
+        "name": "isopact.gateway.authenticate",
+        "startTime": "2026-08-24T23:28:37.247955225Z",
+        "endTime": "2026-08-24T23:28:37.469298054Z",
+        "labels": {
+          "cloud.region": "africa-south1",
+          "telemetry.sdk.version": "1.39.1",
+          "service.name": "isopact-outcome-gateway"
+        }
+      },
+      {
+        "spanId": "500014597666179437",
+        "parentSpanId": "16813305125331058901",
+        "name": "isopact.gateway.authorize",
+        "startTime": "2026-08-24T23:28:38.051054154Z",
+        "endTime": "2026-08-24T23:28:38.306686466Z",
+        "labels": {
+          "isopact.agent.role": "SUPPORT",
+          "cloud.region": "africa-south1",
+          "isopact.pact_id": "pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793",
+          "telemetry.sdk.version": "1.39.1",
+          "service.name": "isopact-outcome-gateway"
+        }
+      },
+      {
+        "spanId": "4937071576982149668",
+        "parentSpanId": "500014597666179437",
+        "name": "isopact.reservation.transaction",
+        "startTime": "2026-08-24T23:28:38.051091484Z",
+        "endTime": "2026-08-24T23:28:38.306230020Z",
+        "labels": {
+          "cloud.region": "africa-south1",
+          "telemetry.sdk.version": "1.39.1",
+          "service.name": "isopact-outcome-gateway"
+        }
+      },
+      {
+        "spanId": "1774560013594500439",
+        "parentSpanId": "9109698059416133862",
+        "name": "call_llm",
+        "startTime": "2026-08-24T23:28:38.565328884Z",
+        "endTime": "2026-08-24T23:28:41.213218504Z",
+        "labels": {
+          "telemetry.sdk.version": "1.42.1",
+          "cloud.region": "europe-west1",
+          "service.name": "1997126532413259776"
+        }
+      },
+      {
+        "spanId": "3195992120858592140",
+        "parentSpanId": "1774560013594500439",
+        "name": "generate_content gemini-3.5-flash",
+        "startTime": "2026-08-24T23:28:38.565461260Z",
+        "endTime": "2026-08-24T23:28:41.213035503Z",
+        "labels": {
+          "service.name": "1997126532413259776",
+          "telemetry.sdk.version": "1.42.1",
+          "cloud.region": "europe-west1"
+        }
+      },
+      {
+        "spanId": "17852406543530944511",
+        "parentSpanId": "3195992120858592140",
+        "name": "execute_tool support_inspect_pact_state",
+        "startTime": "2026-08-24T23:28:40.757062081Z",
+        "endTime": "2026-08-24T23:28:41.152083618Z",
+        "labels": {
+          "cloud.region": "europe-west1",
+          "telemetry.sdk.version": "1.42.1",
+          "service.name": "1997126532413259776"
+        }
+      },
+      {
+        "spanId": "14744205960592980295",
+        "parentSpanId": "17852406543530944511",
+        "name": "isopact.agent.invoke",
+        "startTime": "2026-08-24T23:28:40.757397049Z",
+        "endTime": "2026-08-24T23:28:41.150563595Z",
+        "labels": {
+          "isopact.agent.role": "SUPPORT",
+          "cloud.region": "europe-west1",
+          "isopact.tool.path": "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/status",
+          "service.name": "1997126532413259776",
+          "telemetry.sdk.version": "1.42.1"
+        }
+      },
+      {
+        "spanId": "7191573010982719260",
+        "parentSpanId": "14744205960592980295",
+        "name": "/v1/pacts/pact_stage8b-e2e-20260824205251_eb00881cf40576cb2793/status",
+        "startTime": "2026-08-24T23:28:41.055905Z",
+        "endTime": "2026-08-24T23:28:41.067945900Z",
+        "labels": {
+          "cloud.region": "africa-south1"
+        }
+      },
+      {
+        "spanId": "14857061252257880354",
+        "parentSpanId": "9109698059416133862",
+        "name": "call_llm",
+        "startTime": "2026-08-24T23:28:41.217269066Z",
+        "endTime": "2026-08-24T23:28:48.333666512Z",
+        "labels": {
+          "service.name": "1997126532413259776",
+          "cloud.region": "europe-west1",
+          "telemetry.sdk.version": "1.42.1"
+        }
+      },
+      {
+        "spanId": "8301053621459928475",
+        "parentSpanId": "14857061252257880354",
+        "name": "generate_content gemini-3.5-flash",
+        "startTime": "2026-08-24T23:28:41.217395831Z",
+        "endTime": "2026-08-24T23:28:48.333492558Z",
+        "labels": {
+          "cloud.region": "europe-west1",
+          "telemetry.sdk.version": "1.42.1",
+          "service.name": "1997126532413259776"
+        }
+      }
+    ]
+  }
+]
