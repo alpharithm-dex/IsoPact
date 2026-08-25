@@ -1,0 +1,24 @@
+{
+  "schema_version": "stage14-final-clean-run-v1",
+  "status": "PASS_WITH_CLOUD_REQUERY_NOT_AUTHENTICATED",
+  "release_source_commit": "571e7b9d4874a9be090978e956ae056701b36118",
+  "git_archive_sha256": "8F8496FB46BC852F7BC1D1ED38086729F5CDDCDED9DF1AC1145B15AFDB983BCE",
+  "environment": "fresh git archive extraction with a new Python virtual environment and isolated npm cache",
+  "checks": {
+    "backend": "117 passed, 5 subtests passed",
+    "frontend": "2 files and 12 tests passed",
+    "frontend_build": "PASS",
+    "receipt_integrity": "PASS: FULL_INTEGRITY",
+    "benchmark_smoke": "PASS: projected total 65000, projected excess 45000",
+    "vulnerability_audit": "PASS with documented reachability assessments",
+    "sbom": "PASS: CycloneDX 1.5, 106 Python and 160 frontend components"
+  },
+  "cloud_requery": {
+    "status": "NOT_AUTHENTICATED_IN_ISOLATED_CHECKOUT",
+    "effect": "The deployment re-query could not enumerate authenticated Google Cloud resources. This is not represented as a live deployment failure; the signed Stage 13 live evidence remains the authoritative deployment proof."
+  },
+  "notes": [
+    "The first npm install attempt encountered the user's inaccessible shared cache; the isolated local cache run passed.",
+    "Receipt verification emitted a non-authoritative telemetry initialization warning while enforcement and integrity verification remained active."
+  ]
+}

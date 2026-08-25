@@ -31,7 +31,7 @@
   "schema_version": "isopact-release-v1",
   "secret_scan": "PASS",
   "security_scan": "PASS",
-  "source_revision": "STAGE14_GIT_COMMIT_PENDING",
+  "source_revision": "571e7b9d4874a9be090978e956ae056701b36118",
   "stage13_historic_source_revision": "NOT_A_GIT_CHECKOUT",
   "stage13_historic_tree_sha256": "7c46d5d76b9fbede8525cd745e56dd08bf2079c08d6a1a950e10cb810b12d92d",
   "source_tree_sha256": "7c46d5d76b9fbede8525cd745e56dd08bf2079c08d6a1a950e10cb810b12d92d",
