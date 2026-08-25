@@ -3,7 +3,7 @@
   "tagline": "Outcome settlement infrastructure that keeps independent enterprise agents from succeeding locally while the business fails globally.",
   "category": "Fortified Enterprise Fleet",
   "hosted_project": "https://isopact-outcome-gateway-442539309409.africa-south1.run.app/",
-  "repository_url": "REPO_REMOTE_REQUIRED",
+  "repository_url": "https://github.com/alpharithm-dex/IsoPact",
   "reproducible_testing_instructions": true,
   "google_sdks": ["Agent Development Kit (ADK)", "Google GenAI SDK (google-genai)"],
   "google_cloud_services": ["Cloud Run", "Firestore", "Pub/Sub"],
@@ -16,7 +16,6 @@
     "country",
     "organization name / N/A behavior",
     "exact project start date",
-    "final repository URL",
     "Startup Prize eligibility",
     "corporate email",
     "final video URL"

@@ -44,7 +44,7 @@ https://isopact-outcome-gateway-442539309409.africa-south1.run.app/
 
 ## Public Repository Link
 
-**REPO_REMOTE_REQUIRED**
+https://github.com/alpharithm-dex/IsoPact
 
 ## Demo Video
 
@@ -56,7 +56,7 @@ See `artifacts/submission/screenshots/README.md`.
 
 ## Submission Readiness Notes
 
-Local package and evidence are complete. Remote repository URL, final video, exact start date, and user-specific form fields remain.
+The public repository and local package are complete. Final video, exact start date, and user-specific form fields remain.
 
 ## Known Limitations
 

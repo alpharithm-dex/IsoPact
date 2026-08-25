@@ -17,7 +17,6 @@
   "missing": [],
   "status": "PASS",
   "user_blockers": [
-    "public repository URL",
     "final video URL",
     "exact project start date",
     "user-specific Devpost fields"

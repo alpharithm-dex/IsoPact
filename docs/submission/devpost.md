@@ -87,7 +87,7 @@ Validated customer-specific adapters, backup/PITR hardening, provenance-head sca
 - Country: **NEEDS_USER_CONFIRMATION**
 - Organization name / N/A behavior: **NEEDS_USER_CONFIRMATION**
 - Exact project start date: **NEEDS_USER_CONFIRMATION**
-- Final repository URL: **NEEDS_USER_CONFIRMATION**
+- Final repository URL: https://github.com/alpharithm-dex/IsoPact
 - Startup Prize eligibility: **NEEDS_USER_CONFIRMATION**
 - Corporate email: **NEEDS_USER_CONFIRMATION**
 - Final video URL: **NEEDS_USER_CONFIRMATION**

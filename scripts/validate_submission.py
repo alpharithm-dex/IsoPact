@@ -32,6 +32,9 @@ def main() -> int:
               for kind in ("VERIFIED", "QUALIFIED", "DO_NOT_CLAIM")}
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     hostile = (ROOT / "docs/submission/hostile-judge-audit.md").read_text(encoding="utf-8")
+    devpost_fields = json.loads(
+        (ROOT / "artifacts/submission/devpost-fields.json").read_text(encoding="utf-8")
+    )
     checks = {
         "required_assets": not missing,
         "claims_have_all_classes": all(counts.values()),
@@ -43,8 +46,11 @@ def main() -> int:
         "architecture_pdf_valid": (ROOT / "artifacts/submission/isopact-architecture.pdf").read_bytes().startswith(b"%PDF-"),
     }
     status = "PASS" if all(checks.values()) else "BLOCKED"
+    user_blockers = ["final video URL", "exact project start date", "user-specific Devpost fields"]
+    if not str(devpost_fields.get("repository_url", "")).startswith("https://github.com/"):
+        user_blockers.insert(0, "public repository URL")
     report = {"status": status, "checks": checks, "missing": missing, "claim_counts": counts,
-              "user_blockers": ["public repository URL", "final video URL", "exact project start date", "user-specific Devpost fields"]}
+              "user_blockers": user_blockers}
     OUT.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2, sort_keys=True))
     return 0 if status == "PASS" else 1
