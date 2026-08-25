@@ -6,7 +6,7 @@
     <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-opacity=".35"/></filter>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#69e0c4"/></marker>
     <style>
-      .title{font:700 40px system-ui,Segoe UI;fill:#f7fbff}.sub{font:500 18px system-ui,Segoe UI;fill:#a9bad7}.region{font:700 22px system-ui,Segoe UI;fill:#fff}.boxTitle{font:700 19px system-ui,Segoe UI;fill:#fff}.body{font:500 15px system-ui,Segoe UI;fill:#d7e2f2}.tiny{font:500 13px system-ui,Segoe UI;fill:#b9c8df}.box{stroke:#ffffff22;stroke-width:2;rx:18;filter:url(#shadow)}.line{stroke:#69e0c4;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .title{font:700 40px system-ui,Segoe UI;fill:#f7fbff}.sub{font:500 18px system-ui,Segoe UI;fill:#a9bad7}.region{font:700 22px system-ui,Segoe UI;fill:#fff}.boxTitle{font:700 19px system-ui,Segoe UI;fill:#fff}.body{font:500 15px system-ui,Segoe UI;fill:#d7e2f2}.tiny{font:500 13px system-ui,Segoe UI;fill:#b9c8df}.micro{font:500 9px system-ui,Segoe UI;fill:#a9bad7}.box{stroke:#ffffff22;stroke-width:2;rx:18;filter:url(#shadow)}.line{stroke:#69e0c4;stroke-width:4;fill:none;marker-end:url(#arrow)}
     </style>
   </defs>
   <rect width="1600" height="1000" fill="url(#bg)"/>
@@ -37,9 +37,29 @@
   <text x="980" y="393" text-anchor="middle" class="body">STS JWT authentication · semantic reservation</text>
   <text x="980" y="419" text-anchor="middle" class="body">capability + deterministic invariant authorization</text>
   <rect x="1180" y="330" width="315" height="120" fill="#225b56" class="box"/>
-  <text x="1337" y="365" text-anchor="middle" class="boxTitle">Enterprise adapters</text>
-  <text x="1337" y="393" text-anchor="middle" class="body">payment · carrier · warehouse</text>
-  <text x="1337" y="419" text-anchor="middle" class="body">CRM / Jira · authenticated evidence</text>
+  <text x="1337" y="356" text-anchor="middle" class="boxTitle">Enterprise systems · illustrative</text>
+  <!-- Jira, Slack, and Salesforce marks identify possible adapter surfaces only;
+       they do not assert that these integrations are implemented or endorsed. -->
+  <g aria-label="Jira" transform="translate(1208 369) scale(1.35)">
+    <path fill="#2684FF" d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24 12.483V1.005A1.001 1.001 0 0 0 23.013 0Z"/>
+  </g>
+  <g aria-label="Slack" transform="translate(1321 369) scale(.5)">
+    <path fill="#E01E5A" d="M17.78 40.31c0-3.73 2.82-6.73 6.32-6.73s6.32 3 6.32 6.73v16.57c0 3.73-2.82 6.73-6.32 6.73s-6.32-3-6.32-6.73z"/>
+    <path fill="#ECB22D" d="M40.31 46.22c-3.73 0-6.73-2.82-6.73-6.32s3-6.32 6.73-6.32h16.57c3.73 0 6.73 2.82 6.73 6.32s-3 6.32-6.73 6.32z"/>
+    <path fill="#2FB67C" d="M33.58 7.12c0-3.73 2.82-6.73 6.32-6.73s6.32 3 6.32 6.73v16.57c0 3.73-2.82 6.73-6.32 6.73s-6.32-3-6.32-6.73z"/>
+    <path fill="#36C5F1" d="M7.12 30.42c-3.73 0-6.73-2.82-6.73-6.32s3-6.32 6.73-6.32h16.57c3.73 0 6.73 2.82 6.73 6.32s-3 6.32-6.73 6.32z"/>
+    <path fill="#ECB22D" d="M33.58 57.67a6.31 6.31 0 0 0 6.32 6.32c3.5 0 6.32-2.82 6.32-6.32v-6.32H39.9a6.31 6.31 0 0 0-6.32 6.32z"/>
+    <path fill="#2FB67C" d="M57.67 30.42h-6.32V24.1c0-3.5 2.82-6.32 6.32-6.32s6.32 2.82 6.32 6.32-2.82 6.32-6.32 6.32z"/>
+    <path fill="#E01E5A" d="M6.71 33.58h6.32v6.32c0 3.5-2.82 6.32-6.32 6.32S.39 43.4.39 39.9s2.82-6.32 6.32-6.32z"/>
+    <path fill="#36C5F1" d="M30.42 6.71v6.32H24.1c-3.5 0-6.32-2.82-6.32-6.32S20.6.39 24.1.39s6.32 2.82 6.32 6.32z"/>
+  </g>
+  <g aria-label="Salesforce" transform="translate(1434 369) scale(.5)">
+    <path fill="#00A1E0" d="M26.62 14.49c2.07-2.14 4.95-3.5 8.13-3.5 4.24 0 7.91 2.36 9.88 5.86a13.6 13.6 0 0 1 5.6-1.18c7.63 0 13.8 6.23 13.8 13.91S57.82 43.5 50.2 43.5c-.93 0-1.83-.09-2.71-.27a10.1 10.1 0 0 1-8.82 5.17c-1.58 0-3.08-.37-4.41-1a11.5 11.5 0 0 1-10.59 7.02 11.5 11.5 0 0 1-10.8-7.54c-.71.15-1.44.22-2.19.22C4.78 47.1 0 42.27 0 36.29a10.82 10.82 0 0 1 5.34-9.36 12.2 12.2 0 0 1-1.03-4.95c-.03-6.82 5.56-12.39 12.41-12.39 3.98 0 7.56 1.92 9.9 4.9"/>
+  </g>
+  <text x="1224" y="430" text-anchor="middle" class="tiny">Jira</text>
+  <text x="1337" y="430" text-anchor="middle" class="tiny">Slack</text>
+  <text x="1450" y="430" text-anchor="middle" class="tiny">Salesforce</text>
+  <text x="1337" y="445" text-anchor="middle" class="micro">Examples only · no live integration or endorsement claimed</text>
   <rect x="815" y="485" width="210" height="90" fill="#225b56" class="box"/><text x="920" y="518" text-anchor="middle" class="boxTitle">Firestore</text><text x="920" y="544" text-anchor="middle" class="tiny">Pact Graph · slots</text><text x="920" y="562" text-anchor="middle" class="tiny">claims · UNKNOWN</text>
   <rect x="1045" y="485" width="210" height="90" fill="#225b56" class="box"/><text x="1150" y="518" text-anchor="middle" class="boxTitle">Pub/Sub evidence</text><text x="1150" y="544" text-anchor="middle" class="tiny">async authoritative</text><text x="1150" y="562" text-anchor="middle" class="tiny">transport</text>
   <rect x="1275" y="485" width="220" height="90" fill="#225b56" class="box"/><text x="1385" y="518" text-anchor="middle" class="boxTitle">Evidence reducer</text><text x="1385" y="544" text-anchor="middle" class="tiny">rank 1–5 · corrections</text><text x="1385" y="562" text-anchor="middle" class="tiny">source state machines</text>
@@ -70,5 +90,6 @@
   <text x="1075" y="855" class="body">Provisioned · default deny · not bound</text>
   <text x="1075" y="883" class="tiny">A2A is not used in the canonical production flow.</text>
 
-  <text x="70" y="955" class="tiny">Trust boundary: reasoning proposes → settlement authenticates and authorizes → evidence settles → KMS proves recorded integrity</text>
+  <text x="70" y="946" class="tiny">Trust boundary: reasoning proposes → settlement authenticates and authorizes → evidence settles → KMS proves recorded integrity</text>
+  <text x="70" y="970" class="tiny">Illustrative third-party marks identify possible adapter surfaces; no endorsement or implemented integration is implied. Trademarks belong to their owners.</text>
 </svg>
